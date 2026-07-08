@@ -29,13 +29,11 @@
         "in_network": false
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Parris",
         "surface": "Parris",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Jack F. Matlock Jr.",
@@ -49,7 +47,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "John Poindexter",
@@ -106,13 +104,11 @@
         "in_network": true
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Parris",
         "surface": "Parris",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_CSJ_1",
@@ -129,13 +125,11 @@
         "in_network": false
       },
       {
-        "name": "Thomas W. Simons Jr.",
-        "side": "US",
-        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
-        "id": "us.simons",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
+        "name": "Simons",
         "surface": "Simons",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_DN_1",
@@ -152,22 +146,18 @@
         "in_network": false
       },
       {
-        "name": "Michael H. Armacost",
-        "side": "US",
-        "role": "Under Secretary of State for Political Affairs",
-        "id": "us.armacost",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
+        "name": "Mike Armacost",
         "surface": "Mike Armacost",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Oleg M. Sokolov",
-        "side": "USSR",
-        "role": "Minister-Counselor, Soviet Embassy in Washington",
-        "id": "ussr.sokolov",
+        "id": "frus1981-88v05:p_SO_1",
         "tei_id": "p_SO_1",
+        "name": "Sokolov",
         "surface": "Sokolov",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -181,20 +171,18 @@
       {
         "name": "Anatoly F. Dobrynin",
         "side": "USSR",
-        "role": "Secretary, CPSU Central Committee (Head of the International Department)",
+        "role": "Secretary, CPSU Central Committee",
         "id": "ussr.dobrynin",
         "tei_id": "p_DA_1",
         "surface": "Dobrynin",
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_SA_2",
@@ -204,13 +192,11 @@
         "in_network": false
       },
       {
-        "name": "John C. Whitehead",
-        "side": "US",
-        "role": "Deputy Secretary of State",
-        "id": "us.whitehead",
+        "id": "frus1981-88v05:p_WJC_1",
         "tei_id": "p_WJC_1",
+        "name": "Whitehead",
         "surface": "Whitehead",
-        "in_network": true
+        "in_network": false
       }
     ],
     "topics": [
@@ -263,13 +249,11 @@
         "in_network": true
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Parris",
         "surface": "Parris",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_SA_2",
@@ -293,13 +277,11 @@
         "in_network": false
       },
       {
-        "name": "Michael H. Armacost",
-        "side": "US",
-        "role": "Under Secretary of State for Political Affairs",
-        "id": "us.armacost",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
+        "name": "Armacost",
         "surface": "Armacost",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Ronald Reagan",
@@ -327,31 +309,25 @@
         "in_network": true
       },
       {
-        "name": "Peter W. Rodman",
-        "side": "US",
-        "role": "Director, Policy Planning Council; NSC Deputy Assistant",
-        "id": "us.rodman",
+        "id": "frus1981-88v05:p_RPW_1",
         "tei_id": "p_RPW_1",
+        "name": "Peter Rodman",
         "surface": "Peter Rodman",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "John C. Whitehead",
-        "side": "US",
-        "role": "Deputy Secretary of State",
-        "id": "us.whitehead",
+        "id": "frus1981-88v05:p_WJC_1",
         "tei_id": "p_WJC_1",
+        "name": "Whitehead",
         "surface": "Whitehead",
-        "in_network": true
+        "in_network": false
       }
     ],
     "topics": [
@@ -405,7 +381,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -464,13 +440,11 @@
         "in_network": false
       },
       {
-        "name": "Michael H. Armacost",
-        "side": "US",
-        "role": "Under Secretary of State for Political Affairs",
-        "id": "us.armacost",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
+        "name": "Armacost",
         "surface": "Armacost",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_DN_1",
@@ -489,18 +463,16 @@
         "in_network": true
       },
       {
-        "name": "Georgii M. Korniyenko",
-        "side": "USSR",
-        "role": "First Deputy Foreign Minister (until 1986)",
-        "id": "ussr.korniyenko",
+        "id": "frus1981-88v05:p_KG_1",
         "tei_id": "p_KG_1",
+        "name": "Korniyenko",
         "surface": "Korniyenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -532,13 +504,11 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_OY_1",
@@ -606,22 +576,18 @@
         "in_network": false
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Parris",
         "surface": "Parris",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -633,13 +599,11 @@
         "in_network": true
       },
       {
-        "name": "Michael H. Armacost",
-        "side": "US",
-        "role": "Under Secretary of State for Political Affairs",
-        "id": "us.armacost",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
+        "name": "Mike Armacost",
         "surface": "Mike Armacost",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_CRE_1",
@@ -649,13 +613,11 @@
         "in_network": false
       },
       {
-        "name": "Donald T. Regan",
-        "side": "US",
-        "role": "White House Chief of Staff (until Feb 1987)",
-        "id": "us.regan",
+        "id": "frus1981-88v05:p_RDT_1",
         "tei_id": "p_RDT_1",
+        "name": "Don Regan",
         "surface": "Don Regan",
-        "in_network": true
+        "in_network": false
       }
     ],
     "topics": [
@@ -682,7 +644,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -712,13 +674,11 @@
         "in_network": false
       },
       {
-        "name": "Donald T. Regan",
-        "side": "US",
-        "role": "White House Chief of Staff (until Feb 1987)",
-        "id": "us.regan",
+        "id": "frus1981-88v05:p_RDT_1",
         "tei_id": "p_RDT_1",
+        "name": "Regan",
         "surface": "Regan",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "George P. Shultz",
@@ -751,13 +711,11 @@
         "in_network": false
       },
       {
-        "name": "Michael H. Armacost",
-        "side": "US",
-        "role": "Under Secretary of State for Political Affairs",
-        "id": "us.armacost",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
+        "name": "Armacost",
         "surface": "Armacost",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -804,7 +762,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -827,13 +785,11 @@
         "in_network": false
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Linhard",
         "surface": "Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Paul H. Nitze",
@@ -854,13 +810,11 @@
         "in_network": true
       },
       {
-        "name": "Edward L. Rowny",
-        "side": "US",
-        "role": "Special Advisor to the President and Secretary of State on Arms Control",
-        "id": "us.rowny",
+        "id": "frus1981-88v05:p_REL_1",
         "tei_id": "p_REL_1",
+        "name": "Ed Rowny",
         "surface": "Ed Rowny",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Richard N. Perle",
@@ -872,13 +826,11 @@
         "in_network": true
       },
       {
-        "name": "Ronald F. Lehman II",
-        "side": "US",
-        "role": "Chief U.S. Negotiator on Strategic Nuclear Arms (START)",
-        "id": "us.lehman",
+        "id": "frus1981-88v05:p_LRF_1",
         "tei_id": "p_LRF_1",
+        "name": "Ron Lehman",
         "surface": "Ron Lehman",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_GMW_1",
@@ -888,7 +840,7 @@
         "in_network": false
       },
       {
-        "name": "Viktor P. Karpov",
+        "name": "Viktor M. Karpov",
         "side": "USSR",
         "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
         "id": "ussr.karpov",
@@ -897,13 +849,11 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "George P. Shultz",
@@ -972,22 +922,18 @@
         "in_network": false
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Parris",
         "surface": "Parris",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Thomas W. Simons Jr.",
-        "side": "US",
-        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
-        "id": "us.simons",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
+        "name": "Simons",
         "surface": "Simons",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Rozanne L. Ridgway",
@@ -1015,31 +961,25 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Michael H. Armacost",
-        "side": "US",
-        "role": "Under Secretary of State for Political Affairs",
-        "id": "us.armacost",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
+        "name": "Armacost",
         "surface": "Armacost",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Oleg M. Sokolov",
-        "side": "USSR",
-        "role": "Minister-Counselor, Soviet Embassy in Washington",
-        "id": "ussr.sokolov",
+        "id": "frus1981-88v05:p_SO_1",
         "tei_id": "p_SO_1",
+        "name": "Sokolov",
         "surface": "Sokolov",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -1089,7 +1029,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -1169,13 +1109,11 @@
         "in_network": true
       },
       {
-        "name": "Peter W. Rodman",
-        "side": "US",
-        "role": "Director, Policy Planning Council; NSC Deputy Assistant",
-        "id": "us.rodman",
+        "id": "frus1981-88v05:p_RPW_1",
         "tei_id": "p_RPW_1",
+        "name": "Peter Rodman",
         "surface": "Peter Rodman",
-        "in_network": true
+        "in_network": false
       }
     ],
     "topics": [
@@ -1228,7 +1166,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -1295,13 +1233,11 @@
         "in_network": false
       },
       {
-        "name": "Thomas W. Simons Jr.",
-        "side": "US",
-        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
-        "id": "us.simons",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
+        "name": "Simons",
         "surface": "Simons",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Rozanne L. Ridgway",
@@ -1313,22 +1249,18 @@
         "in_network": true
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Parris",
         "surface": "Parris",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Oleg M. Sokolov",
-        "side": "USSR",
-        "role": "Minister-Counselor, Soviet Embassy in Washington",
-        "id": "ussr.sokolov",
+        "id": "frus1981-88v05:p_SO_1",
         "tei_id": "p_SO_1",
+        "name": "Sokolov",
         "surface": "Sokolov",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -1389,13 +1321,11 @@
         "in_network": true
       },
       {
-        "name": "Andrei A. Gromyko",
-        "side": "USSR",
-        "role": "Chairman of the Presidium of the Supreme Soviet (former Foreign Minister)",
-        "id": "ussr.gromyko",
+        "id": "frus1981-88v05:p_GA_1",
         "tei_id": "p_GA_1",
+        "name": "Gromyko",
         "surface": "Gromyko",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_RNI_1",
@@ -1451,18 +1381,16 @@
         "in_network": false
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Robert Linhard",
         "surface": "Robert Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -1503,13 +1431,11 @@
         "in_network": true
       },
       {
-        "name": "Caspar W. Weinberger",
-        "side": "US",
-        "role": "Secretary of Defense",
-        "id": "us.weinberger",
+        "id": "frus1981-88v05:p_WCW_1",
         "tei_id": "p_WCW_1",
+        "name": "Weinberger",
         "surface": "Weinberger",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -1528,13 +1454,11 @@
         "in_network": false
       },
       {
-        "name": "Peter W. Rodman",
-        "side": "US",
-        "role": "Director, Policy Planning Council; NSC Deputy Assistant",
-        "id": "us.rodman",
+        "id": "frus1981-88v05:p_RPW_1",
         "tei_id": "p_RPW_1",
+        "name": "Peter Rodman",
         "surface": "Peter Rodman",
-        "in_network": true
+        "in_network": false
       }
     ],
     "topics": [
@@ -1564,7 +1488,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -1587,13 +1511,11 @@
         "in_network": false
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Linhard",
         "surface": "Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -1605,13 +1527,11 @@
         "in_network": true
       },
       {
-        "name": "Caspar W. Weinberger",
-        "side": "US",
-        "role": "Secretary of Defense",
-        "id": "us.weinberger",
+        "id": "frus1981-88v05:p_WCW_1",
         "tei_id": "p_WCW_1",
+        "name": "Weinberger",
         "surface": "Weinberger",
-        "in_network": true
+        "in_network": false
       }
     ],
     "topics": [
@@ -1679,18 +1599,16 @@
         "in_network": true
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Anatoly F. Dobrynin",
         "side": "USSR",
-        "role": "Secretary, CPSU Central Committee (Head of the International Department)",
+        "role": "Secretary, CPSU Central Committee",
         "id": "ussr.dobrynin",
         "tei_id": "p_DA_1",
         "surface": "Dobrynin",
@@ -1720,13 +1638,11 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Yury Dubinin",
         "surface": "Yury Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -1832,31 +1748,25 @@
         "in_network": true
       },
       {
-        "name": "Thomas W. Simons Jr.",
-        "side": "US",
-        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
-        "id": "us.simons",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
+        "name": "Tom Simons",
         "surface": "Tom Simons",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Robert Linhard",
         "surface": "Robert Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Mark Parris",
         "surface": "Mark Parris",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -1868,16 +1778,14 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Viktor P. Karpov",
+        "name": "Viktor M. Karpov",
         "side": "USSR",
         "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
         "id": "ussr.karpov",
@@ -1886,13 +1794,11 @@
         "in_network": true
       },
       {
-        "name": "Oleg M. Sokolov",
-        "side": "USSR",
-        "role": "Minister-Counselor, Soviet Embassy in Washington",
-        "id": "ussr.sokolov",
+        "id": "frus1981-88v05:p_SO_1",
         "tei_id": "p_SO_1",
+        "name": "Sokolov",
         "surface": "Sokolov",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_MV_1",
@@ -1902,22 +1808,18 @@
         "in_network": false
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "Palazhchenko",
         "surface": "Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Ronald F. Lehman II",
-        "side": "US",
-        "role": "Chief U.S. Negotiator on Strategic Nuclear Arms (START)",
-        "id": "us.lehman",
+        "id": "frus1981-88v05:p_LRF_1",
         "tei_id": "p_LRF_1",
+        "name": "Lehman",
         "surface": "Lehman",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -1929,13 +1831,11 @@
         "in_network": true
       },
       {
-        "name": "Andrei A. Gromyko",
-        "side": "USSR",
-        "role": "Chairman of the Presidium of the Supreme Soviet (former Foreign Minister)",
-        "id": "ussr.gromyko",
+        "id": "frus1981-88v05:p_GA_1",
         "tei_id": "p_GA_1",
+        "name": "Gromyko",
         "surface": "Gromyko",
-        "in_network": true
+        "in_network": false
       }
     ],
     "topics": [
@@ -1997,13 +1897,11 @@
         "in_network": false
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -2114,31 +2012,25 @@
         "in_network": true
       },
       {
-        "name": "Thomas W. Simons Jr.",
-        "side": "US",
-        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
-        "id": "us.simons",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
+        "name": "Tom Simons",
         "surface": "Tom Simons",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Robert Linhard",
         "surface": "Robert Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Mark Parris",
         "surface": "Mark Parris",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -2150,16 +2042,14 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Viktor P. Karpov",
+        "name": "Viktor M. Karpov",
         "side": "USSR",
         "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
         "id": "ussr.karpov",
@@ -2175,13 +2065,11 @@
         "in_network": false
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "Palazhchenko",
         "surface": "Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -2193,13 +2081,11 @@
         "in_network": true
       },
       {
-        "name": "Andrei A. Gromyko",
-        "side": "USSR",
-        "role": "Chairman of the Presidium of the Supreme Soviet (former Foreign Minister)",
-        "id": "ussr.gromyko",
+        "id": "frus1981-88v05:p_GA_1",
         "tei_id": "p_GA_1",
+        "name": "Gromyko",
         "surface": "Gromyko",
-        "in_network": true
+        "in_network": false
       }
     ],
     "topics": [
@@ -2252,22 +2138,18 @@
         "in_network": true
       },
       {
-        "name": "John C. Whitehead",
-        "side": "US",
-        "role": "Deputy Secretary of State",
-        "id": "us.whitehead",
+        "id": "frus1981-88v05:p_WJC_1",
         "tei_id": "p_WJC_1",
+        "name": "Whitehead",
         "surface": "Whitehead",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Michael H. Armacost",
-        "side": "US",
-        "role": "Under Secretary of State for Political Affairs",
-        "id": "us.armacost",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
+        "name": "Armacost",
         "surface": "Armacost",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Paul H. Nitze",
@@ -2308,7 +2190,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -2324,22 +2206,18 @@
         "in_network": true
       },
       {
-        "name": "Thomas W. Simons Jr.",
-        "side": "US",
-        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
-        "id": "us.simons",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
+        "name": "Tom Simons",
         "surface": "Tom Simons",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Mark Parris",
         "surface": "Mark Parris",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_SRH_1",
@@ -2358,16 +2236,14 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Viktor P. Karpov",
+        "name": "Viktor M. Karpov",
         "side": "USSR",
         "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
         "id": "ussr.karpov",
@@ -2376,13 +2252,11 @@
         "in_network": true
       },
       {
-        "name": "Oleg M. Sokolov",
-        "side": "USSR",
-        "role": "Minister-Counselor, Soviet Embassy in Washington",
-        "id": "ussr.sokolov",
+        "id": "frus1981-88v05:p_SO_1",
         "tei_id": "p_SO_1",
+        "name": "Sokolov",
         "surface": "Sokolov",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_MV_1",
@@ -2392,22 +2266,18 @@
         "in_network": false
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "Palazhchenko",
         "surface": "Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Andrei A. Gromyko",
-        "side": "USSR",
-        "role": "Chairman of the Presidium of the Supreme Soviet (former Foreign Minister)",
-        "id": "ussr.gromyko",
+        "id": "frus1981-88v05:p_GA_1",
         "tei_id": "p_GA_1",
+        "name": "Gromyko",
         "surface": "Gromyko",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_PS_1",
@@ -2433,13 +2303,11 @@
         "in_network": false
       },
       {
-        "name": "William J. Casey",
-        "side": "US",
-        "role": "Director of Central Intelligence",
-        "id": "us.casey",
+        "id": "frus1981-88v05:p_CWJ_1",
         "tei_id": "p_CWJ_1",
+        "name": "Casey",
         "surface": "Casey",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_HSG_1",
@@ -2565,13 +2433,11 @@
         "in_network": true
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Ronald Reagan",
@@ -2664,22 +2530,18 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -2754,31 +2616,27 @@
         "in_network": true
       },
       {
-        "name": "Donald T. Regan",
-        "side": "US",
-        "role": "White House Chief of Staff (until Feb 1987)",
-        "id": "us.regan",
+        "id": "frus1981-88v05:p_RDT_1",
         "tei_id": "p_RDT_1",
+        "name": "Regan",
         "surface": "Regan",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
         "in_network": true
       },
       {
-        "name": "William J. Casey",
-        "side": "US",
-        "role": "Director of Central Intelligence",
-        "id": "us.casey",
+        "id": "frus1981-88v05:p_CWJ_1",
         "tei_id": "p_CWJ_1",
+        "name": "Bill Casey",
         "surface": "Bill Casey",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Eduard A. Shevardnadze",
@@ -2790,13 +2648,11 @@
         "in_network": true
       },
       {
-        "name": "Caspar W. Weinberger",
-        "side": "US",
-        "role": "Secretary of Defense",
-        "id": "us.weinberger",
+        "id": "frus1981-88v05:p_WCW_1",
         "tei_id": "p_WCW_1",
+        "name": "Weinberger",
         "surface": "Weinberger",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_OY_1",
@@ -2864,22 +2720,18 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_DN_1",
@@ -3000,22 +2852,18 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_KB_1",
@@ -3130,7 +2978,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -3155,22 +3003,18 @@
         "in_network": true
       },
       {
-        "name": "George H.W. Bush",
-        "side": "US",
-        "role": "Vice President of the United States",
-        "id": "us.bush",
+        "id": "frus1981-88v05:p_BGHW_1",
         "tei_id": "p_BGHW_1",
+        "name": "Bush",
         "surface": "Bush",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Donald T. Regan",
-        "side": "US",
-        "role": "White House Chief of Staff (until Feb 1987)",
-        "id": "us.regan",
+        "id": "frus1981-88v05:p_RDT_1",
         "tei_id": "p_RDT_1",
+        "name": "Regan",
         "surface": "Regan",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -3220,31 +3064,25 @@
         "in_network": true
       },
       {
-        "name": "Alton G. Keel Jr.",
-        "side": "US",
-        "role": "Deputy / Acting National Security Advisor (late 1986)",
-        "id": "us.keel",
+        "id": "frus1981-88v05:p_KAG_1",
         "tei_id": "p_KAG_1",
+        "name": "Alton Keel",
         "surface": "Alton Keel",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "George H.W. Bush",
-        "side": "US",
-        "role": "Vice President of the United States",
-        "id": "us.bush",
+        "id": "frus1981-88v05:p_BGHW_1",
         "tei_id": "p_BGHW_1",
+        "name": "Bush",
         "surface": "Bush",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Donald T. Regan",
-        "side": "US",
-        "role": "White House Chief of Staff (until Feb 1987)",
-        "id": "us.regan",
+        "id": "frus1981-88v05:p_RDT_1",
         "tei_id": "p_RDT_1",
+        "name": "Regan",
         "surface": "Regan",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Ronald Reagan",
@@ -3258,7 +3096,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -3312,7 +3150,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -3326,13 +3164,11 @@
         "in_network": false
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Linhard",
         "surface": "Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -3371,13 +3207,11 @@
         "in_network": true
       },
       {
-        "name": "Edward L. Rowny",
-        "side": "US",
-        "role": "Special Advisor to the President and Secretary of State on Arms Control",
-        "id": "us.rowny",
+        "id": "frus1981-88v05:p_REL_1",
         "tei_id": "p_REL_1",
+        "name": "Rowny",
         "surface": "Rowny",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Paul H. Nitze",
@@ -3433,7 +3267,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -3447,13 +3281,11 @@
         "in_network": false
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Linhard",
         "surface": "Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -3515,13 +3347,11 @@
         "in_network": true
       },
       {
-        "name": "Edward L. Rowny",
-        "side": "US",
-        "role": "Special Advisor to the President and Secretary of State on Arms Control",
-        "id": "us.rowny",
+        "id": "frus1981-88v05:p_REL_1",
         "tei_id": "p_REL_1",
+        "name": "ROWNY",
         "surface": "ROWNY",
-        "in_network": true
+        "in_network": false
       }
     ],
     "topics": [
@@ -3590,13 +3420,11 @@
     "venue": "",
     "persons": [
       {
-        "name": "Caspar W. Weinberger",
-        "side": "US",
-        "role": "Secretary of Defense",
-        "id": "us.weinberger",
+        "id": "frus1981-88v05:p_WCW_1",
         "tei_id": "p_WCW_1",
+        "name": "Weinberger",
         "surface": "Weinberger",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Ronald Reagan",
@@ -3608,13 +3436,11 @@
         "in_network": true
       },
       {
-        "name": "Alton G. Keel Jr.",
-        "side": "US",
-        "role": "Deputy / Acting National Security Advisor (late 1986)",
-        "id": "us.keel",
+        "id": "frus1981-88v05:p_KAG_1",
         "tei_id": "p_KAG_1",
+        "name": "Alton Keel",
         "surface": "Alton Keel",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -3802,13 +3628,11 @@
         "in_network": true
       },
       {
-        "name": "Thomas W. Simons Jr.",
-        "side": "US",
-        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
-        "id": "us.simons",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
+        "name": "Simons",
         "surface": "Simons",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Ronald Reagan",
@@ -3847,13 +3671,11 @@
         "in_network": true
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Paul H. Nitze",
@@ -3883,22 +3705,18 @@
         "in_network": true
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Linhard",
         "surface": "Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Edward L. Rowny",
-        "side": "US",
-        "role": "Special Advisor to the President and Secretary of State on Arms Control",
-        "id": "us.rowny",
+        "id": "frus1981-88v05:p_REL_1",
         "tei_id": "p_REL_1",
+        "name": "Rowny",
         "surface": "Rowny",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Kenneth L. Adelman",
@@ -3910,7 +3728,7 @@
         "in_network": true
       },
       {
-        "name": "Viktor P. Karpov",
+        "name": "Viktor M. Karpov",
         "side": "USSR",
         "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
         "id": "ussr.karpov",
@@ -3944,22 +3762,18 @@
         "in_network": true
       },
       {
-        "name": "Peter W. Rodman",
-        "side": "US",
-        "role": "Director, Policy Planning Council; NSC Deputy Assistant",
-        "id": "us.rodman",
+        "id": "frus1981-88v05:p_RPW_1",
         "tei_id": "p_RPW_1",
+        "name": "Rodman",
         "surface": "Rodman",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Parris",
         "surface": "Parris",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -3998,13 +3812,11 @@
     "venue": "Hofdi House (draft; disavowed by Ridgway)",
     "persons": [
       {
-        "name": "Peter W. Rodman",
-        "side": "US",
-        "role": "Director, Policy Planning Council; NSC Deputy Assistant",
-        "id": "us.rodman",
+        "id": "frus1981-88v05:p_RPW_1",
         "tei_id": "p_RPW_1",
+        "name": "Rodman",
         "surface": "Rodman",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Rozanne L. Ridgway",
@@ -4034,22 +3846,18 @@
         "in_network": true
       },
       {
-        "name": "Thomas W. Simons Jr.",
-        "side": "US",
-        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
-        "id": "us.simons",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
+        "name": "Simons",
         "surface": "Simons",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Parris",
         "surface": "Parris",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -4061,13 +3869,11 @@
         "in_network": true
       },
       {
-        "name": "Yuri V. Dubinin",
-        "side": "USSR",
-        "role": "Soviet Ambassador to the United States (from May 1986)",
-        "id": "ussr.dubinin",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
+        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_MV_1",
@@ -4194,13 +4000,11 @@
         "in_network": true
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Bob Linhard",
         "surface": "Bob Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "George P. Shultz",
@@ -4244,16 +4048,14 @@
         "in_network": false
       },
       {
-        "name": "Edward L. Rowny",
-        "side": "US",
-        "role": "Special Advisor to the President and Secretary of State on Arms Control",
-        "id": "us.rowny",
+        "id": "frus1981-88v05:p_REL_1",
         "tei_id": "p_REL_1",
+        "name": "Rowny",
         "surface": "Rowny",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Viktor P. Karpov",
+        "name": "Viktor M. Karpov",
         "side": "USSR",
         "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
         "id": "ussr.karpov",
@@ -4330,13 +4132,11 @@
         "in_network": true
       },
       {
-        "name": "Georgii M. Korniyenko",
-        "side": "USSR",
-        "role": "First Deputy Foreign Minister (until 1986)",
-        "id": "ussr.korniyenko",
+        "id": "frus1981-88v05:p_KG_1",
         "tei_id": "p_KG_1",
+        "name": "Georgy Korniyenko",
         "surface": "Georgy Korniyenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Paul H. Nitze",
@@ -4357,13 +4157,11 @@
         "in_network": true
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "Palazhchenko",
         "surface": "Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Eduard A. Shevardnadze",
@@ -4418,13 +4216,11 @@
         "in_network": true
       },
       {
-        "name": "Mark R. Parris",
-        "side": "US",
-        "role": "Director, Office of Soviet Union Affairs",
-        "id": "us.parris",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
+        "name": "Parris",
         "surface": "Parris",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Eduard A. Shevardnadze",
@@ -4443,13 +4239,11 @@
         "in_network": false
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "Palazhchenko",
         "surface": "Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -4524,7 +4318,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor (until Nov 1986)",
+        "role": "National Security Advisor",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -4549,16 +4343,14 @@
         "in_network": true
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Robert Linhard",
         "surface": "Robert Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
-        "name": "Viktor P. Karpov",
+        "name": "Viktor M. Karpov",
         "side": "USSR",
         "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
         "id": "ussr.karpov",
@@ -4574,13 +4366,11 @@
         "in_network": false
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Ronald Reagan",
@@ -4601,13 +4391,11 @@
         "in_network": true
       },
       {
-        "name": "Caspar W. Weinberger",
-        "side": "US",
-        "role": "Secretary of Defense",
-        "id": "us.weinberger",
+        "id": "frus1981-88v05:p_WCW_1",
         "tei_id": "p_WCW_1",
+        "name": "Weinberger",
         "surface": "Weinberger",
-        "in_network": true
+        "in_network": false
       }
     ],
     "topics": [
@@ -4643,13 +4431,11 @@
         "in_network": true
       },
       {
-        "name": "Thomas W. Simons Jr.",
-        "side": "US",
-        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
-        "id": "us.simons",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
+        "name": "Simons",
         "surface": "Simons",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Ronald Reagan",
@@ -4688,13 +4474,11 @@
         "in_network": true
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "id": "frus1981-88v05:p_UN_1",
@@ -4713,13 +4497,11 @@
         "in_network": true
       },
       {
-        "name": "Robert E. Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
+        "name": "Linhard",
         "surface": "Linhard",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "Richard N. Perle",
@@ -4773,13 +4555,11 @@
         "in_network": true
       },
       {
-        "name": "Pavel R. Palazhchenko",
-        "side": "USSR",
-        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
-        "id": "ussr.palazhchenko",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
+        "name": "Pavel Palazhchenko",
         "surface": "Pavel Palazhchenko",
-        "in_network": true
+        "in_network": false
       },
       {
         "name": "George P. Shultz",

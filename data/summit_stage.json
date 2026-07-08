@@ -1,0 +1,517 @@
+{
+  "volume": "frus1981-88v05",
+  "days": [
+    "1986-10-11",
+    "1986-10-12"
+  ],
+  "meetings": [
+    {
+      "doc_id": "frus1981-88v05-d301",
+      "doc_number": 301,
+      "url": "https://history.state.gov/historicaldocuments/frus1981-88v05/d301",
+      "session": "Session I - October 11 morning",
+      "principals": "Reagan-Gorbachev",
+      "venue": "Hofdi House",
+      "start": "1986-10-11T10:40:00+00:00",
+      "end": "1986-10-11T12:30:00+00:00",
+      "time_display": "October 11, 1986, 10:40 a.m.–12:30 p.m.",
+      "caption_note": "",
+      "attendees": [
+        {
+          "id": "reagan_gorbachev.reagan",
+          "name": "Ronald Reagan",
+          "display": "President Reagan",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "us.shultz",
+          "name": "George P. Shultz",
+          "display": "Secretary Shultz",
+          "side": "US",
+          "tier": "roster",
+          "note": "came in at 11:30"
+        },
+        {
+          "id": "us.matlock",
+          "name": "Jack F. Matlock Jr.",
+          "display": "Ambassador Matlock",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.zarechnak-dimitry",
+          "name": "Dimitry Zarechnak",
+          "display": "D. Zarechnak",
+          "side": "US",
+          "tier": "annotated",
+          "note": "Interpreter"
+        },
+        {
+          "id": "reagan_gorbachev.gorbachev",
+          "name": "Mikhail S. Gorbachev",
+          "display": "General Secretary Gorbachev",
+          "side": "USSR",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "ussr.shevardnadze",
+          "name": "Eduard A. Shevardnadze",
+          "display": "Foreign Minister Shevardnadze",
+          "side": "USSR",
+          "tier": "roster",
+          "note": "came in at 11:30"
+        },
+        {
+          "id": "person.uspensky-nikolai",
+          "name": "Nikolai Uspensky",
+          "display": "N. Upsenskiy",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": "Interpreter"
+        }
+      ]
+    },
+    {
+      "doc_id": "frus1981-88v05-d302",
+      "doc_number": 302,
+      "url": "https://history.state.gov/historicaldocuments/frus1981-88v05/d302",
+      "session": "Session II - October 11 afternoon",
+      "principals": "Reagan-Gorbachev",
+      "venue": "Hofdi House",
+      "start": "1986-10-11T15:30:00+00:00",
+      "end": "1986-10-11T17:40:00+00:00",
+      "time_display": "October 11, 1986, 3:30–5:40 p.m.",
+      "caption_note": "",
+      "attendees": [
+        {
+          "id": "reagan_gorbachev.reagan",
+          "name": "Ronald Reagan",
+          "display": "President Reagan",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "us.shultz",
+          "name": "George P. Shultz",
+          "display": "Secretary Shultz",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.simons-thomas",
+          "name": "Thomas Simons",
+          "display": "Tom Simons, Notetaker",
+          "side": "US",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "person.hopkins-william",
+          "name": "William Hopkins",
+          "display": "William Hopkins, Interpreter",
+          "side": "US",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "reagan_gorbachev.gorbachev",
+          "name": "Mikhail S. Gorbachev",
+          "display": "General Secretary Gorbachev",
+          "side": "USSR",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "ussr.shevardnadze",
+          "name": "Eduard A. Shevardnadze",
+          "display": "Foreign Minister Shevardnadze",
+          "side": "USSR",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.tarasenko-sergei",
+          "name": "Sergei Tarasenko",
+          "display": "G. Tarasenko, Notetaker",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "person.palazhchenko-pavel",
+          "name": "Pavel Palazhchenko",
+          "display": "P. Palazhchenko, Interpreter",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "doc_id": "frus1981-88v05-d303",
+      "doc_number": 303,
+      "url": "https://history.state.gov/historicaldocuments/frus1981-88v05/d303",
+      "session": "Working Group - Night of October 11-12",
+      "principals": "US-Soviet arms control experts",
+      "venue": "Hofdi House (draft; disavowed by Ridgway)",
+      "start": "1986-10-11T20:00:00+00:00",
+      "end": "1986-10-12T04:00:00+00:00",
+      "time_display": "October 11–12, 1986, 8 p.m.–4 a.m.",
+      "caption_note": "This draft memcon of the political working group was disavowed by Ridgway and included as a matter of record. The parallel arms-control working group (Nitze–Akhromeyev) met through the same night; its record survives as Document 304, an editorial note.",
+      "attendees": [
+        {
+          "id": "us.ridgway",
+          "name": "Rozanne L. Ridgway",
+          "display": "Ambassador Ridgway",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "us.hartman",
+          "name": "Arthur A. Hartman",
+          "display": "Ambassador Hartman",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "us.matlock",
+          "name": "Jack F. Matlock Jr.",
+          "display": "Ambassador Matlock",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.rodman-peter",
+          "name": "Peter Rodman",
+          "display": "Presidential Advisor Rodman",
+          "side": "US",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "person.simons-thomas",
+          "name": "Thomas Simons",
+          "display": "DAS Simons",
+          "side": "US",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "person.parris-mark",
+          "name": "Mark Parris",
+          "display": "Sov Director Parris",
+          "side": "US",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "person.hopkins-william",
+          "name": "William Hopkins",
+          "display": "Mr. Hopkins",
+          "side": "US",
+          "tier": "annotated",
+          "note": "translator"
+        },
+        {
+          "id": "ussr.bessmertnykh",
+          "name": "Aleksandr A. Bessmertnykh",
+          "display": "Bessmertnykh",
+          "side": "USSR",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.dubinin-yuri",
+          "name": "Yuri Dubinin",
+          "display": "Dubinin",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": null,
+          "name": "Mikol’chak",
+          "display": "Mikol’chak",
+          "side": "USSR",
+          "tier": "",
+          "note": ""
+        },
+        {
+          "id": null,
+          "name": "Shishlin",
+          "display": "Shishlin",
+          "side": "USSR",
+          "tier": "",
+          "note": ""
+        },
+        {
+          "id": "person.primakov-evgeniy",
+          "name": "Evgeniy Primakov",
+          "display": "Primakov",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "doc_id": "frus1981-88v05-d306",
+      "doc_number": 306,
+      "url": "https://history.state.gov/historicaldocuments/frus1981-88v05/d306",
+      "session": "Session III - October 12 morning",
+      "principals": "Reagan-Gorbachev",
+      "venue": "Hofdi House",
+      "start": "1986-10-12T10:00:00+00:00",
+      "end": "1986-10-12T13:35:00+00:00",
+      "time_display": "October 12, 1986, 10 a.m.–1:35 p.m.",
+      "caption_note": "",
+      "attendees": [
+        {
+          "id": "reagan_gorbachev.reagan",
+          "name": "Ronald Reagan",
+          "display": "The President",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "us.shultz",
+          "name": "George P. Shultz",
+          "display": "Secretary Shultz",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.parris-mark",
+          "name": "Mark Parris",
+          "display": "Mr. Parris",
+          "side": "US",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "person.zarechnak-dimitry",
+          "name": "Dimitry Zarechnak",
+          "display": "Mr. Zarechnak",
+          "side": "US",
+          "tier": "annotated",
+          "note": "Interpreter"
+        },
+        {
+          "id": "reagan_gorbachev.gorbachev",
+          "name": "Mikhail S. Gorbachev",
+          "display": "The General Secretary",
+          "side": "USSR",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "ussr.shevardnadze",
+          "name": "Eduard A. Shevardnadze",
+          "display": "Foreign Minister Shevardnadze",
+          "side": "USSR",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.uspensky-nikolai",
+          "name": "Nikolai Uspensky",
+          "display": "Mr. Uspenskiy",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "person.palazhchenko-pavel",
+          "name": "Pavel Palazhchenko",
+          "display": "Mr. Palazhchenko",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": "Interpreter"
+        }
+      ]
+    },
+    {
+      "doc_id": "frus1981-88v05-d307",
+      "doc_number": 307,
+      "url": "https://history.state.gov/historicaldocuments/frus1981-88v05/d307",
+      "session": "Foreign Ministers - October 12 afternoon",
+      "principals": "Shultz-Shevardnadze",
+      "venue": "Hofdi House",
+      "start": "1986-10-12T14:05:00+00:00",
+      "end": "1986-10-12T15:00:00+00:00",
+      "time_display": "October 12, 1986, 2:05–3 p.m.",
+      "caption_note": "",
+      "attendees": [
+        {
+          "id": "us.shultz",
+          "name": "George P. Shultz",
+          "display": "Secretary Shultz",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "us.poindexter",
+          "name": "John M. Poindexter",
+          "display": "National Sec. Advisor Poindexter",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "us.nitze",
+          "name": "Paul H. Nitze",
+          "display": "Ambassador Nitze",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "us.perle",
+          "name": "Richard N. Perle",
+          "display": "Assistant Secretary Perle",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "us.linhard",
+          "name": "Robert Linhard",
+          "display": "Robert Linhard, NSC",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.zarechnak-dimitry",
+          "name": "Dimitry Zarechnak",
+          "display": "D. Zarechnak",
+          "side": "US",
+          "tier": "annotated",
+          "note": "Interpreter"
+        },
+        {
+          "id": "ussr.shevardnadze",
+          "name": "Eduard A. Shevardnadze",
+          "display": "Foreign Minister Shevardnadze",
+          "side": "USSR",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "ussr.karpov",
+          "name": "Viktor M. Karpov",
+          "display": "Ambassador Karpov",
+          "side": "USSR",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.arbatov-georgii",
+          "name": "Georgii Arbatov",
+          "display": "G. Arbatov",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "person.palazhchenko-pavel",
+          "name": "Pavel Palazhchenko",
+          "display": "P. Palazhchenko",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": "Interpreter"
+        }
+      ]
+    },
+    {
+      "doc_id": "frus1981-88v05-d308",
+      "doc_number": 308,
+      "url": "https://history.state.gov/historicaldocuments/frus1981-88v05/d308",
+      "session": "Session IV - October 12 afternoon (final plenary)",
+      "principals": "Reagan-Gorbachev",
+      "venue": "Hofdi House",
+      "start": "1986-10-12T15:25:00+00:00",
+      "end": "1986-10-12T16:30:00+00:00",
+      "time_display": "October 12, 1986, 3:25–4:30 p.m.",
+      "caption_note": "",
+      "attendees": [
+        {
+          "id": "reagan_gorbachev.reagan",
+          "name": "Ronald Reagan",
+          "display": "President Reagan",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "us.shultz",
+          "name": "George P. Shultz",
+          "display": "Secretary Shultz",
+          "side": "US",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.simons-thomas",
+          "name": "Thomas Simons",
+          "display": "Tom Simons, Notetaker",
+          "side": "US",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "person.zarechnak-dimitry",
+          "name": "Dimitry Zarechnak",
+          "display": "Dimitry Zarechnak, Interpreter",
+          "side": "US",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "reagan_gorbachev.gorbachev",
+          "name": "Mikhail S. Gorbachev",
+          "display": "General Secretary Gorbachev",
+          "side": "USSR",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "ussr.shevardnadze",
+          "name": "Eduard A. Shevardnadze",
+          "display": "Foreign Minister Shevardnadze",
+          "side": "USSR",
+          "tier": "roster",
+          "note": ""
+        },
+        {
+          "id": "person.palazhchenko-pavel",
+          "name": "Pavel Palazhchenko",
+          "display": "P. Palazhchenko, Notetaker",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": ""
+        },
+        {
+          "id": "person.uspensky-nikolai",
+          "name": "Nikolai Uspensky",
+          "display": "N. Uspenskiy, Interpreter",
+          "side": "USSR",
+          "tier": "annotated",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

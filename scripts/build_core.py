@@ -21,7 +21,7 @@ import json
 import re
 import sys
 from collections import Counter, defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -87,6 +87,7 @@ def build_network(records: list[dict[str, Any]]) -> dict[str, Any]:
                     "name": p.get("name", pid),
                     "side": p.get("side", ""),
                     "role": p.get("role", ""),
+                    "tier": p.get("tier", "roster"),
                     "doc_count": 0,
                     "sessions": set(),
                     "topics": Counter(),
@@ -133,6 +134,7 @@ def build_network(records: list[dict[str, Any]]) -> dict[str, Any]:
                 "name": n["name"],
                 "side": n["side"],
                 "role": n["role"],
+                "tier": n["tier"],
                 "doc_count": n["doc_count"],
                 "sessions": sorted(n["sessions"]),
                 "topics": [{"topic": t, "count": c} for t, c in n["topics"].most_common()],
@@ -146,8 +148,9 @@ def build_network(records: list[dict[str, Any]]) -> dict[str, Any]:
                 "target": e["target"],
                 "weight": e["weight"],
                 "doc_count": len(e["doc_ids"]),
-                "doc_ids": e["doc_ids"],
-                "topics": [{"topic": t, "count": c} for t, c in e["topics"].most_common()],
+                # doc_ids omitted: with the full participant web the edge set
+                # runs to thousands and the id lists dominate the payload.
+                "topics": [{"topic": t, "count": c} for t, c in e["topics"].most_common(5)],
                 "sessions": sorted(e["sessions"]),
             }
         )
@@ -230,7 +233,10 @@ def build_timeline(records: list[dict[str, Any]], v06_chronology: list[dict[str,
 # Restrict FRUS documents to the two summit days themselves.
 # FOIA records are NOT filtered here — the user will filter FOIA manually.
 # Set to None (or an empty set) to disable the filter.
-FRUS_DATE_ALLOWLIST: set[str] | None = {"1986-10-11", "1986-10-12"}
+# Disabled 2026-07-08: the edition now ships the full source material —
+# the whole Reykjavik section of Vol. V, the Vol. VI aftermath window,
+# and the Reykjavik-tagged Vol. XI START I trail.
+FRUS_DATE_ALLOWLIST: set[str] | None = None
 
 
 def _filter_frus(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -242,27 +248,16 @@ def _filter_frus(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
 def main() -> int:
     v05 = [normalize_record(r) for r in load(DATA / "frus_v05_reykjavik.json")]
     v06 = [normalize_record(r) for r in load(DATA / "frus_v06_aftermath.json")]
+    hsg = [normalize_record(r) for r in load(DATA / "frus_hsg_supplement.json")]
     foia = [normalize_record(r) for r in load(DATA / "foia_reykjavik.json")]
     chronology = load(DATA / "v06_chronology.json")
 
-    # Two record universes:
-    #   summit-only: FRUS restricted to Oct 11-12, 1986 memcons (+ FOIA).
-    #                Feeds the default Negotiation Network view.
-    #   full pre/post: entire parsed FRUS window (Sep 1986 - Mar 1987) + FOIA.
-    #                Feeds the "Full Pre/Post Universe" toggle.
-    v05_summit = _filter_frus(v05)
-    v06_summit = _filter_frus(v06)
+    v05 = _filter_frus(v05)
+    v06 = _filter_frus(v06)
+    hsg = _filter_frus(hsg)
 
-    summit_records = v05_summit + v06_summit + foia
-    summit_records.sort(key=lambda r: (r["date"] or "9999", r["source"], r["doc_id"]))
-
-    full_records = v05 + v06 + foia
-    full_records.sort(key=lambda r: (r["date"] or "9999", r["source"], r["doc_id"]))
-
-    # frus_core.json preserves the pre-existing behaviour: only the summit-day
-    # FRUS records plus FOIA are surfaced in the Document Explorer / timeline.
-    # The full pre/post universe is only used to power the second network view.
-    all_records = summit_records
+    all_records = v05 + v06 + hsg + foia
+    all_records.sort(key=lambda r: (r["date"] or "9999", r["source"], r["doc_id"]))
 
     (DATA / "frus_core.json").write_text(json.dumps(all_records, indent=2, ensure_ascii=False))
 
@@ -297,35 +292,22 @@ def main() -> int:
             row["topics"] = "; ".join(r["topics"])
             w.writerow(row)
 
-    # Default network: summit days only (11-12 Oct 1986) + FOIA. This is the
-    # view the site loads first because it isolates the actual Reagan-Gorbachev
-    # conversations from the surrounding preparation and follow-up cables.
-    network = build_network(summit_records)
-    (DATA / "network.json").write_text(json.dumps(network, indent=2, ensure_ascii=False))
-
-    # Full pre/post network: every parsed FRUS document in the Reykjavik
-    # window (Sep 1986 - Mar 1987) plus the FOIA layer. Surfaces the wider
-    # cast -- Weinberger, Bush, Casey, Carlucci, Powell, Baker, Gromyko,
-    # Vorontsov, etc. -- who shaped the summit before and after but were not
-    # in the memcon room on Oct 11-12.
-    network_full = build_network(full_records)
-    (DATA / "network_full.json").write_text(json.dumps(network_full, indent=2, ensure_ascii=False))
+    network = build_network(all_records)
+    (DATA / "network.json").write_text(
+        json.dumps(network, separators=(",", ":"), ensure_ascii=False)
+    )
 
     timeline = build_timeline(all_records, chronology)
     (DATA / "timeline.json").write_text(json.dumps(timeline, indent=2, ensure_ascii=False))
 
     manifest = {
-        "generated": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "counts": {
-            "frus_v05_reykjavik": len(v05_summit),
-            "frus_v06_aftermath": len(v06_summit),
+            "frus_v05_reykjavik": len(v05),
+            "frus_v06_aftermath": len(v06),
+            "frus_hsg_supplement": len(hsg),
             "foia_declassified": len(foia),
             "total_documents": len(all_records),
-            "frus_v05_full": len(v05),
-            "frus_v06_full": len(v06),
-            "total_documents_full": len(full_records),
-            "network_full_nodes": len(network_full["nodes"]),
-            "network_full_edges": len(network_full["edges"]),
             "network_nodes": len(network["nodes"]),
             "network_edges": len(network["edges"]),
             "timeline_events": len(timeline),
@@ -337,6 +319,7 @@ def main() -> int:
         "sources": {
             "FRUS 1981-1988 v05": "https://history.state.gov/historicaldocuments/frus1981-88v05",
             "FRUS 1981-1988 v06": "https://history.state.gov/historicaldocuments/frus1981-88v06",
+            "FRUS 1981-1988 v11": "https://history.state.gov/historicaldocuments/frus1981-88v11",
             "foia.state.gov": "https://foia.state.gov/",
             "TEI source": "https://github.com/HistoryAtState/frus",
         },

@@ -7,12 +7,14 @@ October 1986.
 The site presents every document from the Reykjavík section of the *Foreign
 Relations of the United States* series alongside declassified cables from the
 State Department FOIA Virtual Reading Room and the post-summit chronology from
-FRUS 1981–1988 Volume VI. Nineteen White House Photographic Office plates
-from the Ronald Reagan Presidential Library are woven through the record on
-their hour-by-hour anchors. Four synchronized views — a **Negotiation
-Network**, an **Hour-by-Hour Timeline**, a filterable **Document Explorer**,
-and a **Photograph Gallery** — cross-link every visual element to its
-canonical primary source.
+FRUS 1981–1988 Volume VI. Four synchronized views — a **Participation
+Register** (an archival attendance chart of who is present in the record,
+month by month, with numbered editorial notes), **Höfði House** (a
+playable staging of the six documented meetings of the two summit days,
+with attendance exactly as printed in each memcon's list of
+participants), an **Hour-by-Hour Timeline**, and a filterable **Document
+Explorer** — cross-link every visual element to its canonical primary
+source.
 
 The tone and typography are modeled on the U.S. Department of State's Office
 of the Historian. See [`docs/design/FRUS_AESTHETIC.md`](docs/design/FRUS_AESTHETIC.md) for
@@ -21,18 +23,33 @@ terms for every feed.
 
 ## What the site contains
 
+The edition ships the full source material: the whole Reykjavík section
+of Volume V, the Volume VI aftermath window, every document the Office
+of the Historian's annotation program tagged with the *Reykjavik Summit
+(1986)* Event entity (which pulls in the Volume XI START I negotiation
+trail), and the relevance-filtered FOIA releases. A date filter
+(`FRUS_DATE_ALLOWLIST` in `scripts/build_core.py`) remains available to
+cut a summit-days-only sub-edition.
+
 | Feed | Documents | Range |
 |---|---|---|
 | FRUS 1981–1988 Vol. V (Reykjavík section, Docs 267–309) | 43 | Sep – Oct 1986 |
-| FRUS 1981–1988 Vol. VI (aftermath) | 39 | Oct 1986 – Mar 1987 |
+| FRUS 1981–1988 Vol. VI (aftermath; Doc 1 anchors the timeline) | 39 | Oct 1986 – Mar 1987 |
+| Reykjavik-tagged documents from annotated TEI (Vol. XI + Vol. V Doc 206) | 74 | Mar 1986 – Dec 1988 |
 | foia.state.gov Virtual Reading Room (relevance-filtered) | 15 | Aug 1986 – Mar 1987 |
-| Ronald Reagan Library — White House Photographic Collection | 19 photographs | 11–12 Oct 1986 |
-| **Total documents** | **97** | |
+| **Total documents** | **171** | |
 
 Every document row exposes `doc_id`, `source`, `title`, `date`, canonical
-`url`, `summit_phase`, `session`, `persons[]`, and `topics[]`. FOIA releases
-are rendered in a clearly labeled "Declassified" layer distinct from FRUS
-records.
+`url`, `summit_phase`, `session`, `persons[]`, and `topics[]`. FRUS records
+additionally carry curated annotations from the Office of the Historian's
+annotation program: `subjects[]` (taxonomy subjects with stable refs and
+category paths), `events[]` (tagged Event entities such as *Reykjavik
+Summit (1986)*), and `annotation_profile{}` (entity counts by type).
+`persons[]` merges the TEI-encoded persons with the annotation program's
+People entities — 212 network participants in all, each with a canonical
+id, side (inferred from the volumes' lists of persons), and role. FOIA
+releases are rendered in a clearly labeled "Declassified" layer distinct
+from FRUS records.
 
 ## Repository layout
 
@@ -46,7 +63,11 @@ reykjavik-40/
 ├── scripts/
 │   ├── parse_frus.py           # TEI ingestion for Vols V and VI
 │   ├── fetch_foia.py           # foia.state.gov API client + relevance filter
-│   └── build_core.py           # Merges the three feeds into the site data files
+│   ├── parse_hsg_docs.py       # Ingests Reykjavik-tagged docs from annotated TEI (Vol. XI trail)
+│   ├── build_core.py           # Merges the four feeds into the site data files
+│   ├── enrich_core.py          # Joins subject/event/person annotations; register + network
+│   ├── build_summit_stage.py   # Meeting attendance/times for the Höfði House view
+│   └── build_standalone.py     # Packages the single-file standalone edition
 ├── data/                       # Pipeline outputs (source of truth)
 │   ├── raw/                    # Cached TEI XML from HistoryAtState/frus
 │   └── *.json,*.csv            # frus_core.{json,csv}, network.json, timeline.json, manifest.json
@@ -67,8 +88,31 @@ python3 scripts/parse_frus.py
 # 2. Fetch declassified releases from foia.state.gov and apply the relevance filter
 python3 scripts/fetch_foia.py
 
-# 3. Merge the three feeds into frus_core.json/csv, network.json, timeline.json, manifest.json
+# 3. Ingest the Reykjavik-tagged documents outside Vols V/VI from the
+#    annotated TEI corpus (sibling hsg-annotate-data repository)
+python3 scripts/parse_hsg_docs.py
+
+# 4. Merge the four feeds into frus_core.json/csv, network.json, timeline.json, manifest.json
 python3 scripts/build_core.py
+
+# 5. Join curated subject, event, and person annotations onto the FRUS
+#    records; build the participation register (register.json, with its
+#    editorial notes) and the co-occurrence network (network.json, kept
+#    as a data product). Sources: the sibling frus-subjects and
+#    hsg-annotate-data repositories, or the cached extract in
+#    data/raw/annotations_supplement.json.
+python3 scripts/enrich_core.py
+
+# 6. Extract the summit-day meetings for the Höfði House view: attendance
+#    from each memcon's <list type="participants">, windows from the
+#    dateline from/to attributes (d303's machine window is corrected to
+#    its printed dateline).
+python3 scripts/build_summit_stage.py
+
+# 7. Package the standalone single-file edition: stylesheet, script, and
+#    all five data artifacts inlined into one HTML file that opens from
+#    disk with no server and no Python.
+python3 scripts/build_standalone.py
 ```
 
 Requirements: Python 3.9+ and the standard library only (`urllib`, `xml.etree`,
@@ -105,6 +149,16 @@ python3 -m http.server 8081
 The site is a static single-page application with no build step. All data is
 loaded from `docs/data/*.json` at page load.
 
+### Standalone single-file edition
+
+`docs/reykjavik-40-standalone.html` (~1.3 MB) is the whole edition in
+one file — stylesheet, script, and all data embedded. It opens directly
+from disk (`file://`) with no server, makes no data requests, and can be
+emailed or archived as a single artifact. The front end detects the
+embedded data block and skips fetching, so the same `frus.js` serves
+both the site and the standalone. Regenerate it with
+`python3 scripts/build_standalone.py` after any data change.
+
 ## Deployment (GitHub Pages)
 
 The `docs/` directory is the publish root. To serve on GitHub Pages:
@@ -140,6 +194,9 @@ Any static host (Cloudflare Pages, Netlify, S3+CloudFront) can serve the
   <https://history.state.gov/historicaldocuments/frus1981-88v06>
 - TEI XML source: <https://github.com/HistoryAtState/frus>
 - foia.state.gov Virtual Reading Room: <https://foia.state.gov/>
+- FRUS subject taxonomy (`frus-subjects`) and annotated TEI corpus
+  (`hsg-annotate-data`) — Office of the Historian annotation program;
+  see `SOURCES.md` Feeds 4 and 5.
 
 See [`SOURCES.md`](SOURCES.md) for exact URLs, TEI paths, and FOIA query terms.
 

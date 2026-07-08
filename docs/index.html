@@ -13,55 +13,28 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- ==== Dossier cover splash ==== -->
+  <!-- ==== FRUS cover splash ==== -->
   <div class="cover" id="cover" role="presentation">
-    <div class="cover__dossier">
-      <div class="cover__frame">
-        <div class="cover__rule cover__rule--top" aria-hidden="true"></div>
-
-        <p class="cover__agency">United States Department of State</p>
-        <p class="cover__bureau">Bureau of Administration</p>
-
-        <div class="cover__seal" aria-hidden="true">
-          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="1"/>
-            <circle cx="60" cy="60" r="48" fill="none" stroke="currentColor" stroke-width="0.6"/>
-            <text x="60" y="55" text-anchor="middle" font-family="Times New Roman, serif" font-size="9" letter-spacing="2" fill="currentColor">DEPARTMENT</text>
-            <text x="60" y="68" text-anchor="middle" font-family="Times New Roman, serif" font-size="9" letter-spacing="2" fill="currentColor">OF STATE</text>
-            <text x="60" y="84" text-anchor="middle" font-family="Times New Roman, serif" font-size="7" letter-spacing="1" fill="currentColor">&#10022;</text>
-          </svg>
-        </div>
-
-        <p class="cover__kicker">A Documentary Collection</p>
-        <h1 class="cover__title">The Reykjav&iacute;k Summit</h1>
-        <p class="cover__subtitle">Reagan and Gorbachev at H&ouml;f&eth;i House</p>
-        <p class="cover__dates">11&nbsp;&ndash;&nbsp;12 October 1986</p>
-
-        <div class="cover__ornament" aria-hidden="true">&#10086;</div>
-
-        <div class="cover__sources" aria-label="Source collections">
-          <div class="cover__source">
-            <p class="cover__source-label">Published Record</p>
-            <p class="cover__source-name">Foreign Relations of the United States</p>
-            <p class="cover__source-host">history.state.gov</p>
-          </div>
-          <div class="cover__source-divider" aria-hidden="true"></div>
-          <div class="cover__source">
-            <p class="cover__source-label">Declassified Releases</p>
-            <p class="cover__source-name">Reykjav&iacute;k Documents, Virtual Reading Room</p>
-            <p class="cover__source-host">foia.state.gov</p>
-          </div>
-        </div>
-
-        <div class="cover__rule cover__rule--bottom" aria-hidden="true"></div>
-
-        <p class="cover__imprint">
-          Produced by the Bureau of Administration<br/>
-          <span class="cover__imprint-sub">under Assistant Secretary of State Jose Cunningham</span>
-        </p>
-
-        <button type="button" class="cover__enter" id="cover-enter">Open the Collection</button>
+    <div class="cover__frame">
+      <div class="cover__rule cover__rule--top" aria-hidden="true"></div>
+      <p class="cover__series">Foreign Relations of the United States</p>
+      <p class="cover__years">1981&nbsp;&ndash;&nbsp;1988</p>
+      <div class="cover__seal" aria-hidden="true">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle cx="60" cy="60" r="48" fill="none" stroke="currentColor" stroke-width="0.6"/>
+          <text x="60" y="55" text-anchor="middle" font-family="Times New Roman, serif" font-size="9" letter-spacing="2" fill="currentColor">DEPARTMENT</text>
+          <text x="60" y="68" text-anchor="middle" font-family="Times New Roman, serif" font-size="9" letter-spacing="2" fill="currentColor">OF STATE</text>
+          <text x="60" y="84" text-anchor="middle" font-family="Times New Roman, serif" font-size="7" letter-spacing="1" fill="currentColor">✦</text>
+        </svg>
       </div>
+      <h1 class="cover__title">The Reykjav&iacute;k Summit</h1>
+      <p class="cover__subtitle">Reagan and Gorbachev at H&ouml;f&eth;i House</p>
+      <p class="cover__dates">11&nbsp;&ndash;&nbsp;12 October 1986</p>
+      <div class="cover__ornament" aria-hidden="true">&#10086;</div>
+      <p class="cover__imprint">A Documentary Guide<br/><span class="cover__imprint-sub">Compiled from the Foreign Relations series&nbsp;&middot;&nbsp;Office of the Historian</span></p>
+      <div class="cover__rule cover__rule--bottom" aria-hidden="true"></div>
+      <button type="button" class="cover__enter" id="cover-enter">Open the Volume</button>
     </div>
   </div>
 
@@ -73,10 +46,10 @@
         <p class="masthead__subtitle">Reagan and Gorbachev at H&ouml;f&eth;i House &middot; 11&ndash;12 October 1986</p>
       </div>
       <nav class="masthead__nav" aria-label="Views">
-        <button class="nav-btn is-active" data-view="network" aria-pressed="true">Negotiation Network</button>
+        <button class="nav-btn is-active" data-view="register" aria-pressed="true">Participation Register</button>
+        <button class="nav-btn" data-view="stage" aria-pressed="false">H&ouml;f&eth;i House</button>
         <button class="nav-btn" data-view="timeline" aria-pressed="false">Hour-by-Hour Timeline</button>
         <button class="nav-btn" data-view="explorer" aria-pressed="false">Document Explorer</button>
-        <button class="nav-btn" data-view="gallery" aria-pressed="false">Photograph Gallery</button>
       </nav>
     </div>
   </header>
@@ -86,34 +59,64 @@
     <!-- ==== Views container ==== -->
     <section class="views">
 
-      <!-- Network view -->
-      <article class="view view--network is-active" data-view="network" aria-labelledby="view-network-heading">
+      <!-- Participation register view -->
+      <article class="view view--register is-active" data-view="register" aria-labelledby="view-register-heading">
         <header class="view__head">
-          <h2 id="view-network-heading">Negotiation Network</h2>
-          <p class="view__lede">Co-occurrence of principals and negotiators across every memorandum of conversation, briefing paper, and follow-on cable in the Reykjav&iacute;k section of the Foreign Relations series and the corresponding declassified releases. Node size encodes document count; edge width encodes weighted co-occurrence. Select a node to filter the timeline and the explorer.</p>
-          <div class="scope-toggle" role="radiogroup" aria-label="Network scope">
-            <span class="scope-toggle__label">Scope</span>
-            <button type="button" class="scope-toggle__btn is-active" data-scope="summit" role="radio" aria-checked="true">
-              Summit days
-              <span class="scope-toggle__meta" id="scope-summit-meta"></span>
-            </button>
-            <button type="button" class="scope-toggle__btn" data-scope="full" role="radio" aria-checked="false">
-              Full pre/post universe
-              <span class="scope-toggle__meta" id="scope-full-meta"></span>
-            </button>
-          </div>
-          <p class="scope-toggle__hint" id="scope-hint">Restricted to memoranda of conversation on 11&ndash;12 October 1986 plus declassified cables from the same window.</p>
+          <h2 id="view-register-heading">Participation Register</h2>
+          <p class="view__lede">Who is present in the record, month by month, from the first preparation paper in March 1986 to the end of the administration &mdash; drawn from the Office of the Historian&rsquo;s person annotations on every document. Each row is a participant; each cell is a month, shaded by how many documents that person appears in. Numbered editorial notes mark episodes legible in the record itself. Select a row to filter the timeline and the explorer.</p>
         </header>
-        <div class="network">
-          <div class="network__canvas" id="network-canvas" role="figure" aria-label="Interactive graph of people, documents, and topics."></div>
-          <aside class="network__legend" aria-label="Legend">
+        <div class="register">
+          <div class="register__canvas" id="register-canvas" role="figure" aria-label="Grid of participants by month; cell darkness shows documents per month."></div>
+          <aside class="register__legend" aria-label="Legend">
             <div class="legend-row"><span class="dot dot--us"></span> United States</div>
             <div class="legend-row"><span class="dot dot--ussr"></span> Soviet Union</div>
-            <p class="legend-note">Topic strands (SDI, INF, Strategic Arms, Nuclear Testing, Human Rights) tint edges by the dominant subject of the shared document.</p>
-            <fieldset class="legend-topics" id="topic-filter">
-              <legend>Filter edges by topic</legend>
-              <!-- filled by JS -->
+            <div class="legend-row"><span class="dot dot--other"></span> Other / unattributed</div>
+            <div class="legend-row"><span class="dot dot--roster"></span> Curated delegation roster</div>
+            <p class="legend-note">Cell shading: documents per month (1 &middot; 2&ndash;3 &middot; 4&ndash;6 &middot; 7+). Sides are inferred from the volumes&rsquo; lists of persons. Undated editorial notes count toward totals but not the monthly grid.</p>
+            <fieldset class="legend-controls">
+              <legend>Register</legend>
+              <label>Participants in at least
+                <select id="reg-min">
+                  <option value="1">1 document</option>
+                  <option value="2">2 documents</option>
+                  <option value="3">3 documents</option>
+                  <option value="5" selected>5 documents</option>
+                  <option value="8">8 documents</option>
+                  <option value="12">12 documents</option>
+                </select>
+              </label>
+              <label>Order by
+                <select id="reg-sort">
+                  <option value="total" selected>Prominence</option>
+                  <option value="first">First appearance</option>
+                </select>
+              </label>
+              <p class="legend-note" id="register-meta" aria-live="polite"></p>
             </fieldset>
+            <fieldset class="legend-controls">
+              <legend>Editorial notes</legend>
+              <ol class="register-notes" id="register-notes"></ol>
+            </fieldset>
+          </aside>
+        </div>
+      </article>
+
+      <!-- Höfði House stage view -->
+      <article class="view view--stage" data-view="stage" aria-labelledby="view-stage-heading" hidden>
+        <header class="view__head">
+          <h2 id="view-stage-heading">H&ouml;f&eth;i House &mdash; The Two Days</h2>
+          <p class="view__lede">Press play to follow the delegations through the six documented meetings of 11&ndash;12 October 1986. Attendance is exactly as printed in each memorandum&rsquo;s list of participants; meeting times are taken from the memcon datelines. Figures return to their delegations between meetings. Select a figure to filter the other views.</p>
+        </header>
+        <div class="stage">
+          <div class="stage__canvas" id="stage-canvas" role="figure" aria-label="Animated diagram of delegation figures moving into the documented meetings at Hofdi House."></div>
+          <aside class="stage__panel" aria-label="Playback">
+            <div class="stage__controls">
+              <button type="button" id="stage-prev" class="btn-ghost" aria-label="Previous step">&#8249; Back</button>
+              <button type="button" id="stage-play" class="btn-ghost stage__play">Play</button>
+              <button type="button" id="stage-next" class="btn-ghost" aria-label="Next step">Next &#8250;</button>
+            </div>
+            <input type="range" id="stage-scrub" min="0" max="0" value="0" step="1" aria-label="Step through the two days" />
+            <div class="stage__caption" id="stage-caption" aria-live="polite"></div>
           </aside>
         </div>
       </article>
@@ -125,16 +128,6 @@
           <p class="view__lede">Anchored to the Iceland Chronology in <em>Foreign Relations of the United States, 1981&ndash;1988, Volume VI</em>, Document 1 &mdash; a Memorandum for the Record dated 18 October 1986 that reconstructs the four days in Iceland. Documents released in Volumes V and VI are folded in as marker events; times of day are parsed from the chronology text.</p>
         </header>
         <div class="timeline" id="timeline-canvas"></div>
-      </article>
-
-      <!-- Photograph gallery view -->
-      <article class="view view--gallery" data-view="gallery" aria-labelledby="view-gallery-heading" hidden>
-        <header class="view__head">
-          <h2 id="view-gallery-heading">Photograph Gallery</h2>
-          <p class="view__lede">Nineteen photographs of the two summit days, made by the <em>White House Photographic Office</em> under President Reagan and preserved in the White House Photographic Collection at the Ronald Reagan Presidential Library and Museum. The plates are arranged in the same hour-by-hour chronology as the <em>Foreign Relations</em> record, from the first handshake at H&ouml;f&eth;i House on the morning of 11 October to the final departure briefing at Keflav&iacute;k on the evening of 12 October. Click a plate to enlarge.</p>
-        </header>
-        <div class="gallery" id="gallery-canvas"></div>
-        <p class="gallery__credit">Photographs courtesy of the <a href="https://www.reaganlibrary.gov/archives/audiovisual/white-house-photo-collection-galleries/summits-mikhail-gorbachev" target="_blank" rel="noopener">Ronald Reagan Presidential Library and Museum</a>, White House Photographic Collection.</p>
       </article>
 
       <!-- Explorer view -->
@@ -167,6 +160,12 @@
             <span class="control__label">Topic</span>
             <select id="explorer-topic">
               <option value="">All topics</option>
+            </select>
+          </label>
+          <label class="control">
+            <span class="control__label">Subject</span>
+            <select id="explorer-subject">
+              <option value="">All subjects</option>
             </select>
           </label>
           <label class="control">
@@ -207,17 +206,6 @@
     </aside>
   </main>
 
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" hidden>
-    <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
-    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous photograph">&lsaquo;</button>
-    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next photograph">&rsaquo;</button>
-    <figure class="lightbox__figure">
-      <img class="lightbox__img" id="lightbox-img" alt="" />
-      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
-    </figure>
-  </div>
-
   <footer class="colophon">
     <div class="colophon__inner">
       <div class="colophon__col">
@@ -230,7 +218,6 @@
           <li><a href="https://history.state.gov/historicaldocuments/frus1981-88v05">FRUS 1981&ndash;1988, Volume V &mdash; Soviet Union, March 1985&ndash;October 1986</a></li>
           <li><a href="https://history.state.gov/historicaldocuments/frus1981-88v06">FRUS 1981&ndash;1988, Volume VI &mdash; Soviet Union, October 1986&ndash;January 1989</a></li>
           <li><a href="https://foia.state.gov/">U.S. Department of State &mdash; Virtual Reading Room</a></li>
-          <li><a href="https://www.reaganlibrary.gov/archives/audiovisual/white-house-photo-collection-galleries/summits-mikhail-gorbachev">Ronald Reagan Presidential Library &mdash; White House Photographic Collection</a></li>
         </ul>
       </div>
       <div class="colophon__col">

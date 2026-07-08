@@ -37,143 +37,72 @@ NS = {"tei": TEI_NS, "frus": FRUS_NS, "xml": XML_NS}
 # whose value appears here is emitted with a normalised label; other
 # persons are captured verbatim but not promoted to network nodes by
 # default.
-#
-# TEI xml:id values are volume-scoped -- e.g. p_RN_1 is Nancy Reagan
-# in Vol V but Nikolai Ryzhkov in Vol VI, and p_MRB_1 is McDaniel in
-# Vol V but McFarlane in Vol VI. The maps below are therefore keyed
-# per volume. Cross-volume variants of the same person (Vol V uses
-# p_GMS_1 for Gorbachev, Vol VI uses p_GM_1, etc.) are collapsed onto
-# a single canonical node id.
-CANONICAL_ID_BY_VOLUME: dict[str, dict[str, str]] = {
-    "frus1981-88v05": {
-        "p_GMS_1": "reagan_gorbachev.gorbachev",
-        "p_RRW_1": "reagan_gorbachev.reagan",
-        "p_SGP_1": "us.shultz",
-        "p_SE_1": "ussr.shevardnadze",
-        "p_MJF_1": "us.matlock",
-        "p_NPH_1": "us.nitze",
-        "p_PJM_1": "us.poindexter",
-        "p_AKL_1": "us.adelman",
-        "p_RRL_1": "us.ridgway",
-        "p_PRN_1": "us.perle",
-        "p_KMM_1": "us.kampelman",
-        "p_LRE_1": "us.linhard",
-        "p_HAA_1": "us.hartman",
-        "p_WCW_1": "us.weinberger",
-        "p_BGHW_1": "us.bush",
-        "p_CWJ_1": "us.casey",
-        "p_RDT_1": "us.regan",
-        "p_AMH_1": "us.armacost",
-        "p_STW_1": "us.simons",
-        "p_PMR_1": "us.parris",
-        "p_EF_1": "us.ermarth",
-        "p_REL_1": "us.rowny",
-        "p_LRF_1": "us.lehman",
-        "p_PCL_1": "us.powell",
-        "p_WJC_1": "us.whitehead",
-        "p_RPW_1": "us.rodman",
-        "p_KAG_1": "us.keel",
-        "p_SR_1": "us.schifter",
-        "p_ASF_1": "ussr.akhromeyev",
-        "p_DA_1": "ussr.dobrynin",
-        "p_KVP_1": "ussr.karpov",
-        "p_BAA_1": "ussr.bessmertnykh",
-        "p_GA_1": "ussr.gromyko",
-        "p_DY_1": "ussr.dubinin",
-        "p_VY_1": "ussr.vorontsov",
-        "p_PP_1": "ussr.palazhchenko",
-        "p_SO_1": "ussr.sokolov",
-        "p_KG_1": "ussr.korniyenko",
-    },
-    "frus1981-88v06": {
-        "p_GM_1": "reagan_gorbachev.gorbachev",
-        "p_GM_2": "reagan_gorbachev.gorbachev",
-        "p_RRW_1": "reagan_gorbachev.reagan",
-        "p_SGP_1": "us.shultz",
-        "p_SEA_1": "ussr.shevardnadze",
-        "p_MJF_1": "us.matlock",
-        "p_NPH_1": "us.nitze",
-        "p_PJM_1": "us.poindexter",
-        "p_AKL_1": "us.adelman",
-        "p_RRL_1": "us.ridgway",
-        "p_PRN_1": "us.perle",
-        "p_KMM_1": "us.kampelman",
-        "p_LRE_1": "us.linhard",
-        "p_HAA_1": "us.hartman",
-        "p_WCW_1": "us.weinberger",
-        "p_BGHW_1": "us.bush",
-        "p_CWJ_1": "us.casey",
-        "p_RDY_1": "us.regan",
-        "p_AMH_1": "us.armacost",
-        "p_STW_1": "us.simons",
-        "p_PM_1": "us.parris",
-        "p_EF_1": "us.ermarth",
-        "p_LRF_1": "us.lehman",
-        "p_PCL_1": "us.powell",
-        "p_WJC_1": "us.whitehead",
-        "p_CFC_1": "us.carlucci",
-        "p_BHH_1": "us.baker_h",
-        "p_GMM_1": "us.glitman",
-        "p_MRB_1": "us.mcfarlane",  # Vol V uses p_MRB_1 for McDaniel; do not remap in V.
-        "p_SR_1": "us.schifter",
-        "p_ASF_1": "ussr.akhromeyev",
-        "p_DA_1": "ussr.dobrynin",
-        "p_KV_1": "ussr.karpov",
-        "p_BA_2": "ussr.bessmertnykh",
-        "p_GA_1": "ussr.gromyko",
-        "p_DY_1": "ussr.dubinin",
-        "p_VY_1": "ussr.vorontsov",
-        "p_PP_1": "ussr.palazhchenko",
-    },
+# Canonical IDs collapse cross-volume TEI xml:id variants for the same
+# person to a single node in the negotiation network (Vol V uses
+# p_GMS_1 for Gorbachev, Vol VI uses p_GM_1, etc.).
+CANONICAL_ID = {
+    "p_GMS_1": "reagan_gorbachev.gorbachev",
+    "p_GM_1": "reagan_gorbachev.gorbachev",
+    "p_GM_2": "reagan_gorbachev.gorbachev",
+    "p_RRW_1": "reagan_gorbachev.reagan",
+    "p_SGP_1": "us.shultz",
+    "p_SE_1": "ussr.shevardnadze",
+    "p_MJF_1": "us.matlock",
+    "p_NPH_1": "us.nitze",
+    "p_PJM_1": "us.poindexter",
+    "p_RJH_1": "us.poindexter",
+    "p_AKL_1": "us.adelman",
+    "p_RRA_1": "us.ridgway",
+    "p_RRL_1": "us.ridgway",
+    "p_PR_1": "us.perle",
+    "p_PRN_1": "us.perle",
+    "p_KMH_1": "us.kampelman",
+    "p_KMM_1": "us.kampelman",
+    "p_LR_1": "us.linhard",
+    "p_HAH_1": "us.hartman",
+    "p_HAA_1": "us.hartman",
+    "p_ASF_1": "ussr.akhromeyev",
+    "p_DAF_1": "ussr.dobrynin",
+    "p_DA_1": "ussr.dobrynin",
+    "p_KVM_1": "ussr.karpov",
+    "p_KVP_1": "ussr.karpov",
+    "p_BAA_1": "ussr.bessmertnykh",
 }
 
-NETWORK_PEOPLE: dict[str, dict[str, str]] = {
-    # United States -- principals
-    "reagan_gorbachev.reagan": {"name": "Ronald Reagan", "side": "US", "role": "President of the United States"},
-    "us.shultz": {"name": "George P. Shultz", "side": "US", "role": "Secretary of State"},
-    "us.poindexter": {"name": "John M. Poindexter", "side": "US", "role": "National Security Advisor (until Nov 1986)"},
-    "us.nitze": {"name": "Paul H. Nitze", "side": "US", "role": "Special Adviser on Arms Control"},
-    "us.matlock": {"name": "Jack F. Matlock Jr.", "side": "US", "role": "NSC Senior Director, European and Soviet Affairs"},
-    "us.adelman": {"name": "Kenneth L. Adelman", "side": "US", "role": "Director, Arms Control and Disarmament Agency"},
-    "us.ridgway": {"name": "Rozanne L. Ridgway", "side": "US", "role": "Assistant Secretary of State for European and Canadian Affairs"},
-    "us.perle": {"name": "Richard N. Perle", "side": "US", "role": "Assistant Secretary of Defense for International Security Policy"},
-    "us.kampelman": {"name": "Max M. Kampelman", "side": "US", "role": "Head, U.S. Delegation to the Nuclear and Space Talks"},
-    "us.linhard": {"name": "Robert E. Linhard", "side": "US", "role": "NSC Director, Defense Programs and Arms Control"},
-    "us.hartman": {"name": "Arthur A. Hartman", "side": "US", "role": "Ambassador to the Soviet Union"},
-    # United States -- Cabinet, White House, and expanded arms-control corps
-    "us.weinberger": {"name": "Caspar W. Weinberger", "side": "US", "role": "Secretary of Defense"},
-    "us.bush": {"name": "George H.W. Bush", "side": "US", "role": "Vice President of the United States"},
-    "us.casey": {"name": "William J. Casey", "side": "US", "role": "Director of Central Intelligence"},
-    "us.regan": {"name": "Donald T. Regan", "side": "US", "role": "White House Chief of Staff (until Feb 1987)"},
-    "us.baker_h": {"name": "Howard H. Baker Jr.", "side": "US", "role": "White House Chief of Staff (from Feb 1987)"},
-    "us.carlucci": {"name": "Frank C. Carlucci", "side": "US", "role": "National Security Advisor (Dec 1986 - Nov 1987); Secretary of Defense (from Nov 1987)"},
-    "us.powell": {"name": "Colin L. Powell", "side": "US", "role": "National Security Advisor (from Nov 1987)"},
-    "us.mcfarlane": {"name": "Robert C. McFarlane", "side": "US", "role": "National Security Advisor (1983-1985)"},
-    "us.armacost": {"name": "Michael H. Armacost", "side": "US", "role": "Under Secretary of State for Political Affairs"},
-    "us.whitehead": {"name": "John C. Whitehead", "side": "US", "role": "Deputy Secretary of State"},
-    "us.simons": {"name": "Thomas W. Simons Jr.", "side": "US", "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs"},
-    "us.parris": {"name": "Mark R. Parris", "side": "US", "role": "Director, Office of Soviet Union Affairs"},
-    "us.rowny": {"name": "Edward L. Rowny", "side": "US", "role": "Special Advisor to the President and Secretary of State on Arms Control"},
-    "us.lehman": {"name": "Ronald F. Lehman II", "side": "US", "role": "Chief U.S. Negotiator on Strategic Nuclear Arms (START)"},
-    "us.glitman": {"name": "Maynard W. Glitman", "side": "US", "role": "Chief U.S. Negotiator on Intermediate-Range Nuclear Forces (INF)"},
-    "us.ermarth": {"name": "Fritz W. Ermarth", "side": "US", "role": "National Intelligence Officer for USSR; NSC Staff"},
-    "us.rodman": {"name": "Peter W. Rodman", "side": "US", "role": "Director, Policy Planning Council; NSC Deputy Assistant"},
-    "us.keel": {"name": "Alton G. Keel Jr.", "side": "US", "role": "Deputy / Acting National Security Advisor (late 1986)"},
-    "us.schifter": {"name": "Richard Schifter", "side": "US", "role": "Assistant Secretary of State for Human Rights and Humanitarian Affairs"},
-    # Soviet Union -- principals
-    "reagan_gorbachev.gorbachev": {"name": "Mikhail S. Gorbachev", "side": "USSR", "role": "General Secretary, Communist Party of the Soviet Union"},
-    "ussr.shevardnadze": {"name": "Eduard A. Shevardnadze", "side": "USSR", "role": "Minister of Foreign Affairs"},
-    "ussr.akhromeyev": {"name": "Sergei F. Akhromeyev", "side": "USSR", "role": "Chief of the General Staff, Soviet Armed Forces"},
-    "ussr.dobrynin": {"name": "Anatoly F. Dobrynin", "side": "USSR", "role": "Secretary, CPSU Central Committee (Head of the International Department)"},
-    "ussr.karpov": {"name": "Viktor P. Karpov", "side": "USSR", "role": "Head, Soviet Delegation to the Nuclear and Space Talks"},
-    "ussr.bessmertnykh": {"name": "Aleksandr A. Bessmertnykh", "side": "USSR", "role": "Deputy Minister of Foreign Affairs"},
-    # Soviet Union -- expanded diplomatic and arms-control corps
-    "ussr.gromyko": {"name": "Andrei A. Gromyko", "side": "USSR", "role": "Chairman of the Presidium of the Supreme Soviet (former Foreign Minister)"},
-    "ussr.dubinin": {"name": "Yuri V. Dubinin", "side": "USSR", "role": "Soviet Ambassador to the United States (from May 1986)"},
-    "ussr.vorontsov": {"name": "Yuli M. Vorontsov", "side": "USSR", "role": "Head, Soviet Delegation to the Nuclear and Space Talks (1987)"},
-    "ussr.palazhchenko": {"name": "Pavel R. Palazhchenko", "side": "USSR", "role": "Interpreter and special assistant to Gorbachev and Shevardnadze"},
-    "ussr.sokolov": {"name": "Oleg M. Sokolov", "side": "USSR", "role": "Minister-Counselor, Soviet Embassy in Washington"},
-    "ussr.korniyenko": {"name": "Georgii M. Korniyenko", "side": "USSR", "role": "First Deputy Foreign Minister (until 1986)"},
+# Several people appear in the volume TEI under ids that differ from the
+# ones this roster was first built with (e.g. Ridgway is p_RRL_1 in the
+# published TEI, not p_RRA_1). Both spellings are kept: the alignment
+# files in hsg-annotate-data are the authority for the published ids.
+NETWORK_PEOPLE = {
+    # United States
+    "p_RRW_1": {"name": "Ronald Reagan", "side": "US", "role": "President of the United States"},
+    "p_SGP_1": {"name": "George P. Shultz", "side": "US", "role": "Secretary of State"},
+    "p_RJH_1": {"name": "John M. Poindexter", "side": "US", "role": "National Security Advisor"},
+    "p_PJM_1": {"name": "John M. Poindexter", "side": "US", "role": "National Security Advisor"},
+    "p_NPH_1": {"name": "Paul H. Nitze", "side": "US", "role": "Special Adviser on Arms Control"},
+    "p_MJF_1": {"name": "Jack F. Matlock Jr.", "side": "US", "role": "NSC Senior Director, European and Soviet Affairs"},
+    "p_AKL_1": {"name": "Kenneth L. Adelman", "side": "US", "role": "Director, Arms Control and Disarmament Agency"},
+    "p_RRA_1": {"name": "Rozanne L. Ridgway", "side": "US", "role": "Assistant Secretary of State for European and Canadian Affairs"},
+    "p_RRL_1": {"name": "Rozanne L. Ridgway", "side": "US", "role": "Assistant Secretary of State for European and Canadian Affairs"},
+    "p_PR_1": {"name": "Richard N. Perle", "side": "US", "role": "Assistant Secretary of Defense for International Security Policy"},
+    "p_PRN_1": {"name": "Richard N. Perle", "side": "US", "role": "Assistant Secretary of Defense for International Security Policy"},
+    "p_KMH_1": {"name": "Max M. Kampelman", "side": "US", "role": "Head, U.S. Delegation to the Nuclear and Space Talks"},
+    "p_KMM_1": {"name": "Max M. Kampelman", "side": "US", "role": "Head, U.S. Delegation to the Nuclear and Space Talks"},
+    "p_LR_1": {"name": "Robert Linhard", "side": "US", "role": "NSC Director, Defense Programs and Arms Control"},
+    "p_HAH_1": {"name": "Arthur A. Hartman", "side": "US", "role": "Ambassador to the Soviet Union"},
+    "p_HAA_1": {"name": "Arthur A. Hartman", "side": "US", "role": "Ambassador to the Soviet Union"},
+    # Soviet Union
+    "p_GM_1": {"name": "Mikhail S. Gorbachev", "side": "USSR", "role": "General Secretary, Communist Party of the Soviet Union"},
+    "p_GMS_1": {"name": "Mikhail S. Gorbachev", "side": "USSR", "role": "General Secretary, Communist Party of the Soviet Union"},
+    "p_SE_1": {"name": "Eduard A. Shevardnadze", "side": "USSR", "role": "Minister of Foreign Affairs"},
+    "p_ASF_1": {"name": "Sergei F. Akhromeyev", "side": "USSR", "role": "Chief of the General Staff, Soviet Armed Forces"},
+    "p_DAF_1": {"name": "Anatoly F. Dobrynin", "side": "USSR", "role": "Secretary, CPSU Central Committee"},
+    "p_DA_1": {"name": "Anatoly F. Dobrynin", "side": "USSR", "role": "Secretary, CPSU Central Committee"},
+    "p_KVM_1": {"name": "Viktor M. Karpov", "side": "USSR", "role": "Head, Soviet Delegation to the Nuclear and Space Talks"},
+    "p_KVP_1": {"name": "Viktor M. Karpov", "side": "USSR", "role": "Head, Soviet Delegation to the Nuclear and Space Talks"},
+    "p_BAA_1": {"name": "Aleksandr A. Bessmertnykh", "side": "USSR", "role": "Deputy Minister of Foreign Affairs"},
+    "p_CVM_1": {"name": "Valentin M. Falin", "side": "USSR", "role": "Chief, Novosti Press Agency"},
+    "p_ZL_1": {"name": "Nikolay Detinov", "side": "USSR", "role": "Arms control adviser"},
 }
 
 # Topic strands for the negotiation network. Each entry is (topic, regex).
@@ -254,9 +183,6 @@ def machine_date(div: ET.Element) -> str:
 
 
 def persons_in(div: ET.Element, volume_key: str) -> list[dict[str, str]]:
-    """Extract persName references, resolving TEI xml:ids against the
-    volume-scoped canonical map (xml:ids collide across volumes)."""
-    canonical_map = CANONICAL_ID_BY_VOLUME.get(volume_key, {})
     seen: dict[str, dict[str, str]] = {}
     for pn in div.iter(qn("persName")):
         # skip persNames inside notes
@@ -267,12 +193,21 @@ def persons_in(div: ET.Element, volume_key: str) -> list[dict[str, str]]:
         if not corresp.startswith("#p_"):
             continue
         key = corresp.lstrip("#")
-        canonical = canonical_map.get(key, f"{volume_key}:{key}")
+        # Roster people keep their canonical (cross-volume) id. Everyone
+        # else falls back to their TEI xml:id, which is only unique within
+        # a single volume — scope it by volume so a bare id reused across
+        # volumes for different people cannot collide into one node.
+        if key in CANONICAL_ID:
+            canonical = CANONICAL_ID[key]
+        elif key in NETWORK_PEOPLE:
+            canonical = key
+        else:
+            canonical = f"{volume_key}:{key}"
         if canonical in seen:
             continue
         label = text_of(pn)
-        if canonical in NETWORK_PEOPLE:
-            entry = dict(NETWORK_PEOPLE[canonical])
+        if key in NETWORK_PEOPLE:
+            entry = dict(NETWORK_PEOPLE[key])
             entry["id"] = canonical
             entry["tei_id"] = key
             entry["surface"] = label

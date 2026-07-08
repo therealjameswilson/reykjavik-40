@@ -22,6 +22,28 @@
     "doc_id": "frus1981-88v06-d1"
   },
   {
+    "kind": "document",
+    "date": "1986-10-09",
+    "date_display": "October 9, 1986",
+    "time_hint": "",
+    "sort_key": "1986-10-09T00:00:frus1981-88v05-d299",
+    "text": "Letter From Secretary of Defense Weinberger to President Reagan",
+    "session": "",
+    "principals": "",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v05/d299",
+    "source": "FRUS 1981-1988 v05",
+    "doc_id": "frus1981-88v05-d299",
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Nuclear Testing",
+      "Human Rights",
+      "Regional Issues"
+    ],
+    "excerpt": "(S) If I may, being on the other side of the world on the eve of your meeting with General Secretary Gorbachev, I would like to summarize briefly the views I have presented to you from time to time. I know this is unsolicited advice, but it is offered only to help serve the ultimate objectives I know we share. I do believe your Reykjavik meeting with Mr. Gorbachev offers an ideal opportunity to advance your vision for reducing the risks of nuclear war. I am glad you intend..."
+  },
+  {
     "kind": "chronology",
     "date": "1986-10-09",
     "date_display": "Thursday, October 9",

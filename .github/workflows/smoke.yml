@@ -1,0 +1,43 @@
+name: smoke
+
+on:
+  push:
+    branches: [main, annotated-edition]
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Python syntax check
+        run: python3 -m py_compile scripts/*.py
+
+      - name: JavaScript syntax check
+        run: node --check docs/assets/js/frus.js
+
+      # All pipeline inputs (raw TEI, FOIA feed, and the annotation cache)
+      # are committed under data/raw, so the build runs offline without the
+      # sibling annotation repositories (enrich_core falls back to the cache).
+      - name: Build pipeline
+        run: |
+          python3 scripts/parse_frus.py
+          python3 scripts/build_core.py
+          python3 scripts/enrich_core.py
+          python3 scripts/build_summit_stage.py
+          python3 scripts/build_standalone.py
+
+      - name: Verify generated JSON is valid
+        run: |
+          for f in data/*.json docs/data/*.json; do
+            python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f"
+          done
