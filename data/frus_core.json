@@ -209,7 +209,7 @@
         "in_network": true
       },
       {
-        "id": "p_UN_1",
+        "id": "frus1981-88v05:p_UN_1",
         "tei_id": "p_UN_1",
         "name": "N. Upsenskiy",
         "surface": "N. Upsenskiy",
@@ -262,11 +262,13 @@
         "in_network": true
       },
       {
-        "id": "p_STW_1",
+        "name": "Thomas W. Simons Jr.",
+        "side": "US",
+        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
+        "id": "us.simons",
         "tei_id": "p_STW_1",
-        "name": "Simons",
         "surface": "Simons",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Ronald Reagan",
@@ -305,11 +307,13 @@
         "in_network": true
       },
       {
-        "id": "p_PP_1",
+        "name": "Pavel R. Palazhchenko",
+        "side": "USSR",
+        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
+        "id": "ussr.palazhchenko",
         "tei_id": "p_PP_1",
-        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Paul H. Nitze",
@@ -321,32 +325,40 @@
         "in_network": true
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Richard Perle",
         "surface": "Richard Perle",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_KMM_1",
+        "name": "Max M. Kampelman",
+        "side": "US",
+        "role": "Head, U.S. Delegation to the Nuclear and Space Talks",
+        "id": "us.kampelman",
         "tei_id": "p_KMM_1",
-        "name": "Kampelman",
         "surface": "Kampelman",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_LRE_1",
+        "name": "Robert E. Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
         "tei_id": "p_LRE_1",
-        "name": "Linhard",
         "surface": "Linhard",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_REL_1",
+        "name": "Edward L. Rowny",
+        "side": "US",
+        "role": "Special Advisor to the President and Secretary of State on Arms Control",
+        "id": "us.rowny",
         "tei_id": "p_REL_1",
-        "name": "Rowny",
         "surface": "Rowny",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Kenneth L. Adelman",
@@ -358,11 +370,13 @@
         "in_network": true
       },
       {
-        "id": "p_KVP_1",
+        "name": "Viktor P. Karpov",
+        "side": "USSR",
+        "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
+        "id": "ussr.karpov",
         "tei_id": "p_KVP_1",
-        "name": "Karpov",
         "surface": "Karpov",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Sergei F. Akhromeyev",
@@ -374,32 +388,38 @@
         "in_network": true
       },
       {
-        "id": "p_VYP_1",
+        "id": "frus1981-88v05:p_VYP_1",
         "tei_id": "p_VYP_1",
         "name": "Yevgeny Velikhov",
         "surface": "Yevgeny Velikhov",
         "in_network": false
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_RPW_1",
+        "name": "Peter W. Rodman",
+        "side": "US",
+        "role": "Director, Policy Planning Council; NSC Deputy Assistant",
+        "id": "us.rodman",
         "tei_id": "p_RPW_1",
-        "name": "Rodman",
         "surface": "Rodman",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_PMR_1",
+        "name": "Mark R. Parris",
+        "side": "US",
+        "role": "Director, Office of Soviet Union Affairs",
+        "id": "us.parris",
         "tei_id": "p_PMR_1",
-        "name": "Parris",
         "surface": "Parris",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -447,25 +467,31 @@
     "venue": "Hofdi House (draft; disavowed by Ridgway)",
     "persons": [
       {
-        "id": "p_RPW_1",
+        "name": "Peter W. Rodman",
+        "side": "US",
+        "role": "Director, Policy Planning Council; NSC Deputy Assistant",
+        "id": "us.rodman",
         "tei_id": "p_RPW_1",
-        "name": "Rodman",
         "surface": "Rodman",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_HAA_1",
+        "name": "Arthur A. Hartman",
+        "side": "US",
+        "role": "Ambassador to the Soviet Union",
+        "id": "us.hartman",
         "tei_id": "p_HAA_1",
-        "name": "Hartman",
         "surface": "Hartman",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Jack F. Matlock Jr.",
@@ -477,18 +503,22 @@
         "in_network": true
       },
       {
-        "id": "p_STW_1",
+        "name": "Thomas W. Simons Jr.",
+        "side": "US",
+        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
+        "id": "us.simons",
         "tei_id": "p_STW_1",
-        "name": "Simons",
         "surface": "Simons",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_PMR_1",
+        "name": "Mark R. Parris",
+        "side": "US",
+        "role": "Director, Office of Soviet Union Affairs",
+        "id": "us.parris",
         "tei_id": "p_PMR_1",
-        "name": "Parris",
         "surface": "Parris",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -500,21 +530,23 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "name": "Yuri V. Dubinin",
+        "side": "USSR",
+        "role": "Soviet Ambassador to the United States (from May 1986)",
+        "id": "ussr.dubinin",
         "tei_id": "p_DY_1",
-        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_MV_1",
+        "id": "frus1981-88v05:p_MV_1",
         "tei_id": "p_MV_1",
         "name": "Mikol’chak",
         "surface": "Mikol’chak",
         "in_network": false
       },
       {
-        "id": "p_PYM_1",
+        "id": "frus1981-88v05:p_PYM_1",
         "tei_id": "p_PYM_1",
         "name": "Primakov",
         "surface": "Primakov",
@@ -539,7 +571,7 @@
         "in_network": true
       },
       {
-        "id": "p_PS_1",
+        "id": "frus1981-88v05:p_PS_1",
         "tei_id": "p_PS_1",
         "name": "Peres",
         "surface": "Peres",
@@ -564,7 +596,7 @@
         "in_network": true
       },
       {
-        "id": "p_KB_1",
+        "id": "frus1981-88v05:p_KB_1",
         "tei_id": "p_KB_1",
         "name": "Bernard Kalb",
         "surface": "Bernard Kalb",
@@ -631,11 +663,13 @@
         "in_network": true
       },
       {
-        "id": "p_KG_1",
+        "name": "Georgii M. Korniyenko",
+        "side": "USSR",
+        "role": "First Deputy Foreign Minister (until 1986)",
+        "id": "ussr.korniyenko",
         "tei_id": "p_KG_1",
-        "name": "Georgy Korniyenko",
         "surface": "Georgy Korniyenko",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Paul H. Nitze",
@@ -656,11 +690,13 @@
         "in_network": true
       },
       {
-        "id": "p_PP_1",
+        "name": "Pavel R. Palazhchenko",
+        "side": "USSR",
+        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
+        "id": "ussr.palazhchenko",
         "tei_id": "p_PP_1",
-        "name": "Palazhchenko",
         "surface": "Palazhchenko",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Eduard A. Shevardnadze",
@@ -733,41 +769,47 @@
         "in_network": true
       },
       {
-        "id": "p_RDY_1",
+        "name": "Donald T. Regan",
+        "side": "US",
+        "role": "White House Chief of Staff (until Feb 1987)",
+        "id": "us.regan",
         "tei_id": "p_RDY_1",
-        "name": "Donald Regan",
         "surface": "Donald Regan",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor",
+        "role": "National Security Advisor (until Nov 1986)",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
         "in_network": true
       },
       {
-        "id": "p_TC_1",
+        "id": "frus1981-88v06:p_TC_1",
         "tei_id": "p_TC_1",
         "name": "Thomas",
         "surface": "Thomas",
         "in_network": false
       },
       {
-        "id": "p_HAA_1",
+        "name": "Arthur A. Hartman",
+        "side": "US",
+        "role": "Ambassador to the Soviet Union",
+        "id": "us.hartman",
         "tei_id": "p_HAA_1",
-        "name": "Hartman",
         "surface": "Hartman",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Jack F. Matlock Jr.",
@@ -788,37 +830,41 @@
         "in_network": true
       },
       {
-        "name": "Robert Linhard",
-        "side": "US",
-        "role": "NSC Director, Defense Programs and Arms Control",
-        "id": "us.linhard",
+        "id": "frus1981-88v06:p_LR_1",
         "tei_id": "p_LR_1",
+        "name": "Linhard",
         "surface": "Linhard",
+        "in_network": false
+      },
+      {
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
+        "tei_id": "p_PRN_1",
+        "surface": "Richard Perle",
         "in_network": true
       },
       {
-        "id": "p_PRN_1",
-        "tei_id": "p_PRN_1",
-        "name": "Richard Perle",
-        "surface": "Richard Perle",
-        "in_network": false
-      },
-      {
-        "id": "p_KMM_1",
+        "name": "Max M. Kampelman",
+        "side": "US",
+        "role": "Head, U.S. Delegation to the Nuclear and Space Talks",
+        "id": "us.kampelman",
         "tei_id": "p_KMM_1",
-        "name": "Max Kampelman",
         "surface": "Max Kampelman",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_SEA_1",
+        "name": "Eduard A. Shevardnadze",
+        "side": "USSR",
+        "role": "Minister of Foreign Affairs",
+        "id": "ussr.shevardnadze",
         "tei_id": "p_SEA_1",
-        "name": "Shevardnadze",
         "surface": "Shevardnadze",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_RE_1",
+        "id": "frus1981-88v06:p_RE_1",
         "tei_id": "p_RE_1",
         "name": "Rowny",
         "surface": "Rowny",
@@ -834,49 +880,55 @@
         "in_network": true
       },
       {
-        "id": "p_MJH_1",
+        "id": "frus1981-88v06:p_MJH_1",
         "tei_id": "p_MJH_1",
         "name": "John Moellering",
         "surface": "John Moellering",
         "in_network": false
       },
       {
-        "id": "p_AS_1",
+        "id": "frus1981-88v06:p_AS_1",
         "tei_id": "p_AS_1",
         "name": "Akhromeyev",
         "surface": "Akhromeyev",
         "in_network": false
       },
       {
-        "id": "p_BA_2",
+        "name": "Aleksandr A. Bessmertnykh",
+        "side": "USSR",
+        "role": "Deputy Minister of Foreign Affairs",
+        "id": "ussr.bessmertnykh",
         "tei_id": "p_BA_2",
-        "name": "Alexander Bessmertnykh",
         "surface": "Alexander Bessmertnykh",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "name": "Yuri V. Dubinin",
+        "side": "USSR",
+        "role": "Soviet Ambassador to the United States (from May 1986)",
+        "id": "ussr.dubinin",
         "tei_id": "p_DY_1",
-        "name": "Dubinin",
         "surface": "Dubinin",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_PE_1",
+        "id": "frus1981-88v06:p_PE_1",
         "tei_id": "p_PE_1",
         "name": "Primakov",
         "surface": "Primakov",
         "in_network": false
       },
       {
-        "id": "p_PM_1",
+        "name": "Mark R. Parris",
+        "side": "US",
+        "role": "Director, Office of Soviet Union Affairs",
+        "id": "us.parris",
         "tei_id": "p_PM_1",
-        "name": "Parris",
         "surface": "Parris",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_KAG_1",
+        "id": "frus1981-88v06:p_KAG_1",
         "tei_id": "p_KAG_1",
         "name": "Keel",
         "surface": "Keel",
@@ -1016,11 +1068,13 @@
         "in_network": true
       },
       {
-        "id": "p_LRE_1",
+        "name": "Robert E. Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
         "tei_id": "p_LRE_1",
-        "name": "Bob Linhard",
         "surface": "Bob Linhard",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "George P. Shultz",
@@ -1032,46 +1086,54 @@
         "in_network": true
       },
       {
-        "id": "p_KMM_1",
+        "name": "Max M. Kampelman",
+        "side": "US",
+        "role": "Head, U.S. Delegation to the Nuclear and Space Talks",
+        "id": "us.kampelman",
         "tei_id": "p_KMM_1",
-        "name": "Kampelman",
         "surface": "Kampelman",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Perle",
         "surface": "Perle",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_HMC_1",
+        "id": "frus1981-88v05:p_HMC_1",
         "tei_id": "p_HMC_1",
         "name": "Hill",
         "surface": "Hill",
         "in_network": false
       },
       {
-        "id": "p_TJP_1",
+        "id": "frus1981-88v05:p_TJP_1",
         "tei_id": "p_TJP_1",
         "name": "Timbie",
         "surface": "Timbie",
         "in_network": false
       },
       {
-        "id": "p_REL_1",
+        "name": "Edward L. Rowny",
+        "side": "US",
+        "role": "Special Advisor to the President and Secretary of State on Arms Control",
+        "id": "us.rowny",
         "tei_id": "p_REL_1",
-        "name": "Rowny",
         "surface": "Rowny",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_KVP_1",
+        "name": "Viktor P. Karpov",
+        "side": "USSR",
+        "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
+        "id": "ussr.karpov",
         "tei_id": "p_KVP_1",
-        "name": "Karpov",
         "surface": "Karpov",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Jack F. Matlock Jr.",
@@ -1083,7 +1145,7 @@
         "in_network": true
       },
       {
-        "id": "p_AG_1",
+        "id": "frus1981-88v05:p_AG_1",
         "tei_id": "p_AG_1",
         "name": "Arbatov",
         "surface": "Arbatov",
@@ -1142,11 +1204,13 @@
         "in_network": true
       },
       {
-        "id": "p_PMR_1",
+        "name": "Mark R. Parris",
+        "side": "US",
+        "role": "Director, Office of Soviet Union Affairs",
+        "id": "us.parris",
         "tei_id": "p_PMR_1",
-        "name": "Parris",
         "surface": "Parris",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Eduard A. Shevardnadze",
@@ -1158,18 +1222,20 @@
         "in_network": true
       },
       {
-        "id": "p_UN_1",
+        "id": "frus1981-88v05:p_UN_1",
         "tei_id": "p_UN_1",
         "name": "Uspenskiy",
         "surface": "Uspenskiy",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "name": "Pavel R. Palazhchenko",
+        "side": "USSR",
+        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
+        "id": "ussr.palazhchenko",
         "tei_id": "p_PP_1",
-        "name": "Palazhchenko",
         "surface": "Palazhchenko",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Mikhail S. Gorbachev",
@@ -1181,7 +1247,7 @@
         "in_network": true
       },
       {
-        "id": "p_TMH_1",
+        "id": "frus1981-88v05:p_TMH_1",
         "tei_id": "p_TMH_1",
         "name": "Thatcher",
         "surface": "Thatcher",
@@ -1253,7 +1319,7 @@
       {
         "name": "John M. Poindexter",
         "side": "US",
-        "role": "National Security Advisor",
+        "role": "National Security Advisor (until Nov 1986)",
         "id": "us.poindexter",
         "tei_id": "p_PJM_1",
         "surface": "Poindexter",
@@ -1269,39 +1335,47 @@
         "in_network": true
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Perle",
         "surface": "Perle",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_LRE_1",
+        "name": "Robert E. Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
         "tei_id": "p_LRE_1",
-        "name": "Robert Linhard",
         "surface": "Robert Linhard",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_KVP_1",
+        "name": "Viktor P. Karpov",
+        "side": "USSR",
+        "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
+        "id": "ussr.karpov",
         "tei_id": "p_KVP_1",
-        "name": "Karpov",
         "surface": "Karpov",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_AG_1",
+        "id": "frus1981-88v05:p_AG_1",
         "tei_id": "p_AG_1",
         "name": "G. Arbatov",
         "surface": "G. Arbatov",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "name": "Pavel R. Palazhchenko",
+        "side": "USSR",
+        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
+        "id": "ussr.palazhchenko",
         "tei_id": "p_PP_1",
-        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Ronald Reagan",
@@ -1322,11 +1396,13 @@
         "in_network": true
       },
       {
-        "id": "p_WCW_1",
+        "name": "Caspar W. Weinberger",
+        "side": "US",
+        "role": "Secretary of Defense",
+        "id": "us.weinberger",
         "tei_id": "p_WCW_1",
-        "name": "Weinberger",
         "surface": "Weinberger",
-        "in_network": false
+        "in_network": true
       }
     ],
     "topics": [
@@ -1371,11 +1447,13 @@
         "in_network": true
       },
       {
-        "id": "p_STW_1",
+        "name": "Thomas W. Simons Jr.",
+        "side": "US",
+        "role": "Director/Deputy Assistant Secretary, Soviet Union Affairs",
+        "id": "us.simons",
         "tei_id": "p_STW_1",
-        "name": "Simons",
         "surface": "Simons",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Ronald Reagan",
@@ -1414,39 +1492,47 @@
         "in_network": true
       },
       {
-        "id": "p_PP_1",
+        "name": "Pavel R. Palazhchenko",
+        "side": "USSR",
+        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
+        "id": "ussr.palazhchenko",
         "tei_id": "p_PP_1",
-        "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_UN_1",
+        "id": "frus1981-88v05:p_UN_1",
         "tei_id": "p_UN_1",
         "name": "N. Uspenskiy",
         "surface": "N. Uspenskiy",
         "in_network": false
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_LRE_1",
+        "name": "Robert E. Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
         "tei_id": "p_LRE_1",
-        "name": "Linhard",
         "surface": "Linhard",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Richard [Perle]",
         "surface": "Richard [Perle]",
-        "in_network": false
+        "in_network": true
       }
     ],
     "topics": [
@@ -1500,11 +1586,13 @@
         "in_network": true
       },
       {
-        "id": "p_PP_1",
+        "name": "Pavel R. Palazhchenko",
+        "side": "USSR",
+        "role": "Interpreter and special assistant to Gorbachev and Shevardnadze",
+        "id": "ussr.palazhchenko",
         "tei_id": "p_PP_1",
-        "name": "Pavel Palazhchenko",
         "surface": "Pavel Palazhchenko",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "George P. Shultz",

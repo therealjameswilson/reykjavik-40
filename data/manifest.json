@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-08T16:08:12Z",
+  "generated": "2026-07-08T18:07:26Z",
   "counts": {
     "frus_v05_reykjavik": 10,
     "frus_v06_aftermath": 1,
     "foia_declassified": 15,
     "total_documents": 26,
-    "network_nodes": 11,
-    "network_edges": 50,
+    "network_nodes": 25,
+    "network_edges": 249,
     "timeline_events": 89
   },
   "by_phase": {
