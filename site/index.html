@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reykjavík 40 — A Documentary Guide to the 1986 Summit</title>
+  <meta name="description" content="A primary-source documentary guide to the Reykjavík Summit between President Reagan and General Secretary Gorbachev, 11–12 October 1986, drawn from the Foreign Relations of the United States series and declassified releases at foia.state.gov." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="assets/css/frus.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="masthead">
+    <div class="masthead__inner">
+      <div class="masthead__brand">
+        <p class="masthead__eyebrow">A Documentary Guide</p>
+        <h1 class="masthead__title">The Reykjav&iacute;k Summit</h1>
+        <p class="masthead__subtitle">Reagan and Gorbachev at H&ouml;f&eth;i House &middot; 11&ndash;12 October 1986</p>
+      </div>
+      <nav class="masthead__nav" aria-label="Views">
+        <button class="nav-btn is-active" data-view="network" aria-pressed="true">Negotiation Network</button>
+        <button class="nav-btn" data-view="timeline" aria-pressed="false">Hour-by-Hour Timeline</button>
+        <button class="nav-btn" data-view="explorer" aria-pressed="false">Document Explorer</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+
+    <!-- ==== Views container ==== -->
+    <section class="views">
+
+      <!-- Network view -->
+      <article class="view view--network is-active" data-view="network" aria-labelledby="view-network-heading">
+        <header class="view__head">
+          <h2 id="view-network-heading">Negotiation Network</h2>
+          <p class="view__lede">Co-occurrence of principals and negotiators across every memorandum of conversation, briefing paper, and follow-on cable in the Reykjav&iacute;k section of the Foreign Relations series and the corresponding declassified releases. Node size encodes document count; edge width encodes weighted co-occurrence. Select a node to filter the timeline and the explorer.</p>
+        </header>
+        <div class="network">
+          <div class="network__canvas" id="network-canvas" role="figure" aria-label="Interactive graph of people, documents, and topics."></div>
+          <aside class="network__legend" aria-label="Legend">
+            <div class="legend-row"><span class="dot dot--us"></span> United States</div>
+            <div class="legend-row"><span class="dot dot--ussr"></span> Soviet Union</div>
+            <p class="legend-note">Topic strands (SDI, INF, Strategic Arms, Nuclear Testing, Human Rights) tint edges by the dominant subject of the shared document.</p>
+            <fieldset class="legend-topics" id="topic-filter">
+              <legend>Filter edges by topic</legend>
+              <!-- filled by JS -->
+            </fieldset>
+          </aside>
+        </div>
+      </article>
+
+      <!-- Timeline view -->
+      <article class="view view--timeline" data-view="timeline" aria-labelledby="view-timeline-heading" hidden>
+        <header class="view__head">
+          <h2 id="view-timeline-heading">Hour-by-Hour Timeline</h2>
+          <p class="view__lede">Anchored to the Iceland Chronology in <em>Foreign Relations of the United States, 1981&ndash;1988, Volume VI</em>, Document 1 &mdash; a Memorandum for the Record dated 18 October 1986 that reconstructs the four days in Iceland. Documents released in Volumes V and VI are folded in as marker events; times of day are parsed from the chronology text.</p>
+        </header>
+        <div class="timeline" id="timeline-canvas"></div>
+      </article>
+
+      <!-- Explorer view -->
+      <article class="view view--explorer" data-view="explorer" aria-labelledby="view-explorer-heading" hidden>
+        <header class="view__head">
+          <h2 id="view-explorer-heading">Document Explorer</h2>
+          <p class="view__lede">A searchable, filterable table of every document in the corpus. FRUS records are compiled and edited by the Office of the Historian; declassified releases are drawn from the Department of State&rsquo;s Virtual Reading Room. Each record links to its canonical publisher URL.</p>
+        </header>
+        <div class="explorer__controls">
+          <label class="control control--search">
+            <span class="control__label">Search</span>
+            <input type="search" id="explorer-search" placeholder="Search titles, persons, and topics&hellip;" autocomplete="off" />
+          </label>
+          <label class="control">
+            <span class="control__label">Source</span>
+            <select id="explorer-source">
+              <option value="">All sources</option>
+            </select>
+          </label>
+          <label class="control">
+            <span class="control__label">Phase</span>
+            <select id="explorer-phase">
+              <option value="">All phases</option>
+              <option value="pre-summit">Pre-summit</option>
+              <option value="summit">Summit (11&ndash;12 Oct)</option>
+              <option value="aftermath">Aftermath</option>
+            </select>
+          </label>
+          <label class="control">
+            <span class="control__label">Topic</span>
+            <select id="explorer-topic">
+              <option value="">All topics</option>
+            </select>
+          </label>
+          <label class="control">
+            <span class="control__label">Person</span>
+            <select id="explorer-person">
+              <option value="">All persons</option>
+            </select>
+          </label>
+          <button type="button" id="explorer-clear" class="btn-ghost">Clear</button>
+        </div>
+        <div class="explorer__meta" id="explorer-meta" aria-live="polite"></div>
+        <div class="explorer__grid">
+          <table class="explorer__table" aria-labelledby="view-explorer-heading">
+            <thead>
+              <tr>
+                <th scope="col" class="col-date">Date</th>
+                <th scope="col" class="col-source">Source</th>
+                <th scope="col" class="col-title">Title</th>
+                <th scope="col" class="col-session">Session</th>
+                <th scope="col" class="col-topics">Topics</th>
+              </tr>
+            </thead>
+            <tbody id="explorer-tbody"></tbody>
+          </table>
+          <aside class="transcript" id="transcript" aria-label="Selected document">
+            <div class="transcript__empty">Select a document to open its record here.</div>
+          </aside>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ==== Selection panel (persistent) ==== -->
+    <aside class="selection" id="selection" aria-live="polite" hidden>
+      <button type="button" class="selection__close" id="selection-close" aria-label="Clear selection">&times;</button>
+      <p class="selection__eyebrow">Current selection</p>
+      <div class="selection__body" id="selection-body"></div>
+    </aside>
+  </main>
+
+  <footer class="colophon">
+    <div class="colophon__inner">
+      <div class="colophon__col">
+        <p class="colophon__label">Corpus</p>
+        <p id="corpus-line" class="colophon__value"></p>
+      </div>
+      <div class="colophon__col">
+        <p class="colophon__label">Primary sources</p>
+        <ul>
+          <li><a href="https://history.state.gov/historicaldocuments/frus1981-88v05">FRUS 1981&ndash;1988, Volume V &mdash; Soviet Union, March 1985&ndash;October 1986</a></li>
+          <li><a href="https://history.state.gov/historicaldocuments/frus1981-88v06">FRUS 1981&ndash;1988, Volume VI &mdash; Soviet Union, October 1986&ndash;January 1989</a></li>
+          <li><a href="https://foia.state.gov/">U.S. Department of State &mdash; Virtual Reading Room</a></li>
+        </ul>
+      </div>
+      <div class="colophon__col">
+        <p class="colophon__label">Repository</p>
+        <ul>
+          <li><a href="https://github.com/therealjameswilson/reykjavik-40">therealjameswilson/reykjavik-40</a></li>
+          <li><a href="https://github.com/HistoryAtState/frus">HistoryAtState/frus (TEI source)</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/frus.js" type="module"></script>
+</body>
+</html>

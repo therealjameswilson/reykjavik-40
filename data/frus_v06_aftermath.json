@@ -1,0 +1,3803 @@
+[
+  {
+    "doc_id": "frus1981-88v06-d1",
+    "doc_number": 1,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum for the Record",
+    "date": "1986-10-11",
+    "date_display": "undated",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d1",
+    "summit_phase": "summit",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_RDY_1",
+        "tei_id": "p_RDY_1",
+        "name": "Donald Regan",
+        "surface": "Donald Regan",
+        "in_network": false
+      },
+      {
+        "name": "John M. Poindexter",
+        "side": "US",
+        "role": "National Security Advisor",
+        "id": "us.poindexter",
+        "tei_id": "p_PJM_1",
+        "surface": "Poindexter",
+        "in_network": true
+      },
+      {
+        "id": "p_TC_1",
+        "tei_id": "p_TC_1",
+        "name": "Thomas",
+        "surface": "Thomas",
+        "in_network": false
+      },
+      {
+        "id": "p_HAA_1",
+        "tei_id": "p_HAA_1",
+        "name": "Hartman",
+        "surface": "Hartman",
+        "in_network": false
+      },
+      {
+        "id": "p_RRL_1",
+        "tei_id": "p_RRL_1",
+        "name": "Ridgway",
+        "surface": "Ridgway",
+        "in_network": false
+      },
+      {
+        "name": "Jack F. Matlock Jr.",
+        "side": "US",
+        "role": "NSC Senior Director, European and Soviet Affairs",
+        "id": "us.matlock",
+        "tei_id": "p_MJF_1",
+        "surface": "Matlock",
+        "in_network": true
+      },
+      {
+        "name": "Paul H. Nitze",
+        "side": "US",
+        "role": "Special Adviser on Arms Control",
+        "id": "us.nitze",
+        "tei_id": "p_NPH_1",
+        "surface": "Nitze",
+        "in_network": true
+      },
+      {
+        "name": "Robert Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
+        "tei_id": "p_LR_1",
+        "surface": "Linhard",
+        "in_network": true
+      },
+      {
+        "id": "p_PRN_1",
+        "tei_id": "p_PRN_1",
+        "name": "Richard Perle",
+        "surface": "Richard Perle",
+        "in_network": false
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "Max Kampelman",
+        "surface": "Max Kampelman",
+        "in_network": false
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "id": "p_RE_1",
+        "tei_id": "p_RE_1",
+        "name": "Rowny",
+        "surface": "Rowny",
+        "in_network": false
+      },
+      {
+        "name": "Kenneth L. Adelman",
+        "side": "US",
+        "role": "Director, Arms Control and Disarmament Agency",
+        "id": "us.adelman",
+        "tei_id": "p_AKL_1",
+        "surface": "Adelman",
+        "in_network": true
+      },
+      {
+        "id": "p_MJH_1",
+        "tei_id": "p_MJH_1",
+        "name": "John Moellering",
+        "surface": "John Moellering",
+        "in_network": false
+      },
+      {
+        "id": "p_AS_1",
+        "tei_id": "p_AS_1",
+        "name": "Akhromeyev",
+        "surface": "Akhromeyev",
+        "in_network": false
+      },
+      {
+        "id": "p_BA_2",
+        "tei_id": "p_BA_2",
+        "name": "Alexander Bessmertnykh",
+        "surface": "Alexander Bessmertnykh",
+        "in_network": false
+      },
+      {
+        "id": "p_DY_1",
+        "tei_id": "p_DY_1",
+        "name": "Dubinin",
+        "surface": "Dubinin",
+        "in_network": false
+      },
+      {
+        "id": "p_PE_1",
+        "tei_id": "p_PE_1",
+        "name": "Primakov",
+        "surface": "Primakov",
+        "in_network": false
+      },
+      {
+        "id": "p_PM_1",
+        "tei_id": "p_PM_1",
+        "name": "Parris",
+        "surface": "Parris",
+        "in_network": false
+      },
+      {
+        "id": "p_KAG_1",
+        "tei_id": "p_KAG_1",
+        "name": "Keel",
+        "surface": "Keel",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Nuclear Testing",
+      "Human Rights",
+      "Regional Issues",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "Attached is a detailed chronology covering the meeting between President Reagan and Soviet General Secretary Gorbachev, held in Reykjavik, Iceland on October 11–12, 1986. This document has been prepared, as a one-time exception to the normal practice of not publishing records of such meetings, in view of the extraordinary nature of the Reykjavik meeting. The document is a chronology, not a negotiating record. Recipients should [be] meticulous in characterizing it correctly...."
+  },
+  {
+    "doc_id": "frus1981-88v06-d2",
+    "doc_number": 2,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "editorial-note",
+    "title": "Editorial Note",
+    "date": "1989-01-08",
+    "date_display": "",
+    "place": "",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d2",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Ronald Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_CR_1",
+        "tei_id": "p_CR_1",
+        "name": "Richard Combs",
+        "surface": "Richard Combs",
+        "in_network": false
+      }
+    ],
+    "topics": [],
+    "verified": true,
+    "excerpt": "In his diary entry for October 20, 1986, President Ronald Reagan noted: “A meeting to discuss how to respond to the Soviets kicking 5 of our diplomatic people out of Russia. Four are from the Soviet Embassy & 1 from the Leningrad Consulate. This is their reply to our sending 25 of their K.G.B. types home from the U.N. We had announced we were going to reduce their staff at the U.N. which is greater than the next 2 nations put together. Now they have hinted at further action..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d3",
+    "doc_number": 3,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Minutes of a National Security Planning Group Meeting",
+    "date": "1986-10-27",
+    "date_display": "October 27, 1986, 11 a.m.–noon",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d3",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_BL_1",
+        "tei_id": "p_BL_1",
+        "name": "Linton Brooks",
+        "surface": "Linton Brooks",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "George Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_BJA_1",
+        "tei_id": "p_BJA_1",
+        "name": "James Baker",
+        "surface": "James Baker",
+        "in_network": false
+      },
+      {
+        "id": "p_WCW_1",
+        "tei_id": "p_WCW_1",
+        "name": "Caspar Weinberger",
+        "surface": "Caspar Weinberger",
+        "in_network": false
+      },
+      {
+        "id": "p_PRN_1",
+        "tei_id": "p_PRN_1",
+        "name": "Richard Perle",
+        "surface": "Richard Perle",
+        "in_network": false
+      },
+      {
+        "id": "p_HJ_1",
+        "tei_id": "p_HJ_1",
+        "name": "John Herrington",
+        "surface": "John Herrington",
+        "in_network": false
+      },
+      {
+        "id": "p_MJ_1",
+        "tei_id": "p_MJ_1",
+        "name": "James Miller",
+        "surface": "James Miller",
+        "in_network": false
+      },
+      {
+        "name": "Kenneth L. Adelman",
+        "side": "US",
+        "role": "Director, Arms Control and Disarmament Agency",
+        "id": "us.adelman",
+        "tei_id": "p_AKL_1",
+        "surface": "Kenneth Adelman",
+        "in_network": true
+      },
+      {
+        "id": "p_CWJ_2",
+        "tei_id": "p_CWJ_2",
+        "name": "William J. Crowe",
+        "surface": "William J. Crowe",
+        "in_network": false
+      },
+      {
+        "id": "p_MJH_1",
+        "tei_id": "p_MJH_1",
+        "name": "John Moellering",
+        "surface": "John Moellering",
+        "in_network": false
+      },
+      {
+        "id": "p_RDY_1",
+        "tei_id": "p_RDY_1",
+        "name": "Regan",
+        "surface": "Regan",
+        "in_network": false
+      },
+      {
+        "name": "John M. Poindexter",
+        "side": "US",
+        "role": "National Security Advisor",
+        "id": "us.poindexter",
+        "tei_id": "p_PJM_1",
+        "surface": "John M. Poindexter",
+        "in_network": true
+      },
+      {
+        "id": "p_KAG_1",
+        "tei_id": "p_KAG_1",
+        "name": "Alton J. Keel",
+        "surface": "Alton J. Keel",
+        "in_network": false
+      },
+      {
+        "id": "p_CW_1",
+        "tei_id": "p_CW_1",
+        "name": "William Cockell",
+        "surface": "William Cockell",
+        "in_network": false
+      },
+      {
+        "name": "Robert Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
+        "tei_id": "p_LR_1",
+        "surface": "Robert Linhard",
+        "in_network": true
+      },
+      {
+        "name": "Paul H. Nitze",
+        "side": "US",
+        "role": "Special Adviser on Arms Control",
+        "id": "us.nitze",
+        "tei_id": "p_NPH_1",
+        "surface": "Paul Nitze",
+        "in_network": true
+      },
+      {
+        "id": "p_RE_1",
+        "tei_id": "p_RE_1",
+        "name": "Edward Rowny",
+        "surface": "Edward Rowny",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_KH_1",
+        "tei_id": "p_KH_1",
+        "name": "Kohl",
+        "surface": "Kohl",
+        "in_network": false
+      },
+      {
+        "id": "p_TM_1",
+        "tei_id": "p_TM_1",
+        "name": "Thatcher",
+        "surface": "Thatcher",
+        "in_network": false
+      },
+      {
+        "id": "p_KV_1",
+        "tei_id": "p_KV_1",
+        "name": "Viktor Karpov",
+        "surface": "Viktor Karpov",
+        "in_network": false
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "id": "p_DY_1",
+        "tei_id": "p_DY_1",
+        "name": "Dubinin",
+        "surface": "Dubinin",
+        "in_network": false
+      },
+      {
+        "id": "p_BHH_1",
+        "tei_id": "p_BHH_1",
+        "name": "Baker",
+        "surface": "Baker",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Nuclear Testing"
+    ],
+    "verified": true,
+    "excerpt": "The meeting opened at 11:00 a.m. in the Situation Room. The agenda was as shown at Tab A. (U) VADM Poindexter opened the meeting using his prepared talking points. He then asked Secretary Shultz to comment on the results of his consultations following the President’s meeting with General Secretary Gorbachev in Iceland. (C) Secretary Shultz: I met with my NATO counterparts in Brussels, Ambassador Rowny travelled in Asia, Ken Adelman has been to Australia, Federal Republic of..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d4",
+    "doc_number": 4,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Telegram From the Embassy in the Soviet Union to the Department of State",
+    "date": "1986-10-31",
+    "date_display": "October 31, 1986, 1555Z",
+    "place": "Moscow",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d4",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "Paul H. Nitze",
+        "side": "US",
+        "role": "Special Adviser on Arms Control",
+        "id": "us.nitze",
+        "tei_id": "p_NPH_1",
+        "surface": "Nitze",
+        "in_network": true
+      },
+      {
+        "name": "John M. Poindexter",
+        "side": "US",
+        "role": "National Security Advisor",
+        "id": "us.poindexter",
+        "tei_id": "p_PJM_1",
+        "surface": "Poindexter",
+        "in_network": true
+      },
+      {
+        "id": "p_HAA_1",
+        "tei_id": "p_HAA_1",
+        "name": "Hartman",
+        "surface": "Hartman",
+        "in_network": false
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "id": "p_KV_1",
+        "tei_id": "p_KV_1",
+        "name": "Karpov",
+        "surface": "Karpov",
+        "in_network": false
+      },
+      {
+        "id": "p_DY_1",
+        "tei_id": "p_DY_1",
+        "name": "Dubinin",
+        "surface": "Dubinin",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Human Rights",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "18874. For the Secretary from Hartman. Subject: Your Meeting With Shevardnadze. 1. Secret—entire text. 2. As you prepare for next week’s meetings with Shevardnadze, let me offer the following thoughts. 3. In Reykjavik we came close to striking an important arms control deal. The possibility of getting such an accord remains very much alive, but, after two weeks of public exchanges between Washington and Moscow, your talks with Shevardnadze are now crucial for getting things..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d5",
+    "doc_number": 5,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From the President’s Assistant for National Security Affairs (Poindexter) to Secretary of State Shultz",
+    "date": "1986-11-03",
+    "date_display": "November 3, 1986",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d5",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "John M. Poindexter",
+        "side": "US",
+        "role": "National Security Advisor",
+        "id": "us.poindexter",
+        "tei_id": "p_PJM_1",
+        "surface": "Poindexter",
+        "in_network": true
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Nuclear Testing",
+      "Human Rights",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "Based upon our earlier discussions, the President has reviewed the plans for your upcoming meetings in Vienna with the Soviet Foreign Minister. The President agrees that the U.S. objectives for these meetings are as follows: The President also agrees with our objectives in each of the individual areas discussed at Reykjavik. (U) —With respect to the areas of human rights, regional and bilateral issues, we should confirm the work plan developed in Iceland. (U) —In START, we..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d6",
+    "doc_number": 6,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum of Conversation",
+    "date": "1986-11-05",
+    "date_display": "November 5, 1986, 3:55–6:55 p.m. and 7:05–7:15 p.m.",
+    "place": "Vienna",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d6",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "id": "p_STW_1",
+        "tei_id": "p_STW_1",
+        "name": "Simons",
+        "surface": "Simons",
+        "in_network": false
+      },
+      {
+        "id": "p_PP_1",
+        "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
+        "surface": "P. Palazhchenko",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Mikhail Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_HAA_1",
+        "tei_id": "p_HAA_1",
+        "name": "Hartman",
+        "surface": "Hartman",
+        "in_network": false
+      },
+      {
+        "id": "p_RDY_1",
+        "tei_id": "p_RDY_1",
+        "name": "Regan",
+        "surface": "Regan",
+        "in_network": false
+      },
+      {
+        "name": "John M. Poindexter",
+        "side": "US",
+        "role": "National Security Advisor",
+        "id": "us.poindexter",
+        "tei_id": "p_PJM_1",
+        "surface": "Poindexter",
+        "in_network": true
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_BA_2",
+        "tei_id": "p_BA_2",
+        "name": "Bessmertnykh",
+        "surface": "Bessmertnykh",
+        "in_network": false
+      },
+      {
+        "id": "p_RRL_1",
+        "tei_id": "p_RRL_1",
+        "name": "Ridgway",
+        "surface": "Ridgway",
+        "in_network": false
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "Kampelman",
+        "surface": "Kampelman",
+        "in_network": false
+      },
+      {
+        "name": "Paul H. Nitze",
+        "side": "US",
+        "role": "Special Adviser on Arms Control",
+        "id": "us.nitze",
+        "tei_id": "p_NPH_1",
+        "surface": "Nitze",
+        "in_network": true
+      },
+      {
+        "id": "p_AS_1",
+        "tei_id": "p_AS_1",
+        "name": "Akhromeyev",
+        "surface": "Akhromeyev",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Nuclear Testing",
+      "Human Rights",
+      "Regional Issues",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "The Secretary welcomed Shevardnadze, and offered him tea or coffee, noting it was self-service. Shevardnadze said that was the best way. He asked if the Secretary were tired. The Secretary replied that it was not too bad; he was able to sleep on an airplane. Shevardnadze said he also made himself sleep on a plane, though this was not easy to get used to. The Secretary said his plane was like an office in the air. Everyone was there, and there was a tendency to talk and..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d7",
+    "doc_number": 7,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum of Conversation",
+    "date": "1986-11-06",
+    "date_display": "November 6, 1986, 8:05–9:40 a.m.",
+    "place": "Vienna",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d7",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "id": "p_RRL_1",
+        "tei_id": "p_RRL_1",
+        "name": "Ridgway",
+        "surface": "Ridgway",
+        "in_network": false
+      },
+      {
+        "name": "Paul H. Nitze",
+        "side": "US",
+        "role": "Special Adviser on Arms Control",
+        "id": "us.nitze",
+        "tei_id": "p_NPH_1",
+        "surface": "Nitze",
+        "in_network": true
+      },
+      {
+        "id": "p_HAA_1",
+        "tei_id": "p_HAA_1",
+        "name": "Hartman",
+        "surface": "Hartman",
+        "in_network": false
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "Kampelman",
+        "surface": "Kampelman",
+        "in_network": false
+      },
+      {
+        "name": "Jack F. Matlock Jr.",
+        "side": "US",
+        "role": "NSC Senior Director, European and Soviet Affairs",
+        "id": "us.matlock",
+        "tei_id": "p_MJF_1",
+        "surface": "Matlock",
+        "in_network": true
+      },
+      {
+        "name": "Robert Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
+        "tei_id": "p_LR_1",
+        "surface": "Linhard",
+        "in_network": true
+      },
+      {
+        "id": "p_PM_1",
+        "tei_id": "p_PM_1",
+        "name": "Parris",
+        "surface": "Parris",
+        "in_network": false
+      },
+      {
+        "id": "p_BA_2",
+        "tei_id": "p_BA_2",
+        "name": "Bessmertnykh",
+        "surface": "Bessmertnykh",
+        "in_network": false
+      },
+      {
+        "id": "p_KV_1",
+        "tei_id": "p_KV_1",
+        "name": "Karpov",
+        "surface": "Karpov",
+        "in_network": false
+      },
+      {
+        "id": "p_PP_1",
+        "tei_id": "p_PP_1",
+        "name": "Palazhchenko",
+        "surface": "Palazhchenko",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_WCZ_1",
+        "tei_id": "p_WCZ_1",
+        "name": "Wick",
+        "surface": "Wick",
+        "in_network": false
+      },
+      {
+        "id": "p_HJT_1",
+        "tei_id": "p_HJT_1",
+        "name": "Howe",
+        "surface": "Howe",
+        "in_network": false
+      },
+      {
+        "id": "p_DY_1",
+        "tei_id": "p_DY_1",
+        "name": "Dubinin",
+        "surface": "Dubinin",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Human Rights",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "Secretary Shultz’s Meeting with Foreign Minister Shevardnadze Shevardnadze opened the meeting by asking when the Secretary would have to leave. The Secretary replied that, as he understood Shevardnadze had to leave Vienna at 10:00, he had planned accordingly. Shevardnadze confirmed that his plane would leave Vienna at 10:00. The Secretary indicated he had a number of points to make on subjects which had not been discussed the day before. He understood that Shevardnadze had..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d8",
+    "doc_number": 8,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From Secretary of State Shultz to President Reagan",
+    "date": "1986-11-14",
+    "date_display": "November 14, 1986",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d8",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "name": "Jack F. Matlock Jr.",
+        "side": "US",
+        "role": "NSC Senior Director, European and Soviet Affairs",
+        "id": "us.matlock",
+        "tei_id": "p_MJF_1",
+        "surface": "Matlock",
+        "in_network": true
+      },
+      {
+        "id": "p_KAG_1",
+        "tei_id": "p_KAG_1",
+        "name": "Keel",
+        "surface": "Keel",
+        "in_network": false
+      },
+      {
+        "id": "p_TM_1",
+        "tei_id": "p_TM_1",
+        "name": "Thatcher",
+        "surface": "Thatcher",
+        "in_network": false
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "id": "p_AMH_1",
+        "tei_id": "p_AMH_1",
+        "name": "Armacost",
+        "surface": "Armacost",
+        "in_network": false
+      },
+      {
+        "id": "p_VY_1",
+        "tei_id": "p_VY_1",
+        "name": "Vorontsov",
+        "surface": "Vorontsov",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Nuclear Testing",
+      "Human Rights",
+      "Regional Issues",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "Where We Are After Vienna The outcome of the Vienna meeting has at least temporarily changed the context of our dialogue with Moscow. Since mid-1985, that dialogue has evolved within the framework of preparations for successive high-level meetings, at your level and mine. The summit process forced bureaucracies on both sides—but particularly the Soviets—to make decisions which would otherwise have been put off. The results have been impressive. —In a series of steps..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d9",
+    "doc_number": 9,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "editorial-note",
+    "title": "Editorial Note",
+    "date": "1989-01-08",
+    "date_display": "",
+    "place": "",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d9",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "John M. Poindexter",
+        "side": "US",
+        "role": "National Security Advisor",
+        "id": "us.poindexter",
+        "tei_id": "p_PJM_1",
+        "surface": "John Poindexter",
+        "in_network": true
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Ronald Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Frank Carlucci",
+        "surface": "Frank Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_KAG_1",
+        "tei_id": "p_KAG_1",
+        "name": "Alton Keel",
+        "surface": "Alton Keel",
+        "in_network": false
+      },
+      {
+        "id": "p_DA_1",
+        "tei_id": "p_DA_1",
+        "name": "Dobrynin",
+        "surface": "Dobrynin",
+        "in_network": false
+      },
+      {
+        "id": "p_BGHW_1",
+        "tei_id": "p_BGHW_1",
+        "name": "George H.W. Bush",
+        "surface": "George H.W. Bush",
+        "in_network": false
+      },
+      {
+        "id": "p_WCW_1",
+        "tei_id": "p_WCW_1",
+        "name": "Caspar Weinberger",
+        "surface": "Caspar Weinberger",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "George Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_GR_2",
+        "tei_id": "p_GR_2",
+        "name": "Robert Gates",
+        "surface": "Robert Gates",
+        "in_network": false
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "Max Kampelman",
+        "surface": "Max Kampelman",
+        "in_network": false
+      },
+      {
+        "name": "Paul H. Nitze",
+        "side": "US",
+        "role": "Special Adviser on Arms Control",
+        "id": "us.nitze",
+        "tei_id": "p_NPH_1",
+        "surface": "Paul Nitze",
+        "in_network": true
+      },
+      {
+        "id": "p_PRN_1",
+        "tei_id": "p_PRN_1",
+        "name": "Richard Perle",
+        "surface": "Richard Perle",
+        "in_network": false
+      },
+      {
+        "name": "Robert Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
+        "tei_id": "p_LR_1",
+        "surface": "Robert Linhard",
+        "in_network": true
+      },
+      {
+        "name": "Jack F. Matlock Jr.",
+        "side": "US",
+        "role": "NSC Senior Director, European and Soviet Affairs",
+        "id": "us.matlock",
+        "tei_id": "p_MJF_1",
+        "surface": "Jack Matlock",
+        "in_network": true
+      },
+      {
+        "id": "p_RDY_1",
+        "tei_id": "p_RDY_1",
+        "name": "Donald Regan",
+        "surface": "Donald Regan",
+        "in_network": false
+      },
+      {
+        "name": "Kenneth L. Adelman",
+        "side": "US",
+        "role": "Director, Arms Control and Disarmament Agency",
+        "id": "us.adelman",
+        "tei_id": "p_AKL_1",
+        "surface": "Kenneth Adelman",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "INF",
+      "Strategic Arms"
+    ],
+    "verified": true,
+    "excerpt": "On November 25, 1986, the President’s Assistant for National Security Affairs John Poindexter resigned as a result of his role in the Iran-Contra affair. In his diary that evening, President Ronald Reagan recalled meeting with Poindexter that morning to accept his resignation. President Reagan went on to describe “an N.S.C. meeting to see how we’d handle the roll out of the 131st [B–52] bomber equipped for Nuclear Cruise Missiles. It puts us 1 plane above the restraints of..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d10",
+    "doc_number": 10,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Paper Prepared in the National Security Council",
+    "date": "1986-12-31",
+    "date_display": "December 31, 1986",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d10",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_KAG_1",
+        "tei_id": "p_KAG_1",
+        "name": "Keel",
+        "surface": "Keel",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      }
+    ],
+    "topics": [],
+    "verified": true,
+    "excerpt": "ESPIONAGE CASE AT EMBASSY MOSCOW On December 14 a Marine security guard assigned to Embassy Vienna voluntarily confessed to espionage [less than 1 line not declassified]. While stationed at Embassy Moscow he had been recruited by the “uncle” of a female Soviet employee of the embassy with whom he had a sexual relationship. The Soviets apparently continued to meet him clandestinely in Vienna following Moscow tour. Marine allegedly provided over 100 classified documents,..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d11",
+    "doc_number": 11,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From the President’s Assistant for National Security Affairs (Carlucci) to Secretary of State Shultz",
+    "date": "1987-01-10",
+    "date_display": "January 10, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d11",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_RDY_1",
+        "tei_id": "p_RDY_1",
+        "name": "Regan",
+        "surface": "Regan",
+        "in_network": false
+      },
+      {
+        "id": "p_HL_1",
+        "tei_id": "p_HL_1",
+        "name": "Lawrence Horowitz",
+        "surface": "Lawrence Horowitz",
+        "in_network": false
+      },
+      {
+        "id": "p_VY_1",
+        "tei_id": "p_VY_1",
+        "name": "Yuli Vorontsov",
+        "surface": "Yuli Vorontsov",
+        "in_network": false
+      },
+      {
+        "id": "p_WJC_1",
+        "tei_id": "p_WJC_1",
+        "name": "John Whitehead",
+        "surface": "John Whitehead",
+        "in_network": false
+      },
+      {
+        "id": "p_DA_1",
+        "tei_id": "p_DA_1",
+        "name": "Dobrynin",
+        "surface": "Dobrynin",
+        "in_network": false
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "Max Kampelman",
+        "surface": "Max Kampelman",
+        "in_network": false
+      },
+      {
+        "id": "p_PRN_1",
+        "tei_id": "p_PRN_1",
+        "name": "Perle",
+        "surface": "Perle",
+        "in_network": false
+      },
+      {
+        "name": "Paul H. Nitze",
+        "side": "US",
+        "role": "Special Adviser on Arms Control",
+        "id": "us.nitze",
+        "tei_id": "p_NPH_1",
+        "surface": "Nitze",
+        "in_network": true
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "id": "p_AMH_1",
+        "tei_id": "p_AMH_1",
+        "name": "Mike Armacost",
+        "surface": "Mike Armacost",
+        "in_network": false
+      }
+    ],
+    "topics": [],
+    "verified": true,
+    "excerpt": "For some weeks now we have been in a dialogue with the Soviets via a former Kennedy staffer. Kennedy has made it clear that he has personally been involved in facilitating these exchanges. The Soviets initiated these exchanges by telling us they had an important new arms control proposal to convey, and wished to convey it directly to a special Presidential emissary. Kennedy has made it clear that the Soviets do not wish to convey this proposal through normal diplomatic..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d12",
+    "doc_number": 12,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Telegram From the Department of State to the Secretary’s Delegation",
+    "date": "1987-01-13",
+    "date_display": "January 13, 1987, 0116Z",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d12",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_PM_1",
+        "tei_id": "p_PM_1",
+        "name": "Parris",
+        "surface": "Parris",
+        "in_network": false
+      },
+      {
+        "id": "p_PN_1",
+        "tei_id": "p_PN_1",
+        "name": "Platt",
+        "surface": "Platt",
+        "in_network": false
+      },
+      {
+        "id": "p_RRL_1",
+        "tei_id": "p_RRL_1",
+        "name": "Ridgway",
+        "surface": "Ridgway",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_DY_1",
+        "tei_id": "p_DY_1",
+        "name": "Dubinin",
+        "surface": "Dubinin",
+        "in_network": false
+      },
+      {
+        "id": "p_VY_1",
+        "tei_id": "p_VY_1",
+        "name": "Vorontsov",
+        "surface": "Vorontsov",
+        "in_network": false
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "Kampelman",
+        "surface": "Kampelman",
+        "in_network": false
+      },
+      {
+        "id": "p_AMH_1",
+        "tei_id": "p_AMH_1",
+        "name": "Armacost",
+        "surface": "Armacost",
+        "in_network": false
+      }
+    ],
+    "topics": [],
+    "verified": true,
+    "excerpt": "10182/Tosec 10265. Subject: 1/12 Ridgway-Dubinin Meeting. 1. Secret entire text. 2. Summary: Dubinin affirmed that Soviet nomination of Vorontsov to head next round of NST talks reflected a genuine desire to move the negotiations forward, rather than an attempt to gain propaganda advantage. Asst. Sec Ridgway used the opportunity to confirm that Ambassador Kampelman would remain Chairman of the U.S. Delegation in Geneva, and informed Dubinin of Kampelman’s appointment as..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d13",
+    "doc_number": 13,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From Vice President Bush to the President’s Assistant for National Security Affairs (Carlucci)",
+    "date": "1987-01-16",
+    "date_display": "undated",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d13",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_BGHW_1",
+        "tei_id": "p_BGHW_1",
+        "name": "Bush",
+        "surface": "Bush",
+        "in_network": false
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_DA_1",
+        "tei_id": "p_DA_1",
+        "name": "Dobrynin",
+        "surface": "Dobrynin",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_VY_1",
+        "tei_id": "p_VY_1",
+        "name": "Vorontsov",
+        "surface": "Vorontsov",
+        "in_network": false
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "Kampelman",
+        "surface": "Kampelman",
+        "in_network": false
+      }
+    ],
+    "topics": [],
+    "verified": true,
+    "excerpt": "“I recently spent a full day with Dobrynin, and subsequently have had two calls from him. I will be staying with Dobrynin and his wife in Moscow next month—both Bim and I.” A summation of the substance of his call: Changes in Soviet Union are very rapid. The full court press is on on all this consumer stuff and Gorbachev is totally committed to internal change. Vorontsov is “Dobrynin’s boy”. He is flexible and has authority. Kendall was critical of the Kampelman move,..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d14",
+    "doc_number": 14,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "editorial-note",
+    "title": "Editorial Note",
+    "date": "1989-01-08",
+    "date_display": "",
+    "place": "",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d14",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Ronald Reagan",
+        "in_network": true
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "George Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Frank Carlucci",
+        "surface": "Frank Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_RDY_1",
+        "tei_id": "p_RDY_1",
+        "name": "Donald Regan",
+        "surface": "Donald Regan",
+        "in_network": false
+      },
+      {
+        "id": "p_MRB_1",
+        "tei_id": "p_MRB_1",
+        "name": "Bud McFarlane",
+        "surface": "Bud McFarlane",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "SDI",
+      "Strategic Arms",
+      "Regional Issues"
+    ],
+    "verified": true,
+    "excerpt": "On January 21, 1987, President Ronald Reagan met with Secretary of State George Shultz and President’s Assistant for National Security Affairs Frank Carlucci in the Oval Office at the White House from 2 to 2:48 p.m. White House Chief of Staff Donald Regan attended the meeting from 2 to 2:32 p.m. Reagan wrote in his diary: “After lunch—back to office for some desk work—then a meeting with Geo. Shultz. He brought word—Soviets are suggesting a foreign ministers meeting in..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d15",
+    "doc_number": 15,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Telegram From the Embassy in the Soviet Union to the Department of State",
+    "date": "1987-01-22",
+    "date_display": "January 22, 1987, 1337Z",
+    "place": "Moscow",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d15",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_EF_1",
+        "tei_id": "p_EF_1",
+        "name": "Ermarth",
+        "surface": "Ermarth",
+        "in_network": false
+      },
+      {
+        "id": "p_VY_1",
+        "tei_id": "p_VY_1",
+        "name": "Vorontsov",
+        "surface": "Vorontsov",
+        "in_network": false
+      },
+      {
+        "name": "Jack F. Matlock Jr.",
+        "side": "US",
+        "role": "NSC Senior Director, European and Soviet Affairs",
+        "id": "us.matlock",
+        "tei_id": "p_MJF_1",
+        "surface": "Matlock",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "id": "p_DA_1",
+        "tei_id": "p_DA_1",
+        "name": "Dobrynin",
+        "surface": "Dobrynin",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_HAA_1",
+        "tei_id": "p_HAA_1",
+        "name": "Hartman",
+        "surface": "Hartman",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "SDI",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "879. Subject: Soviet Official on Arms Control Proposal, Vorontsov, Matlock. Ref: (A) 86 Moscow 21664. 1. Secret—Entire text. Summary 2. According to a Soviet State Committee for Science & Technology (SCST) official—who is probably a KGB officer—work on a draft protocol to the ABM Treaty was proceeding smoothly and the draft should be ready “soon.” Vorontsov’s appointment was intended to demonstrate how seriously Moscow seeks an arms control agreement with the U.S. Vorontsov..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d16",
+    "doc_number": 16,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From Secretary of State Shultz to President Reagan",
+    "date": "1987-01-24",
+    "date_display": "January 24, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d16",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_EF_1",
+        "tei_id": "p_EF_1",
+        "name": "Ermarth",
+        "surface": "Ermarth",
+        "in_network": false
+      },
+      {
+        "id": "p_PM_1",
+        "tei_id": "p_PM_1",
+        "name": "Parris",
+        "surface": "Parris",
+        "in_network": false
+      },
+      {
+        "id": "p_STW_1",
+        "tei_id": "p_STW_1",
+        "name": "Simons",
+        "surface": "Simons",
+        "in_network": false
+      },
+      {
+        "id": "p_TC_1",
+        "tei_id": "p_TC_1",
+        "name": "Thomas",
+        "surface": "Thomas",
+        "in_network": false
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_DY_1",
+        "tei_id": "p_DY_1",
+        "name": "Dubinin",
+        "surface": "Dubinin",
+        "in_network": false
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "id": "p_DA_1",
+        "tei_id": "p_DA_1",
+        "name": "Dobrynin",
+        "surface": "Dobrynin",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_VY_1",
+        "tei_id": "p_VY_1",
+        "name": "Vorontsov",
+        "surface": "Vorontsov",
+        "in_network": false
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "Kampelman",
+        "surface": "Kampelman",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms"
+    ],
+    "verified": true,
+    "excerpt": "Ambassador Dubinin, who will be returning to Moscow Sunday for consultations, came by Saturday morning for a review of where the relationship stands. He said he expects to see Shevardnadze, Dobrynin and “in all probability” Gorbachev while he is back. As we agreed, I used the occasion to express our satisfaction with the more businesslike approach their new head of delegation, Vorontsov, has been taking in Geneva. I said that we welcomed the apparent realism reflected in..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d17",
+    "doc_number": 17,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Telegram From the Delegation to the Nuclear and Space Talks to the Department of State",
+    "date": "1987-02-09",
+    "date_display": "February 9, 1987, 1817Z",
+    "place": "Geneva",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d17",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "C. Max Kampelman",
+        "surface": "C. Max Kampelman",
+        "in_network": false
+      },
+      {
+        "id": "p_VY_1",
+        "tei_id": "p_VY_1",
+        "name": "Vorontsov",
+        "surface": "Vorontsov",
+        "in_network": false
+      },
+      {
+        "id": "p_GMM_1",
+        "tei_id": "p_GMM_1",
+        "name": "Maynard “Mike” Glitman",
+        "surface": "Maynard “Mike” Glitman",
+        "in_network": false
+      },
+      {
+        "id": "p_LRF_1",
+        "tei_id": "p_LRF_1",
+        "name": "Ron Lehman",
+        "surface": "Ron Lehman",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "name": "Kenneth L. Adelman",
+        "side": "US",
+        "role": "Director, Arms Control and Disarmament Agency",
+        "id": "us.adelman",
+        "tei_id": "p_AKL_1",
+        "surface": "Ken Adelman",
+        "in_network": true
+      },
+      {
+        "id": "p_CWJ_2",
+        "tei_id": "p_CWJ_2",
+        "name": "Crowe",
+        "surface": "Crowe",
+        "in_network": false
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Frank Carlucci",
+        "surface": "Frank Carlucci",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms"
+    ],
+    "verified": true,
+    "excerpt": "1366. USNST. For the Secretary from Ambassador Kampelman. Subject: Vorontsov Conversations. 1. Secret—Entire text. 2. Dear Mr. Secretary: 3. I have spent the weekend reviewing my impressions of the talks with Vorontsov and where I think they leave us after his return to Moscow. My conclusions are strengthened by two dinner conversations with Jeane Kirkpatrick, who stopped in Geneva en route home from her Moscow trip of last week. 4. Substantively, the Soviets have made no..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d18",
+    "doc_number": 18,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From the President’s Assistant for National Security Affairs (Carlucci) to President Reagan",
+    "date": "1987-02-14",
+    "date_display": "February 14, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d18",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_EF_1",
+        "tei_id": "p_EF_1",
+        "name": "Ermarth",
+        "surface": "Ermarth",
+        "in_network": false
+      },
+      {
+        "id": "p_BGHW_1",
+        "tei_id": "p_BGHW_1",
+        "name": "Bush",
+        "surface": "Bush",
+        "in_network": false
+      },
+      {
+        "id": "p_DY_1",
+        "tei_id": "p_DY_1",
+        "name": "Dubinin",
+        "surface": "Dubinin",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "SDI",
+      "Human Rights"
+    ],
+    "verified": true,
+    "excerpt": "The Soviet ambassador came to my office with his interpreter for a 30-minute conversation. He made general remarks about Gorbachev’s internal reforms and said they coupled with new directions in Soviet foreign policy. I interjected that, in that context, you and your administration felt very strongly about human rights, and that human rights issues were involved in the larger quest for a peaceful, more stable world. Dubinin said we could quarrel over the way we define these..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d19",
+    "doc_number": 19,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Notes of a Meeting",
+    "date": "1987-02-24",
+    "date_display": "February 24, 1987, 1:15 p.m.",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d19",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_VC_1",
+        "tei_id": "p_VC_1",
+        "name": "Vance",
+        "surface": "Vance",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_WCW_1",
+        "tei_id": "p_WCW_1",
+        "name": "Weinberger",
+        "surface": "Weinberger",
+        "in_network": false
+      },
+      {
+        "id": "p_RDY_1",
+        "tei_id": "p_RDY_1",
+        "name": "Don Regan",
+        "surface": "Don Regan",
+        "in_network": false
+      },
+      {
+        "id": "p_CJE_1",
+        "tei_id": "p_CJE_1",
+        "name": "Carter",
+        "surface": "Carter",
+        "in_network": false
+      }
+    ],
+    "topics": [],
+    "verified": true,
+    "excerpt": "FCC Meeting Notes G. First question is P. too weak for us to deal with. Vance: Certainly not. Congress would support any agreements or departures R.R. would support. Others said Iran-Contra is a domestic affair. G. How long would it take R.R. to negotiate agreement. When does politics take over. Americans: Must be completed by September 1987. J.K. disagreed. We have more time. G. R. not a fiasco. Reproached H.K. for criticizing R. H.K. said R. not well prepared. G. said in..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d20",
+    "doc_number": 20,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum to the File",
+    "date": "1987-02-24",
+    "date_display": "February 24, 1987, 3 p.m.",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d20",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_MS_1",
+        "tei_id": "p_MS_1",
+        "name": "Suzanne Massie",
+        "surface": "Suzanne Massie",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "I called the President’s attention to the request in Suzanne Massie’s letter (attached) that she be assigned a specific task. I told the President I thought it was fine for him to be talking with Suzanne Massie but assigning her specific tasks was another matter. While she may be very sensible and clear-eyed about the Soviets, they are obviously aware of her direct channel to the President. They would unquestionably try to use her in some way. Given her anxiousness to serve..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d21",
+    "doc_number": 21,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Notes of a Meeting",
+    "date": "1987-02-25",
+    "date_display": "February 25, 1987, 1:30 p.m.",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d21",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_RDY_1",
+        "tei_id": "p_RDY_1",
+        "name": "Don Regan",
+        "surface": "Don Regan",
+        "in_network": false
+      },
+      {
+        "id": "p_AMH_1",
+        "tei_id": "p_AMH_1",
+        "name": "Armacost",
+        "surface": "Armacost",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Human Rights"
+    ],
+    "verified": true,
+    "excerpt": "Where we are w/Soviets Have process in motion comes from Geneva summit. At this round modest progress. Tone more businesslike. Mvt. on substance as well. Soviets accepted our proposal we tablulate when we agree/disagree. Will buy 4,500 ballistic missile ceiling. Regional dialogue—Armacost to Moscow, and we will probe Afghan. P. Are we going to have a summit? G.S. Getting to point where human rights not a block. P. No bows or credit when they turn people loose. G.S. Soviets..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d22",
+    "doc_number": 22,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "editorial-note",
+    "title": "Editorial Note",
+    "date": "1989-01-08",
+    "date_display": "",
+    "place": "",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d22",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Mikhail Gorbachev",
+        "in_network": true
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Ronald Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "Max Kampelman",
+        "surface": "Max Kampelman",
+        "in_network": false
+      },
+      {
+        "id": "p_GMM_1",
+        "tei_id": "p_GMM_1",
+        "name": "Mike Glitman",
+        "surface": "Mike Glitman",
+        "in_network": false
+      },
+      {
+        "id": "p_LRF_1",
+        "tei_id": "p_LRF_1",
+        "name": "Ron Lehman",
+        "surface": "Ron Lehman",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "INF",
+      "Regional Issues"
+    ],
+    "verified": true,
+    "excerpt": "On February 28, 1987, Soviet General Secretary Mikhail Gorbachev announced he would no longer link an INF Treaty to other arms negotiations. On March 3, President Ronald Reagan hailed Gorbachev’s decision in a 3:30 p.m. appearance before reporters assembled in the White House Briefing Room: “This removes a serious obstacle to progress toward INF reductions and is consistent with the understanding which Mr. Gorbachev and I reached at our 1985 Geneva summit meeting: that we..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d23",
+    "doc_number": 23,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Paper Prepared in the Central Intelligence Agency",
+    "date": "1987-03-10",
+    "date_display": "undated",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d23",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_GR_2",
+        "tei_id": "p_GR_2",
+        "name": "Gates",
+        "surface": "Gates",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_WCW_1",
+        "tei_id": "p_WCW_1",
+        "name": "Weinberger",
+        "surface": "Weinberger",
+        "in_network": false
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_BGHW_1",
+        "tei_id": "p_BGHW_1",
+        "name": "Bush",
+        "surface": "Bush",
+        "in_network": false
+      },
+      {
+        "id": "p_CWJ_1",
+        "tei_id": "p_CWJ_1",
+        "name": "Casey",
+        "surface": "Casey",
+        "in_network": false
+      },
+      {
+        "id": "p_BHH_1",
+        "tei_id": "p_BHH_1",
+        "name": "Howard Baker",
+        "surface": "Howard Baker",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF"
+    ],
+    "verified": true,
+    "excerpt": "SOVIET MOTIVES 1. We believe the Soviets recognize that the Iceland package concept had run its course, that they had lost ground in trying to influence our Allies, and that the package concept made the Soviet Union appear to be the primary obstacle to progress in arms control. Thus, Gorbachev perceived a need for a new approach. 2. The Soviets probably calculate that encouraging progress on INF by demonstrating Soviet flexibility will increase the political pressure on the..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d24",
+    "doc_number": 24,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Minutes of a Policy Review Group Meeting",
+    "date": "1987-03-18",
+    "date_display": "March 18, 1987, 1–2 p.m.",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d24",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_EF_1",
+        "tei_id": "p_EF_1",
+        "name": "Ermarth",
+        "surface": "Ermarth",
+        "in_network": false
+      },
+      {
+        "id": "p_PCL_1",
+        "tei_id": "p_PCL_1",
+        "name": "Powell",
+        "surface": "Powell",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_GD_1",
+        "tei_id": "p_GD_1",
+        "name": "Donald Gregg",
+        "surface": "Donald Gregg",
+        "in_network": false
+      },
+      {
+        "id": "p_RRL_1",
+        "tei_id": "p_RRL_1",
+        "name": "Rozanne Ridgway",
+        "surface": "Rozanne Ridgway",
+        "in_network": false
+      },
+      {
+        "id": "p_SR_1",
+        "tei_id": "p_SR_1",
+        "name": "Richard Schifter",
+        "surface": "Richard Schifter",
+        "in_network": false
+      },
+      {
+        "id": "p_PM_1",
+        "tei_id": "p_PM_1",
+        "name": "Mark Parris",
+        "surface": "Mark Parris",
+        "in_network": false
+      },
+      {
+        "id": "p_GF_1",
+        "tei_id": "p_GF_1",
+        "name": "Frank Gaffney",
+        "surface": "Frank Gaffney",
+        "in_network": false
+      },
+      {
+        "id": "p_KR_1",
+        "tei_id": "p_KR_1",
+        "name": "Richard Kerr",
+        "surface": "Richard Kerr",
+        "in_network": false
+      },
+      {
+        "id": "p_MJH_1",
+        "tei_id": "p_MJH_1",
+        "name": "John Moellering",
+        "surface": "John Moellering",
+        "in_network": false
+      },
+      {
+        "name": "Kenneth L. Adelman",
+        "side": "US",
+        "role": "Director, Arms Control and Disarmament Agency",
+        "id": "us.adelman",
+        "tei_id": "p_AKL_1",
+        "surface": "Kenneth Adelman",
+        "in_network": true
+      },
+      {
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_2",
+        "name": "Michael Guhin",
+        "surface": "Michael Guhin",
+        "in_network": false
+      },
+      {
+        "id": "p_SM_1",
+        "tei_id": "p_SM_1",
+        "name": "Marvin Stone",
+        "surface": "Marvin Stone",
+        "in_network": false
+      },
+      {
+        "name": "Robert Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
+        "tei_id": "p_LR_1",
+        "surface": "Robert E. Linhard",
+        "in_network": true
+      },
+      {
+        "name": "Paul H. Nitze",
+        "side": "US",
+        "role": "Special Adviser on Arms Control",
+        "id": "us.nitze",
+        "tei_id": "p_NPH_1",
+        "surface": "Paul Nitze",
+        "in_network": true
+      },
+      {
+        "id": "p_AMH_1",
+        "tei_id": "p_AMH_1",
+        "name": "Armacost",
+        "surface": "Armacost",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "INF",
+      "Human Rights",
+      "Regional Issues",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "Colin Powell opened the meeting by stating its purpose as assuring proper interagency support on the broad range of subjects being prepared for visit of Secretary of State Shultz to Moscow, 13–16 April. (C) Overview Ambassador Ridgway gave an overview of the trip agenda and trip planning. She stressed we would be pushing our entire four-element agenda (arms reduction, regional conflict, human rights and bilateral issues), seeking convergence in all areas that could then be..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d25",
+    "doc_number": 25,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Notes of a Meeting",
+    "date": "1987-03-18",
+    "date_display": "March 18, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d25",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_BHH_1",
+        "tei_id": "p_BHH_1",
+        "name": "Howard Baker",
+        "surface": "Howard Baker",
+        "in_network": false
+      },
+      {
+        "id": "p_AMH_1",
+        "tei_id": "p_AMH_1",
+        "name": "Armacost",
+        "surface": "Armacost",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "INF",
+      "Strategic Arms",
+      "Human Rights"
+    ],
+    "verified": true,
+    "excerpt": "The President’s Meeting with Secretary Shultz and Howard Baker 1. Moscow. Started meetings. Object is to bring things to you to settle. Want unified Admin. posture. Met with Wright. He will be there. We worked out schedules so not talking to same people at same time. I’m not comfortable w/his refusal to lay off legislating arms control before trip. 2. INF. Continuing to work. Trying to see if anything in START and space that we could bring to you. 3. Armacost has finished...."
+  },
+  {
+    "doc_id": "frus1981-88v06-d26",
+    "doc_number": 26,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From the Under Secretary of State for Political Affairs (Armacost) to Secretary of State Shultz",
+    "date": "1987-03-20",
+    "date_display": "March 20, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d26",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_AMH_1",
+        "tei_id": "p_AMH_1",
+        "name": "Armacost",
+        "surface": "Armacost",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_BHH_1",
+        "tei_id": "p_BHH_1",
+        "name": "Baker",
+        "surface": "Baker",
+        "in_network": false
+      },
+      {
+        "id": "p_DA_1",
+        "tei_id": "p_DA_1",
+        "name": "Dobrynin",
+        "surface": "Dobrynin",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_VY_1",
+        "tei_id": "p_VY_1",
+        "name": "Vorontsov",
+        "surface": "Vorontsov",
+        "in_network": false
+      },
+      {
+        "id": "p_RN_1",
+        "tei_id": "p_RN_1",
+        "name": "Ryzhkov",
+        "surface": "Ryzhkov",
+        "in_network": false
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "id": "p_AA_1",
+        "tei_id": "p_AA_1",
+        "name": "Adamishin",
+        "surface": "Adamishin",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "INF",
+      "Regional Issues"
+    ],
+    "verified": true,
+    "excerpt": "1. General Impressions —Hopes are stirring in Moscow for an upturn in US-Soviet relations. Your visit next month is considered a potential turning point which could shape the contours of the relationship for the next several years. Dobrynin virtually predicted a 1987 summit in the United States. The Soviets are prepared to discuss the full range of issues when you are in Moscow. It is clear that they will focus on nailing down an INF agreement, and exploring for further..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d27",
+    "doc_number": 27,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From the Executive Secretary of the Department of State (Levitsky) to the President’s Assistant for National Security Affairs (Carlucci)",
+    "date": "1987-03-23",
+    "date_display": "March 23, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d27",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_LM_1",
+        "tei_id": "p_LM_1",
+        "name": "Levitsky",
+        "surface": "Levitsky",
+        "in_network": false
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      }
+    ],
+    "topics": [],
+    "verified": true,
+    "excerpt": "A second Marine who served as a guard in Embassy Moscow has admitted during a polygraph examination on March 20, 1986 that he helped Lonetree commit espionage against the United States. This Marine, Cpl. Arnold Bracy, was also sexually involved with a Soviet national who worked as a cook in the Embassy. The Soviet woman introduced the Marine to a KGB operative who apparently also worked with Lonetree. When the two Marines worked together, Bracy claims to have deactivated,..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d28",
+    "doc_number": 28,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From Barry Kelly of the National Security Council Staff to the President’s Assistant for National Security Affairs (Carlucci)",
+    "date": "1987-03-24",
+    "date_display": "March 24, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d28",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_PCL_1",
+        "tei_id": "p_PCL_1",
+        "name": "Powell",
+        "surface": "Powell",
+        "in_network": false
+      }
+    ],
+    "topics": [],
+    "verified": true,
+    "excerpt": "Attached at Tab I is the first report submitted to you relating to the potential damage to the national security as a result of the marine guard previously assigned to our embassy in Moscow who was arrested on December 31, 1986, for being a KGB agent. New information has been developed as the Naval Investigative Service has pursued this case and it now appears the damage is far worse than we previously projected. The NIS located and interviewed last week (March 19, 1987)..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d29",
+    "doc_number": 29,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Information Memorandum From the Assistant Secretary of State for Human Rights and Humanitarian Affairs (Schifter) to Secretary of State Shultz",
+    "date": "1987-03-25",
+    "date_display": "March 25, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d29",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_SR_1",
+        "tei_id": "p_SR_1",
+        "name": "Schifter",
+        "surface": "Schifter",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_RRL_1",
+        "tei_id": "p_RRL_1",
+        "name": "Ridgway",
+        "surface": "Ridgway",
+        "in_network": false
+      },
+      {
+        "id": "p_SR_2",
+        "tei_id": "p_SR_2",
+        "name": "Solomon",
+        "surface": "Solomon",
+        "in_network": false
+      },
+      {
+        "id": "p_AM_1",
+        "tei_id": "p_AM_1",
+        "name": "Abramowitz",
+        "surface": "Abramowitz",
+        "in_network": false
+      },
+      {
+        "id": "p_DEJ_1",
+        "tei_id": "p_DEJ_1",
+        "name": "Derwinski",
+        "surface": "Derwinski",
+        "in_network": false
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "Kampelman",
+        "surface": "Kampelman",
+        "in_network": false
+      },
+      {
+        "name": "Kenneth L. Adelman",
+        "side": "US",
+        "role": "Director, Arms Control and Disarmament Agency",
+        "id": "us.adelman",
+        "tei_id": "p_AKL_1",
+        "surface": "Adelman",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "Human Rights"
+    ],
+    "verified": true,
+    "excerpt": "Summary. In the years immediately following Stalin’s death in 1953, the Soviet Union gradually emerged from the state of fear engendered by his despotic rule. With the Secret Police less powerful and less oppressive, the Soviet people discovered they could speak more freely and intellectuals began to assert their independence. This state of affairs, known as “the thaw,” continued through the Khrushchev years (ending in 1964) into the early part of the Brezhnev era...."
+  },
+  {
+    "doc_id": "frus1981-88v06-d30",
+    "doc_number": 30,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From Fritz Ermarth of the National Security Council Staff to the President’s Assistant for National Security Affairs (Carlucci)",
+    "date": "1987-03-26",
+    "date_display": "March 26, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d30",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_EF_1",
+        "tei_id": "p_EF_1",
+        "name": "Fritz Ermarth",
+        "surface": "Fritz Ermarth",
+        "in_network": false
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_BGHW_1",
+        "tei_id": "p_BGHW_1",
+        "name": "Bush",
+        "surface": "Bush",
+        "in_network": false
+      },
+      {
+        "id": "p_PCL_1",
+        "tei_id": "p_PCL_1",
+        "name": "Powell",
+        "surface": "Powell",
+        "in_network": false
+      },
+      {
+        "id": "p_BHH_1",
+        "tei_id": "p_BHH_1",
+        "name": "Baker",
+        "surface": "Baker",
+        "in_network": false
+      },
+      {
+        "id": "p_DK_1",
+        "tei_id": "p_DK_1",
+        "name": "Duberstein",
+        "surface": "Duberstein",
+        "in_network": false
+      },
+      {
+        "name": "Robert Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
+        "tei_id": "p_LR_1",
+        "surface": "Linhard",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_CJE_1",
+        "tei_id": "p_CJE_1",
+        "name": "Jimmy Carter",
+        "surface": "Jimmy Carter",
+        "in_network": false
+      },
+      {
+        "id": "p_RRL_1",
+        "tei_id": "p_RRL_1",
+        "name": "Roz Ridgway",
+        "surface": "Roz Ridgway",
+        "in_network": false
+      },
+      {
+        "id": "p_AMH_1",
+        "tei_id": "p_AMH_1",
+        "name": "Armacost",
+        "surface": "Armacost",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Regional Issues"
+    ],
+    "verified": true,
+    "excerpt": "In your 3:30 p.m. meeting with Secretary Shultz today, you should aprise him of the exchange that took place at yesterday’s 9:30 a.m. NSB about the treatment to be given Afghanistan during the Secretary’s visit to Moscow. The bottom line: The Secretary should convey a very strong message about the importance of the Soviets getting out, and should instruct those preparing his materials accordingly. Suggested talking points are attached. After Linhard briefed the President on..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d31",
+    "doc_number": 31,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Minutes of a National Security Planning Group Meeting",
+    "date": "1987-03-27",
+    "date_display": "March 27, 1987, 1:30–3 p.m.",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d31",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "George P. Shultz",
+        "in_network": true
+      },
+      {
+        "name": "Jack F. Matlock Jr.",
+        "side": "US",
+        "role": "NSC Senior Director, European and Soviet Affairs",
+        "id": "us.matlock",
+        "tei_id": "p_MJF_1",
+        "surface": "Jack Matlock",
+        "in_network": true
+      },
+      {
+        "id": "p_WCW_1",
+        "tei_id": "p_WCW_1",
+        "name": "Caspar W. Weinberger",
+        "surface": "Caspar W. Weinberger",
+        "in_network": false
+      },
+      {
+        "id": "p_GR_2",
+        "tei_id": "p_GR_2",
+        "name": "Robert M. Gates",
+        "surface": "Robert M. Gates",
+        "in_network": false
+      },
+      {
+        "id": "p_BW_1",
+        "tei_id": "p_BW_1",
+        "name": "Arnold Burns",
+        "surface": "Arnold Burns",
+        "in_network": false
+      },
+      {
+        "id": "p_WW_1",
+        "tei_id": "p_WW_1",
+        "name": "William Webster",
+        "surface": "William Webster",
+        "in_network": false
+      },
+      {
+        "id": "p_MJH_1",
+        "tei_id": "p_MJH_1",
+        "name": "John Moellering",
+        "surface": "John Moellering",
+        "in_network": false
+      },
+      {
+        "id": "p_BHH_1",
+        "tei_id": "p_BHH_1",
+        "name": "Howard Baker",
+        "surface": "Howard Baker",
+        "in_network": false
+      },
+      {
+        "id": "p_DK_1",
+        "tei_id": "p_DK_1",
+        "name": "Ken Duberstein",
+        "surface": "Ken Duberstein",
+        "in_network": false
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Frank C. Carlucci",
+        "surface": "Frank C. Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_PCL_1",
+        "tei_id": "p_PCL_1",
+        "name": "Colin L. Powell",
+        "surface": "Colin L. Powell",
+        "in_network": false
+      },
+      {
+        "id": "p_HAA_1",
+        "tei_id": "p_HAA_1",
+        "name": "Hartman",
+        "surface": "Hartman",
+        "in_network": false
+      },
+      {
+        "id": "p_AMH_1",
+        "tei_id": "p_AMH_1",
+        "name": "Armacost",
+        "surface": "Armacost",
+        "in_network": false
+      },
+      {
+        "id": "p_GA_1",
+        "tei_id": "p_GA_1",
+        "name": "Gromyko",
+        "surface": "Gromyko",
+        "in_network": false
+      },
+      {
+        "id": "p_CWJ_1",
+        "tei_id": "p_CWJ_1",
+        "name": "Bill Casey",
+        "surface": "Bill Casey",
+        "in_network": false
+      },
+      {
+        "id": "p_MRB_1",
+        "tei_id": "p_MRB_1",
+        "name": "Bud McFarlane",
+        "surface": "Bud McFarlane",
+        "in_network": false
+      },
+      {
+        "id": "p_CJE_1",
+        "tei_id": "p_CJE_1",
+        "name": "Carter",
+        "surface": "Carter",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "Strategic Arms"
+    ],
+    "verified": true,
+    "excerpt": "(1:40 p.m.) The President began the meeting by stating that as the facts of the Marine espionage case in Moscow emerge, it appears the damage to our national security may be severe; we must get on top of this situation immediately. Our actions must be well coordinated, and we must take the steps necessary to protect our national security interests against the activity of hostile intelligence services. We should remember, however, that Marines have defended our embassies..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d32",
+    "doc_number": 32,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Information Memorandum From the Assistant Secretary of State for Human Rights and Humanitarian Affairs (Schifter) to Secretary of State Shultz",
+    "date": "1987-03-28",
+    "date_display": "March 28, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d32",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_SR_1",
+        "tei_id": "p_SR_1",
+        "name": "Schifter",
+        "surface": "Schifter",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_KMM_1",
+        "tei_id": "p_KMM_1",
+        "name": "C. Max Kampelman",
+        "surface": "C. Max Kampelman",
+        "in_network": false
+      },
+      {
+        "id": "p_RRL_1",
+        "tei_id": "p_RRL_1",
+        "name": "Ridgway",
+        "surface": "Ridgway",
+        "in_network": false
+      },
+      {
+        "id": "p_SR_2",
+        "tei_id": "p_SR_2",
+        "name": "Solomon",
+        "surface": "Solomon",
+        "in_network": false
+      },
+      {
+        "id": "p_AM_1",
+        "tei_id": "p_AM_1",
+        "name": "Abramowitz",
+        "surface": "Abramowitz",
+        "in_network": false
+      },
+      {
+        "id": "p_DEJ_1",
+        "tei_id": "p_DEJ_1",
+        "name": "Derwinski",
+        "surface": "Derwinski",
+        "in_network": false
+      },
+      {
+        "name": "Kenneth L. Adelman",
+        "side": "US",
+        "role": "Director, Arms Control and Disarmament Agency",
+        "id": "us.adelman",
+        "tei_id": "p_AKL_1",
+        "surface": "Adelman",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "Human Rights"
+    ],
+    "verified": true,
+    "excerpt": "Summary. Driven largely by domestic concerns, namely his desire to reinvigorate the Soviet Union and improve the operations of the economy, Gorbachev has initiated major programs to open up to public scrutiny and debate governmental operations at the local level. For the same reason he has loosened somewhat the rigid controls recently in effect with regard to cultural activities. Change with regard to other aspects of freedom of expression has been far more limited and..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d33",
+    "doc_number": 33,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From Barry Kelly of the National Security Council Staff to the President’s Assistant for National Security Affairs (Carlucci) and the President’s Deputy Assistant for National Security Affairs (Powell)",
+    "date": "1987-04-06",
+    "date_display": "April 6, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d33",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "id": "p_PCL_1",
+        "tei_id": "p_PCL_1",
+        "name": "Powell",
+        "surface": "Powell",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "The Soviets have scored a major intelligence success. The KGB has successfully compromised our Embassy in Moscow. Before the investigation is completed, foreign missions other than Leningrad and Vienna will be effected by KGB success in using the tried and true tools of espionage—sex, money and revenge. Our national security has been severely damaged by the Marine cases and several other recent espionage cases. There are a number of concurrent actions that need to be..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d34",
+    "doc_number": 34,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum From the President’s Assistant for National Security Affairs (Carlucci) to President Reagan",
+    "date": "1987-04-06",
+    "date_display": "April 6, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d34",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_EF_1",
+        "tei_id": "p_EF_1",
+        "name": "Ermarth",
+        "surface": "Ermarth",
+        "in_network": false
+      },
+      {
+        "id": "p_BGHW_1",
+        "tei_id": "p_BGHW_1",
+        "name": "Bush",
+        "surface": "Bush",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Human Rights",
+      "Regional Issues",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "Your speech in Los Angeles and Secretary Shultz’s trip to Moscow will open a new phase in the minuet with the Soviets. At Reykjavik, Gorbachev was unable to catch you in a prelaid trap because you neither gave in on SDI nor accepted the outcome as a political failure. For a time thereafter Washington was distracted by Iran-Contra, while Moscow was both puzzled—by Washington developments and unexpected European anxiety about Reykjavik—and seized with its own internal..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d35",
+    "doc_number": 35,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Electronic Message From Fritz Ermarth of the National Security Council Staff to Sandra Kelly of the National Security Council Staff",
+    "date": "1987-04-07",
+    "date_display": "April 7, 1987, 3:09 p.m.",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d35",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_EF_1",
+        "tei_id": "p_EF_1",
+        "name": "Fritz Ermarth",
+        "surface": "Fritz Ermarth",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_BGHW_1",
+        "tei_id": "p_BGHW_1",
+        "name": "Bush",
+        "surface": "Bush",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_RRL_1",
+        "tei_id": "p_RRL_1",
+        "name": "Ridgway",
+        "surface": "Ridgway",
+        "in_network": false
+      },
+      {
+        "name": "Paul H. Nitze",
+        "side": "US",
+        "role": "Special Adviser on Arms Control",
+        "id": "us.nitze",
+        "tei_id": "p_NPH_1",
+        "surface": "Nitze",
+        "in_network": true
+      },
+      {
+        "id": "p_RE_1",
+        "tei_id": "p_RE_1",
+        "name": "Rowny",
+        "surface": "Rowny",
+        "in_network": false
+      },
+      {
+        "id": "p_LRF_1",
+        "tei_id": "p_LRF_1",
+        "name": "Lehman",
+        "surface": "Lehman",
+        "in_network": false
+      },
+      {
+        "id": "p_WCW_1",
+        "tei_id": "p_WCW_1",
+        "name": "Weinberger",
+        "surface": "Weinberger",
+        "in_network": false
+      },
+      {
+        "id": "p_CWJ_2",
+        "tei_id": "p_CWJ_2",
+        "name": "Crowe",
+        "surface": "Crowe",
+        "in_network": false
+      },
+      {
+        "id": "p_MJH_1",
+        "tei_id": "p_MJH_1",
+        "name": "Moellering",
+        "surface": "Moellering",
+        "in_network": false
+      },
+      {
+        "name": "Kenneth L. Adelman",
+        "side": "US",
+        "role": "Director, Arms Control and Disarmament Agency",
+        "id": "us.adelman",
+        "tei_id": "p_AKL_1",
+        "surface": "Adelman",
+        "in_network": true
+      },
+      {
+        "id": "p_GR_2",
+        "tei_id": "p_GR_2",
+        "name": "Gates",
+        "surface": "Gates",
+        "in_network": false
+      },
+      {
+        "id": "p_MEE_1",
+        "tei_id": "p_MEE_1",
+        "name": "Meese",
+        "surface": "Meese",
+        "in_network": false
+      },
+      {
+        "id": "p_BJA_1",
+        "tei_id": "p_BJA_1",
+        "name": "James Baker",
+        "surface": "James Baker",
+        "in_network": false
+      },
+      {
+        "id": "p_MW_1",
+        "tei_id": "p_MW_1",
+        "name": "Martin",
+        "surface": "Martin",
+        "in_network": false
+      },
+      {
+        "id": "p_MJ_1",
+        "tei_id": "p_MJ_1",
+        "name": "Miller",
+        "surface": "Miller",
+        "in_network": false
+      },
+      {
+        "id": "p_GW_1",
+        "tei_id": "p_GW_1",
+        "name": "Graham",
+        "surface": "Graham",
+        "in_network": false
+      },
+      {
+        "id": "p_DK_1",
+        "tei_id": "p_DK_1",
+        "name": "Duberstein",
+        "surface": "Duberstein",
+        "in_network": false
+      },
+      {
+        "id": "p_BHH_1",
+        "tei_id": "p_BHH_1",
+        "name": "Howard Baker",
+        "surface": "Howard Baker",
+        "in_network": false
+      },
+      {
+        "id": "p_CFC_1",
+        "tei_id": "p_CFC_1",
+        "name": "Carlucci",
+        "surface": "Carlucci",
+        "in_network": false
+      },
+      {
+        "name": "Robert Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
+        "tei_id": "p_LR_1",
+        "surface": "Linhard",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_AMH_1",
+        "tei_id": "p_AMH_1",
+        "name": "Armacost",
+        "surface": "Armacost",
+        "in_network": false
+      },
+      {
+        "id": "p_SJ_1",
+        "tei_id": "p_SJ_1",
+        "name": "Savimbi",
+        "surface": "Savimbi",
+        "in_network": false
+      },
+      {
+        "id": "p_CJE_1",
+        "tei_id": "p_CJE_1",
+        "name": "Carter",
+        "surface": "Carter",
+        "in_network": false
+      },
+      {
+        "name": "Jack F. Matlock Jr.",
+        "side": "US",
+        "role": "NSC Senior Director, European and Soviet Affairs",
+        "id": "us.matlock",
+        "tei_id": "p_MJF_1",
+        "surface": "Matlock",
+        "in_network": true
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "INF",
+      "Strategic Arms",
+      "Human Rights",
+      "Regional Issues",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "A Document is attached to this message. NSPG 7 April 1987, WHSR, chaired by the President. Fritz W. Ermarth minutes of discussion on subjects other than arms control. Transmission to Robert E. Linhard. Opening the meeting, the President stressed that our total agenda with the Soviets—human rights, bilateral contacts, and regional conflicts, along with arms control—should get fully balanced treatment. He invited the Secretary of State to give an overview of his impending..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d36",
+    "doc_number": 36,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Telegram From the Consulate in Frankfurt to the Department of State",
+    "date": "1987-04-08",
+    "date_display": "April 8, 1987, 2056Z",
+    "place": "Frankfurt",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d36",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_EF_1",
+        "tei_id": "p_EF_1",
+        "name": "Ermarth",
+        "surface": "Ermarth",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "name": "Jack F. Matlock Jr.",
+        "side": "US",
+        "role": "NSC Senior Director, European and Soviet Affairs",
+        "id": "us.matlock",
+        "tei_id": "p_MJF_1",
+        "surface": "Matlock",
+        "in_network": true
+      },
+      {
+        "id": "p_DA_1",
+        "tei_id": "p_DA_1",
+        "name": "Dobrynin",
+        "surface": "Dobrynin",
+        "in_network": false
+      },
+      {
+        "id": "p_HL_1",
+        "tei_id": "p_HL_1",
+        "name": "Horowitz",
+        "surface": "Horowitz",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms"
+    ],
+    "verified": true,
+    "excerpt": "5317. Personal for Secretary from Matlock. Following text is Moscow 52. Subject: Dobrynin on Your Visit. 1. Secret—Entire text. 2. In two-hour private conversation today, Dobrynin indicated that Soviet aim during your visit is to “clear the way” for completion of an INF treaty before the end of 1987, and also—if possible—agreement on the elements of a START/DST agreement. These would be concluded at a summit in U.S. this year. 3. Re INF he indicated that Soviets would have..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d37",
+    "doc_number": 37,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Letter From President Reagan to Soviet General Secretary Gorbachev",
+    "date": "1987-04-10",
+    "date_display": "April 10, 1987",
+    "place": "Washington",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d37",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "Human Rights",
+      "Regional Issues"
+    ],
+    "verified": true,
+    "excerpt": "It has been a long time since you and I last communicated directly. I am pleased that the visit of Secretary Shultz to Moscow offers us an opportunity to resume our direct dialogue. I can recall at Geneva sitting before a fireplace and commenting that you and I were in a unique position. Together we can make the difference in the future course of world events. Let us pray that you and I can continue our dialogue so that the future will be one of peace and prosperity for..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d38",
+    "doc_number": 38,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum of Conversation",
+    "date": "1987-04-13",
+    "date_display": "April 13, 1987, 11:30 a.m.–1:25 p.m.",
+    "place": "Moscow",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d38",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_PM_1",
+        "tei_id": "p_PM_1",
+        "name": "Parris",
+        "surface": "Parris",
+        "in_network": false
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_STW_1",
+        "tei_id": "p_STW_1",
+        "name": "Thomas Simons",
+        "surface": "Thomas Simons",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      },
+      {
+        "id": "p_VC_1",
+        "tei_id": "p_VC_1",
+        "name": "Cyrus Vance",
+        "surface": "Cyrus Vance",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_WCZ_1",
+        "tei_id": "p_WCZ_1",
+        "name": "Wick",
+        "surface": "Wick",
+        "in_network": false
+      },
+      {
+        "id": "p_TM_1",
+        "tei_id": "p_TM_1",
+        "name": "Margaret Thatcher",
+        "surface": "Margaret Thatcher",
+        "in_network": false
+      },
+      {
+        "id": "p_SR_1",
+        "tei_id": "p_SR_1",
+        "name": "Schifter",
+        "surface": "Schifter",
+        "in_network": false
+      }
+    ],
+    "topics": [
+      "Strategic Arms",
+      "Human Rights",
+      "Regional Issues",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "The Secretary opened the meeting by explaining the reason for his limp: he had pulled a muscle in his leg. Noting that he was aware that the Secretary was active in sports, Shevardnadze quipped that he had heard that the Secretary liked to choose opponents less skillful than himself. The Secretary said it was always nice to win. Shevardnadze turned to substance by noting that a number of problems had accumulated since their last meeting. Unfortunately, it seemed to have..."
+  },
+  {
+    "doc_id": "frus1981-88v06-d39",
+    "doc_number": 39,
+    "source": "FRUS 1981-1988 v06",
+    "source_kind": "historical-document",
+    "title": "Memorandum of Conversation",
+    "date": "1987-04-13",
+    "date_display": "April 13, 1987",
+    "place": "Moscow",
+    "url": "https://history.state.gov/historicaldocuments/frus1981-88v06/d39",
+    "summit_phase": "aftermath",
+    "session": "",
+    "principals": "",
+    "venue": "",
+    "persons": [
+      {
+        "id": "p_STW_1",
+        "tei_id": "p_STW_1",
+        "name": "Simons",
+        "surface": "Simons",
+        "in_network": false
+      },
+      {
+        "name": "George P. Shultz",
+        "side": "US",
+        "role": "Secretary of State",
+        "id": "us.shultz",
+        "tei_id": "p_SGP_1",
+        "surface": "Shultz",
+        "in_network": true
+      },
+      {
+        "id": "p_SEA_1",
+        "tei_id": "p_SEA_1",
+        "name": "Shevardnadze",
+        "surface": "Shevardnadze",
+        "in_network": false
+      },
+      {
+        "name": "Jack F. Matlock Jr.",
+        "side": "US",
+        "role": "NSC Senior Director, European and Soviet Affairs",
+        "id": "us.matlock",
+        "tei_id": "p_MJF_1",
+        "surface": "Jack F. Matlock",
+        "in_network": true
+      },
+      {
+        "name": "Paul H. Nitze",
+        "side": "US",
+        "role": "Special Adviser on Arms Control",
+        "id": "us.nitze",
+        "tei_id": "p_NPH_1",
+        "surface": "Paul Nitze",
+        "in_network": true
+      },
+      {
+        "name": "Kenneth L. Adelman",
+        "side": "US",
+        "role": "Director, Arms Control and Disarmament Agency",
+        "id": "us.adelman",
+        "tei_id": "p_AKL_1",
+        "surface": "Kenneth Adelman",
+        "in_network": true
+      },
+      {
+        "id": "p_RRL_1",
+        "tei_id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "surface": "Rozanne L. Ridgway",
+        "in_network": false
+      },
+      {
+        "id": "p_PRN_1",
+        "tei_id": "p_PRN_1",
+        "name": "Richard Perle",
+        "surface": "Richard Perle",
+        "in_network": false
+      },
+      {
+        "name": "Robert Linhard",
+        "side": "US",
+        "role": "NSC Director, Defense Programs and Arms Control",
+        "id": "us.linhard",
+        "tei_id": "p_LR_1",
+        "surface": "Robert Linhard",
+        "in_network": true
+      },
+      {
+        "id": "p_BA_2",
+        "tei_id": "p_BA_2",
+        "name": "Aleksandr Bessmertnykh",
+        "surface": "Aleksandr Bessmertnykh",
+        "in_network": false
+      },
+      {
+        "id": "p_KV_1",
+        "tei_id": "p_KV_1",
+        "name": "Victor Karpov",
+        "surface": "Victor Karpov",
+        "in_network": false
+      },
+      {
+        "id": "p_DY_1",
+        "tei_id": "p_DY_1",
+        "name": "Yuriy Dubinin",
+        "surface": "Yuriy Dubinin",
+        "in_network": false
+      },
+      {
+        "id": "p_TS_1",
+        "tei_id": "p_TS_1",
+        "name": "Sergey Tarasenko",
+        "surface": "Sergey Tarasenko",
+        "in_network": false
+      },
+      {
+        "id": "p_OA_1",
+        "tei_id": "p_OA_1",
+        "name": "Aleksey Obukhov",
+        "surface": "Aleksey Obukhov",
+        "in_network": false
+      },
+      {
+        "id": "p_PP_1",
+        "tei_id": "p_PP_1",
+        "name": "P. Palazhchenko",
+        "surface": "P. Palazhchenko",
+        "in_network": false
+      },
+      {
+        "id": "p_SR_1",
+        "tei_id": "p_SR_1",
+        "name": "Schifter",
+        "surface": "Schifter",
+        "in_network": false
+      },
+      {
+        "name": "Mikhail S. Gorbachev",
+        "side": "USSR",
+        "role": "General Secretary, Communist Party of the Soviet Union",
+        "id": "reagan_gorbachev.gorbachev",
+        "tei_id": "p_GM_1",
+        "surface": "Gorbachev",
+        "in_network": true
+      },
+      {
+        "id": "p_GMM_1",
+        "tei_id": "p_GMM_1",
+        "name": "Glitman",
+        "surface": "Glitman",
+        "in_network": false
+      },
+      {
+        "id": "p_ML_1",
+        "tei_id": "p_ML_1",
+        "name": "Masterkov",
+        "surface": "Masterkov",
+        "in_network": false
+      },
+      {
+        "name": "Ronald Reagan",
+        "side": "US",
+        "role": "President of the United States",
+        "id": "reagan_gorbachev.reagan",
+        "tei_id": "p_RRW_1",
+        "surface": "Reagan",
+        "in_network": true
+      }
+    ],
+    "topics": [
+      "SDI",
+      "INF",
+      "Strategic Arms",
+      "Nuclear Testing",
+      "Human Rights",
+      "Bilateral Relations"
+    ],
+    "verified": true,
+    "excerpt": "[Omitted here is the first session of the Shultz-Shevardnadze meetings during which they discussed the schedule for their talks.] Second Session Shevardnadze commented that he was not used to the interpreting equipment, but it was okay. The Secretary agreed. Shevardnadze suggested that they proceed to security issues, the heading the Soviets give to arms control. He wished to say a few words first. The Soviet side understood the meeting of the foreign ministers to express..."
+  }
+]

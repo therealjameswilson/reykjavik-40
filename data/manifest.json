@@ -1,0 +1,38 @@
+{
+  "generated": "2026-07-08T15:41:21Z",
+  "counts": {
+    "frus_v05_reykjavik": 43,
+    "frus_v06_aftermath": 39,
+    "foia_declassified": 15,
+    "total_documents": 97,
+    "network_nodes": 11,
+    "network_edges": 51,
+    "timeline_events": 90
+  },
+  "by_phase": {
+    "pre-summit": 37,
+    "summit": 11,
+    "aftermath": 49
+  },
+  "by_source": {
+    "FRUS 1981-1988 v05": 43,
+    "foia.state.gov": 15,
+    "FRUS 1981-1988 v06": 39
+  },
+  "by_topic": {
+    "Human Rights": 48,
+    "Bilateral Relations": 29,
+    "Regional Issues": 23,
+    "INF": 41,
+    "SDI": 36,
+    "Strategic Arms": 38,
+    "Nuclear Testing": 22
+  },
+  "unverified": [],
+  "sources": {
+    "FRUS 1981-1988 v05": "https://history.state.gov/historicaldocuments/frus1981-88v05",
+    "FRUS 1981-1988 v06": "https://history.state.gov/historicaldocuments/frus1981-88v06",
+    "foia.state.gov": "https://foia.state.gov/",
+    "TEI source": "https://github.com/HistoryAtState/frus"
+  }
+}
