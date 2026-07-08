@@ -674,6 +674,54 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
 /* Keep the editorial frame above the crease */
 .cover__frame { position: relative; z-index: 1; }
 
+/* Page-edge glow — a faint gold-tinted halo along the outer margins,
+   as if the gilt page edges are catching light along the fore-edge. */
+.cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    linear-gradient(to right,
+      rgba(201, 168, 76, 0.10) 0%,
+      rgba(201, 168, 76, 0.03) 3%,
+      transparent 8%,
+      transparent 92%,
+      rgba(201, 168, 76, 0.03) 97%,
+      rgba(201, 168, 76, 0.10) 100%),
+    linear-gradient(to bottom,
+      rgba(201, 168, 76, 0.08) 0%,
+      rgba(201, 168, 76, 0.02) 3%,
+      transparent 8%,
+      transparent 88%,
+      rgba(201, 168, 76, 0.02) 96%,
+      rgba(201, 168, 76, 0.06) 100%);
+  mix-blend-mode: screen;
+}
+
+/* Shelf shadow — a soft horizontal shadow along the very bottom of the
+   viewport, as if the volume is resting on a surface. Sits above the
+   buckram but below the frame content. */
+.cover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    /* narrow contact shadow, densest right at the bottom edge */
+    linear-gradient(to top,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.30) 12%,
+      rgba(0, 0, 0, 0.12) 40%,
+      rgba(0, 0, 0, 0.00) 100%);
+  mix-blend-mode: multiply;
+}
+
 /* When the cover is up, hide the app behind it — no scroll bleed */
 body.cover-open { overflow: hidden; }
 
