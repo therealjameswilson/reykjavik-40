@@ -603,20 +603,22 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
 }
 
 /* ==========================================================================
-   FRUS Cover Splash — full-bleed ruby buckram letterhead
-   Modelled on the printed FRUS Starter Pack cover: deep buckram ground,
-   spaced gold letterhead, department seal, gold hairline rules top & bottom.
+   Cover Splash — Documentary Collection dossier
+   A single, un-tilted panel keyed to the FRUS palette (ruby + gold), but
+   presenting itself as a document collection cover rather than a bound
+   volume. Two source panels (history.state.gov / foia.state.gov) sit
+   beneath the title, and a Bureau of Administration imprint sits above
+   the entry button.
    ========================================================================== */
 
-/* Outer stage — fixed to viewport, holds the perspective and the
-   dark surface the volume rests on. */
+/* Outer stage — fixed to viewport. A deep ruby ground with a subtle
+   vignette; no perspective, no shelf, no tilt. */
 .cover {
   position: fixed;
   inset: 0;
   z-index: 200;
-  /* Deep desk / shelf ground behind the volume */
   background:
-    radial-gradient(ellipse at 50% 60%, #2a0f0d 0%, #180806 70%, #0d0403 100%);
+    radial-gradient(ellipse at 50% 45%, #2a0f0d 0%, #180806 70%, #0d0403 100%);
   color: var(--frus-gold);
   font-family: var(--font-editorial);
   display: flex;
@@ -626,41 +628,30 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
   opacity: 1;
   transition: opacity 900ms ease-in-out, visibility 0s linear 900ms;
   overflow: auto;
-  perspective: 2400px;
-  perspective-origin: 50% 40%;
 }
 
-/* The volume itself — a full-bleed buckram plane that carries all the
-   book cues (weave, vignette, spine crease, page-edge glow) and is
-   tilted slightly in 3D space. */
-.cover__volume {
-  position: absolute;
-  inset: clamp(1.5rem, 4vw, 3rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+/* The dossier panel — a flat, upright buckram sheet. No spine crease,
+   no gilt page edges, no 3D tilt. Reads as a document cover / portfolio
+   rather than a bound volume. */
+.cover__dossier {
+  position: relative;
+  width: min(760px, 100%);
+  padding: clamp(2rem, 5vw, 3.5rem) clamp(1.75rem, 5vw, 3.25rem);
   background:
-    /* subtle vignette */
-    radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.35) 100%),
-    /* buckram weave — two crossed hair-fine gradients */
-    repeating-linear-gradient( 45deg, rgba(0,0,0,0.05) 0 1px, transparent 1px 3px),
-    repeating-linear-gradient(-45deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px),
-    /* base ruby buckram */
-    linear-gradient(180deg, #631E1B 0%, var(--frus-buckram) 50%, #4A1513 100%);
-  transform-origin: 50% 60%;
-  transform: rotateX(4deg) rotateY(-1.5deg);
+    /* very fine paper-like weave so the buckram doesn't read as leather */
+    repeating-linear-gradient( 45deg, rgba(0,0,0,0.04) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,0.025) 0 1px, transparent 1px 3px),
+    linear-gradient(180deg, #631E1B 0%, var(--frus-buckram) 55%, #4A1513 100%);
   box-shadow:
-    0 40px 80px rgba(0, 0, 0, 0.55),
-    0 20px 40px rgba(0, 0, 0, 0.35),
-    0 8px 16px rgba(0, 0, 0, 0.25);
-  will-change: transform;
-  animation: cover-volume-in 1400ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    0 30px 60px rgba(0, 0, 0, 0.55),
+    0 12px 24px rgba(0, 0, 0, 0.35),
+    0 2px 4px rgba(0, 0, 0, 0.25);
+  animation: cover-panel-in 900ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
 
-@keyframes cover-volume-in {
-  from { transform: rotateX(10deg) rotateY(-4deg) scale(0.985); opacity: 0.6; }
-  to   { transform: rotateX(4deg)  rotateY(-1.5deg) scale(1);    opacity: 1;   }
+@keyframes cover-panel-in {
+  from { transform: translateY(8px); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
 }
 
 .cover.is-dismissed {
@@ -669,123 +660,23 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
   pointer-events: none;
 }
 
-/* Spine crease — narrow vertical shadow band suggesting the gutter
-   where two buckram boards meet. A very slim gold-tinted highlight
-   sits just to the right of the shadow, as if catching a raking light. */
-.cover__spine {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  pointer-events: none;
-  background:
-    /* thin warm highlight, offset just off-center */
-    linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 52%,
-      rgba(201, 168, 76, 0.05) 53%,
-      transparent 55%
-    ),
-    /* soft shadow trough down the centerline */
-    linear-gradient(
-      to right,
-      transparent 0%,
-      rgba(0, 0, 0, 0.00) 30%,
-      rgba(0, 0, 0, 0.28) 50%,
-      rgba(0, 0, 0, 0.00) 70%,
-      transparent 100%
-    );
-  mix-blend-mode: multiply;
-  opacity: 0.9;
-  z-index: 0;
-}
-
-/* Keep the editorial frame above the crease */
-.cover__frame { position: relative; z-index: 1; }
-
-/* Page-edge glow — a faint gold-tinted halo along the outer margins
-   of the volume, as if the gilt page edges are catching light along
-   the fore-edge, head, and tail. Lives on the tilted volume plane. */
-.cover__volume::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    linear-gradient(to right,
-      rgba(201, 168, 76, 0.10) 0%,
-      rgba(201, 168, 76, 0.03) 3%,
-      transparent 8%,
-      transparent 92%,
-      rgba(201, 168, 76, 0.03) 97%,
-      rgba(201, 168, 76, 0.10) 100%),
-    linear-gradient(to bottom,
-      rgba(201, 168, 76, 0.08) 0%,
-      rgba(201, 168, 76, 0.02) 3%,
-      transparent 8%,
-      transparent 88%,
-      rgba(201, 168, 76, 0.02) 96%,
-      rgba(201, 168, 76, 0.06) 100%);
-  mix-blend-mode: screen;
-}
-
-/* Raking-light gloss — a very soft diagonal sheen from top-left,
-   consistent with the perspective tilt and the light source suggested
-   by the shelf shadow. Lives on the volume plane. */
-.cover__volume::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background:
-    linear-gradient(115deg,
-      rgba(255, 240, 200, 0.05) 0%,
-      rgba(255, 240, 200, 0.02) 25%,
-      transparent 45%,
-      transparent 100%);
-  mix-blend-mode: screen;
-}
-
-/* Shelf contact shadow — sits on the outer stage (not the tilted
-   volume) so it always meets the surface. Denser below the volume
-   than at the edges, matching the perspective. */
-.cover > .cover__shelf {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 110px;
-  pointer-events: none;
-  z-index: 1;
-  background:
-    radial-gradient(ellipse 60% 100% at 50% 100%,
-      rgba(0, 0, 0, 0.65) 0%,
-      rgba(0, 0, 0, 0.30) 40%,
-      rgba(0, 0, 0, 0.00) 100%);
-  mix-blend-mode: multiply;
-}
-
 /* When the cover is up, hide the app behind it — no scroll bleed */
 body.cover-open { overflow: hidden; }
 
+/* Inner editorial frame — thin gold rules on all four sides */
 .cover__frame {
-  width: min(720px, 100%);
-  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(2rem, 6vw, 4rem);
+  position: relative;
   text-align: center;
+  padding: clamp(1.75rem, 4vw, 2.75rem) clamp(1rem, 3vw, 2rem);
   border: 1px solid rgba(201, 168, 76, 0.55);
-  outline: 1px solid rgba(201, 168, 76, 0.25);
+  outline: 1px solid rgba(201, 168, 76, 0.22);
   outline-offset: 6px;
   background: transparent;
-  animation: cover-fade-in 1200ms ease-out both;
+  animation: cover-fade-in 1000ms ease-out 150ms both;
 }
 
 @keyframes cover-fade-in {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(4px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
@@ -808,42 +699,56 @@ body.cover-open { overflow: hidden; }
 .cover__rule--top::before    { top: 4px; }
 .cover__rule--bottom::after  { bottom: 4px; }
 
-.cover__series {
+/* --- Letterhead: agency + bureau --------------------------------------- */
+.cover__agency {
   font-family: var(--font-editorial);
   font-size: clamp(0.7rem, 1.05vw, 0.88rem);
   color: var(--frus-gold);
-  margin: 2.25rem 0 0.9rem;
+  margin: 1.75rem 0 0.4rem;
   text-transform: uppercase;
   letter-spacing: 0.32em;
-  word-spacing: 0.22em;
-  padding-left: 0.32em; /* optical centering when tracking is heavy */
+  word-spacing: 0.18em;
+  padding-left: 0.32em;
   white-space: nowrap;
 }
 
-.cover__years {
+.cover__bureau {
   font-family: var(--font-editorial);
   font-style: italic;
-  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
   color: var(--frus-gold);
-  margin: 0 0 1.75rem;
+  margin: 0 0 1.25rem;
   letter-spacing: 0.05em;
+  opacity: 0.95;
 }
 
 .cover__seal {
-  width: clamp(72px, 10vw, 96px);
-  height: clamp(72px, 10vw, 96px);
-  margin: 0.25rem auto 1.5rem;
+  width: clamp(64px, 8.5vw, 86px);
+  height: clamp(64px, 8.5vw, 86px);
+  margin: 0.15rem auto 1.25rem;
   color: var(--frus-gold);
-  opacity: 0.92;
+  opacity: 0.9;
 }
 .cover__seal svg { display: block; width: 100%; height: 100%; }
+
+/* --- Title block ------------------------------------------------------- */
+.cover__kicker {
+  font-family: var(--font-editorial);
+  font-size: clamp(0.68rem, 1vw, 0.8rem);
+  color: var(--frus-gold);
+  margin: 0 0 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.34em;
+  padding-left: 0.34em;
+  opacity: 0.85;
+}
 
 .cover__title {
   font-family: var(--font-editorial);
   font-weight: 400;
   font-size: clamp(2rem, 5.2vw, 3.4rem);
   line-height: 1.1;
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.6rem;
   color: var(--frus-gold);
   letter-spacing: 0.01em;
 }
@@ -854,46 +759,99 @@ body.cover-open { overflow: hidden; }
   font-size: clamp(1.05rem, 1.8vw, 1.35rem);
   color: var(--frus-gold);
   opacity: 0.92;
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.3rem;
 }
 
 .cover__dates {
   font-family: var(--font-editorial);
   font-size: clamp(0.95rem, 1.5vw, 1.15rem);
   color: var(--frus-gold);
-  margin: 0 0 1.4rem;
+  margin: 0 0 1.1rem;
   letter-spacing: 0.04em;
 }
 
 .cover__ornament {
   color: var(--frus-gold);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   line-height: 1;
-  margin: 0.75rem 0 1.25rem;
-  opacity: 0.85;
+  margin: 0.5rem 0 1.35rem;
+  opacity: 0.75;
 }
 
-.cover__imprint {
+/* --- Two source panels ------------------------------------------------ */
+.cover__sources {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  margin: 0.25rem auto 1.5rem;
+  padding: 1rem clamp(0.5rem, 2vw, 1.25rem);
+  border-top: 1px solid rgba(201, 168, 76, 0.28);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.28);
+}
+
+.cover__source {
+  text-align: center;
+  padding: 0.15rem 0.25rem;
+}
+
+.cover__source-label {
+  font-family: var(--font-editorial);
+  font-size: clamp(0.6rem, 0.9vw, 0.72rem);
+  color: var(--frus-gold);
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  padding-left: 0.28em;
+  opacity: 0.8;
+}
+
+.cover__source-name {
   font-family: var(--font-editorial);
   font-size: clamp(0.9rem, 1.35vw, 1.05rem);
   color: var(--frus-gold);
-  margin: 0 0 2rem;
-  line-height: 1.5;
+  margin: 0 0 0.35rem;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+}
+
+.cover__source-host {
+  font-family: var(--font-mono, ui-monospace, "JetBrains Mono", monospace);
+  font-size: clamp(0.72rem, 1vw, 0.82rem);
+  color: var(--frus-gold);
+  margin: 0;
+  opacity: 0.72;
+  letter-spacing: 0.04em;
+}
+
+.cover__source-divider {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(201, 168, 76, 0.35);
+}
+
+/* --- Imprint + entry button ------------------------------------------- */
+.cover__imprint {
+  font-family: var(--font-editorial);
+  font-size: clamp(0.88rem, 1.3vw, 1rem);
+  color: var(--frus-gold);
+  margin: 1.35rem 0 1.4rem;
+  line-height: 1.55;
   font-variant: small-caps;
   letter-spacing: 0.06em;
 }
 .cover__imprint-sub {
   display: inline-block;
-  margin-top: 0.4rem;
+  margin-top: 0.3rem;
   font-variant: normal;
   font-style: italic;
   letter-spacing: 0.02em;
-  opacity: 0.85;
-  font-size: 0.9em;
+  opacity: 0.9;
+  font-size: 0.92em;
 }
 
 .cover__enter {
-  margin-top: 0.5rem;
+  margin-top: 0.35rem;
   background: transparent;
   color: var(--frus-gold);
   border: 1px solid var(--frus-gold);
@@ -916,15 +874,23 @@ body.cover-open { overflow: hidden; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .cover, .cover__frame, .cover__volume { transition: none; animation: none; }
-  .cover__volume { transform: none; }
+  .cover, .cover__frame, .cover__dossier { transition: none; animation: none; }
 }
 
 @media (max-width: 640px) {
-  .cover__series {
+  .cover__agency {
     font-size: 0.55rem;
     letter-spacing: 0.22em;
-    word-spacing: 0.14em;
-    white-space: normal; /* allow wrap on very narrow screens */
+    word-spacing: 0.12em;
+    white-space: normal;
+  }
+  .cover__sources {
+    grid-template-columns: 1fr;
+  }
+  .cover__source-divider {
+    width: 60%;
+    height: 1px;
+    margin: 0.25rem auto;
+    align-self: center;
   }
 }
