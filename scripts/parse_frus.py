@@ -182,7 +182,7 @@ def machine_date(div: ET.Element) -> str:
     return ""
 
 
-def persons_in(div: ET.Element) -> list[dict[str, str]]:
+def persons_in(div: ET.Element, volume_key: str) -> list[dict[str, str]]:
     seen: dict[str, dict[str, str]] = {}
     for pn in div.iter(qn("persName")):
         # skip persNames inside notes
@@ -193,7 +193,16 @@ def persons_in(div: ET.Element) -> list[dict[str, str]]:
         if not corresp.startswith("#p_"):
             continue
         key = corresp.lstrip("#")
-        canonical = CANONICAL_ID.get(key, key)
+        # Roster people keep their canonical (cross-volume) id. Everyone
+        # else falls back to their TEI xml:id, which is only unique within
+        # a single volume — scope it by volume so a bare id reused across
+        # volumes for different people cannot collide into one node.
+        if key in CANONICAL_ID:
+            canonical = CANONICAL_ID[key]
+        elif key in NETWORK_PEOPLE:
+            canonical = key
+        else:
+            canonical = f"{volume_key}:{key}"
         if canonical in seen:
             continue
         label = text_of(pn)
@@ -276,7 +285,7 @@ def parse_volume(xml_path: Path, volume_key: str, doc_range: range | None) -> li
         title_clean = re.sub(r"\s+Source:.*$", "", title_clean)
 
         place = opener_place(div)
-        persons = persons_in(div)
+        persons = persons_in(div, volume_key)
         topics = topics_in(div)
 
         canonical = f"https://history.state.gov/historicaldocuments/{volume_key}/d{doc_num}"

@@ -1,6 +1,6 @@
 // reykjavik-40 front end
-// Three linked views (network, timeline, explorer) driven from data/*.json.
-// No external dependencies.
+// Four linked views (participation register, Höfði House stage, timeline,
+// document explorer) driven from data/*.json. No external dependencies.
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 
@@ -152,10 +152,10 @@ function updateSelectionPanel() {
       <strong>${escape(d.title || s.label || s.id)}</strong>
       <p style="color:var(--frus-slate);font-family:var(--font-mono);font-size:var(--fs-xs)">${escape(d.date_display || d.date || "")}</p>
       ${d.excerpt ? `<p style="font-family:var(--font-editorial);border-left:2px solid var(--frus-gold);padding-left:0.6rem;color:var(--frus-ink)">${escape(d.excerpt)}</p>` : ""}
-      ${d.url ? `<a class="tr-cta" href="${escape(d.url)}" target="_blank" rel="noopener">Read at source →</a>` : ""}
+      ${safeHttpUrl(d.url) ? `<a class="tr-cta" href="${escape(safeHttpUrl(d.url))}" target="_blank" rel="noopener">Read at source →</a>` : ""}
     `;
   } else if (s.kind === "topic") {
-    body.innerHTML = `<strong>Topic strand</strong><p style="color:var(--frus-slate)">${escape(s.label)}</p><p>Highlighted across all three views.</p>`;
+    body.innerHTML = `<strong>Topic strand</strong><p style="color:var(--frus-slate)">${escape(s.label)}</p><p>Highlighted across the linked views.</p>`;
   }
 }
 
@@ -548,7 +548,8 @@ function stageSurname(name) {
 }
 
 function stageInitials(name) {
-  const parts = name.split(/\s+/);
+  const parts = String(name ?? "").split(/\s+/).filter(Boolean);
+  if (!parts.length) return "";
   return (parts[0][0] + (parts.length > 1 ? stageSurname(name)[0] : "")).toUpperCase();
 }
 
@@ -720,7 +721,7 @@ function renderStage() {
         <p class="stage-cap-meta">${meeting.attendees.length} participants, as printed in the memcon</p>
         ${notes.length ? `<p class="stage-cap-note">${notes.join("<br>")}</p>` : ""}
         ${meeting.caption_note ? `<p class="stage-cap-note">${escape(meeting.caption_note)}</p>` : ""}
-        <a class="tr-cta" href="${escape(meeting.url)}" target="_blank" rel="noopener">Read the memcon (Doc ${meeting.doc_number}) →</a>
+        <a class="tr-cta" href="${escape(safeHttpUrl(meeting.url) || "#")}" target="_blank" rel="noopener">Read the memcon (Doc ${meeting.doc_number}) →</a>
       `;
     } else {
       cap.innerHTML = `
@@ -809,7 +810,7 @@ function renderTimeline() {
       const b = document.createElement("div");
       b.className = "event__text";
       if (ev.kind === "document") {
-        b.innerHTML = `<a href="${escape(ev.url || "#")}" target="_blank" rel="noopener">${escape(ev.text)}</a>${ev.session ? ` <span style="color:var(--frus-slate);font-size:var(--fs-xs);font-family:var(--font-interface)">· ${escape(ev.session)}</span>` : ""}`;
+        b.innerHTML = `<a href="${escape(safeHttpUrl(ev.url) || "#")}" target="_blank" rel="noopener">${escape(ev.text)}</a>${ev.session ? ` <span style="color:var(--frus-slate);font-size:var(--fs-xs);font-family:var(--font-interface)">· ${escape(ev.session)}</span>` : ""}`;
         row.style.cursor = "pointer";
         row.addEventListener("click", (e) => {
           if (e.target.tagName !== "A") {
@@ -1008,7 +1009,7 @@ function renderTranscript() {
     ${topicTags ? `<div class="tr-section"><p class="tr-label">Topics</p><div>${topicTags}</div></div>` : ""}
     ${eventTags ? `<div class="tr-section"><p class="tr-label">Events</p><div>${eventTags}</div></div>` : ""}
     ${subjectHtml ? `<div class="tr-section"><p class="tr-label">Curated subjects</p>${subjectHtml}<p class="tr-provenance">Subject and event annotations by the Office of the Historian.</p></div>` : ""}
-    ${d.url ? `<a class="tr-cta" href="${escape(d.url)}" target="_blank" rel="noopener">Open at ${d.source === "foia.state.gov" ? "foia.state.gov" : "history.state.gov"} →</a>` : ""}
+    ${safeHttpUrl(d.url) ? `<a class="tr-cta" href="${escape(safeHttpUrl(d.url))}" target="_blank" rel="noopener">Open at ${d.source === "foia.state.gov" ? "foia.state.gov" : "history.state.gov"} →</a>` : ""}
   `;
 }
 
@@ -1040,6 +1041,18 @@ function uniq(arr) {
 
 function escape(s) {
   return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[c]));
+}
+
+// Only http(s) URLs are safe as outbound href values; escape() blocks
+// attribute breakout but not javascript:/data: and other schemes.
+// Returns the normalized URL for valid http(s) links, otherwise "".
+function safeHttpUrl(url) {
+  try {
+    const u = new URL(String(url ?? "").trim());
+    return u.protocol === "http:" || u.protocol === "https:" ? u.href : "";
+  } catch {
+    return "";
+  }
 }
 
 document.addEventListener("DOMContentLoaded", boot);

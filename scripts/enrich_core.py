@@ -42,7 +42,7 @@ import re
 import sys
 import xml.etree.ElementTree as ET
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -236,8 +236,10 @@ class PersonResolver:
             surname, given = key
             if info is None:
                 candidate = self.roster_surname.get(surname)
-                if candidate and name_key(candidate["name"])[1][:1] == given[:1]:
-                    info = candidate
+                if candidate:
+                    ckey = name_key(candidate["name"])
+                    if ckey and ckey[1][:1] == given[:1]:
+                        info = candidate
             if not aligned:
                 candidate = self.alignment_surname.get(surname)
                 if candidate:
@@ -689,7 +691,7 @@ def main() -> int:
     manifest["counts"]["network_edges"] = len(network["edges"])
     manifest["counts"]["participants"] = len(register["people"])
     manifest["counts"]["register_notes"] = len(register["notes"])
-    manifest["enriched"] = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    manifest["enriched"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     manifest["sources"]["FRUS subject taxonomy"] = "https://github.com/HistoryAtState/frus-subjects"
     manifest["sources"]["HSG annotated TEI"] = "https://history.state.gov (Office of the Historian annotation program)"
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False))

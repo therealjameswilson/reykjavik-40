@@ -21,7 +21,7 @@ import json
 import re
 import sys
 from collections import Counter, defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -301,7 +301,7 @@ def main() -> int:
     (DATA / "timeline.json").write_text(json.dumps(timeline, indent=2, ensure_ascii=False))
 
     manifest = {
-        "generated": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "counts": {
             "frus_v05_reykjavik": len(v05),
             "frus_v06_aftermath": len(v06),
