@@ -215,6 +215,68 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
 .topic-toggle input { accent-color: var(--frus-navy); }
 .topic-swatch { width: 12px; height: 3px; border-radius: 1px; }
 
+/* Scope toggle: Summit days vs. Full pre/post universe */
+.scope-toggle {
+  display: inline-flex;
+  align-items: stretch;
+  gap: 0;
+  margin-top: 1.1rem;
+  border: 1px solid var(--frus-rule);
+  border-radius: 2px;
+  background: var(--frus-parchment);
+  overflow: hidden;
+  font-family: var(--font-interface);
+}
+.scope-toggle__label {
+  display: inline-flex; align-items: center;
+  padding: 0.35rem 0.75rem;
+  font-size: var(--fs-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--frus-slate);
+  background: rgba(0,0,0,0.02);
+  border-right: 1px solid var(--frus-rule);
+}
+.scope-toggle__btn {
+  border: 0;
+  background: transparent;
+  color: var(--frus-ink);
+  padding: 0.35rem 0.9rem;
+  font: inherit;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  border-right: 1px solid var(--frus-rule);
+  transition: background 120ms ease-out, color 120ms ease-out;
+}
+.scope-toggle__btn:last-child { border-right: 0; }
+.scope-toggle__btn:hover { background: rgba(0,0,0,0.03); }
+.scope-toggle__btn.is-active {
+  background: var(--frus-navy);
+  color: var(--frus-parchment);
+}
+.scope-toggle__btn.is-active .scope-toggle__meta { color: var(--frus-gold); }
+.scope-toggle__meta {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--frus-slate);
+  letter-spacing: 0.02em;
+}
+.scope-toggle__btn:focus-visible {
+  outline: 2px solid var(--frus-gold);
+  outline-offset: -2px;
+}
+.scope-toggle__hint {
+  margin: 0.55rem 0 0;
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: var(--fs-sm);
+  color: var(--frus-slate);
+  max-width: 72ch;
+}
+
 /* Node/edge styling within the SVG — semantic navy/red retained for US/USSR */
 .node circle { transition: r 120ms ease-out, stroke-width 120ms ease-out; }
 .node.us circle { fill: var(--frus-navy); }

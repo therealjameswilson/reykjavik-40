@@ -245,11 +245,24 @@ def main() -> int:
     foia = [normalize_record(r) for r in load(DATA / "foia_reykjavik.json")]
     chronology = load(DATA / "v06_chronology.json")
 
-    v05 = _filter_frus(v05)
-    v06 = _filter_frus(v06)
+    # Two record universes:
+    #   summit-only: FRUS restricted to Oct 11-12, 1986 memcons (+ FOIA).
+    #                Feeds the default Negotiation Network view.
+    #   full pre/post: entire parsed FRUS window (Sep 1986 - Mar 1987) + FOIA.
+    #                Feeds the "Full Pre/Post Universe" toggle.
+    v05_summit = _filter_frus(v05)
+    v06_summit = _filter_frus(v06)
 
-    all_records = v05 + v06 + foia
-    all_records.sort(key=lambda r: (r["date"] or "9999", r["source"], r["doc_id"]))
+    summit_records = v05_summit + v06_summit + foia
+    summit_records.sort(key=lambda r: (r["date"] or "9999", r["source"], r["doc_id"]))
+
+    full_records = v05 + v06 + foia
+    full_records.sort(key=lambda r: (r["date"] or "9999", r["source"], r["doc_id"]))
+
+    # frus_core.json preserves the pre-existing behaviour: only the summit-day
+    # FRUS records plus FOIA are surfaced in the Document Explorer / timeline.
+    # The full pre/post universe is only used to power the second network view.
+    all_records = summit_records
 
     (DATA / "frus_core.json").write_text(json.dumps(all_records, indent=2, ensure_ascii=False))
 
@@ -284,8 +297,19 @@ def main() -> int:
             row["topics"] = "; ".join(r["topics"])
             w.writerow(row)
 
-    network = build_network(all_records)
+    # Default network: summit days only (11-12 Oct 1986) + FOIA. This is the
+    # view the site loads first because it isolates the actual Reagan-Gorbachev
+    # conversations from the surrounding preparation and follow-up cables.
+    network = build_network(summit_records)
     (DATA / "network.json").write_text(json.dumps(network, indent=2, ensure_ascii=False))
+
+    # Full pre/post network: every parsed FRUS document in the Reykjavik
+    # window (Sep 1986 - Mar 1987) plus the FOIA layer. Surfaces the wider
+    # cast -- Weinberger, Bush, Casey, Carlucci, Powell, Baker, Gromyko,
+    # Vorontsov, etc. -- who shaped the summit before and after but were not
+    # in the memcon room on Oct 11-12.
+    network_full = build_network(full_records)
+    (DATA / "network_full.json").write_text(json.dumps(network_full, indent=2, ensure_ascii=False))
 
     timeline = build_timeline(all_records, chronology)
     (DATA / "timeline.json").write_text(json.dumps(timeline, indent=2, ensure_ascii=False))
@@ -293,10 +317,15 @@ def main() -> int:
     manifest = {
         "generated": datetime.utcnow().isoformat(timespec="seconds") + "Z",
         "counts": {
-            "frus_v05_reykjavik": len(v05),
-            "frus_v06_aftermath": len(v06),
+            "frus_v05_reykjavik": len(v05_summit),
+            "frus_v06_aftermath": len(v06_summit),
             "foia_declassified": len(foia),
             "total_documents": len(all_records),
+            "frus_v05_full": len(v05),
+            "frus_v06_full": len(v06),
+            "total_documents_full": len(full_records),
+            "network_full_nodes": len(network_full["nodes"]),
+            "network_full_edges": len(network_full["edges"]),
             "network_nodes": len(network["nodes"]),
             "network_edges": len(network["edges"]),
             "timeline_events": len(timeline),

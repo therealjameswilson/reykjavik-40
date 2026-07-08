@@ -91,6 +91,18 @@
         <header class="view__head">
           <h2 id="view-network-heading">Negotiation Network</h2>
           <p class="view__lede">Co-occurrence of principals and negotiators across every memorandum of conversation, briefing paper, and follow-on cable in the Reykjav&iacute;k section of the Foreign Relations series and the corresponding declassified releases. Node size encodes document count; edge width encodes weighted co-occurrence. Select a node to filter the timeline and the explorer.</p>
+          <div class="scope-toggle" role="radiogroup" aria-label="Network scope">
+            <span class="scope-toggle__label">Scope</span>
+            <button type="button" class="scope-toggle__btn is-active" data-scope="summit" role="radio" aria-checked="true">
+              Summit days
+              <span class="scope-toggle__meta" id="scope-summit-meta"></span>
+            </button>
+            <button type="button" class="scope-toggle__btn" data-scope="full" role="radio" aria-checked="false">
+              Full pre/post universe
+              <span class="scope-toggle__meta" id="scope-full-meta"></span>
+            </button>
+          </div>
+          <p class="scope-toggle__hint" id="scope-hint">Restricted to memoranda of conversation on 11&ndash;12 October 1986 plus declassified cables from the same window.</p>
         </header>
         <div class="network">
           <div class="network__canvas" id="network-canvas" role="figure" aria-label="Interactive graph of people, documents, and topics."></div>

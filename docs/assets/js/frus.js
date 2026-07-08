@@ -16,7 +16,14 @@ const TOPIC_COLORS = {
 
 const state = {
   docs: [],
+  // Two network universes, selectable via the scope toggle:
+  //   networkSummit -- summit-day memcons only (25 nodes / 249 edges)
+  //   networkFull   -- full Sep 1986 - Mar 1987 pre/post window (42 / 604)
+  // state.network is an alias that always points at the currently active one.
   network: { nodes: [], edges: [] },
+  networkSummit: { nodes: [], edges: [] },
+  networkFull: { nodes: [], edges: [] },
+  activeScope: "summit",
   timeline: [],
   manifest: {},
   photos: [],
@@ -25,18 +32,26 @@ const state = {
   topicFilter: new Set(),
 };
 
+const SCOPE_HINTS = {
+  summit: "Restricted to memoranda of conversation on 11\u201312 October 1986 plus declassified cables from the same window.",
+  full: "Every parsed FRUS document from September 1986 through March 1987 plus declassified cables \u2014 surfaces Weinberger, Bush, Casey, Carlucci, Powell, Baker, Gromyko, Vorontsov, and others who shaped the summit before and after.",
+};
+
 // ------------------------ boot ------------------------
 async function boot() {
   try {
-    const [docs, network, timeline, manifest, photosPayload] = await Promise.all([
+    const [docs, network, networkFull, timeline, manifest, photosPayload] = await Promise.all([
       fetch("data/frus_core.json").then(r => r.json()),
       fetch("data/network.json").then(r => r.json()),
+      fetch("data/network_full.json").then(r => r.json()).catch(() => null),
       fetch("data/timeline.json").then(r => r.json()),
       fetch("data/manifest.json").then(r => r.json()),
       fetch("data/reagan_photos.json").then(r => r.json()).catch(() => ({ photos: [] })),
     ]);
     state.docs = docs;
-    state.network = network;
+    state.networkSummit = network;
+    state.networkFull = networkFull || network;
+    state.network = state.networkSummit;
     state.timeline = timeline;
     state.manifest = manifest;
     state.photos = (photosPayload && photosPayload.photos) || [];
@@ -46,6 +61,7 @@ async function boot() {
 
     setupNav();
     setupCorpusLine();
+    setupScopeToggle();
     renderNetwork();
     renderTimeline();
     renderExplorer();
@@ -86,9 +102,45 @@ function setupNav() {
 function setupCorpusLine() {
   const c = state.manifest.counts || {};
   const line = document.getElementById("corpus-line");
-  if (!line) return;
-  const photoCount = (state.photos && state.photos.length) || c.photographs || 0;
-  line.textContent = `${c.total_documents || 0} documents · ${c.network_nodes || 0} network nodes · ${c.timeline_events || 0} timeline events · ${photoCount} photographs · generated ${(state.manifest.generated || "").slice(0, 10)}`;
+  if (line) {
+    const photoCount = (state.photos && state.photos.length) || c.photographs || 0;
+    line.textContent = `${c.total_documents || 0} documents · ${c.network_nodes || 0} network nodes · ${c.timeline_events || 0} timeline events · ${photoCount} photographs · generated ${(state.manifest.generated || "").slice(0, 10)}`;
+  }
+  const summitMeta = document.getElementById("scope-summit-meta");
+  const fullMeta = document.getElementById("scope-full-meta");
+  const summitNodes = state.networkSummit.nodes.length || c.network_nodes || 0;
+  const fullNodes = state.networkFull.nodes.length || c.network_full_nodes || 0;
+  if (summitMeta) summitMeta.textContent = `${summitNodes} nodes`;
+  if (fullMeta) fullMeta.textContent = `${fullNodes} nodes`;
+}
+
+function setupScopeToggle() {
+  const buttons = document.querySelectorAll(".scope-toggle__btn");
+  const hint = document.getElementById("scope-hint");
+  if (!buttons.length) return;
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const scope = btn.dataset.scope;
+      if (scope === state.activeScope) return;
+      state.activeScope = scope;
+      state.network = scope === "full" ? state.networkFull : state.networkSummit;
+      buttons.forEach(b => {
+        const on = b === btn;
+        b.classList.toggle("is-active", on);
+        b.setAttribute("aria-checked", on ? "true" : "false");
+      });
+      if (hint) hint.textContent = SCOPE_HINTS[scope] || "";
+      // Cross-view selection may reference a person who does not exist in the
+      // other scope. Clear it so the two views stay coherent.
+      if (state.selection && state.selection.kind === "person") {
+        const stillPresent = state.network.nodes.some(n => n.id === state.selection.id);
+        if (!stillPresent) state.selection = null;
+      }
+      renderNetwork();
+      updateSelectionPanel();
+      highlightNetwork();
+    });
+  });
 }
 
 function setupSelectionClose() {
