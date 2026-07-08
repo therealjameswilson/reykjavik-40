@@ -805,6 +805,17 @@ function renderTimeline() {
     head.append(h, meta);
     day.appendChild(head);
 
+    // A day made up entirely of declassified PDFs gets a caption that
+    // makes the supplemental nature (and the missing per-document dates)
+    // explicit, so these never read as dated FRUS chronology.
+    if (events.every(e => e.kind === "foia")) {
+      day.classList.add("day--foia");
+      const cap = document.createElement("p");
+      cap.className = "day__caption";
+      cap.textContent = "Declassified PDFs supplementing the FRUS record — individual document dates were not released in this FOIA case.";
+      day.appendChild(cap);
+    }
+
     events.forEach(ev => {
       const row = document.createElement("div");
       row.className = `event event--${ev.kind}`;
@@ -813,10 +824,20 @@ function renderTimeline() {
 
       const t = document.createElement("div");
       t.className = "event__time";
-      t.textContent = ev.time_hint || "—";
+      t.textContent = ev.kind === "foia" ? "PDF" : (ev.time_hint || "—");
       const b = document.createElement("div");
       b.className = "event__text";
-      if (ev.kind === "document") {
+      if (ev.kind === "foia") {
+        const local = safeLocalPdf(ev.local_url);
+        const source = safeHttpUrl(ev.url);
+        b.innerHTML = `<span class="event__foia-title">${escape(ev.text)}</span>`
+          + `<span class="tag tag--source-foia">${escape(ev.classification || "Declassified")}</span>`
+          + (ev.detail ? ` <span class="event__foia-detail">${escape(ev.detail)}</span>` : "")
+          + `<span class="event__foia-links">`
+          + (local ? `<a href="${escape(local)}" target="_blank" rel="noopener">Open PDF &rarr;</a>` : "")
+          + (source ? `<a href="${escape(source)}" target="_blank" rel="noopener">Source at foia.state.gov</a>` : "")
+          + `</span>`;
+      } else if (ev.kind === "document") {
         b.innerHTML = `<a href="${escape(safeHttpUrl(ev.url) || "#")}" target="_blank" rel="noopener">${escape(ev.text)}</a>${ev.session ? ` <span style="color:var(--frus-slate);font-size:var(--fs-xs);font-family:var(--font-interface)">· ${escape(ev.session)}</span>` : ""}`;
         row.style.cursor = "pointer";
         row.addEventListener("click", (e) => {
