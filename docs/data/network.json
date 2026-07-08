@@ -1,85 +1,47 @@
 {
   "nodes": [
     {
-      "id": "us.matlock",
-      "name": "Jack F. Matlock Jr.",
+      "id": "reagan_gorbachev.reagan",
+      "name": "Ronald Reagan",
       "side": "US",
-      "role": "NSC Senior Director, European and Soviet Affairs",
-      "doc_count": 27,
+      "role": "President of the United States",
+      "doc_count": 16,
       "sessions": [
+        "Foreign Ministers - October 12 afternoon",
         "Session I - October 11 morning",
         "Session II - October 11 afternoon",
         "Session III - October 12 morning",
+        "Session IV - October 12 afternoon (final plenary)",
         "Working Group - Night of October 11-12"
       ],
       "topics": [
         {
-          "topic": "Strategic Arms",
-          "count": 18
-        },
-        {
-          "topic": "Human Rights",
-          "count": 17
-        },
-        {
-          "topic": "INF",
-          "count": 16
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 15
-        },
-        {
           "topic": "SDI",
-          "count": 14
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 12
-        },
-        {
-          "topic": "Regional Issues",
           "count": 9
-        }
-      ]
-    },
-    {
-      "id": "us.poindexter",
-      "name": "John M. Poindexter",
-      "side": "US",
-      "role": "National Security Advisor",
-      "doc_count": 22,
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 14
-        },
-        {
-          "topic": "INF",
-          "count": 13
         },
         {
           "topic": "Strategic Arms",
-          "count": 13
+          "count": 9
         },
         {
-          "topic": "Bilateral Relations",
-          "count": 11
+          "topic": "INF",
+          "count": 8
         },
         {
-          "topic": "SDI",
-          "count": 10
+          "topic": "Human Rights",
+          "count": 7
         },
         {
           "topic": "Nuclear Testing",
-          "count": 10
+          "count": 7
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 6
         },
         {
           "topic": "Regional Issues",
-          "count": 5
+          "count": 4
         }
       ]
     },
@@ -87,8 +49,8 @@
       "id": "reagan_gorbachev.gorbachev",
       "name": "Mikhail S. Gorbachev",
       "side": "USSR",
-      "role": "General Secretary, Communist Party of the Soviet Union",
-      "doc_count": 69,
+      "role": "General Secretary, CPSU",
+      "doc_count": 16,
       "sessions": [
         "Foreign Ministers - October 12 afternoon",
         "Session I - October 11 morning",
@@ -99,52 +61,50 @@
       ],
       "topics": [
         {
-          "topic": "Human Rights",
-          "count": 38
-        },
-        {
-          "topic": "INF",
-          "count": 37
-        },
-        {
           "topic": "SDI",
-          "count": 34
+          "count": 9
         },
         {
           "topic": "Strategic Arms",
-          "count": 34
+          "count": 9
         },
         {
-          "topic": "Bilateral Relations",
-          "count": 25
+          "topic": "INF",
+          "count": 8
         },
         {
           "topic": "Nuclear Testing",
-          "count": 21
+          "count": 7
+        },
+        {
+          "topic": "Human Rights",
+          "count": 6
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 6
         },
         {
           "topic": "Regional Issues",
-          "count": 19
+          "count": 4
         }
       ]
     },
     {
-      "id": "ussr.bessmertnykh",
-      "name": "Aleksandr A. Bessmertnykh",
-      "side": "USSR",
-      "role": "Deputy Minister of Foreign Affairs",
-      "doc_count": 15,
+      "id": "us.matlock",
+      "name": "Jack F. Matlock Jr.",
+      "side": "US",
+      "role": "NSC Senior Director, European and Soviet Affairs",
+      "doc_count": 8,
       "sessions": [
+        "Session I - October 11 morning",
         "Session II - October 11 afternoon",
+        "Session III - October 12 morning",
         "Working Group - Night of October 11-12"
       ],
       "topics": [
         {
-          "topic": "Human Rights",
-          "count": 13
-        },
-        {
-          "topic": "Bilateral Relations",
+          "topic": "SDI",
           "count": 6
         },
         {
@@ -152,110 +112,24 @@
           "count": 6
         },
         {
-          "topic": "SDI",
-          "count": 5
-        },
-        {
           "topic": "Strategic Arms",
-          "count": 4
+          "count": 6
         },
         {
           "topic": "Nuclear Testing",
-          "count": 4
+          "count": 6
         },
-        {
-          "topic": "Regional Issues",
-          "count": 4
-        }
-      ]
-    },
-    {
-      "id": "us.shultz",
-      "name": "George P. Shultz",
-      "side": "US",
-      "role": "Secretary of State",
-      "doc_count": 60,
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon",
-        "Session I - October 11 morning",
-        "Session II - October 11 afternoon",
-        "Session III - October 12 morning",
-        "Session IV - October 12 afternoon (final plenary)",
-        "Working Group - Night of October 11-12"
-      ],
-      "topics": [
         {
           "topic": "Human Rights",
-          "count": 37
-        },
-        {
-          "topic": "INF",
-          "count": 34
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 32
-        },
-        {
-          "topic": "SDI",
-          "count": 28
+          "count": 6
         },
         {
           "topic": "Bilateral Relations",
-          "count": 21
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 18
+          "count": 6
         },
         {
           "topic": "Regional Issues",
-          "count": 17
-        }
-      ]
-    },
-    {
-      "id": "reagan_gorbachev.reagan",
-      "name": "Ronald Reagan",
-      "side": "US",
-      "role": "President of the United States",
-      "doc_count": 65,
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon",
-        "Session I - October 11 morning",
-        "Session II - October 11 afternoon",
-        "Session III - October 12 morning",
-        "Session IV - October 12 afternoon (final plenary)",
-        "Working Group - Night of October 11-12"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 37
-        },
-        {
-          "topic": "INF",
-          "count": 34
-        },
-        {
-          "topic": "SDI",
-          "count": 30
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 30
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 24
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 20
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 20
+          "count": 4
         }
       ]
     },
@@ -264,7 +138,7 @@
       "name": "Eduard A. Shevardnadze",
       "side": "USSR",
       "role": "Minister of Foreign Affairs",
-      "doc_count": 26,
+      "doc_count": 8,
       "sessions": [
         "Foreign Ministers - October 12 afternoon",
         "Session I - October 11 morning",
@@ -275,32 +149,77 @@
       ],
       "topics": [
         {
-          "topic": "Human Rights",
-          "count": 18
-        },
-        {
-          "topic": "INF",
-          "count": 15
+          "topic": "SDI",
+          "count": 7
         },
         {
           "topic": "Strategic Arms",
-          "count": 15
+          "count": 7
         },
         {
-          "topic": "SDI",
-          "count": 14
+          "topic": "INF",
+          "count": 6
         },
         {
           "topic": "Nuclear Testing",
-          "count": 13
+          "count": 5
+        },
+        {
+          "topic": "Human Rights",
+          "count": 4
         },
         {
           "topic": "Bilateral Relations",
-          "count": 10
+          "count": 4
         },
         {
           "topic": "Regional Issues",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "us.shultz",
+      "name": "George P. Shultz",
+      "side": "US",
+      "role": "Secretary of State",
+      "doc_count": 11,
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon",
+        "Session I - October 11 morning",
+        "Session II - October 11 afternoon",
+        "Session III - October 12 morning",
+        "Session IV - October 12 afternoon (final plenary)",
+        "Working Group - Night of October 11-12"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 8
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 8
+        },
+        {
+          "topic": "INF",
           "count": 7
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 6
+        },
+        {
+          "topic": "Human Rights",
+          "count": 5
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 5
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 3
         }
       ]
     },
@@ -309,7 +228,7 @@
       "name": "Paul H. Nitze",
       "side": "US",
       "role": "Special Adviser on Arms Control",
-      "doc_count": 22,
+      "doc_count": 6,
       "sessions": [
         "Foreign Ministers - October 12 afternoon",
         "Session II - October 11 afternoon",
@@ -317,32 +236,32 @@
       ],
       "topics": [
         {
-          "topic": "INF",
-          "count": 20
+          "topic": "SDI",
+          "count": 6
         },
         {
           "topic": "Strategic Arms",
-          "count": 20
+          "count": 6
         },
         {
-          "topic": "SDI",
-          "count": 16
+          "topic": "INF",
+          "count": 5
         },
         {
           "topic": "Nuclear Testing",
-          "count": 14
+          "count": 5
         },
         {
           "topic": "Human Rights",
-          "count": 11
+          "count": 2
         },
         {
           "topic": "Bilateral Relations",
-          "count": 11
+          "count": 2
         },
         {
           "topic": "Regional Issues",
-          "count": 6
+          "count": 1
         }
       ]
     },
@@ -351,38 +270,38 @@
       "name": "Kenneth L. Adelman",
       "side": "US",
       "role": "Director, Arms Control and Disarmament Agency",
-      "doc_count": 10,
+      "doc_count": 2,
       "sessions": [
         "Session II - October 11 afternoon"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 2
+        },
+        {
           "topic": "INF",
-          "count": 8
+          "count": 2
         },
         {
           "topic": "Strategic Arms",
-          "count": 7
-        },
-        {
-          "topic": "Human Rights",
-          "count": 7
-        },
-        {
-          "topic": "SDI",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
+          "count": 2
         },
         {
           "topic": "Nuclear Testing",
-          "count": 4
+          "count": 2
+        },
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
         },
         {
           "topic": "Regional Issues",
-          "count": 3
+          "count": 1
         }
       ]
     },
@@ -423,40 +342,121 @@
       ]
     },
     {
+      "id": "ussr.bessmertnykh",
+      "name": "Aleksandr A. Bessmertnykh",
+      "side": "USSR",
+      "role": "Deputy Minister of Foreign Affairs",
+      "doc_count": 2,
+      "sessions": [
+        "Session II - October 11 afternoon",
+        "Working Group - Night of October 11-12"
+      ],
+      "topics": [
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
+        },
+        {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "us.poindexter",
+      "name": "John M. Poindexter",
+      "side": "US",
+      "role": "National Security Advisor",
+      "doc_count": 2,
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 2
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 2
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 2
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
+        }
+      ]
+    },
+    {
       "id": "us.linhard",
       "name": "Robert Linhard",
       "side": "US",
       "role": "NSC Director, Defense Programs and Arms Control",
-      "doc_count": 8,
+      "doc_count": 1,
       "sessions": [],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
           "topic": "INF",
-          "count": 8
+          "count": 1
         },
         {
           "topic": "Strategic Arms",
-          "count": 6
-        },
-        {
-          "topic": "SDI",
-          "count": 5
-        },
-        {
-          "topic": "Human Rights",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 4
+          "count": 1
         },
         {
           "topic": "Nuclear Testing",
-          "count": 3
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
         }
       ]
     }
@@ -464,457 +464,51 @@
   "edges": [
     {
       "source": "reagan_gorbachev.gorbachev",
-      "target": "us.matlock",
-      "weight": 50,
-      "doc_count": 24,
-      "doc_ids": [
-        "frus1981-88v05-d267",
-        "frus1981-88v05-d271",
-        "frus1981-88v05-d272",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d294",
-        "frus1981-88v05-d295",
-        "frus1981-88v05-d297",
-        "frus1981-88v05-d301",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d303",
-        "frus1981-88v05-d305",
-        "frus1981-88v06-d1",
-        "frus1981-88v05-d300",
-        "frus1981-88v05-d304",
-        "frus1981-88v05-d306",
-        "frus1981-88v06-d7",
-        "frus1981-88v06-d15",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d36",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "Strategic Arms",
-          "count": 16
-        },
-        {
-          "topic": "Human Rights",
-          "count": 15
-        },
-        {
-          "topic": "INF",
-          "count": 15
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 14
-        },
-        {
-          "topic": "SDI",
-          "count": 13
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 11
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 8
-        }
-      ],
-      "sessions": [
-        "Session I - October 11 morning",
-        "Session II - October 11 afternoon",
-        "Session III - October 12 morning",
-        "Working Group - Night of October 11-12"
-      ]
-    },
-    {
-      "source": "reagan_gorbachev.gorbachev",
-      "target": "us.poindexter",
-      "weight": 28,
-      "doc_count": 20,
-      "doc_ids": [
-        "frus1981-88v05-d267",
-        "frus1981-88v05-d271",
-        "frus1981-88v05-d272",
-        "frus1981-88v05-d274",
-        "frus1981-88v05-d275",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d278",
-        "frus1981-88v05-d281",
-        "frus1981-88v05-d282",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d294",
-        "frus1981-88v05-d295",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d297",
-        "frus1981-88v06-d1",
-        "frus1981-88v05-d307",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d5",
-        "frus1981-88v06-d6",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 12
-        },
-        {
-          "topic": "INF",
-          "count": 12
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 12
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 10
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 10
-        },
-        {
-          "topic": "SDI",
-          "count": 9
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 5
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon"
-      ]
-    },
-    {
-      "source": "reagan_gorbachev.gorbachev",
-      "target": "ussr.bessmertnykh",
-      "weight": 34,
+      "target": "reagan_gorbachev.reagan",
+      "weight": 36,
       "doc_count": 12,
       "doc_ids": [
-        "frus1981-88v05-d267",
-        "frus1981-88v05-d271",
-        "frus1981-88v05-d273",
-        "frus1981-88v05-d283",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d288",
-        "frus1981-88v05-d289",
-        "frus1981-88v05-d292",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d303"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 10
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 6
-        },
-        {
-          "topic": "INF",
-          "count": 6
-        },
-        {
-          "topic": "SDI",
-          "count": 5
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 4
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 4
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 4
-        }
-      ],
-      "sessions": [
-        "Session II - October 11 afternoon",
-        "Working Group - Night of October 11-12"
-      ]
-    },
-    {
-      "source": "us.matlock",
-      "target": "us.poindexter",
-      "weight": 12,
-      "doc_count": 10,
-      "doc_ids": [
-        "frus1981-88v05-d267",
-        "frus1981-88v05-d271",
-        "frus1981-88v05-d272",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d294",
-        "frus1981-88v05-d295",
-        "frus1981-88v05-d297",
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 7
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 4
-        },
-        {
-          "topic": "INF",
-          "count": 4
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 3
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 3
-        },
-        {
-          "topic": "SDI",
-          "count": 2
-        }
-      ],
-      "sessions": []
-    },
-    {
-      "source": "us.matlock",
-      "target": "ussr.bessmertnykh",
-      "weight": 22,
-      "doc_count": 8,
-      "doc_ids": [
-        "frus1981-88v05-d267",
-        "frus1981-88v05-d271",
-        "frus1981-88v05-d276",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d303"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 6
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
-        },
-        {
-          "topic": "INF",
-          "count": 4
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 4
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 4
-        },
-        {
-          "topic": "SDI",
-          "count": 3
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 3
-        }
-      ],
-      "sessions": [
-        "Session II - October 11 afternoon",
-        "Working Group - Night of October 11-12"
-      ]
-    },
-    {
-      "source": "us.poindexter",
-      "target": "ussr.bessmertnykh",
-      "weight": 5,
-      "doc_count": 3,
-      "doc_ids": [
-        "frus1981-88v05-d267",
-        "frus1981-88v05-d271",
-        "frus1981-88v05-d287"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 3
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 2
-        },
-        {
-          "topic": "INF",
-          "count": 1
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 1
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 1
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 1
-        }
-      ],
-      "sessions": []
-    },
-    {
-      "source": "us.shultz",
-      "target": "ussr.bessmertnykh",
-      "weight": 37,
-      "doc_count": 13,
-      "doc_ids": [
-        "frus1981-88v05-d268",
-        "frus1981-88v05-d273",
-        "frus1981-88v05-d276",
-        "frus1981-88v05-d283",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d288",
-        "frus1981-88v05-d289",
-        "frus1981-88v05-d291",
-        "frus1981-88v05-d292",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d303"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 11
-        },
-        {
-          "topic": "INF",
-          "count": 6
-        },
-        {
-          "topic": "SDI",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 4
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 4
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 4
-        }
-      ],
-      "sessions": [
-        "Session II - October 11 afternoon",
-        "Working Group - Night of October 11-12"
-      ]
-    },
-    {
-      "source": "reagan_gorbachev.reagan",
-      "target": "us.shultz",
-      "weight": 83,
-      "doc_count": 43,
-      "doc_ids": [
-        "frus1981-88v05-d270",
-        "frus1981-88v05-d273",
-        "frus1981-88v05-d274",
-        "frus1981-88v05-d275",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d279",
-        "frus1981-88v05-d281",
-        "frus1981-88v05-d283",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d288",
-        "frus1981-88v05-d289",
-        "frus1981-88v05-d290",
-        "frus1981-88v05-d292",
-        "frus1981-88v05-d293",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d297",
+        "foia-C09000001",
         "frus1981-88v05-d301",
         "frus1981-88v05-d302",
         "frus1981-88v05-d303",
+        "frus1981-88v05-d305",
         "frus1981-88v06-d1",
+        "frus1981-88v05-d300",
         "frus1981-88v05-d304",
         "frus1981-88v05-d306",
         "frus1981-88v05-d307",
         "frus1981-88v05-d308",
-        "frus1981-88v05-d309",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d5",
-        "frus1981-88v06-d6",
-        "frus1981-88v06-d8",
-        "frus1981-88v06-d16",
-        "frus1981-88v06-d19",
-        "frus1981-88v06-d20",
-        "frus1981-88v06-d23",
-        "frus1981-88v06-d24",
-        "frus1981-88v06-d26",
-        "frus1981-88v06-d30",
-        "frus1981-88v06-d34",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d37",
-        "frus1981-88v06-d38",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d14",
-        "frus1981-88v06-d9"
+        "frus1981-88v05-d309"
       ],
       "topics": [
         {
-          "topic": "Human Rights",
-          "count": 28
-        },
-        {
-          "topic": "INF",
-          "count": 28
+          "topic": "SDI",
+          "count": 9
         },
         {
           "topic": "Strategic Arms",
-          "count": 25
+          "count": 9
         },
         {
-          "topic": "SDI",
-          "count": 23
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 19
+          "topic": "INF",
+          "count": 8
         },
         {
           "topic": "Nuclear Testing",
-          "count": 16
+          "count": 7
+        },
+        {
+          "topic": "Human Rights",
+          "count": 6
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 6
         },
         {
           "topic": "Regional Issues",
-          "count": 16
+          "count": 4
         }
       ],
       "sessions": [
@@ -928,34 +522,10 @@
     },
     {
       "source": "reagan_gorbachev.gorbachev",
-      "target": "reagan_gorbachev.reagan",
-      "weight": 95,
-      "doc_count": 55,
+      "target": "us.matlock",
+      "weight": 24,
+      "doc_count": 8,
       "doc_ids": [
-        "frus1981-88v05-d271",
-        "frus1981-88v05-d272",
-        "frus1981-88v05-d273",
-        "frus1981-88v05-d274",
-        "frus1981-88v05-d275",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d278",
-        "frus1981-88v05-d279",
-        "frus1981-88v05-d280",
-        "frus1981-88v05-d281",
-        "frus1981-88v05-d282",
-        "frus1981-88v05-d283",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d288",
-        "frus1981-88v05-d289",
-        "frus1981-88v05-d292",
-        "frus1981-88v05-d293",
-        "frus1981-88v05-d294",
-        "frus1981-88v05-d295",
-        "foia-C09000001",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d297",
-        "frus1981-88v05-d298",
-        "frus1981-88v05-d299",
         "frus1981-88v05-d301",
         "frus1981-88v05-d302",
         "frus1981-88v05-d303",
@@ -963,59 +533,143 @@
         "frus1981-88v06-d1",
         "frus1981-88v05-d300",
         "frus1981-88v05-d304",
-        "frus1981-88v05-d306",
-        "frus1981-88v05-d307",
-        "frus1981-88v05-d308",
-        "frus1981-88v05-d309",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d5",
-        "frus1981-88v06-d6",
-        "frus1981-88v06-d15",
-        "frus1981-88v06-d16",
-        "frus1981-88v06-d17",
-        "frus1981-88v06-d18",
-        "frus1981-88v06-d19",
-        "frus1981-88v06-d20",
-        "frus1981-88v06-d23",
-        "frus1981-88v06-d26",
-        "frus1981-88v06-d30",
-        "frus1981-88v06-d34",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d37",
-        "frus1981-88v06-d38",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d14",
-        "frus1981-88v06-d22",
-        "frus1981-88v06-d9"
+        "frus1981-88v05-d306"
       ],
       "topics": [
         {
-          "topic": "Human Rights",
-          "count": 32
+          "topic": "SDI",
+          "count": 6
         },
         {
           "topic": "INF",
-          "count": 32
-        },
-        {
-          "topic": "SDI",
-          "count": 29
+          "count": 6
         },
         {
           "topic": "Strategic Arms",
-          "count": 29
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 22
+          "count": 6
         },
         {
           "topic": "Nuclear Testing",
-          "count": 19
+          "count": 6
+        },
+        {
+          "topic": "Human Rights",
+          "count": 6
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 6
         },
         {
           "topic": "Regional Issues",
-          "count": 18
+          "count": 4
+        }
+      ],
+      "sessions": [
+        "Session I - October 11 morning",
+        "Session II - October 11 afternoon",
+        "Session III - October 12 morning",
+        "Working Group - Night of October 11-12"
+      ]
+    },
+    {
+      "source": "reagan_gorbachev.gorbachev",
+      "target": "us.shultz",
+      "weight": 33,
+      "doc_count": 9,
+      "doc_ids": [
+        "frus1981-88v05-d301",
+        "frus1981-88v05-d302",
+        "frus1981-88v05-d303",
+        "frus1981-88v06-d1",
+        "frus1981-88v05-d304",
+        "frus1981-88v05-d306",
+        "frus1981-88v05-d307",
+        "frus1981-88v05-d308",
+        "frus1981-88v05-d309"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 8
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 8
+        },
+        {
+          "topic": "INF",
+          "count": 7
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 6
+        },
+        {
+          "topic": "Human Rights",
+          "count": 5
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 5
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 3
+        }
+      ],
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon",
+        "Session I - October 11 morning",
+        "Session II - October 11 afternoon",
+        "Session III - October 12 morning",
+        "Session IV - October 12 afternoon (final plenary)",
+        "Working Group - Night of October 11-12"
+      ]
+    },
+    {
+      "source": "reagan_gorbachev.gorbachev",
+      "target": "ussr.shevardnadze",
+      "weight": 32,
+      "doc_count": 8,
+      "doc_ids": [
+        "frus1981-88v05-d301",
+        "frus1981-88v05-d302",
+        "frus1981-88v05-d303",
+        "frus1981-88v05-d305",
+        "frus1981-88v05-d306",
+        "frus1981-88v05-d307",
+        "frus1981-88v05-d308",
+        "frus1981-88v05-d309"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 7
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 7
+        },
+        {
+          "topic": "INF",
+          "count": 6
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 5
+        },
+        {
+          "topic": "Human Rights",
+          "count": 4
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 4
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 2
         }
       ],
       "sessions": [
@@ -1030,16 +684,9 @@
     {
       "source": "reagan_gorbachev.reagan",
       "target": "us.matlock",
-      "weight": 40,
-      "doc_count": 20,
+      "weight": 24,
+      "doc_count": 8,
       "doc_ids": [
-        "frus1981-88v05-d271",
-        "frus1981-88v05-d272",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d294",
-        "frus1981-88v05-d295",
-        "frus1981-88v05-d297",
         "frus1981-88v05-d301",
         "frus1981-88v05-d302",
         "frus1981-88v05-d303",
@@ -1047,41 +694,36 @@
         "frus1981-88v06-d1",
         "frus1981-88v05-d300",
         "frus1981-88v05-d304",
-        "frus1981-88v05-d306",
-        "frus1981-88v06-d8",
-        "frus1981-88v06-d15",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v05-d306"
       ],
       "topics": [
         {
-          "topic": "Human Rights",
-          "count": 14
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 13
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 12
+          "topic": "SDI",
+          "count": 6
         },
         {
           "topic": "INF",
-          "count": 12
+          "count": 6
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 6
         },
         {
           "topic": "Nuclear Testing",
-          "count": 10
+          "count": 6
         },
         {
-          "topic": "SDI",
-          "count": 10
+          "topic": "Human Rights",
+          "count": 6
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 6
         },
         {
           "topic": "Regional Issues",
-          "count": 8
+          "count": 4
         }
       ],
       "sessions": [
@@ -1093,139 +735,10 @@
     },
     {
       "source": "reagan_gorbachev.reagan",
-      "target": "us.poindexter",
-      "weight": 28,
-      "doc_count": 20,
-      "doc_ids": [
-        "frus1981-88v05-d271",
-        "frus1981-88v05-d272",
-        "frus1981-88v05-d274",
-        "frus1981-88v05-d275",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d278",
-        "frus1981-88v05-d281",
-        "frus1981-88v05-d282",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d290",
-        "frus1981-88v05-d294",
-        "frus1981-88v05-d295",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d297",
-        "frus1981-88v06-d1",
-        "frus1981-88v05-d307",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d5",
-        "frus1981-88v06-d6",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 12
-        },
-        {
-          "topic": "INF",
-          "count": 12
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 12
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 10
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 9
-        },
-        {
-          "topic": "SDI",
-          "count": 9
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 5
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon"
-      ]
-    },
-    {
-      "source": "reagan_gorbachev.reagan",
-      "target": "ussr.bessmertnykh",
-      "weight": 27,
+      "target": "us.shultz",
+      "weight": 33,
       "doc_count": 9,
       "doc_ids": [
-        "frus1981-88v05-d271",
-        "frus1981-88v05-d273",
-        "frus1981-88v05-d283",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d288",
-        "frus1981-88v05-d289",
-        "frus1981-88v05-d292",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d303"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 9
-        },
-        {
-          "topic": "INF",
-          "count": 4
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 4
-        },
-        {
-          "topic": "SDI",
-          "count": 3
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 3
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 2
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 2
-        }
-      ],
-      "sessions": [
-        "Session II - October 11 afternoon",
-        "Working Group - Night of October 11-12"
-      ]
-    },
-    {
-      "source": "reagan_gorbachev.gorbachev",
-      "target": "us.shultz",
-      "weight": 95,
-      "doc_count": 47,
-      "doc_ids": [
-        "frus1981-88v05-d273",
-        "frus1981-88v05-d274",
-        "frus1981-88v05-d275",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d279",
-        "frus1981-88v05-d281",
-        "frus1981-88v05-d283",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d285",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d288",
-        "frus1981-88v05-d289",
-        "frus1981-88v05-d292",
-        "frus1981-88v05-d293",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d297",
         "frus1981-88v05-d301",
         "frus1981-88v05-d302",
         "frus1981-88v05-d303",
@@ -1234,127 +747,36 @@
         "frus1981-88v05-d306",
         "frus1981-88v05-d307",
         "frus1981-88v05-d308",
-        "frus1981-88v05-d309",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d5",
-        "frus1981-88v06-d6",
-        "frus1981-88v06-d7",
-        "frus1981-88v06-d16",
-        "frus1981-88v06-d19",
-        "frus1981-88v06-d20",
-        "frus1981-88v06-d21",
-        "frus1981-88v06-d23",
-        "frus1981-88v06-d26",
-        "frus1981-88v06-d29",
-        "frus1981-88v06-d30",
-        "frus1981-88v06-d32",
-        "frus1981-88v06-d34",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d36",
-        "frus1981-88v06-d37",
-        "frus1981-88v06-d38",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d14",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "INF",
-          "count": 31
-        },
-        {
-          "topic": "Human Rights",
-          "count": 29
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 29
-        },
-        {
-          "topic": "SDI",
-          "count": 27
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 19
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 17
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 15
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon",
-        "Session I - October 11 morning",
-        "Session II - October 11 afternoon",
-        "Session III - October 12 morning",
-        "Session IV - October 12 afternoon (final plenary)",
-        "Working Group - Night of October 11-12"
-      ]
-    },
-    {
-      "source": "reagan_gorbachev.gorbachev",
-      "target": "ussr.shevardnadze",
-      "weight": 64,
-      "doc_count": 24,
-      "doc_ids": [
-        "frus1981-88v05-d274",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d280",
-        "frus1981-88v05-d281",
-        "frus1981-88v05-d283",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d285",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d288",
-        "frus1981-88v05-d289",
-        "frus1981-88v05-d292",
-        "frus1981-88v05-d293",
-        "frus1981-88v05-d294",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d299",
-        "frus1981-88v05-d301",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d303",
-        "frus1981-88v05-d305",
-        "frus1981-88v05-d306",
-        "frus1981-88v05-d307",
-        "frus1981-88v05-d308",
         "frus1981-88v05-d309"
       ],
       "topics": [
         {
-          "topic": "Human Rights",
-          "count": 16
-        },
-        {
-          "topic": "INF",
-          "count": 15
+          "topic": "SDI",
+          "count": 8
         },
         {
           "topic": "Strategic Arms",
-          "count": 15
+          "count": 8
         },
         {
-          "topic": "SDI",
-          "count": 14
+          "topic": "INF",
+          "count": 7
         },
         {
           "topic": "Nuclear Testing",
-          "count": 13
+          "count": 6
+        },
+        {
+          "topic": "Human Rights",
+          "count": 5
         },
         {
           "topic": "Bilateral Relations",
-          "count": 10
+          "count": 5
         },
         {
           "topic": "Regional Issues",
-          "count": 7
+          "count": 3
         }
       ],
       "sessions": [
@@ -1368,554 +790,114 @@
     },
     {
       "source": "reagan_gorbachev.reagan",
-      "target": "ussr.shevardnadze",
-      "weight": 56,
-      "doc_count": 22,
-      "doc_ids": [
-        "frus1981-88v05-d274",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d280",
-        "frus1981-88v05-d281",
-        "frus1981-88v05-d283",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d288",
-        "frus1981-88v05-d289",
-        "frus1981-88v05-d290",
-        "frus1981-88v05-d292",
-        "frus1981-88v05-d293",
-        "frus1981-88v05-d294",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d299",
-        "frus1981-88v05-d301",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d303",
-        "frus1981-88v05-d305",
-        "frus1981-88v05-d306",
-        "frus1981-88v05-d307",
-        "frus1981-88v05-d308",
-        "frus1981-88v05-d309"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 16
-        },
-        {
-          "topic": "INF",
-          "count": 13
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 13
-        },
-        {
-          "topic": "SDI",
-          "count": 12
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 11
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 9
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 6
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon",
-        "Session I - October 11 morning",
-        "Session II - October 11 afternoon",
-        "Session III - October 12 morning",
-        "Session IV - October 12 afternoon (final plenary)",
-        "Working Group - Night of October 11-12"
-      ]
-    },
-    {
-      "source": "us.poindexter",
-      "target": "us.shultz",
-      "weight": 22,
-      "doc_count": 14,
-      "doc_ids": [
-        "frus1981-88v05-d274",
-        "frus1981-88v05-d275",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d281",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d290",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d297",
-        "frus1981-88v06-d1",
-        "frus1981-88v05-d307",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d5",
-        "frus1981-88v06-d6",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "Strategic Arms",
-          "count": 11
-        },
-        {
-          "topic": "INF",
-          "count": 10
-        },
-        {
-          "topic": "Human Rights",
-          "count": 9
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 9
-        },
-        {
-          "topic": "SDI",
-          "count": 8
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 7
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 4
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon"
-      ]
-    },
-    {
-      "source": "us.poindexter",
-      "target": "ussr.shevardnadze",
-      "weight": 14,
-      "doc_count": 8,
-      "doc_ids": [
-        "frus1981-88v05-d274",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d281",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d290",
-        "frus1981-88v05-d294",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d307"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 4
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 4
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 4
-        },
-        {
-          "topic": "INF",
-          "count": 3
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 2
-        },
-        {
-          "topic": "SDI",
-          "count": 2
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon"
-      ]
-    },
-    {
-      "source": "us.shultz",
-      "target": "ussr.shevardnadze",
-      "weight": 64,
-      "doc_count": 22,
-      "doc_ids": [
-        "frus1981-88v05-d274",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d281",
-        "frus1981-88v05-d283",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d285",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d288",
-        "frus1981-88v05-d289",
-        "frus1981-88v05-d290",
-        "frus1981-88v05-d291",
-        "frus1981-88v05-d292",
-        "frus1981-88v05-d293",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d301",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d303",
-        "frus1981-88v05-d306",
-        "frus1981-88v05-d307",
-        "frus1981-88v05-d308",
-        "frus1981-88v05-d309"
-      ],
-      "topics": [
-        {
-          "topic": "Human Rights",
-          "count": 16
-        },
-        {
-          "topic": "INF",
-          "count": 13
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 12
-        },
-        {
-          "topic": "SDI",
-          "count": 11
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 10
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 10
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 6
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon",
-        "Session I - October 11 morning",
-        "Session II - October 11 afternoon",
-        "Session III - October 12 morning",
-        "Session IV - October 12 afternoon (final plenary)",
-        "Working Group - Night of October 11-12"
-      ]
-    },
-    {
-      "source": "reagan_gorbachev.gorbachev",
-      "target": "us.nitze",
-      "weight": 43,
-      "doc_count": 19,
-      "doc_ids": [
-        "frus1981-88v05-d275",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d293",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d297",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d305",
-        "frus1981-88v06-d1",
-        "frus1981-88v05-d304",
-        "frus1981-88v05-d307",
-        "frus1981-88v05-d308",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d6",
-        "frus1981-88v06-d7",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "Strategic Arms",
-          "count": 19
-        },
-        {
-          "topic": "INF",
-          "count": 18
-        },
-        {
-          "topic": "SDI",
-          "count": 15
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 14
-        },
-        {
-          "topic": "Human Rights",
-          "count": 9
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 9
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 5
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon",
-        "Session II - October 11 afternoon",
-        "Session IV - October 12 afternoon (final plenary)"
-      ]
-    },
-    {
-      "source": "reagan_gorbachev.reagan",
-      "target": "us.nitze",
-      "weight": 35,
-      "doc_count": 17,
-      "doc_ids": [
-        "frus1981-88v05-d275",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d293",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d297",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d305",
-        "frus1981-88v06-d1",
-        "frus1981-88v05-d304",
-        "frus1981-88v05-d307",
-        "frus1981-88v05-d308",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d6",
-        "frus1981-88v06-d24",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "INF",
-          "count": 16
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 16
-        },
-        {
-          "topic": "SDI",
-          "count": 12
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 12
-        },
-        {
-          "topic": "Human Rights",
-          "count": 9
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 8
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 5
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon",
-        "Session II - October 11 afternoon",
-        "Session IV - October 12 afternoon (final plenary)"
-      ]
-    },
-    {
-      "source": "us.nitze",
-      "target": "us.poindexter",
-      "weight": 18,
-      "doc_count": 10,
-      "doc_ids": [
-        "frus1981-88v05-d275",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d297",
-        "frus1981-88v06-d1",
-        "frus1981-88v05-d307",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d4",
-        "frus1981-88v06-d6",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "Strategic Arms",
-          "count": 10
-        },
-        {
-          "topic": "INF",
-          "count": 9
-        },
-        {
-          "topic": "SDI",
-          "count": 8
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 7
-        },
-        {
-          "topic": "Human Rights",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 3
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon"
-      ]
-    },
-    {
-      "source": "us.nitze",
-      "target": "us.shultz",
-      "weight": 44,
-      "doc_count": 20,
-      "doc_ids": [
-        "frus1981-88v05-d275",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d293",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d297",
-        "frus1981-88v05-d302",
-        "frus1981-88v06-d1",
-        "frus1981-88v05-d304",
-        "frus1981-88v05-d307",
-        "frus1981-88v05-d308",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d6",
-        "frus1981-88v06-d7",
-        "frus1981-88v06-d11",
-        "frus1981-88v06-d24",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "INF",
-          "count": 18
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 18
-        },
-        {
-          "topic": "SDI",
-          "count": 14
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 13
-        },
-        {
-          "topic": "Human Rights",
-          "count": 10
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 10
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 6
-        }
-      ],
-      "sessions": [
-        "Foreign Ministers - October 12 afternoon",
-        "Session II - October 11 afternoon",
-        "Session IV - October 12 afternoon (final plenary)"
-      ]
-    },
-    {
-      "source": "us.matlock",
-      "target": "us.shultz",
-      "weight": 45,
-      "doc_count": 19,
-      "doc_ids": [
-        "frus1981-88v05-d276",
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d297",
-        "frus1981-88v05-d301",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d303",
-        "frus1981-88v06-d1",
-        "frus1981-88v05-d304",
-        "frus1981-88v05-d306",
-        "frus1981-88v06-d7",
-        "frus1981-88v06-d8",
-        "frus1981-88v06-d31",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d36",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "Strategic Arms",
-          "count": 17
-        },
-        {
-          "topic": "INF",
-          "count": 15
-        },
-        {
-          "topic": "Human Rights",
-          "count": 12
-        },
-        {
-          "topic": "SDI",
-          "count": 12
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 11
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 11
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 7
-        }
-      ],
-      "sessions": [
-        "Session I - October 11 morning",
-        "Session II - October 11 afternoon",
-        "Session III - October 12 morning",
-        "Working Group - Night of October 11-12"
-      ]
-    },
-    {
-      "source": "us.matlock",
       "target": "ussr.shevardnadze",
       "weight": 32,
-      "doc_count": 10,
+      "doc_count": 8,
       "doc_ids": [
-        "frus1981-88v05-d277",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d294",
+        "frus1981-88v05-d301",
+        "frus1981-88v05-d302",
+        "frus1981-88v05-d303",
+        "frus1981-88v05-d305",
+        "frus1981-88v05-d306",
+        "frus1981-88v05-d307",
+        "frus1981-88v05-d308",
+        "frus1981-88v05-d309"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 7
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 7
+        },
+        {
+          "topic": "INF",
+          "count": 6
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 5
+        },
+        {
+          "topic": "Human Rights",
+          "count": 4
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 4
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 2
+        }
+      ],
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon",
+        "Session I - October 11 morning",
+        "Session II - October 11 afternoon",
+        "Session III - October 12 morning",
+        "Session IV - October 12 afternoon (final plenary)",
+        "Working Group - Night of October 11-12"
+      ]
+    },
+    {
+      "source": "us.matlock",
+      "target": "us.shultz",
+      "weight": 22,
+      "doc_count": 6,
+      "doc_ids": [
+        "frus1981-88v05-d301",
+        "frus1981-88v05-d302",
+        "frus1981-88v05-d303",
+        "frus1981-88v06-d1",
+        "frus1981-88v05-d304",
+        "frus1981-88v05-d306"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 5
+        },
+        {
+          "topic": "INF",
+          "count": 5
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 5
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 5
+        },
+        {
+          "topic": "Human Rights",
+          "count": 5
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 5
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 3
+        }
+      ],
+      "sessions": [
+        "Session I - October 11 morning",
+        "Session II - October 11 afternoon",
+        "Session III - October 12 morning",
+        "Working Group - Night of October 11-12"
+      ]
+    },
+    {
+      "source": "us.matlock",
+      "target": "ussr.shevardnadze",
+      "weight": 21,
+      "doc_count": 5,
+      "doc_ids": [
         "frus1981-88v05-d301",
         "frus1981-88v05-d302",
         "frus1981-88v05-d303",
@@ -1924,32 +906,32 @@
       ],
       "topics": [
         {
-          "topic": "Strategic Arms",
-          "count": 8
+          "topic": "SDI",
+          "count": 4
         },
         {
           "topic": "INF",
-          "count": 7
+          "count": 4
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 4
         },
         {
           "topic": "Nuclear Testing",
-          "count": 7
+          "count": 4
         },
         {
           "topic": "Human Rights",
-          "count": 6
-        },
-        {
-          "topic": "SDI",
-          "count": 6
+          "count": 4
         },
         {
           "topic": "Bilateral Relations",
-          "count": 6
+          "count": 4
         },
         {
           "topic": "Regional Issues",
-          "count": 4
+          "count": 2
         }
       ],
       "sessions": [
@@ -1960,199 +942,142 @@
       ]
     },
     {
-      "source": "ussr.bessmertnykh",
+      "source": "us.shultz",
       "target": "ussr.shevardnadze",
-      "weight": 34,
-      "doc_count": 10,
+      "weight": 31,
+      "doc_count": 7,
       "doc_ids": [
-        "frus1981-88v05-d283",
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d288",
-        "frus1981-88v05-d289",
-        "frus1981-88v05-d291",
-        "frus1981-88v05-d292",
+        "frus1981-88v05-d301",
         "frus1981-88v05-d302",
-        "frus1981-88v05-d303"
+        "frus1981-88v05-d303",
+        "frus1981-88v05-d306",
+        "frus1981-88v05-d307",
+        "frus1981-88v05-d308",
+        "frus1981-88v05-d309"
       ],
       "topics": [
         {
-          "topic": "Human Rights",
-          "count": 8
-        },
-        {
-          "topic": "INF",
+          "topic": "SDI",
           "count": 6
         },
         {
-          "topic": "SDI",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
-        },
-        {
           "topic": "Strategic Arms",
-          "count": 4
+          "count": 6
+        },
+        {
+          "topic": "INF",
+          "count": 5
         },
         {
           "topic": "Nuclear Testing",
           "count": 4
         },
         {
-          "topic": "Regional Issues",
+          "topic": "Human Rights",
           "count": 4
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 4
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 2
         }
       ],
       "sessions": [
+        "Foreign Ministers - October 12 afternoon",
+        "Session I - October 11 morning",
         "Session II - October 11 afternoon",
+        "Session III - October 12 morning",
+        "Session IV - October 12 afternoon (final plenary)",
         "Working Group - Night of October 11-12"
       ]
     },
     {
-      "source": "us.matlock",
-      "target": "us.nitze",
-      "weight": 26,
-      "doc_count": 12,
+      "source": "reagan_gorbachev.gorbachev",
+      "target": "us.adelman",
+      "weight": 6,
+      "doc_count": 2,
       "doc_ids": [
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d297",
+        "frus1981-88v05-d302",
+        "frus1981-88v06-d1"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 2
+        },
+        {
+          "topic": "INF",
+          "count": 2
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 2
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 2
+        },
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Session II - October 11 afternoon"
+      ]
+    },
+    {
+      "source": "reagan_gorbachev.gorbachev",
+      "target": "us.nitze",
+      "weight": 18,
+      "doc_count": 6,
+      "doc_ids": [
         "frus1981-88v05-d302",
         "frus1981-88v05-d305",
         "frus1981-88v06-d1",
         "frus1981-88v05-d304",
-        "frus1981-88v06-d7",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
-      ],
-      "topics": [
-        {
-          "topic": "INF",
-          "count": 12
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 12
-        },
-        {
-          "topic": "SDI",
-          "count": 9
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 9
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 7
-        },
-        {
-          "topic": "Human Rights",
-          "count": 6
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 4
-        }
-      ],
-      "sessions": [
-        "Session II - October 11 afternoon"
-      ]
-    },
-    {
-      "source": "us.nitze",
-      "target": "ussr.bessmertnykh",
-      "weight": 14,
-      "doc_count": 4,
-      "doc_ids": [
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d302"
-      ],
-      "topics": [
-        {
-          "topic": "INF",
-          "count": 4
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 4
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 4
-        },
-        {
-          "topic": "SDI",
-          "count": 3
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 3
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 2
-        },
-        {
-          "topic": "Human Rights",
-          "count": 2
-        }
-      ],
-      "sessions": [
-        "Session II - October 11 afternoon"
-      ]
-    },
-    {
-      "source": "us.nitze",
-      "target": "ussr.shevardnadze",
-      "weight": 27,
-      "doc_count": 9,
-      "doc_ids": [
-        "frus1981-88v05-d284",
-        "frus1981-88v05-d286",
-        "frus1981-88v05-d287",
-        "frus1981-88v05-d293",
-        "frus1981-88v05-d296",
-        "frus1981-88v05-d302",
-        "frus1981-88v05-d305",
         "frus1981-88v05-d307",
         "frus1981-88v05-d308"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 6
+        },
+        {
           "topic": "Strategic Arms",
-          "count": 9
+          "count": 6
         },
         {
           "topic": "INF",
-          "count": 8
+          "count": 5
         },
         {
           "topic": "Nuclear Testing",
-          "count": 8
-        },
-        {
-          "topic": "SDI",
-          "count": 7
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 4
+          "count": 5
         },
         {
           "topic": "Human Rights",
-          "count": 3
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
         },
         {
           "topic": "Regional Issues",
-          "count": 2
+          "count": 1
         }
       ],
       "sessions": [
@@ -2163,48 +1088,38 @@
     },
     {
       "source": "reagan_gorbachev.gorbachev",
-      "target": "us.adelman",
-      "weight": 15,
-      "doc_count": 9,
+      "target": "ussr.akhromeyev",
+      "weight": 7,
+      "doc_count": 3,
       "doc_ids": [
         "frus1981-88v05-d302",
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d17",
-        "frus1981-88v06-d29",
-        "frus1981-88v06-d32",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v05-d305",
+        "frus1981-88v05-d304"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 3
+        },
+        {
           "topic": "INF",
-          "count": 7
+          "count": 3
         },
         {
           "topic": "Strategic Arms",
-          "count": 7
-        },
-        {
-          "topic": "Human Rights",
-          "count": 6
-        },
-        {
-          "topic": "SDI",
-          "count": 5
+          "count": 3
         },
         {
           "topic": "Nuclear Testing",
-          "count": 4
+          "count": 3
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
         },
         {
           "topic": "Bilateral Relations",
-          "count": 4
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 2
+          "count": 1
         }
       ],
       "sessions": [
@@ -2213,91 +1128,138 @@
     },
     {
       "source": "reagan_gorbachev.gorbachev",
-      "target": "ussr.akhromeyev",
-      "weight": 7,
-      "doc_count": 3,
+      "target": "ussr.bessmertnykh",
+      "weight": 10,
+      "doc_count": 2,
       "doc_ids": [
         "frus1981-88v05-d302",
-        "frus1981-88v05-d305",
-        "frus1981-88v05-d304"
+        "frus1981-88v05-d303"
       ],
       "topics": [
         {
-          "topic": "SDI",
-          "count": 3
-        },
-        {
-          "topic": "INF",
-          "count": 3
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 3
-        },
-        {
-          "topic": "Nuclear Testing",
-          "count": 3
-        },
-        {
           "topic": "Human Rights",
-          "count": 1
+          "count": 2
         },
         {
           "topic": "Bilateral Relations",
+          "count": 2
+        },
+        {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
           "count": 1
         }
       ],
       "sessions": [
-        "Session II - October 11 afternoon"
+        "Session II - October 11 afternoon",
+        "Working Group - Night of October 11-12"
       ]
     },
     {
       "source": "reagan_gorbachev.reagan",
       "target": "us.adelman",
-      "weight": 14,
-      "doc_count": 8,
+      "weight": 6,
+      "doc_count": 2,
       "doc_ids": [
         "frus1981-88v05-d302",
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d17",
-        "frus1981-88v06-d24",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v06-d1"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 2
+        },
+        {
           "topic": "INF",
-          "count": 8
+          "count": 2
         },
         {
           "topic": "Strategic Arms",
-          "count": 7
-        },
-        {
-          "topic": "SDI",
-          "count": 5
-        },
-        {
-          "topic": "Human Rights",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
+          "count": 2
         },
         {
           "topic": "Nuclear Testing",
-          "count": 4
+          "count": 2
+        },
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
         },
         {
           "topic": "Regional Issues",
-          "count": 3
+          "count": 1
         }
       ],
       "sessions": [
         "Session II - October 11 afternoon"
+      ]
+    },
+    {
+      "source": "reagan_gorbachev.reagan",
+      "target": "us.nitze",
+      "weight": 18,
+      "doc_count": 6,
+      "doc_ids": [
+        "frus1981-88v05-d302",
+        "frus1981-88v05-d305",
+        "frus1981-88v06-d1",
+        "frus1981-88v05-d304",
+        "frus1981-88v05-d307",
+        "frus1981-88v05-d308"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 6
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 6
+        },
+        {
+          "topic": "INF",
+          "count": 5
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 5
+        },
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon",
+        "Session II - October 11 afternoon",
+        "Session IV - October 12 afternoon (final plenary)"
       ]
     },
     {
@@ -2341,45 +1303,86 @@
       ]
     },
     {
-      "source": "us.adelman",
-      "target": "us.matlock",
-      "weight": 11,
-      "doc_count": 5,
+      "source": "reagan_gorbachev.reagan",
+      "target": "ussr.bessmertnykh",
+      "weight": 10,
+      "doc_count": 2,
       "doc_ids": [
         "frus1981-88v05-d302",
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v05-d303"
       ],
       "topics": [
         {
-          "topic": "INF",
-          "count": 5
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 5
-        },
-        {
           "topic": "Human Rights",
-          "count": 4
+          "count": 2
         },
         {
           "topic": "Bilateral Relations",
-          "count": 4
+          "count": 2
         },
         {
           "topic": "SDI",
-          "count": 3
+          "count": 1
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
         },
         {
           "topic": "Nuclear Testing",
-          "count": 3
+          "count": 1
         },
         {
           "topic": "Regional Issues",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Session II - October 11 afternoon",
+        "Working Group - Night of October 11-12"
+      ]
+    },
+    {
+      "source": "us.adelman",
+      "target": "us.matlock",
+      "weight": 6,
+      "doc_count": 2,
+      "doc_ids": [
+        "frus1981-88v05-d302",
+        "frus1981-88v06-d1"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
           "count": 2
+        },
+        {
+          "topic": "INF",
+          "count": 2
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 2
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 2
+        },
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
         }
       ],
       "sessions": [
@@ -2389,45 +1392,40 @@
     {
       "source": "us.adelman",
       "target": "us.nitze",
-      "weight": 13,
-      "doc_count": 7,
+      "weight": 6,
+      "doc_count": 2,
       "doc_ids": [
         "frus1981-88v05-d302",
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d24",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v06-d1"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 2
+        },
+        {
           "topic": "INF",
-          "count": 7
+          "count": 2
         },
         {
           "topic": "Strategic Arms",
-          "count": 6
-        },
-        {
-          "topic": "Human Rights",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
-        },
-        {
-          "topic": "SDI",
-          "count": 4
+          "count": 2
         },
         {
           "topic": "Nuclear Testing",
-          "count": 4
+          "count": 2
+        },
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
         },
         {
           "topic": "Regional Issues",
-          "count": 3
+          "count": 1
         }
       ],
       "sessions": [
@@ -2437,47 +1435,40 @@
     {
       "source": "us.adelman",
       "target": "us.shultz",
-      "weight": 15,
-      "doc_count": 9,
+      "weight": 6,
+      "doc_count": 2,
       "doc_ids": [
         "frus1981-88v05-d302",
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d24",
-        "frus1981-88v06-d29",
-        "frus1981-88v06-d32",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v06-d1"
       ],
       "topics": [
         {
-          "topic": "INF",
-          "count": 7
+          "topic": "SDI",
+          "count": 2
         },
         {
-          "topic": "Human Rights",
-          "count": 7
+          "topic": "INF",
+          "count": 2
         },
         {
           "topic": "Strategic Arms",
-          "count": 6
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
-        },
-        {
-          "topic": "SDI",
-          "count": 4
+          "count": 2
         },
         {
           "topic": "Nuclear Testing",
-          "count": 4
+          "count": 2
+        },
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
         },
         {
           "topic": "Regional Issues",
-          "count": 3
+          "count": 1
         }
       ],
       "sessions": [
@@ -2600,6 +1591,51 @@
     },
     {
       "source": "us.matlock",
+      "target": "us.nitze",
+      "weight": 8,
+      "doc_count": 4,
+      "doc_ids": [
+        "frus1981-88v05-d302",
+        "frus1981-88v05-d305",
+        "frus1981-88v06-d1",
+        "frus1981-88v05-d304"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 4
+        },
+        {
+          "topic": "INF",
+          "count": 4
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 4
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 4
+        },
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Session II - October 11 afternoon"
+      ]
+    },
+    {
+      "source": "us.matlock",
       "target": "ussr.akhromeyev",
       "weight": 7,
       "doc_count": 3,
@@ -2636,6 +1672,98 @@
       ],
       "sessions": [
         "Session II - October 11 afternoon"
+      ]
+    },
+    {
+      "source": "us.matlock",
+      "target": "ussr.bessmertnykh",
+      "weight": 10,
+      "doc_count": 2,
+      "doc_ids": [
+        "frus1981-88v05-d302",
+        "frus1981-88v05-d303"
+      ],
+      "topics": [
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
+        },
+        {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Session II - October 11 afternoon",
+        "Working Group - Night of October 11-12"
+      ]
+    },
+    {
+      "source": "us.nitze",
+      "target": "us.shultz",
+      "weight": 17,
+      "doc_count": 5,
+      "doc_ids": [
+        "frus1981-88v05-d302",
+        "frus1981-88v06-d1",
+        "frus1981-88v05-d304",
+        "frus1981-88v05-d307",
+        "frus1981-88v05-d308"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 5
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 5
+        },
+        {
+          "topic": "INF",
+          "count": 4
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 4
+        },
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon",
+        "Session II - October 11 afternoon",
+        "Session IV - October 12 afternoon (final plenary)"
       ]
     },
     {
@@ -2676,6 +1804,87 @@
       ],
       "sessions": [
         "Session II - October 11 afternoon"
+      ]
+    },
+    {
+      "source": "us.nitze",
+      "target": "ussr.bessmertnykh",
+      "weight": 5,
+      "doc_count": 1,
+      "doc_ids": [
+        "frus1981-88v05-d302"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Session II - October 11 afternoon"
+      ]
+    },
+    {
+      "source": "us.nitze",
+      "target": "ussr.shevardnadze",
+      "weight": 16,
+      "doc_count": 4,
+      "doc_ids": [
+        "frus1981-88v05-d302",
+        "frus1981-88v05-d305",
+        "frus1981-88v05-d307",
+        "frus1981-88v05-d308"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 4
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 4
+        },
+        {
+          "topic": "INF",
+          "count": 3
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 3
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon",
+        "Session II - October 11 afternoon",
+        "Session IV - October 12 afternoon (final plenary)"
       ]
     },
     {
@@ -2715,6 +1924,50 @@
       ],
       "sessions": [
         "Session II - October 11 afternoon"
+      ]
+    },
+    {
+      "source": "us.shultz",
+      "target": "ussr.bessmertnykh",
+      "weight": 10,
+      "doc_count": 2,
+      "doc_ids": [
+        "frus1981-88v05-d302",
+        "frus1981-88v05-d303"
+      ],
+      "topics": [
+        {
+          "topic": "Human Rights",
+          "count": 2
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 2
+        },
+        {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Session II - October 11 afternoon",
+        "Working Group - Night of October 11-12"
       ]
     },
     {
@@ -2795,138 +2048,251 @@
       ]
     },
     {
-      "source": "reagan_gorbachev.gorbachev",
-      "target": "us.linhard",
-      "weight": 11,
-      "doc_count": 7,
+      "source": "ussr.bessmertnykh",
+      "target": "ussr.shevardnadze",
+      "weight": 10,
+      "doc_count": 2,
       "doc_ids": [
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d7",
-        "frus1981-88v06-d30",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v05-d302",
+        "frus1981-88v05-d303"
       ],
       "topics": [
         {
-          "topic": "INF",
-          "count": 7
-        },
-        {
-          "topic": "Strategic Arms",
-          "count": 6
-        },
-        {
-          "topic": "SDI",
-          "count": 5
-        },
-        {
           "topic": "Human Rights",
-          "count": 4
+          "count": 2
         },
         {
           "topic": "Bilateral Relations",
-          "count": 4
+          "count": 2
+        },
+        {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
         },
         {
           "topic": "Nuclear Testing",
-          "count": 3
+          "count": 1
         },
         {
           "topic": "Regional Issues",
-          "count": 3
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Session II - October 11 afternoon",
+        "Working Group - Night of October 11-12"
+      ]
+    },
+    {
+      "source": "reagan_gorbachev.gorbachev",
+      "target": "us.linhard",
+      "weight": 1,
+      "doc_count": 1,
+      "doc_ids": [
+        "frus1981-88v06-d1"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
+        }
+      ],
+      "sessions": []
+    },
+    {
+      "source": "reagan_gorbachev.gorbachev",
+      "target": "us.poindexter",
+      "weight": 6,
+      "doc_count": 2,
+      "doc_ids": [
+        "frus1981-88v06-d1",
+        "frus1981-88v05-d307"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 2
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 2
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 2
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon"
+      ]
+    },
+    {
+      "source": "reagan_gorbachev.reagan",
+      "target": "us.linhard",
+      "weight": 1,
+      "doc_count": 1,
+      "doc_ids": [
+        "frus1981-88v06-d1"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
         }
       ],
       "sessions": []
     },
     {
       "source": "reagan_gorbachev.reagan",
-      "target": "us.linhard",
-      "weight": 9,
-      "doc_count": 7,
+      "target": "us.poindexter",
+      "weight": 6,
+      "doc_count": 2,
       "doc_ids": [
         "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d24",
-        "frus1981-88v06-d30",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v05-d307"
       ],
       "topics": [
         {
-          "topic": "INF",
-          "count": 7
+          "topic": "SDI",
+          "count": 2
         },
         {
           "topic": "Strategic Arms",
-          "count": 5
-        },
-        {
-          "topic": "SDI",
-          "count": 4
-        },
-        {
-          "topic": "Human Rights",
-          "count": 4
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 4
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 4
+          "count": 2
         },
         {
           "topic": "Nuclear Testing",
-          "count": 3
+          "count": 2
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
         }
       ],
-      "sessions": []
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon"
+      ]
     },
     {
       "source": "us.adelman",
       "target": "us.linhard",
-      "weight": 8,
-      "doc_count": 6,
+      "weight": 1,
+      "doc_count": 1,
       "doc_ids": [
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d24",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v06-d1"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
           "topic": "INF",
-          "count": 6
+          "count": 1
         },
         {
           "topic": "Strategic Arms",
-          "count": 5
-        },
-        {
-          "topic": "Human Rights",
-          "count": 4
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 4
-        },
-        {
-          "topic": "SDI",
-          "count": 3
+          "count": 1
         },
         {
           "topic": "Nuclear Testing",
-          "count": 3
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
         },
         {
           "topic": "Regional Issues",
-          "count": 3
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
         }
       ],
       "sessions": []
@@ -2934,29 +2300,27 @@
     {
       "source": "us.adelman",
       "target": "us.poindexter",
-      "weight": 3,
-      "doc_count": 3,
+      "weight": 1,
+      "doc_count": 1,
       "doc_ids": [
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d9"
+        "frus1981-88v06-d1"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
           "topic": "INF",
-          "count": 3
+          "count": 1
         },
         {
           "topic": "Strategic Arms",
-          "count": 3
-        },
-        {
-          "topic": "SDI",
-          "count": 2
+          "count": 1
         },
         {
           "topic": "Nuclear Testing",
-          "count": 2
+          "count": 1
         },
         {
           "topic": "Human Rights",
@@ -2976,43 +2340,39 @@
     {
       "source": "us.linhard",
       "target": "us.matlock",
-      "weight": 9,
-      "doc_count": 5,
+      "weight": 1,
+      "doc_count": 1,
       "doc_ids": [
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d7",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v06-d1"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
           "topic": "INF",
-          "count": 5
+          "count": 1
         },
         {
           "topic": "Strategic Arms",
-          "count": 5
-        },
-        {
-          "topic": "Human Rights",
-          "count": 4
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 4
-        },
-        {
-          "topic": "SDI",
-          "count": 3
+          "count": 1
         },
         {
           "topic": "Nuclear Testing",
-          "count": 2
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
         },
         {
           "topic": "Regional Issues",
-          "count": 2
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
         }
       ],
       "sessions": []
@@ -3020,45 +2380,39 @@
     {
       "source": "us.linhard",
       "target": "us.nitze",
-      "weight": 11,
-      "doc_count": 7,
+      "weight": 1,
+      "doc_count": 1,
       "doc_ids": [
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d7",
-        "frus1981-88v06-d24",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v06-d1"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
           "topic": "INF",
-          "count": 7
+          "count": 1
         },
         {
           "topic": "Strategic Arms",
-          "count": 6
-        },
-        {
-          "topic": "Human Rights",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
-        },
-        {
-          "topic": "SDI",
-          "count": 4
+          "count": 1
         },
         {
           "topic": "Nuclear Testing",
-          "count": 3
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
         },
         {
           "topic": "Regional Issues",
-          "count": 3
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
         }
       ],
       "sessions": []
@@ -3066,29 +2420,27 @@
     {
       "source": "us.linhard",
       "target": "us.poindexter",
-      "weight": 3,
-      "doc_count": 3,
+      "weight": 1,
+      "doc_count": 1,
       "doc_ids": [
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d9"
+        "frus1981-88v06-d1"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
           "topic": "INF",
-          "count": 3
+          "count": 1
         },
         {
           "topic": "Strategic Arms",
-          "count": 3
-        },
-        {
-          "topic": "SDI",
-          "count": 2
+          "count": 1
         },
         {
           "topic": "Nuclear Testing",
-          "count": 2
+          "count": 1
         },
         {
           "topic": "Human Rights",
@@ -3108,49 +2460,194 @@
     {
       "source": "us.linhard",
       "target": "us.shultz",
-      "weight": 12,
-      "doc_count": 8,
+      "weight": 1,
+      "doc_count": 1,
       "doc_ids": [
-        "frus1981-88v06-d1",
-        "frus1981-88v06-d3",
-        "frus1981-88v06-d7",
-        "frus1981-88v06-d24",
-        "frus1981-88v06-d30",
-        "frus1981-88v06-d35",
-        "frus1981-88v06-d39",
-        "frus1981-88v06-d9"
+        "frus1981-88v06-d1"
       ],
       "topics": [
         {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
           "topic": "INF",
-          "count": 8
+          "count": 1
         },
         {
           "topic": "Strategic Arms",
-          "count": 6
-        },
-        {
-          "topic": "SDI",
-          "count": 5
-        },
-        {
-          "topic": "Human Rights",
-          "count": 5
-        },
-        {
-          "topic": "Bilateral Relations",
-          "count": 5
-        },
-        {
-          "topic": "Regional Issues",
-          "count": 4
+          "count": 1
         },
         {
           "topic": "Nuclear Testing",
-          "count": 3
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
         }
       ],
       "sessions": []
+    },
+    {
+      "source": "us.matlock",
+      "target": "us.poindexter",
+      "weight": 1,
+      "doc_count": 1,
+      "doc_ids": [
+        "frus1981-88v06-d1"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
+        }
+      ],
+      "sessions": []
+    },
+    {
+      "source": "us.nitze",
+      "target": "us.poindexter",
+      "weight": 6,
+      "doc_count": 2,
+      "doc_ids": [
+        "frus1981-88v06-d1",
+        "frus1981-88v05-d307"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 2
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 2
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 2
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon"
+      ]
+    },
+    {
+      "source": "us.poindexter",
+      "target": "us.shultz",
+      "weight": 6,
+      "doc_count": 2,
+      "doc_ids": [
+        "frus1981-88v06-d1",
+        "frus1981-88v05-d307"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 2
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 2
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 2
+        },
+        {
+          "topic": "INF",
+          "count": 1
+        },
+        {
+          "topic": "Human Rights",
+          "count": 1
+        },
+        {
+          "topic": "Regional Issues",
+          "count": 1
+        },
+        {
+          "topic": "Bilateral Relations",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon"
+      ]
+    },
+    {
+      "source": "us.poindexter",
+      "target": "ussr.shevardnadze",
+      "weight": 5,
+      "doc_count": 1,
+      "doc_ids": [
+        "frus1981-88v05-d307"
+      ],
+      "topics": [
+        {
+          "topic": "SDI",
+          "count": 1
+        },
+        {
+          "topic": "Strategic Arms",
+          "count": 1
+        },
+        {
+          "topic": "Nuclear Testing",
+          "count": 1
+        }
+      ],
+      "sessions": [
+        "Foreign Ministers - October 12 afternoon"
+      ]
     }
   ]
 }

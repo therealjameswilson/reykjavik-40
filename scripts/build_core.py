@@ -227,11 +227,26 @@ def build_timeline(records: list[dict[str, Any]], v06_chronology: list[dict[str,
     return events
 
 
+# Restrict FRUS documents to the two summit days themselves.
+# FOIA records are NOT filtered here — the user will filter FOIA manually.
+# Set to None (or an empty set) to disable the filter.
+FRUS_DATE_ALLOWLIST: set[str] | None = {"1986-10-11", "1986-10-12"}
+
+
+def _filter_frus(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    if not FRUS_DATE_ALLOWLIST:
+        return records
+    return [r for r in records if r.get("date") in FRUS_DATE_ALLOWLIST]
+
+
 def main() -> int:
     v05 = [normalize_record(r) for r in load(DATA / "frus_v05_reykjavik.json")]
     v06 = [normalize_record(r) for r in load(DATA / "frus_v06_aftermath.json")]
     foia = [normalize_record(r) for r in load(DATA / "foia_reykjavik.json")]
     chronology = load(DATA / "v06_chronology.json")
+
+    v05 = _filter_frus(v05)
+    v06 = _filter_frus(v06)
 
     all_records = v05 + v06 + foia
     all_records.sort(key=lambda r: (r["date"] or "9999", r["source"], r["doc_id"]))
