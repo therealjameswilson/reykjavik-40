@@ -15,21 +15,21 @@
     "venue": "",
     "persons": [
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Nicholas Daniloff",
         "surface": "Nicholas Daniloff",
         "in_network": false
       },
       {
-        "id": "p_CRE_1",
+        "id": "frus1981-88v05:p_CRE_1",
         "tei_id": "p_CRE_1",
         "name": "Combs",
         "surface": "Combs",
         "in_network": false
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Parris",
         "surface": "Parris",
@@ -104,56 +104,56 @@
         "in_network": true
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Parris",
         "surface": "Parris",
         "in_network": false
       },
       {
-        "id": "p_CSJ_1",
+        "id": "frus1981-88v05:p_CSJ_1",
         "tei_id": "p_CSJ_1",
         "name": "Coffey",
         "surface": "Coffey",
         "in_network": false
       },
       {
-        "id": "p_PBL_1",
+        "id": "frus1981-88v05:p_PBL_1",
         "tei_id": "p_PBL_1",
         "name": "Pascoe",
         "surface": "Pascoe",
         "in_network": false
       },
       {
-        "id": "p_STW_1",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
         "name": "Simons",
         "surface": "Simons",
         "in_network": false
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Nick Daniloff",
         "surface": "Nick Daniloff",
         "in_network": false
       },
       {
-        "id": "p_MV_1",
+        "id": "frus1981-88v05:p_MV_1",
         "tei_id": "p_MV_1",
         "name": "Mikol’chak",
         "surface": "Mikol’chak",
         "in_network": false
       },
       {
-        "id": "p_AMH_1",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
         "name": "Mike Armacost",
         "surface": "Mike Armacost",
         "in_network": false
       },
       {
-        "id": "p_SO_1",
+        "id": "frus1981-88v05:p_SO_1",
         "tei_id": "p_SO_1",
         "name": "Sokolov",
         "surface": "Sokolov",
@@ -178,21 +178,21 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
         "in_network": false
       },
       {
-        "id": "p_SA_2",
+        "id": "frus1981-88v05:p_SA_2",
         "tei_id": "p_SA_2",
         "name": "Abe Sofaer",
         "surface": "Abe Sofaer",
         "in_network": false
       },
       {
-        "id": "p_WJC_1",
+        "id": "frus1981-88v05:p_WJC_1",
         "tei_id": "p_WJC_1",
         "name": "Whitehead",
         "surface": "Whitehead",
@@ -249,35 +249,35 @@
         "in_network": true
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Parris",
         "surface": "Parris",
         "in_network": false
       },
       {
-        "id": "p_SA_2",
+        "id": "frus1981-88v05:p_SA_2",
         "tei_id": "p_SA_2",
         "name": "Sofaer",
         "surface": "Sofaer",
         "in_network": false
       },
       {
-        "id": "p_CSJ_1",
+        "id": "frus1981-88v05:p_CSJ_1",
         "tei_id": "p_CSJ_1",
         "name": "S. Coffey",
         "surface": "S. Coffey",
         "in_network": false
       },
       {
-        "id": "p_PBL_1",
+        "id": "frus1981-88v05:p_PBL_1",
         "tei_id": "p_PBL_1",
         "name": "Pascoe",
         "surface": "Pascoe",
         "in_network": false
       },
       {
-        "id": "p_AMH_1",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
         "name": "Armacost",
         "surface": "Armacost",
@@ -293,7 +293,7 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
@@ -309,21 +309,21 @@
         "in_network": true
       },
       {
-        "id": "p_RPW_1",
+        "id": "frus1981-88v05:p_RPW_1",
         "tei_id": "p_RPW_1",
         "name": "Peter Rodman",
         "surface": "Peter Rodman",
         "in_network": false
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
         "in_network": false
       },
       {
-        "id": "p_WJC_1",
+        "id": "frus1981-88v05:p_WJC_1",
         "tei_id": "p_WJC_1",
         "name": "Whitehead",
         "surface": "Whitehead",
@@ -388,14 +388,14 @@
         "in_network": true
       },
       {
-        "id": "p_MRB_1",
+        "id": "frus1981-88v05:p_MRB_1",
         "tei_id": "p_MRB_1",
         "name": "Rod McDaniel",
         "surface": "Rod McDaniel",
         "in_network": false
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
@@ -433,21 +433,21 @@
     "venue": "",
     "persons": [
       {
-        "id": "p_PBL_1",
+        "id": "frus1981-88v05:p_PBL_1",
         "tei_id": "p_PBL_1",
         "name": "Pascoe",
         "surface": "Pascoe",
         "in_network": false
       },
       {
-        "id": "p_AMH_1",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
         "name": "Armacost",
         "surface": "Armacost",
         "in_network": false
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
@@ -463,7 +463,7 @@
         "in_network": true
       },
       {
-        "id": "p_KG_1",
+        "id": "frus1981-88v05:p_KG_1",
         "tei_id": "p_KG_1",
         "name": "Korniyenko",
         "surface": "Korniyenko",
@@ -479,7 +479,7 @@
         "in_network": true
       },
       {
-        "id": "p_PN_1",
+        "id": "frus1981-88v05:p_PN_1",
         "tei_id": "p_PN_1",
         "name": "Platt",
         "surface": "Platt",
@@ -504,14 +504,14 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
         "in_network": false
       },
       {
-        "id": "p_OY_1",
+        "id": "frus1981-88v05:p_OY_1",
         "tei_id": "p_OY_1",
         "name": "Orlov",
         "surface": "Orlov",
@@ -569,21 +569,21 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
         "in_network": false
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Parris",
         "surface": "Parris",
@@ -599,21 +599,21 @@
         "in_network": true
       },
       {
-        "id": "p_AMH_1",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
         "name": "Mike Armacost",
         "surface": "Mike Armacost",
         "in_network": false
       },
       {
-        "id": "p_CRE_1",
+        "id": "frus1981-88v05:p_CRE_1",
         "tei_id": "p_CRE_1",
         "name": "Combs",
         "surface": "Combs",
         "in_network": false
       },
       {
-        "id": "p_RDT_1",
+        "id": "frus1981-88v05:p_RDT_1",
         "tei_id": "p_RDT_1",
         "name": "Don Regan",
         "surface": "Don Regan",
@@ -660,21 +660,21 @@
         "in_network": true
       },
       {
-        "id": "p_SSR_1",
+        "id": "frus1981-88v05:p_SSR_1",
         "tei_id": "p_SSR_1",
         "name": "Stephen Sestanovich",
         "surface": "Stephen Sestanovich",
         "in_network": false
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_RDT_1",
+        "id": "frus1981-88v05:p_RDT_1",
         "tei_id": "p_RDT_1",
         "name": "Regan",
         "surface": "Regan",
@@ -690,28 +690,28 @@
         "in_network": true
       },
       {
-        "id": "p_ME_1",
+        "id": "frus1981-88v05:p_ME_1",
         "tei_id": "p_ME_1",
         "name": "Meese",
         "surface": "Meese",
         "in_network": false
       },
       {
-        "id": "p_SA_1",
+        "id": "frus1981-88v05:p_SA_1",
         "tei_id": "p_SA_1",
         "name": "Sakharov",
         "surface": "Sakharov",
         "in_network": false
       },
       {
-        "id": "p_SA_2",
+        "id": "frus1981-88v05:p_SA_2",
         "tei_id": "p_SA_2",
         "name": "Sofaer",
         "surface": "Sofaer",
         "in_network": false
       },
       {
-        "id": "p_AMH_1",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
         "name": "Armacost",
         "surface": "Armacost",
@@ -778,14 +778,14 @@
         "in_network": true
       },
       {
-        "id": "p_CT_1",
+        "id": "frus1981-88v05:p_CT_1",
         "tei_id": "p_CT_1",
         "name": "Tyrus Cobb",
         "surface": "Tyrus Cobb",
         "in_network": false
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Linhard",
         "surface": "Linhard",
@@ -810,7 +810,7 @@
         "in_network": true
       },
       {
-        "id": "p_REL_1",
+        "id": "frus1981-88v05:p_REL_1",
         "tei_id": "p_REL_1",
         "name": "Ed Rowny",
         "surface": "Ed Rowny",
@@ -826,14 +826,14 @@
         "in_network": true
       },
       {
-        "id": "p_LRF_1",
+        "id": "frus1981-88v05:p_LRF_1",
         "tei_id": "p_LRF_1",
         "name": "Ron Lehman",
         "surface": "Ron Lehman",
         "in_network": false
       },
       {
-        "id": "p_GMW_1",
+        "id": "frus1981-88v05:p_GMW_1",
         "tei_id": "p_GMW_1",
         "name": "Mike Glitman",
         "surface": "Mike Glitman",
@@ -849,7 +849,7 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
@@ -865,7 +865,7 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
@@ -915,21 +915,21 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Parris",
         "surface": "Parris",
         "in_network": false
       },
       {
-        "id": "p_STW_1",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
         "name": "Simons",
         "surface": "Simons",
@@ -945,7 +945,7 @@
         "in_network": true
       },
       {
-        "id": "p_PBL_1",
+        "id": "frus1981-88v05:p_PBL_1",
         "tei_id": "p_PBL_1",
         "name": "Pascoe",
         "surface": "Pascoe",
@@ -961,21 +961,21 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
         "in_network": false
       },
       {
-        "id": "p_AMH_1",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
         "name": "Armacost",
         "surface": "Armacost",
         "in_network": false
       },
       {
-        "id": "p_SO_1",
+        "id": "frus1981-88v05:p_SO_1",
         "tei_id": "p_SO_1",
         "name": "Sokolov",
         "surface": "Sokolov",
@@ -991,7 +991,7 @@
         "in_network": true
       },
       {
-        "id": "p_CRE_1",
+        "id": "frus1981-88v05:p_CRE_1",
         "tei_id": "p_CRE_1",
         "name": "Combs",
         "surface": "Combs",
@@ -1020,7 +1020,7 @@
     "venue": "",
     "persons": [
       {
-        "id": "p_SSR_1",
+        "id": "frus1981-88v05:p_SSR_1",
         "tei_id": "p_SSR_1",
         "name": "Stephen Sestanovich",
         "surface": "Stephen Sestanovich",
@@ -1036,14 +1036,14 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_CWA_1",
+        "id": "frus1981-88v05:p_CWA_1",
         "tei_id": "p_CWA_1",
         "name": "Cockell",
         "surface": "Cockell",
@@ -1086,14 +1086,14 @@
         "in_network": true
       },
       {
-        "id": "p_SRH_1",
+        "id": "frus1981-88v05:p_SRH_1",
         "tei_id": "p_SRH_1",
         "name": "Solomon",
         "surface": "Solomon",
         "in_network": false
       },
       {
-        "id": "p_CJE_1",
+        "id": "frus1981-88v05:p_CJE_1",
         "tei_id": "p_CJE_1",
         "name": "Carter",
         "surface": "Carter",
@@ -1109,7 +1109,7 @@
         "in_network": true
       },
       {
-        "id": "p_RPW_1",
+        "id": "frus1981-88v05:p_RPW_1",
         "tei_id": "p_RPW_1",
         "name": "Peter Rodman",
         "surface": "Peter Rodman",
@@ -1139,7 +1139,7 @@
     "venue": "",
     "persons": [
       {
-        "id": "p_CHF_1",
+        "id": "frus1981-88v05:p_CHF_1",
         "tei_id": "p_CHF_1",
         "name": "Henry F. Cooper",
         "surface": "Henry F. Cooper",
@@ -1226,14 +1226,14 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_STW_1",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
         "name": "Simons",
         "surface": "Simons",
@@ -1249,14 +1249,14 @@
         "in_network": true
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Parris",
         "surface": "Parris",
         "in_network": false
       },
       {
-        "id": "p_SO_1",
+        "id": "frus1981-88v05:p_SO_1",
         "tei_id": "p_SO_1",
         "name": "Sokolov",
         "surface": "Sokolov",
@@ -1321,28 +1321,28 @@
         "in_network": true
       },
       {
-        "id": "p_GA_1",
+        "id": "frus1981-88v05:p_GA_1",
         "tei_id": "p_GA_1",
         "name": "Gromyko",
         "surface": "Gromyko",
         "in_network": false
       },
       {
-        "id": "p_RNI_1",
+        "id": "frus1981-88v05:p_RNI_1",
         "tei_id": "p_RNI_1",
         "name": "Ryzhkov",
         "surface": "Ryzhkov",
         "in_network": false
       },
       {
-        "id": "p_LY_1",
+        "id": "frus1981-88v05:p_LY_1",
         "tei_id": "p_LY_1",
         "name": "Ligachev",
         "surface": "Ligachev",
         "in_network": false
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
@@ -1374,14 +1374,14 @@
     "venue": "",
     "persons": [
       {
-        "id": "p_CT_1",
+        "id": "frus1981-88v05:p_CT_1",
         "tei_id": "p_CT_1",
         "name": "Tyrus Cobb",
         "surface": "Tyrus Cobb",
         "in_network": false
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Robert Linhard",
         "surface": "Robert Linhard",
@@ -1415,7 +1415,7 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
@@ -1431,7 +1431,7 @@
         "in_network": true
       },
       {
-        "id": "p_WCW_1",
+        "id": "frus1981-88v05:p_WCW_1",
         "tei_id": "p_WCW_1",
         "name": "Weinberger",
         "surface": "Weinberger",
@@ -1447,14 +1447,14 @@
         "in_network": true
       },
       {
-        "id": "p_MRB_1",
+        "id": "frus1981-88v05:p_MRB_1",
         "tei_id": "p_MRB_1",
         "name": "Rod McDaniel",
         "surface": "Rod McDaniel",
         "in_network": false
       },
       {
-        "id": "p_RPW_1",
+        "id": "frus1981-88v05:p_RPW_1",
         "tei_id": "p_RPW_1",
         "name": "Peter Rodman",
         "surface": "Peter Rodman",
@@ -1504,14 +1504,14 @@
         "in_network": true
       },
       {
-        "id": "p_TW_1",
+        "id": "frus1981-88v05:p_TW_1",
         "tei_id": "p_TW_1",
         "name": "Tobey",
         "surface": "Tobey",
         "in_network": false
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Linhard",
         "surface": "Linhard",
@@ -1527,7 +1527,7 @@
         "in_network": true
       },
       {
-        "id": "p_WCW_1",
+        "id": "frus1981-88v05:p_WCW_1",
         "tei_id": "p_WCW_1",
         "name": "Weinberger",
         "surface": "Weinberger",
@@ -1565,7 +1565,7 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
@@ -1599,7 +1599,7 @@
         "in_network": true
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
@@ -1615,14 +1615,14 @@
         "in_network": true
       },
       {
-        "id": "p_SA_1",
+        "id": "frus1981-88v05:p_SA_1",
         "tei_id": "p_SA_1",
         "name": "Sakharov",
         "surface": "Sakharov",
         "in_network": false
       },
       {
-        "id": "p_OY_1",
+        "id": "frus1981-88v05:p_OY_1",
         "tei_id": "p_OY_1",
         "name": "Orlov",
         "surface": "Orlov",
@@ -1638,7 +1638,7 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Yury Dubinin",
         "surface": "Yury Dubinin",
@@ -1687,7 +1687,7 @@
         "in_network": true
       },
       {
-        "id": "p_PBL_1",
+        "id": "frus1981-88v05:p_PBL_1",
         "tei_id": "p_PBL_1",
         "name": "Pascoe",
         "surface": "Pascoe",
@@ -1748,21 +1748,21 @@
         "in_network": true
       },
       {
-        "id": "p_STW_1",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
         "name": "Tom Simons",
         "surface": "Tom Simons",
         "in_network": false
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Robert Linhard",
         "surface": "Robert Linhard",
         "in_network": false
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Mark Parris",
         "surface": "Mark Parris",
@@ -1778,7 +1778,7 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
@@ -1794,28 +1794,28 @@
         "in_network": true
       },
       {
-        "id": "p_SO_1",
+        "id": "frus1981-88v05:p_SO_1",
         "tei_id": "p_SO_1",
         "name": "Sokolov",
         "surface": "Sokolov",
         "in_network": false
       },
       {
-        "id": "p_MV_1",
+        "id": "frus1981-88v05:p_MV_1",
         "tei_id": "p_MV_1",
         "name": "Mikol’chak",
         "surface": "Mikol’chak",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "Palazhchenko",
         "surface": "Palazhchenko",
         "in_network": false
       },
       {
-        "id": "p_LRF_1",
+        "id": "frus1981-88v05:p_LRF_1",
         "tei_id": "p_LRF_1",
         "name": "Lehman",
         "surface": "Lehman",
@@ -1831,7 +1831,7 @@
         "in_network": true
       },
       {
-        "id": "p_GA_1",
+        "id": "frus1981-88v05:p_GA_1",
         "tei_id": "p_GA_1",
         "name": "Gromyko",
         "surface": "Gromyko",
@@ -1883,21 +1883,21 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_HMC_1",
+        "id": "frus1981-88v05:p_HMC_1",
         "tei_id": "p_HMC_1",
         "name": "Hill",
         "surface": "Hill",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
@@ -1913,7 +1913,7 @@
         "in_network": true
       },
       {
-        "id": "p_SA_1",
+        "id": "frus1981-88v05:p_SA_1",
         "tei_id": "p_SA_1",
         "name": "Sakharov",
         "surface": "Sakharov",
@@ -1951,7 +1951,7 @@
         "in_network": true
       },
       {
-        "id": "p_PBL_1",
+        "id": "frus1981-88v05:p_PBL_1",
         "tei_id": "p_PBL_1",
         "name": "Pascoe",
         "surface": "Pascoe",
@@ -2012,21 +2012,21 @@
         "in_network": true
       },
       {
-        "id": "p_STW_1",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
         "name": "Tom Simons",
         "surface": "Tom Simons",
         "in_network": false
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Robert Linhard",
         "surface": "Robert Linhard",
         "in_network": false
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Mark Parris",
         "surface": "Mark Parris",
@@ -2042,7 +2042,7 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
@@ -2058,14 +2058,14 @@
         "in_network": true
       },
       {
-        "id": "p_MV_1",
+        "id": "frus1981-88v05:p_MV_1",
         "tei_id": "p_MV_1",
         "name": "Mikol’chak",
         "surface": "Mikol’chak",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "Palazhchenko",
         "surface": "Palazhchenko",
@@ -2081,7 +2081,7 @@
         "in_network": true
       },
       {
-        "id": "p_GA_1",
+        "id": "frus1981-88v05:p_GA_1",
         "tei_id": "p_GA_1",
         "name": "Gromyko",
         "surface": "Gromyko",
@@ -2122,7 +2122,7 @@
         "in_network": true
       },
       {
-        "id": "p_PBL_1",
+        "id": "frus1981-88v05:p_PBL_1",
         "tei_id": "p_PBL_1",
         "name": "Pascoe",
         "surface": "Pascoe",
@@ -2138,14 +2138,14 @@
         "in_network": true
       },
       {
-        "id": "p_WJC_1",
+        "id": "frus1981-88v05:p_WJC_1",
         "tei_id": "p_WJC_1",
         "name": "Whitehead",
         "surface": "Whitehead",
         "in_network": false
       },
       {
-        "id": "p_AMH_1",
+        "id": "frus1981-88v05:p_AMH_1",
         "tei_id": "p_AMH_1",
         "name": "Armacost",
         "surface": "Armacost",
@@ -2206,21 +2206,21 @@
         "in_network": true
       },
       {
-        "id": "p_STW_1",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
         "name": "Tom Simons",
         "surface": "Tom Simons",
         "in_network": false
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Mark Parris",
         "surface": "Mark Parris",
         "in_network": false
       },
       {
-        "id": "p_SRH_1",
+        "id": "frus1981-88v05:p_SRH_1",
         "tei_id": "p_SRH_1",
         "name": "Richard Solomon",
         "surface": "Richard Solomon",
@@ -2236,7 +2236,7 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
@@ -2252,35 +2252,35 @@
         "in_network": true
       },
       {
-        "id": "p_SO_1",
+        "id": "frus1981-88v05:p_SO_1",
         "tei_id": "p_SO_1",
         "name": "Sokolov",
         "surface": "Sokolov",
         "in_network": false
       },
       {
-        "id": "p_MV_1",
+        "id": "frus1981-88v05:p_MV_1",
         "tei_id": "p_MV_1",
         "name": "Mikol’chak",
         "surface": "Mikol’chak",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "Palazhchenko",
         "surface": "Palazhchenko",
         "in_network": false
       },
       {
-        "id": "p_GA_1",
+        "id": "frus1981-88v05:p_GA_1",
         "tei_id": "p_GA_1",
         "name": "Gromyko",
         "surface": "Gromyko",
         "in_network": false
       },
       {
-        "id": "p_PS_1",
+        "id": "frus1981-88v05:p_PS_1",
         "tei_id": "p_PS_1",
         "name": "Peres",
         "surface": "Peres",
@@ -2296,42 +2296,42 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_CWJ_1",
+        "id": "frus1981-88v05:p_CWJ_1",
         "tei_id": "p_CWJ_1",
         "name": "Casey",
         "surface": "Casey",
         "in_network": false
       },
       {
-        "id": "p_HSG_1",
+        "id": "frus1981-88v05:p_HSG_1",
         "tei_id": "p_HSG_1",
         "name": "Geoffrey Howe",
         "surface": "Geoffrey Howe",
         "in_network": false
       },
       {
-        "id": "p_CB_1",
+        "id": "frus1981-88v05:p_CB_1",
         "tei_id": "p_CB_1",
         "name": "Craxi",
         "surface": "Craxi",
         "in_network": false
       },
       {
-        "id": "p_KH_1",
+        "id": "frus1981-88v05:p_KH_1",
         "tei_id": "p_KH_1",
         "name": "Kohl",
         "surface": "Kohl",
         "in_network": false
       },
       {
-        "id": "p_CJ_1",
+        "id": "frus1981-88v05:p_CJ_1",
         "tei_id": "p_CJ_1",
         "name": "Chirac",
         "surface": "Chirac",
@@ -2392,7 +2392,7 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
@@ -2408,7 +2408,7 @@
         "in_network": true
       },
       {
-        "id": "p_OY_1",
+        "id": "frus1981-88v05:p_OY_1",
         "tei_id": "p_OY_1",
         "name": "Yuri Orlov",
         "surface": "Yuri Orlov",
@@ -2433,7 +2433,7 @@
         "in_network": true
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
@@ -2498,14 +2498,14 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_OY_1",
+        "id": "frus1981-88v05:p_OY_1",
         "tei_id": "p_OY_1",
         "name": "Orlov",
         "surface": "Orlov",
@@ -2530,14 +2530,14 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
@@ -2584,14 +2584,14 @@
     "venue": "",
     "persons": [
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_HMC_1",
+        "id": "frus1981-88v05:p_HMC_1",
         "tei_id": "p_HMC_1",
         "name": "Hill",
         "surface": "Hill",
@@ -2616,7 +2616,7 @@
         "in_network": true
       },
       {
-        "id": "p_RDT_1",
+        "id": "frus1981-88v05:p_RDT_1",
         "tei_id": "p_RDT_1",
         "name": "Regan",
         "surface": "Regan",
@@ -2632,7 +2632,7 @@
         "in_network": true
       },
       {
-        "id": "p_CWJ_1",
+        "id": "frus1981-88v05:p_CWJ_1",
         "tei_id": "p_CWJ_1",
         "name": "Bill Casey",
         "surface": "Bill Casey",
@@ -2648,14 +2648,14 @@
         "in_network": true
       },
       {
-        "id": "p_WCW_1",
+        "id": "frus1981-88v05:p_WCW_1",
         "tei_id": "p_WCW_1",
         "name": "Weinberger",
         "surface": "Weinberger",
         "in_network": false
       },
       {
-        "id": "p_OY_1",
+        "id": "frus1981-88v05:p_OY_1",
         "tei_id": "p_OY_1",
         "name": "Orlov",
         "surface": "Orlov",
@@ -2720,42 +2720,42 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
         "in_network": false
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_OY_1",
+        "id": "frus1981-88v05:p_OY_1",
         "tei_id": "p_OY_1",
         "name": "Orlov",
         "surface": "Orlov",
         "in_network": false
       },
       {
-        "id": "p_RN_1",
+        "id": "frus1981-88v05:p_RN_1",
         "tei_id": "p_RN_1",
         "name": "Reagan",
         "surface": "Reagan",
         "in_network": false
       },
       {
-        "id": "p_NR_1",
+        "id": "frus1981-88v05:p_NR_1",
         "tei_id": "p_NR_1",
         "name": "Nixon",
         "surface": "Nixon",
@@ -2802,14 +2802,14 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
         "in_network": false
       },
       {
-        "id": "p_OY_1",
+        "id": "frus1981-88v05:p_OY_1",
         "tei_id": "p_OY_1",
         "name": "Yuri Orlov",
         "surface": "Yuri Orlov",
@@ -2852,21 +2852,21 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
         "in_network": false
       },
       {
-        "id": "p_KB_1",
+        "id": "frus1981-88v05:p_KB_1",
         "tei_id": "p_KB_1",
         "name": "Kalb",
         "surface": "Kalb",
@@ -2944,7 +2944,7 @@
         "in_network": true
       },
       {
-        "id": "p_HMC_1",
+        "id": "frus1981-88v05:p_HMC_1",
         "tei_id": "p_HMC_1",
         "name": "Hill",
         "surface": "Hill",
@@ -3003,14 +3003,14 @@
         "in_network": true
       },
       {
-        "id": "p_BGHW_1",
+        "id": "frus1981-88v05:p_BGHW_1",
         "tei_id": "p_BGHW_1",
         "name": "Bush",
         "surface": "Bush",
         "in_network": false
       },
       {
-        "id": "p_RDT_1",
+        "id": "frus1981-88v05:p_RDT_1",
         "tei_id": "p_RDT_1",
         "name": "Regan",
         "surface": "Regan",
@@ -3064,21 +3064,21 @@
         "in_network": true
       },
       {
-        "id": "p_KAG_1",
+        "id": "frus1981-88v05:p_KAG_1",
         "tei_id": "p_KAG_1",
         "name": "Alton Keel",
         "surface": "Alton Keel",
         "in_network": false
       },
       {
-        "id": "p_BGHW_1",
+        "id": "frus1981-88v05:p_BGHW_1",
         "tei_id": "p_BGHW_1",
         "name": "Bush",
         "surface": "Bush",
         "in_network": false
       },
       {
-        "id": "p_RDT_1",
+        "id": "frus1981-88v05:p_RDT_1",
         "tei_id": "p_RDT_1",
         "name": "Regan",
         "surface": "Regan",
@@ -3103,7 +3103,7 @@
         "in_network": true
       },
       {
-        "id": "p_DN_1",
+        "id": "frus1981-88v05:p_DN_1",
         "tei_id": "p_DN_1",
         "name": "Daniloff",
         "surface": "Daniloff",
@@ -3141,7 +3141,7 @@
     "venue": "",
     "persons": [
       {
-        "id": "p_KS_1",
+        "id": "frus1981-88v05:p_KS_1",
         "tei_id": "p_KS_1",
         "name": "Sven Kraemer",
         "surface": "Sven Kraemer",
@@ -3157,14 +3157,14 @@
         "in_network": true
       },
       {
-        "id": "p_BLF_1",
+        "id": "frus1981-88v05:p_BLF_1",
         "tei_id": "p_BLF_1",
         "name": "Brooks",
         "surface": "Brooks",
         "in_network": false
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Linhard",
         "surface": "Linhard",
@@ -3207,7 +3207,7 @@
         "in_network": true
       },
       {
-        "id": "p_REL_1",
+        "id": "frus1981-88v05:p_REL_1",
         "tei_id": "p_REL_1",
         "name": "Rowny",
         "surface": "Rowny",
@@ -3258,7 +3258,7 @@
     "venue": "",
     "persons": [
       {
-        "id": "p_KS_1",
+        "id": "frus1981-88v05:p_KS_1",
         "tei_id": "p_KS_1",
         "name": "Sven Kraemer",
         "surface": "Sven Kraemer",
@@ -3274,14 +3274,14 @@
         "in_network": true
       },
       {
-        "id": "p_BLF_1",
+        "id": "frus1981-88v05:p_BLF_1",
         "tei_id": "p_BLF_1",
         "name": "Brooks",
         "surface": "Brooks",
         "in_network": false
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Linhard",
         "surface": "Linhard",
@@ -3297,14 +3297,14 @@
         "in_network": true
       },
       {
-        "id": "p_GRM_2",
+        "id": "frus1981-88v05:p_GRM_2",
         "tei_id": "p_GRM_2",
         "name": "Gorbachev",
         "surface": "Gorbachev",
         "in_network": false
       },
       {
-        "id": "p_RN_1",
+        "id": "frus1981-88v05:p_RN_1",
         "tei_id": "p_RN_1",
         "name": "Reagan",
         "surface": "Reagan",
@@ -3347,7 +3347,7 @@
         "in_network": true
       },
       {
-        "id": "p_REL_1",
+        "id": "frus1981-88v05:p_REL_1",
         "tei_id": "p_REL_1",
         "name": "ROWNY",
         "surface": "ROWNY",
@@ -3420,7 +3420,7 @@
     "venue": "",
     "persons": [
       {
-        "id": "p_WCW_1",
+        "id": "frus1981-88v05:p_WCW_1",
         "tei_id": "p_WCW_1",
         "name": "Weinberger",
         "surface": "Weinberger",
@@ -3436,7 +3436,7 @@
         "in_network": true
       },
       {
-        "id": "p_KAG_1",
+        "id": "frus1981-88v05:p_KAG_1",
         "tei_id": "p_KAG_1",
         "name": "Alton Keel",
         "surface": "Alton Keel",
@@ -3584,7 +3584,7 @@
         "in_network": true
       },
       {
-        "id": "p_UN_1",
+        "id": "frus1981-88v05:p_UN_1",
         "tei_id": "p_UN_1",
         "name": "N. Upsenskiy",
         "surface": "N. Upsenskiy",
@@ -3628,7 +3628,7 @@
         "in_network": true
       },
       {
-        "id": "p_STW_1",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
         "name": "Simons",
         "surface": "Simons",
@@ -3671,7 +3671,7 @@
         "in_network": true
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
@@ -3705,14 +3705,14 @@
         "in_network": true
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Linhard",
         "surface": "Linhard",
         "in_network": false
       },
       {
-        "id": "p_REL_1",
+        "id": "frus1981-88v05:p_REL_1",
         "tei_id": "p_REL_1",
         "name": "Rowny",
         "surface": "Rowny",
@@ -3746,7 +3746,7 @@
         "in_network": true
       },
       {
-        "id": "p_VYP_1",
+        "id": "frus1981-88v05:p_VYP_1",
         "tei_id": "p_VYP_1",
         "name": "Yevgeny Velikhov",
         "surface": "Yevgeny Velikhov",
@@ -3762,14 +3762,14 @@
         "in_network": true
       },
       {
-        "id": "p_RPW_1",
+        "id": "frus1981-88v05:p_RPW_1",
         "tei_id": "p_RPW_1",
         "name": "Rodman",
         "surface": "Rodman",
         "in_network": false
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Parris",
         "surface": "Parris",
@@ -3812,7 +3812,7 @@
     "venue": "Hofdi House (draft; disavowed by Ridgway)",
     "persons": [
       {
-        "id": "p_RPW_1",
+        "id": "frus1981-88v05:p_RPW_1",
         "tei_id": "p_RPW_1",
         "name": "Rodman",
         "surface": "Rodman",
@@ -3846,14 +3846,14 @@
         "in_network": true
       },
       {
-        "id": "p_STW_1",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
         "name": "Simons",
         "surface": "Simons",
         "in_network": false
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Parris",
         "surface": "Parris",
@@ -3869,21 +3869,21 @@
         "in_network": true
       },
       {
-        "id": "p_DY_1",
+        "id": "frus1981-88v05:p_DY_1",
         "tei_id": "p_DY_1",
         "name": "Dubinin",
         "surface": "Dubinin",
         "in_network": false
       },
       {
-        "id": "p_MV_1",
+        "id": "frus1981-88v05:p_MV_1",
         "tei_id": "p_MV_1",
         "name": "Mikol’chak",
         "surface": "Mikol’chak",
         "in_network": false
       },
       {
-        "id": "p_PYM_1",
+        "id": "frus1981-88v05:p_PYM_1",
         "tei_id": "p_PYM_1",
         "name": "Primakov",
         "surface": "Primakov",
@@ -3908,7 +3908,7 @@
         "in_network": true
       },
       {
-        "id": "p_PS_1",
+        "id": "frus1981-88v05:p_PS_1",
         "tei_id": "p_PS_1",
         "name": "Peres",
         "surface": "Peres",
@@ -3933,7 +3933,7 @@
         "in_network": true
       },
       {
-        "id": "p_KB_1",
+        "id": "frus1981-88v05:p_KB_1",
         "tei_id": "p_KB_1",
         "name": "Bernard Kalb",
         "surface": "Bernard Kalb",
@@ -4000,7 +4000,7 @@
         "in_network": true
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Bob Linhard",
         "surface": "Bob Linhard",
@@ -4034,21 +4034,21 @@
         "in_network": true
       },
       {
-        "id": "p_HMC_1",
+        "id": "frus1981-88v05:p_HMC_1",
         "tei_id": "p_HMC_1",
         "name": "Hill",
         "surface": "Hill",
         "in_network": false
       },
       {
-        "id": "p_TJP_1",
+        "id": "frus1981-88v05:p_TJP_1",
         "tei_id": "p_TJP_1",
         "name": "Timbie",
         "surface": "Timbie",
         "in_network": false
       },
       {
-        "id": "p_REL_1",
+        "id": "frus1981-88v05:p_REL_1",
         "tei_id": "p_REL_1",
         "name": "Rowny",
         "surface": "Rowny",
@@ -4073,7 +4073,7 @@
         "in_network": true
       },
       {
-        "id": "p_AG_1",
+        "id": "frus1981-88v05:p_AG_1",
         "tei_id": "p_AG_1",
         "name": "Arbatov",
         "surface": "Arbatov",
@@ -4132,7 +4132,7 @@
         "in_network": true
       },
       {
-        "id": "p_KG_1",
+        "id": "frus1981-88v05:p_KG_1",
         "tei_id": "p_KG_1",
         "name": "Georgy Korniyenko",
         "surface": "Georgy Korniyenko",
@@ -4157,7 +4157,7 @@
         "in_network": true
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "Palazhchenko",
         "surface": "Palazhchenko",
@@ -4216,7 +4216,7 @@
         "in_network": true
       },
       {
-        "id": "p_PMR_1",
+        "id": "frus1981-88v05:p_PMR_1",
         "tei_id": "p_PMR_1",
         "name": "Parris",
         "surface": "Parris",
@@ -4232,14 +4232,14 @@
         "in_network": true
       },
       {
-        "id": "p_UN_1",
+        "id": "frus1981-88v05:p_UN_1",
         "tei_id": "p_UN_1",
         "name": "Uspenskiy",
         "surface": "Uspenskiy",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "Palazhchenko",
         "surface": "Palazhchenko",
@@ -4255,7 +4255,7 @@
         "in_network": true
       },
       {
-        "id": "p_TMH_1",
+        "id": "frus1981-88v05:p_TMH_1",
         "tei_id": "p_TMH_1",
         "name": "Thatcher",
         "surface": "Thatcher",
@@ -4343,7 +4343,7 @@
         "in_network": true
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Robert Linhard",
         "surface": "Robert Linhard",
@@ -4359,14 +4359,14 @@
         "in_network": true
       },
       {
-        "id": "p_AG_1",
+        "id": "frus1981-88v05:p_AG_1",
         "tei_id": "p_AG_1",
         "name": "G. Arbatov",
         "surface": "G. Arbatov",
         "in_network": false
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
@@ -4391,7 +4391,7 @@
         "in_network": true
       },
       {
-        "id": "p_WCW_1",
+        "id": "frus1981-88v05:p_WCW_1",
         "tei_id": "p_WCW_1",
         "name": "Weinberger",
         "surface": "Weinberger",
@@ -4431,7 +4431,7 @@
         "in_network": true
       },
       {
-        "id": "p_STW_1",
+        "id": "frus1981-88v05:p_STW_1",
         "tei_id": "p_STW_1",
         "name": "Simons",
         "surface": "Simons",
@@ -4474,14 +4474,14 @@
         "in_network": true
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "P. Palazhchenko",
         "surface": "P. Palazhchenko",
         "in_network": false
       },
       {
-        "id": "p_UN_1",
+        "id": "frus1981-88v05:p_UN_1",
         "tei_id": "p_UN_1",
         "name": "N. Uspenskiy",
         "surface": "N. Uspenskiy",
@@ -4497,7 +4497,7 @@
         "in_network": true
       },
       {
-        "id": "p_LRE_1",
+        "id": "frus1981-88v05:p_LRE_1",
         "tei_id": "p_LRE_1",
         "name": "Linhard",
         "surface": "Linhard",
@@ -4555,7 +4555,7 @@
         "in_network": true
       },
       {
-        "id": "p_PP_1",
+        "id": "frus1981-88v05:p_PP_1",
         "tei_id": "p_PP_1",
         "name": "Pavel Palazhchenko",
         "surface": "Pavel Palazhchenko",
