@@ -66,7 +66,8 @@ reykjavik-40/
 │   ├── parse_hsg_docs.py       # Ingests Reykjavik-tagged docs from annotated TEI (Vol. XI trail)
 │   ├── build_core.py           # Merges the four feeds into the site data files
 │   ├── enrich_core.py          # Joins subject/event/person annotations; register + network
-│   └── build_summit_stage.py   # Meeting attendance/times for the Höfði House view
+│   ├── build_summit_stage.py   # Meeting attendance/times for the Höfði House view
+│   └── build_standalone.py     # Packages the single-file standalone edition
 ├── data/                       # Pipeline outputs (source of truth)
 │   ├── raw/                    # Cached TEI XML from HistoryAtState/frus
 │   └── *.json,*.csv            # frus_core.{json,csv}, network.json, timeline.json, manifest.json
@@ -107,6 +108,11 @@ python3 scripts/enrich_core.py
 #    dateline from/to attributes (d303's machine window is corrected to
 #    its printed dateline).
 python3 scripts/build_summit_stage.py
+
+# 7. Package the standalone single-file edition: stylesheet, script, and
+#    all five data artifacts inlined into one HTML file that opens from
+#    disk with no server and no Python.
+python3 scripts/build_standalone.py
 ```
 
 Requirements: Python 3.9+ and the standard library only (`urllib`, `xml.etree`,
@@ -142,6 +148,16 @@ python3 -m http.server 8081
 
 The site is a static single-page application with no build step. All data is
 loaded from `docs/data/*.json` at page load.
+
+### Standalone single-file edition
+
+`docs/reykjavik-40-standalone.html` (~1.3 MB) is the whole edition in
+one file — stylesheet, script, and all data embedded. It opens directly
+from disk (`file://`) with no server, makes no data requests, and can be
+emailed or archived as a single artifact. The front end detects the
+embedded data block and skips fetching, so the same `frus.js` serves
+both the site and the standalone. Regenerate it with
+`python3 scripts/build_standalone.py` after any data change.
 
 ## Deployment (GitHub Pages)
 

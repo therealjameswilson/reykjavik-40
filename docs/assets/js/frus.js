@@ -38,15 +38,24 @@ function sideColor(side) {
 }
 
 // ------------------------ boot ------------------------
+async function loadData() {
+  // The standalone single-file edition embeds the corpus in the page
+  // (see scripts/build_standalone.py); the served site fetches it.
+  const embedded = document.getElementById("embedded-data");
+  if (embedded) return JSON.parse(embedded.textContent);
+  const [docs, register, stage, timeline, manifest] = await Promise.all([
+    fetch("data/frus_core.json").then(r => r.json()),
+    fetch("data/register.json").then(r => r.json()),
+    fetch("data/summit_stage.json").then(r => r.json()),
+    fetch("data/timeline.json").then(r => r.json()),
+    fetch("data/manifest.json").then(r => r.json()),
+  ]);
+  return { docs, register, stage, timeline, manifest };
+}
+
 async function boot() {
   try {
-    const [docs, register, stage, timeline, manifest] = await Promise.all([
-      fetch("data/frus_core.json").then(r => r.json()),
-      fetch("data/register.json").then(r => r.json()),
-      fetch("data/summit_stage.json").then(r => r.json()),
-      fetch("data/timeline.json").then(r => r.json()),
-      fetch("data/manifest.json").then(r => r.json()),
-    ]);
+    const { docs, register, stage, timeline, manifest } = await loadData();
     state.docs = docs;
     state.register = register;
     state.stage = stage;

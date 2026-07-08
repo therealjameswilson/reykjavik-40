@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T19:31:38Z",
+  "generated": "2026-07-08T19:47:10Z",
   "counts": {
     "frus_v05_reykjavik": 43,
     "frus_v06_aftermath": 39,
@@ -45,5 +45,5 @@
     "FRUS subject taxonomy": "https://github.com/HistoryAtState/frus-subjects",
     "HSG annotated TEI": "https://history.state.gov (Office of the Historian annotation program)"
   },
-  "enriched": "2026-07-08T19:31:39Z"
+  "enriched": "2026-07-08T19:47:20Z"
 }
