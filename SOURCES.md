@@ -92,7 +92,7 @@ outline and a caveat in the transcript pane.
   marking (`S`, `C`, `LOU`, `U`, ...), a release-decision code, and a
   direct link to the released PDF on `foia.state.gov`.
 - **How it appears in the site:** FOIA records live in a clearly
-  labelled *Declassified* layer of the Document Explorer, on the
+  labelled *Declassified* layer of the FRUS Document Explorer, on the
   same schema as FRUS records. They are never merged into the FRUS
   narrative silently; every FOIA card shows its classification and
   release decision alongside the case number.

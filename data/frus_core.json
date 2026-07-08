@@ -39,7 +39,7 @@
       {
         "id": "person.burton-bruce",
         "name": "Bruce Burton",
-        "side": "USSR",
+        "side": "US",
         "role": "Deputy Director, Multilateral and Security Affairs, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -116,7 +116,7 @@
       {
         "id": "person.hawes-john",
         "name": "John Hawes",
-        "side": "USSR",
+        "side": "US",
         "role": "Deputy Assistant Secretary of State, Bureau of Politico-Military Affairs; Head of the U.S. Delegation to the U.S.-USSR talks on Chemical Weapons Non-Proliferati",
         "tier": "annotated",
         "in_network": true,
@@ -479,7 +479,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -693,8 +693,8 @@
       },
       {
         "id": "person.pascoe-boris",
-        "name": "Boris Pascoe",
-        "side": "USSR",
+        "name": "B. Lynn Pascoe",
+        "side": "US",
         "role": "Deputy Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -775,7 +775,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -881,7 +881,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -1062,8 +1062,8 @@
       },
       {
         "id": "person.pascoe-boris",
-        "name": "Boris Pascoe",
-        "side": "USSR",
+        "name": "B. Lynn Pascoe",
+        "side": "US",
         "role": "Deputy Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -1133,7 +1133,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -1635,8 +1635,8 @@
     "persons": [
       {
         "id": "person.pascoe-boris",
-        "name": "Boris Pascoe",
-        "side": "USSR",
+        "name": "B. Lynn Pascoe",
+        "side": "US",
         "role": "Deputy Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -2088,7 +2088,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -2813,7 +2813,7 @@
       {
         "id": "person.glitman-maynard",
         "name": "Maynard Glitman",
-        "side": "US",
+        "side": "other",
         "role": "Negotiator for the Intermediate-Range Nuclear Forces Talks in Geneva, Office of Negotiations on Nuclear and Space Talks with the Soviet Union, Department of Sta",
         "tier": "annotated",
         "in_network": true,
@@ -2995,7 +2995,7 @@
       {
         "id": "person.cobb-tyrus",
         "name": "Tyrus Cobb",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, European and Soviet Affairs Directorate, National Security Council Staff, from 1983",
         "tier": "annotated",
         "in_network": true,
@@ -3240,8 +3240,8 @@
       },
       {
         "id": "person.pascoe-boris",
-        "name": "Boris Pascoe",
-        "side": "USSR",
+        "name": "B. Lynn Pascoe",
+        "side": "US",
         "role": "Deputy Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -3313,7 +3313,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -3440,7 +3440,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -4289,7 +4289,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -4409,7 +4409,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -5141,7 +5141,7 @@
       {
         "id": "person.cobb-tyrus",
         "name": "Tyrus Cobb",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, European and Soviet Affairs Directorate, National Security Council Staff, from 1983",
         "tier": "annotated",
         "in_network": true,
@@ -6182,8 +6182,8 @@
       },
       {
         "id": "person.pascoe-boris",
-        "name": "Boris Pascoe",
-        "side": "USSR",
+        "name": "B. Lynn Pascoe",
+        "side": "US",
         "role": "Deputy Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -6276,7 +6276,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -6488,7 +6488,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -7366,8 +7366,8 @@
       },
       {
         "id": "person.pascoe-boris",
-        "name": "Boris Pascoe",
-        "side": "USSR",
+        "name": "B. Lynn Pascoe",
+        "side": "US",
         "role": "Deputy Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -7460,7 +7460,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -7623,7 +7623,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -8107,8 +8107,8 @@
       },
       {
         "id": "person.pascoe-boris",
-        "name": "Boris Pascoe",
-        "side": "USSR",
+        "name": "B. Lynn Pascoe",
+        "side": "US",
         "role": "Deputy Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -8323,7 +8323,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -8594,7 +8594,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -14409,7 +14409,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -14654,7 +14654,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -15109,7 +15109,7 @@
       {
         "id": "person.vershbow-alexander",
         "name": "Alexander Vershbow",
-        "side": "USSR",
+        "side": "US",
         "role": "Office of European and Soviet Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -15245,7 +15245,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -15376,7 +15376,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -16250,7 +16250,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -17470,7 +17470,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -18596,7 +18596,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -21384,7 +21384,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -21784,7 +21784,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -24284,7 +24284,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -25460,7 +25460,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -25713,7 +25713,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -25753,7 +25753,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -25827,7 +25827,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -25997,7 +25997,7 @@
       {
         "id": "person.glitman-maynard",
         "name": "Maynard Glitman",
-        "side": "US",
+        "side": "other",
         "role": "Negotiator for the Intermediate-Range Nuclear Forces Talks in Geneva, Office of Negotiations on Nuclear and Space Talks with the Soviet Union, Department of Sta",
         "tier": "annotated",
         "in_network": true,
@@ -26255,7 +26255,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -27082,7 +27082,7 @@
       {
         "id": "person.glitman-maynard",
         "name": "Maynard Glitman",
-        "side": "US",
+        "side": "other",
         "role": "Negotiator for the Intermediate-Range Nuclear Forces Talks in Geneva, Office of Negotiations on Nuclear and Space Talks with the Soviet Union, Department of Sta",
         "tier": "annotated",
         "in_network": true,
@@ -27928,7 +27928,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -28008,7 +28008,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -29433,7 +29433,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -31194,7 +31194,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -31515,7 +31515,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -32153,7 +32153,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -32718,7 +32718,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -33487,7 +33487,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -33559,7 +33559,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -33968,7 +33968,7 @@
       {
         "id": "person.glitman-maynard",
         "name": "Maynard Glitman",
-        "side": "US",
+        "side": "other",
         "role": "Negotiator for the Intermediate-Range Nuclear Forces Talks in Geneva, Office of Negotiations on Nuclear and Space Talks with the Soviet Union, Department of Sta",
         "tier": "annotated",
         "in_network": true,
@@ -34162,7 +34162,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -34735,7 +34735,7 @@
       {
         "id": "person.burton-bruce",
         "name": "Bruce Burton",
-        "side": "USSR",
+        "side": "US",
         "role": "Deputy Director, Multilateral and Security Affairs, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -34779,7 +34779,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -35528,7 +35528,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -36779,7 +36779,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -37120,7 +37120,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -40351,7 +40351,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -41452,7 +41452,7 @@
       {
         "id": "person.burton-bruce",
         "name": "Bruce Burton",
-        "side": "USSR",
+        "side": "US",
         "role": "Deputy Director, Multilateral and Security Affairs, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -41551,7 +41551,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -43935,7 +43935,7 @@
       {
         "id": "person.glitman-maynard",
         "name": "Maynard Glitman",
-        "side": "US",
+        "side": "other",
         "role": "Negotiator for the Intermediate-Range Nuclear Forces Talks in Geneva, Office of Negotiations on Nuclear and Space Talks with the Soviet Union, Department of Sta",
         "tier": "annotated",
         "in_network": true,
@@ -46169,8 +46169,8 @@
       },
       {
         "id": "person.pascoe-boris",
-        "name": "Boris Pascoe",
-        "side": "USSR",
+        "name": "B. Lynn Pascoe",
+        "side": "US",
         "role": "Deputy Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -46313,7 +46313,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -46649,7 +46649,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -46748,7 +46748,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -46770,7 +46770,7 @@
       {
         "id": "person.glitman-maynard",
         "name": "Maynard Glitman",
-        "side": "US",
+        "side": "other",
         "role": "Negotiator for the Intermediate-Range Nuclear Forces Talks in Geneva, Office of Negotiations on Nuclear and Space Talks with the Soviet Union, Department of Sta",
         "tier": "annotated",
         "in_network": true,
@@ -46891,7 +46891,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -47491,7 +47491,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -47689,7 +47689,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -47913,7 +47913,7 @@
       {
         "id": "person.glitman-maynard",
         "name": "Maynard Glitman",
-        "side": "US",
+        "side": "other",
         "role": "Negotiator for the Intermediate-Range Nuclear Forces Talks in Geneva, Office of Negotiations on Nuclear and Space Talks with the Soviet Union, Department of Sta",
         "tier": "annotated",
         "in_network": true,
@@ -48211,7 +48211,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -48892,7 +48892,7 @@
       {
         "id": "person.burton-bruce",
         "name": "Bruce Burton",
-        "side": "USSR",
+        "side": "US",
         "role": "Deputy Director, Multilateral and Security Affairs, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -48991,7 +48991,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -50882,7 +50882,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -51292,7 +51292,7 @@
       {
         "id": "person.ermarth-fritz",
         "name": "Fritz Ermarth",
-        "side": "USSR",
+        "side": "US",
         "role": "National Intelligence Officer for USSR, Central Intelligence Agency, and member, National Intelligence Council from January 1984",
         "tier": "annotated",
         "in_network": true,
@@ -51490,7 +51490,7 @@
       {
         "id": "person.simons-thomas",
         "name": "Thomas Simons",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State, from 1982 until 1985; Deputy Assistant Secretary of Stat",
         "tier": "annotated",
         "in_network": true,
@@ -51897,7 +51897,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -52822,7 +52822,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -54804,7 +54804,7 @@
       {
         "id": "person.parris-mark",
         "name": "Mark Parris",
-        "side": "USSR",
+        "side": "US",
         "role": "Director, Office of Soviet Union Affairs, Bureau of European and Canadian Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,
@@ -56131,7 +56131,7 @@
       {
         "id": "person.vershbow-alexander",
         "name": "Alexander Vershbow",
-        "side": "USSR",
+        "side": "US",
         "role": "Office of European and Soviet Affairs, Department of State",
         "tier": "annotated",
         "in_network": true,

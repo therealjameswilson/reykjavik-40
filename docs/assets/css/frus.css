@@ -469,6 +469,27 @@ svg.is-meeting .stage-token.is-benched { opacity: 0.4; }
 }
 .event.is-faded { opacity: 0.28; }
 
+/* Declassified FOIA PDFs supplement the FRUS chronology; the gold accent
+   ties them to the tag--source-foia colour used elsewhere. */
+.day--foia { border-top: 1px dashed var(--frus-gold-deep); }
+.day__caption {
+  font-family: var(--font-interface); font-size: var(--fs-xs);
+  color: var(--frus-slate); margin: -0.2rem 0 0.6rem; max-width: 60ch;
+}
+.event.event--foia { background: rgba(201, 168, 76, 0.06); }
+.event.event--foia .event__time {
+  font-family: var(--font-interface); font-size: var(--fs-xs);
+  font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--frus-gold-deep);
+}
+.event__foia-title { font-family: var(--font-mono); font-size: var(--fs-sm); margin-right: 0.5rem; }
+.event__foia-detail { color: var(--frus-slate); font-family: var(--font-interface); font-size: var(--fs-xs); }
+.event__foia-links {
+  display: block; margin-top: 0.25rem;
+  font-family: var(--font-interface); font-size: var(--fs-xs);
+}
+.event__foia-links a { color: var(--frus-buckram-dark); margin-right: 1rem; }
+
 /* ========== Explorer ========== */
 .explorer__controls {
   display: grid;

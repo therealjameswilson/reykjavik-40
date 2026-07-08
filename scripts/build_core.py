@@ -230,6 +230,62 @@ def build_timeline(records: list[dict[str, Any]], v06_chronology: list[dict[str,
     return events
 
 
+# Undated FOIA release documents are grouped under one band that sorts
+# after the dated summit days rather than being scattered onto invented
+# dates. The sentinel is a valid ISO date so date-keyed UI code (which
+# sorts the grouped days lexically) keeps working.
+FOIA_UNDATED_KEY = "9999-12-31"
+
+
+def build_foia_supplement(foia_pdfs: dict[str, Any]) -> list[dict[str, Any]]:
+    """Timeline entries derived from a declassified FOIA PDF release.
+
+    These *supplement* the FRUS record — they are typed `foia` so the
+    front end can label and style them distinctly and never displace a
+    FRUS document. Each entry carries a locally-served copy and its
+    foia.state.gov source. The manifest exposes no per-document authored
+    date (only a 2024 posting date), so any document that does expose an
+    ISO `date` is placed on that day; the rest are grouped under a single
+    labeled band anchored after the summit — no dates are invented.
+    """
+    payload = foia_pdfs or {}
+    case = payload.get("case_number", "")
+    source = payload.get("source", "foia.state.gov")
+    source_kind = payload.get("source_kind", "declassified")
+    events: list[dict[str, Any]] = []
+    for d in payload.get("documents", []):
+        date = (d.get("date") or "").strip()
+        dated = bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", date))
+        key = date if dated else FOIA_UNDATED_KEY
+        idx = d.get("doc_index") or 0
+        detail = " · ".join(
+            part for part in (
+                d.get("doctype", ""),
+                f"{d.get('page_count')} p." if d.get("page_count") else "",
+            ) if part
+        )
+        events.append(
+            {
+                "kind": "foia",
+                "date": key,
+                "date_display": date if dated else f"Declassified FOIA release · {case}",
+                "time_hint": "",
+                "sort_key": f"{key}T00:00:foia-{idx:04d}",
+                "text": d.get("filename") or d.get("doc_id", ""),
+                "detail": detail,
+                "url": d.get("source_url", ""),
+                "local_url": d.get("local_url", ""),
+                "source": source,
+                "source_kind": source_kind,
+                "case_number": case,
+                "classification": d.get("classification", ""),
+                "doc_id": d.get("doc_id", ""),
+                "dated": dated,
+            }
+        )
+    return events
+
+
 # Restrict FRUS documents to the two summit days themselves.
 # FOIA records are NOT filtered here — the user will filter FOIA manually.
 # Set to None (or an empty set) to disable the filter.
@@ -298,7 +354,15 @@ def main() -> int:
     )
 
     timeline = build_timeline(all_records, chronology)
+    # Fold the declassified FOIA PDF release in as supplemental, typed
+    # entries. Derived from data/foia_pdfs.json so the standalone build
+    # (which embeds timeline.json) and the served site stay in sync.
+    foia_pdfs = json.loads((DATA / "foia_pdfs.json").read_text()) if (DATA / "foia_pdfs.json").exists() else {}
+    foia_events = build_foia_supplement(foia_pdfs)
+    timeline += foia_events
+    timeline.sort(key=lambda e: e["sort_key"])
     (DATA / "timeline.json").write_text(json.dumps(timeline, indent=2, ensure_ascii=False))
+    foia_undated = sum(1 for e in foia_events if not e["dated"])
 
     manifest = {
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -311,6 +375,8 @@ def main() -> int:
             "network_nodes": len(network["nodes"]),
             "network_edges": len(network["edges"]),
             "timeline_events": len(timeline),
+            "foia_timeline_entries": len(foia_events),
+            "foia_timeline_undated": foia_undated,
         },
         "by_phase": dict(Counter(r["summit_phase"] for r in all_records)),
         "by_source": dict(Counter(r["source"] for r in all_records)),

@@ -128,10 +128,25 @@ def name_key(raw: str) -> tuple[str, str] | None:
 
 def side_for(occupation: str) -> str:
     """US / USSR / other, inferred from the alignment file's occupation
-    text. US postings *to* the Soviet Union are neutralized before the
-    Soviet markers are tested (e.g. 'Ambassador to the Soviet Union')."""
+    text. A Soviet marker indicates Soviet *employment* only when it is
+    not merely the subject of a U.S. posting. US roles defined *by* the
+    Soviet Union are neutralized before the Soviet markers are tested:
+    an embassy posting ('Ambassador to the Soviet Union'), a State
+    Department desk ('Office of Soviet Union Affairs'), or an
+    intelligence portfolio ('National Intelligence Officer for USSR')."""
     occ = occupation or ""
     neutral = re.sub(r"[^;,]*?(to|in|with) the Soviet Union", "", occ, flags=re.I)
+    # US desks and portfolios whose *subject* is the USSR — these describe
+    # the object of the work, not a Soviet employer, so the following US
+    # institutional marker (Department of State, Central Intelligence, …)
+    # is what actually places the person.
+    neutral = re.sub(r"Soviet(?: Union)? Affairs", "", neutral, flags=re.I)
+    neutral = re.sub(r"\bfor (?:the )?(?:USSR|Soviet Union)\b", "", neutral, flags=re.I)
+    # Hyphenated bilateral descriptors ('U.S.-USSR talks') name the subject
+    # of a negotiation, not the negotiator's side; drop the pairing so a
+    # genuine Soviet marker ('Soviet Delegation') still decides.
+    neutral = re.sub(r"\b(?:U\.S\.|US|United States)-(?:Soviet|USSR)\b", "", neutral, flags=re.I)
+    neutral = re.sub(r"\b(?:Soviet|USSR)-(?:U\.S\.|US|United States)\b", "", neutral, flags=re.I)
     if re.search(r"Soviet|USSR|CPSU|KGB|Politburo|Red Army", neutral, re.I):
         return "USSR"
     if re.search(
@@ -608,6 +623,35 @@ def merge_persons(existing: list[dict[str, Any]], annotated: list[dict[str, Any]
     return list(merged.values())
 
 
+# Curated corrections to the annotation feed. "Boris Pascoe" is an
+# annotation error: the officer holding the described post — Deputy
+# Director of State's Office of Soviet Union Affairs — is B. Lynn Pascoe,
+# the U.S. Foreign Service officer; no "Boris Pascoe" appears in the
+# record. Keyed by the resolved person id (see PersonResolver.resolve).
+NAME_CORRECTIONS = {
+    "person.pascoe-boris": "B. Lynn Pascoe",
+}
+
+
+def correct_annotated_person(p: dict[str, Any]) -> None:
+    """Apply curated fixes to an annotated person in place.
+
+    The side is re-derived from the occupation text with the current
+    side_for() so this repository stays correct whether enrichment runs
+    from the live alignment files or the committed cache (the cache bakes
+    in whatever side_for() returned when it was written). This is what
+    reclassifies U.S. desk officers whose portfolio subject is the USSR
+    (e.g. Parris and Simons at State, Ermarth at CIA) as US rather than
+    Soviet.
+    """
+    if p.get("tier") != "annotated":
+        return
+    if p.get("id") in NAME_CORRECTIONS:
+        p["name"] = NAME_CORRECTIONS[p["id"]]
+    if p.get("role"):
+        p["side"] = side_for(p["role"])
+
+
 def enrich_records(records: list[dict[str, Any]], per_doc: dict[str, dict[str, Any]]) -> None:
     for r in records:
         extra = per_doc.get(r["doc_id"], {})
@@ -626,6 +670,8 @@ def enrich_records(records: list[dict[str, Any]], per_doc: dict[str, dict[str, A
             r["persons"] = merge_persons(base, annotated_people)
         else:
             r["persons"] = base
+        for p in r["persons"]:
+            correct_annotated_person(p)
 
 
 def main() -> int:

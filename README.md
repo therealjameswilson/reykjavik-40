@@ -12,8 +12,8 @@ Register** (an archival attendance chart of who is present in the record,
 month by month, with numbered editorial notes), **Höfði House** (a
 playable staging of the six documented meetings of the two summit days,
 with attendance exactly as printed in each memcon's list of
-participants), an **Hour-by-Hour Timeline**, a filterable **Document
-Explorer**, and a **Declassified PDF Library** — cross-link every visual
+participants), an **Hour-by-Hour Timeline**, a filterable **FRUS Document
+Explorer**, and a **Declassified PDFs from FOIA 1986-04261** library — cross-link every visual
 element to its canonical primary source. The PDF Library serves the full
 73-document FOIA release for case F-1986-04261 (the Reykjavík meeting)
 locally from `docs/assets/pdf/`, with a link back to each canonical copy
