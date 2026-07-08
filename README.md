@@ -7,9 +7,12 @@ October 1986.
 The site presents every document from the Reykjavík section of the *Foreign
 Relations of the United States* series alongside declassified cables from the
 State Department FOIA Virtual Reading Room and the post-summit chronology from
-FRUS 1981–1988 Volume VI. Three synchronized views — a **Negotiation Network**,
-an **Hour-by-Hour Timeline**, and a filterable **Document Explorer** — cross-link
-every visual element to its canonical primary source.
+FRUS 1981–1988 Volume VI. Nineteen White House Photographic Office plates
+from the Ronald Reagan Presidential Library are woven through the record on
+their hour-by-hour anchors. Four synchronized views — a **Negotiation
+Network**, an **Hour-by-Hour Timeline**, a filterable **Document Explorer**,
+and a **Photograph Gallery** — cross-link every visual element to its
+canonical primary source.
 
 The tone and typography are modeled on the U.S. Department of State's Office
 of the Historian. See [`docs/design/FRUS_AESTHETIC.md`](docs/design/FRUS_AESTHETIC.md) for
@@ -23,6 +26,7 @@ terms for every feed.
 | FRUS 1981–1988 Vol. V (Reykjavík section, Docs 267–309) | 43 | Sep – Oct 1986 |
 | FRUS 1981–1988 Vol. VI (aftermath) | 39 | Oct 1986 – Mar 1987 |
 | foia.state.gov Virtual Reading Room (relevance-filtered) | 15 | Aug 1986 – Mar 1987 |
+| Ronald Reagan Library — White House Photographic Collection | 19 photographs | 11–12 Oct 1986 |
 | **Total documents** | **97** | |
 
 Every document row exposes `doc_id`, `source`, `title`, `date`, canonical

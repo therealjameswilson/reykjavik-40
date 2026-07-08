@@ -7,7 +7,8 @@
     "total_documents": 26,
     "network_nodes": 11,
     "network_edges": 50,
-    "timeline_events": 89
+    "timeline_events": 89,
+    "photographs": 19
   },
   "by_phase": {
     "pre-summit": 4,
@@ -33,6 +34,7 @@
     "FRUS 1981-1988 v05": "https://history.state.gov/historicaldocuments/frus1981-88v05",
     "FRUS 1981-1988 v06": "https://history.state.gov/historicaldocuments/frus1981-88v06",
     "foia.state.gov": "https://foia.state.gov/",
-    "TEI source": "https://github.com/HistoryAtState/frus"
+    "TEI source": "https://github.com/HistoryAtState/frus",
+    "Reagan Library WHPO": "https://www.reaganlibrary.gov/archives/audiovisual/white-house-photo-collection-galleries/summits-mikhail-gorbachev"
   }
 }

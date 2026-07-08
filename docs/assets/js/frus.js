@@ -19,6 +19,7 @@ const state = {
   network: { nodes: [], edges: [] },
   timeline: [],
   manifest: {},
+  photos: [],
   activeView: "network",
   selection: null,   // { kind: 'person'|'document'|'topic'|'session', id, label }
   topicFilter: new Set(),
@@ -27,16 +28,20 @@ const state = {
 // ------------------------ boot ------------------------
 async function boot() {
   try {
-    const [docs, network, timeline, manifest] = await Promise.all([
+    const [docs, network, timeline, manifest, photosPayload] = await Promise.all([
       fetch("data/frus_core.json").then(r => r.json()),
       fetch("data/network.json").then(r => r.json()),
       fetch("data/timeline.json").then(r => r.json()),
       fetch("data/manifest.json").then(r => r.json()),
+      fetch("data/reagan_photos.json").then(r => r.json()).catch(() => ({ photos: [] })),
     ]);
     state.docs = docs;
     state.network = network;
     state.timeline = timeline;
     state.manifest = manifest;
+    state.photos = (photosPayload && photosPayload.photos) || [];
+    // Fold photograph events into the timeline as first-class chronological entries.
+    state.timeline = mergePhotosIntoTimeline(state.timeline, state.photos);
     state.topicFilter = new Set(Object.keys(TOPIC_COLORS));
 
     setupNav();
@@ -44,6 +49,8 @@ async function boot() {
     renderNetwork();
     renderTimeline();
     renderExplorer();
+    renderGallery();
+    setupLightbox();
     setupExplorerControls();
     setupTopicFilter();
     setupSelectionClose();
@@ -80,7 +87,8 @@ function setupCorpusLine() {
   const c = state.manifest.counts || {};
   const line = document.getElementById("corpus-line");
   if (!line) return;
-  line.textContent = `${c.total_documents || 0} documents · ${c.network_nodes || 0} network nodes · ${c.timeline_events || 0} timeline events · generated ${(state.manifest.generated || "").slice(0, 10)}`;
+  const photoCount = (state.photos && state.photos.length) || c.photographs || 0;
+  line.textContent = `${c.total_documents || 0} documents · ${c.network_nodes || 0} network nodes · ${c.timeline_events || 0} timeline events · ${photoCount} photographs · generated ${(state.manifest.generated || "").slice(0, 10)}`;
 }
 
 function setupSelectionClose() {
@@ -405,6 +413,18 @@ function renderTimeline() {
             else setSelection("document", ev.doc_id, ev.text);
           }
         });
+      } else if (ev.kind === "photo") {
+        row.style.cursor = "zoom-in";
+        b.innerHTML = `
+          <div class="event__photo">
+            <div class="event__photo-thumb"><img loading="lazy" src="${escape(ev.thumb)}" alt="${escape(ev.text)}" /></div>
+            <div class="event__photo-caption">
+              <span class="event__photo-plate">Plate ${ev.photo_seq} · ${escape(ev.photo_id)}</span>
+              <span class="event__photo-text">${escape(ev.text)}</span>
+              <span class="event__photo-credit">${escape(ev.credit || "")}</span>
+            </div>
+          </div>`;
+        row.addEventListener("click", () => openLightbox(ev.photo_seq));
       } else {
         b.textContent = ev.text;
       }
@@ -611,6 +631,127 @@ function uniq(arr) {
 
 function escape(s) {
   return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[c]));
+}
+
+// ------------------------ photograph gallery ------------------------
+function mergePhotosIntoTimeline(timeline, photos) {
+  if (!photos || !photos.length) return timeline;
+  const photoEvents = photos.map((p, i) => ({
+    kind: "photo",
+    date: p.date,
+    date_display: dateDisplayFromISO(p.date),
+    time_hint: p.time_hint || "",
+    // Sort photos AFTER same-time chronology entries so the image follows the
+    // narrative that describes it.
+    sort_key: `${p.date}T${(p.time_hint || "99:99")}:9${String(i).padStart(2,"0")}`,
+    text: p.caption,
+    photo_id: p.id,
+    photo_seq: p.seq,
+    thumb: `assets/photos/reagan/thumbs/${p.filename}`,
+    full: `assets/photos/reagan/${p.filename}`,
+    credit: "White House Photographic Office · Ronald Reagan Presidential Library",
+  }));
+  const merged = timeline.concat(photoEvents);
+  merged.sort((a, b) => (a.sort_key || `${a.date}T${a.time_hint||""}`).localeCompare(b.sort_key || `${b.date}T${b.time_hint||""}`));
+  return merged;
+}
+
+function dateDisplayFromISO(iso) {
+  const d = new Date(iso + "T12:00:00Z");
+  const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  return `${days[d.getUTCDay()]}, ${months[d.getUTCMonth()]} ${d.getUTCDate()}`;
+}
+
+function renderGallery() {
+  const el = document.getElementById("gallery-canvas");
+  if (!el) return;
+  el.innerHTML = "";
+  const days = groupBy(state.photos, p => p.date);
+  Object.keys(days).sort().forEach(date => {
+    const section = document.createElement("section");
+    section.className = "gallery__day";
+    const h = document.createElement("h3");
+    h.className = "gallery__date";
+    h.textContent = dateDisplayFromISO(date) + ", 1986";
+    section.appendChild(h);
+    const grid = document.createElement("div");
+    grid.className = "gallery__grid";
+    days[date].forEach(p => {
+      const fig = document.createElement("figure");
+      fig.className = "plate";
+      fig.dataset.photoId = p.id;
+      fig.tabIndex = 0;
+      fig.setAttribute("role", "button");
+      fig.setAttribute("aria-label", `Plate ${p.seq}: ${p.caption}`);
+      fig.innerHTML = `
+        <div class="plate__mount">
+          <img class="plate__img" loading="lazy" src="assets/photos/reagan/thumbs/${escape(p.filename)}" alt="${escape(p.caption)}" />
+        </div>
+        <figcaption class="plate__caption">
+          <span class="plate__number">Plate ${p.seq}</span>
+          <span class="plate__time">${escape(p.time_hint || "")}</span>
+          <span class="plate__text">${escape(p.caption)}</span>
+          <span class="plate__id">${escape(p.id)}</span>
+        </figcaption>
+      `;
+      fig.addEventListener("click", () => openLightbox(p.seq));
+      fig.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLightbox(p.seq); }
+      });
+      grid.appendChild(fig);
+    });
+    section.appendChild(grid);
+    el.appendChild(section);
+  });
+}
+
+// ------------------------ lightbox ------------------------
+let lightboxIndex = 0;
+function setupLightbox() {
+  const box = document.getElementById("lightbox");
+  if (!box) return;
+  document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+  document.getElementById("lightbox-prev").addEventListener("click", () => stepLightbox(-1));
+  document.getElementById("lightbox-next").addEventListener("click", () => stepLightbox(1));
+  box.addEventListener("click", (e) => { if (e.target === box) closeLightbox(); });
+  document.addEventListener("keydown", (e) => {
+    if (box.hidden) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowLeft") stepLightbox(-1);
+    if (e.key === "ArrowRight") stepLightbox(1);
+  });
+}
+function openLightbox(seq) {
+  const idx = state.photos.findIndex(p => p.seq === seq);
+  if (idx < 0) return;
+  lightboxIndex = idx;
+  showLightboxPhoto();
+  const box = document.getElementById("lightbox");
+  box.hidden = false;
+  document.body.style.overflow = "hidden";
+}
+function closeLightbox() {
+  const box = document.getElementById("lightbox");
+  box.hidden = true;
+  document.body.style.overflow = "";
+}
+function stepLightbox(delta) {
+  if (!state.photos.length) return;
+  lightboxIndex = (lightboxIndex + delta + state.photos.length) % state.photos.length;
+  showLightboxPhoto();
+}
+function showLightboxPhoto() {
+  const p = state.photos[lightboxIndex];
+  const img = document.getElementById("lightbox-img");
+  const cap = document.getElementById("lightbox-caption");
+  img.src = `assets/photos/reagan/${p.filename}`;
+  img.alt = p.caption;
+  cap.innerHTML = `
+    <span class="lightbox__plate">Plate ${p.seq} of ${state.photos.length}</span>
+    <span class="lightbox__text">${escape(p.caption)}</span>
+    <span class="lightbox__meta"><span>${escape(p.id)}</span> · <span>${escape(dateDisplayFromISO(p.date))}, 1986${p.time_hint ? " · " + escape(p.time_hint) : ""}</span> · <span>White House Photographic Office · Ronald Reagan Presidential Library</span></span>
+  `;
 }
 
 document.addEventListener("DOMContentLoaded", boot);

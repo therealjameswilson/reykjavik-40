@@ -97,6 +97,32 @@ outline and a caveat in the transcript pane.
 
 ---
 
+## Feed 4 — Ronald Reagan Presidential Library, White House Photographic Collection
+
+- **Publication:** [*Summits with Mikhail Gorbachev — White House Photo Collection Galleries*](https://www.reaganlibrary.gov/archives/audiovisual/white-house-photo-collection-galleries/summits-mikhail-gorbachev),
+  Ronald Reagan Presidential Library and Museum, National Archives and Records
+  Administration.
+- **What we use:** nineteen photographs by the White House Photographic
+  Office covering the two summit days at Höfði House on 11 and 12 October
+  1986. Each frame carries a `Cxxxxx-xx` accession number, an official
+  White House caption, and a calendar date. The plates are stored in
+  `docs/assets/photos/reagan/` with 640-pixel thumbnails under `thumbs/`
+  and metadata in `docs/data/reagan_photos.json`.
+- **Chronological anchoring:** every plate is assigned a `time_hint` that
+  matches an event line in the Iceland Chronology (FRUS Vol. VI, Doc 1) —
+  arrival at Höfði (10:30), one-on-one and expanded morning sessions
+  (11:15), the U.S. Ambassador’s luncheon (13:00), Sunday-morning staff
+  briefings (08:00–09:00), the Sunday final farewell (18:00), and the
+  Keflavík departure briefing (20:00). The Timeline view interleaves the
+  plate with the chronology paragraph that describes it; the Photograph
+  Gallery view arranges them as a two-day sequence of numbered plates.
+- **Rights:** photographs by the White House Photographic Office are
+  works of the United States Federal Government and are in the public
+  domain. Attribution is given to the Ronald Reagan Presidential Library
+  and Museum on every plate.
+
+---
+
 ## Cross-source identity
 
 Persons are collapsed to a canonical id in `scripts/parse_frus.py`
