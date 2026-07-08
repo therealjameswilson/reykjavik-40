@@ -601,3 +601,196 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
   body { background: white; color: black; }
   .view { display: block !important; page-break-before: always; }
 }
+
+/* ==========================================================================
+   FRUS Cover Splash — full-bleed ruby buckram letterhead
+   Modelled on the printed FRUS Starter Pack cover: deep buckram ground,
+   spaced gold letterhead, department seal, gold hairline rules top & bottom.
+   ========================================================================== */
+
+.cover {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background:
+    /* subtle vignette */
+    radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.35) 100%),
+    /* buckram weave — two crossed hair-fine gradients */
+    repeating-linear-gradient( 45deg, rgba(0,0,0,0.05) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px),
+    /* base ruby buckram */
+    linear-gradient(180deg, #631E1B 0%, var(--frus-buckram) 50%, #4A1513 100%);
+  color: var(--frus-gold);
+  font-family: var(--font-editorial);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  opacity: 1;
+  transition: opacity 900ms ease-in-out, visibility 0s linear 900ms;
+  overflow: auto;
+}
+
+.cover.is-dismissed {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* When the cover is up, hide the app behind it — no scroll bleed */
+body.cover-open { overflow: hidden; }
+
+.cover__frame {
+  width: min(720px, 100%);
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(2rem, 6vw, 4rem);
+  text-align: center;
+  border: 1px solid rgba(201, 168, 76, 0.55);
+  outline: 1px solid rgba(201, 168, 76, 0.25);
+  outline-offset: 6px;
+  background: transparent;
+  animation: cover-fade-in 1200ms ease-out both;
+}
+
+@keyframes cover-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.cover__rule {
+  height: 1px;
+  background: var(--frus-gold);
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.cover__rule::before,
+.cover__rule::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--frus-gold);
+  opacity: 0.5;
+}
+.cover__rule--top::before    { top: 4px; }
+.cover__rule--bottom::after  { bottom: 4px; }
+
+.cover__series {
+  font-family: var(--font-editorial);
+  font-size: clamp(0.7rem, 1.05vw, 0.88rem);
+  color: var(--frus-gold);
+  margin: 2.25rem 0 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  word-spacing: 0.22em;
+  padding-left: 0.32em; /* optical centering when tracking is heavy */
+  white-space: nowrap;
+}
+
+.cover__years {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  color: var(--frus-gold);
+  margin: 0 0 1.75rem;
+  letter-spacing: 0.05em;
+}
+
+.cover__seal {
+  width: clamp(72px, 10vw, 96px);
+  height: clamp(72px, 10vw, 96px);
+  margin: 0.25rem auto 1.5rem;
+  color: var(--frus-gold);
+  opacity: 0.92;
+}
+.cover__seal svg { display: block; width: 100%; height: 100%; }
+
+.cover__title {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  font-size: clamp(2rem, 5.2vw, 3.4rem);
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
+  color: var(--frus-gold);
+  letter-spacing: 0.01em;
+}
+
+.cover__subtitle {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  color: var(--frus-gold);
+  opacity: 0.92;
+  margin: 0 0 0.4rem;
+}
+
+.cover__dates {
+  font-family: var(--font-editorial);
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  color: var(--frus-gold);
+  margin: 0 0 1.4rem;
+  letter-spacing: 0.04em;
+}
+
+.cover__ornament {
+  color: var(--frus-gold);
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 0.75rem 0 1.25rem;
+  opacity: 0.85;
+}
+
+.cover__imprint {
+  font-family: var(--font-editorial);
+  font-size: clamp(0.9rem, 1.35vw, 1.05rem);
+  color: var(--frus-gold);
+  margin: 0 0 2rem;
+  line-height: 1.5;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+}
+.cover__imprint-sub {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-variant: normal;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  opacity: 0.85;
+  font-size: 0.9em;
+}
+
+.cover__enter {
+  margin-top: 0.5rem;
+  background: transparent;
+  color: var(--frus-gold);
+  border: 1px solid var(--frus-gold);
+  padding: 0.7rem 1.6rem;
+  font-family: var(--font-editorial);
+  font-size: 0.95rem;
+  font-variant: small-caps;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  transition: background 200ms ease, color 200ms ease;
+}
+.cover__enter:hover,
+.cover__enter:focus-visible {
+  background: var(--frus-gold);
+  color: var(--frus-buckram);
+  outline: none;
+}
+.cover__enter:focus-visible {
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cover, .cover__frame { transition: none; animation: none; }
+}
+
+@media (max-width: 640px) {
+  .cover__series {
+    font-size: 0.55rem;
+    letter-spacing: 0.22em;
+    word-spacing: 0.14em;
+    white-space: normal; /* allow wrap on very narrow screens */
+  }
+}

@@ -13,6 +13,31 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <!-- ==== FRUS cover splash ==== -->
+  <div class="cover" id="cover" role="presentation">
+    <div class="cover__frame">
+      <div class="cover__rule cover__rule--top" aria-hidden="true"></div>
+      <p class="cover__series">Foreign Relations of the United States</p>
+      <p class="cover__years">1981&nbsp;&ndash;&nbsp;1988</p>
+      <div class="cover__seal" aria-hidden="true">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle cx="60" cy="60" r="48" fill="none" stroke="currentColor" stroke-width="0.6"/>
+          <text x="60" y="55" text-anchor="middle" font-family="Times New Roman, serif" font-size="9" letter-spacing="2" fill="currentColor">DEPARTMENT</text>
+          <text x="60" y="68" text-anchor="middle" font-family="Times New Roman, serif" font-size="9" letter-spacing="2" fill="currentColor">OF STATE</text>
+          <text x="60" y="84" text-anchor="middle" font-family="Times New Roman, serif" font-size="7" letter-spacing="1" fill="currentColor">✦</text>
+        </svg>
+      </div>
+      <h1 class="cover__title">The Reykjav&iacute;k Summit</h1>
+      <p class="cover__subtitle">Reagan and Gorbachev at H&ouml;f&eth;i House</p>
+      <p class="cover__dates">11&nbsp;&ndash;&nbsp;12 October 1986</p>
+      <div class="cover__ornament" aria-hidden="true">&#10086;</div>
+      <p class="cover__imprint">A Documentary Guide<br/><span class="cover__imprint-sub">Compiled from the Foreign Relations series&nbsp;&middot;&nbsp;Office of the Historian</span></p>
+      <div class="cover__rule cover__rule--bottom" aria-hidden="true"></div>
+      <button type="button" class="cover__enter" id="cover-enter">Open the Volume</button>
+    </div>
+  </div>
+
   <header class="masthead">
     <div class="masthead__inner">
       <div class="masthead__brand">
@@ -156,6 +181,31 @@
     </div>
   </footer>
 
+  <script>
+    // Cover splash — fade out on click, keypress, or auto-timeout.
+    (function () {
+      var cover = document.getElementById('cover');
+      var enter = document.getElementById('cover-enter');
+      if (!cover) return;
+      document.body.classList.add('cover-open');
+      var dismissed = false;
+      function dismiss() {
+        if (dismissed) return;
+        dismissed = true;
+        cover.classList.add('is-dismissed');
+        document.body.classList.remove('cover-open');
+        setTimeout(function () { if (cover && cover.parentNode) cover.parentNode.removeChild(cover); }, 1000);
+      }
+      if (enter) enter.addEventListener('click', dismiss);
+      cover.addEventListener('click', function (e) { if (e.target === cover || e.target.classList.contains('cover__frame')) dismiss(); });
+      document.addEventListener('keydown', function (e) {
+        if (dismissed) return;
+        if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') { e.preventDefault(); dismiss(); }
+      }, { once: false });
+      // Gentle auto-dismiss so the cover doesn't trap silent visitors.
+      setTimeout(dismiss, 6500);
+    })();
+  </script>
   <script src="assets/js/frus.js" type="module"></script>
 </body>
 </html>
