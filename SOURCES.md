@@ -123,6 +123,41 @@ outline and a caveat in the transcript pane.
 
 ---
 
+## Feed 5 — FRUS 1981–1988, Volume XI (START I)
+
+- **Publication:** [*Foreign Relations of the United States,
+  1981–1988, Volume XI, START I*](https://history.state.gov/historicaldocuments/frus1981-88v11)
+- **Editor:** James Graham Wilson, Office of the Historian
+- **What it contains:** the full documentary record of the Strategic
+  Arms Reduction Talks from their opening in 1981 through the end of
+  the Reagan administration, organized in four chapters:
+    - **Chapter 1** — July 1981 – January 1985 (opening of START,
+      pre-Geneva groundwork).
+    - **Chapter 2** — January 1985 – October 1986 (Geneva through
+      Reykjavik; the arms-control track that carried the 50-percent
+      strategic-offensive-reductions proposal into Höfði House).
+    - **Chapter 3** — October 1986 – December 1987 (post-Reykjavik
+      negotiations running in parallel with the INF endgame).
+    - **Chapter 4** — December 1987 – January 1989 (the final Reagan
+      push toward a signed START treaty, handed off to the incoming
+      Bush administration), plus an appendix.
+- **Why it belongs alongside Volumes V and VI:** the Reykjavik record
+  in Volume V and the immediate aftermath in Volume VI both refer
+  repeatedly to "the START channel" and to specific U.S. and Soviet
+  strategic-arms proposals whose full drafting history lives only in
+  Volume XI. Volume XI is therefore the companion documentary series
+  for the strategic-offensive-arms half of the Reykjavik package (the
+  INF half is covered in the parallel INF volume).
+- **Retrieval method:** TEI/XML from
+  [`HistoryAtState/frus`](https://github.com/HistoryAtState/frus)
+  (`volumes/frus1981-88v11.xml`), same pipeline as Volumes V and VI.
+- **Ingestion status:** listed here as a canonical source for
+  cross-referencing; ingestion into `data/frus_core.json` is not yet
+  wired into `scripts/parse_frus.py` and will be added under a
+  `--v11` flag on the same schema as the existing volume parsers.
+
+---
+
 ## Cross-source identity
 
 Persons are collapsed to a canonical id in `scripts/parse_frus.py`
