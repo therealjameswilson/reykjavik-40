@@ -1,12 +1,13 @@
-# FRUS Aesthetic
+# FRUS Aesthetic — Ruby Buckram Edition
 
 The visual and editorial standard for **reykjavik-40** is set by the
-publications of the U.S. Department of State's Office of the Historian —
-in particular the *Foreign Relations of the United States* (FRUS)
-documentary series and the associated volumes issued at
-[history.state.gov](https://history.state.gov). This site is intended to
-read as a serious digital extension of that work: restrained, archival,
-typographic, source-first.
+printed **FRUS Starter Pack**: the ruby-red buckram bindings and gold
+letterhead of the *Foreign Relations of the United States* documentary
+series, published by the U.S. Department of State's Office of the
+Historian at [history.state.gov](https://history.state.gov). This site
+is intended to read as a serious digital extension of that printed
+series: restrained, archival, typographic, source-first, and
+instantly recognisable as FRUS.
 
 The rules below are enforced by `assets/css/frus.css`.
 
@@ -35,13 +36,16 @@ The rules below are enforced by `assets/css/frus.css`.
 
 ```css
 :root {
-  --frus-ink:       #1f2933;   /* body text */
-  --frus-navy:      #12355b;   /* headers, primary navigation */
-  --frus-red:       #8f2d2d;   /* Soviet / USSR accent */
-  --frus-gold:      #b08d57;   /* selected states, highlights, rules */
-  --frus-parchment: #f7f1e3;   /* page background */
-  --frus-slate:     #4b5563;   /* secondary text, metadata */
-  --frus-paper:     #fffaf0;   /* cards, transcript panes */
+  --frus-ink:          #1f2226;   /* body text */
+  --frus-buckram:      #5B1A18;   /* masthead / cover — deep ruby buckram */
+  --frus-buckram-dark: #6B1D1D;   /* interior headers, theme bars, section rules */
+  --frus-navy:         #12355b;   /* US-side network nodes (semantic only) */
+  --frus-red:          #8f2d2d;   /* USSR-side network nodes (semantic only) */
+  --frus-gold:         #C9A84C;   /* cover text, rules under headings, active states */
+  --frus-gold-deep:    #B08D3B;   /* darker gold, for links and hover */
+  --frus-parchment:    #f4ecd8;   /* page background */
+  --frus-slate:        #5b4a3d;   /* secondary text, metadata */
+  --frus-paper:        #fffaf0;   /* cards, transcript panes */
 }
 ```
 
@@ -49,32 +53,41 @@ The rules below are enforced by `assets/css/frus.css`.
 
 | Token | Where it appears |
 | --- | --- |
-| `--frus-navy` | Site header rule, section headings, US-side network nodes |
-| `--frus-red` | USSR-side network nodes, "declassified" layer tag, warning states |
-| `--frus-gold` | Selected node / active row / hover underline; horizontal rules under headings |
+| `--frus-buckram` | Sticky masthead bar (ruby cover), skip link background |
+| `--frus-buckram-dark` | Section headings, theme header bars over each timeline day, explorer table header row, transcript accent, colophon top rule, document tags |
+| `--frus-gold` | Masthead lettering, active nav pill, rules under headings, selection highlights, gold pinstripe below the buckram bar |
+| `--frus-gold-deep` | Link hover, FOIA-source tags |
+| `--frus-navy` | US-side network nodes only (semantic) |
+| `--frus-red` | USSR-side network nodes only (semantic) |
 | `--frus-ink` | All body text |
 | `--frus-slate` | Dates, doc IDs, breadcrumbs, byline metadata |
 | `--frus-parchment` | Page background |
 | `--frus-paper` | Card and transcript-pane surfaces |
 
 **Contrast:** Every combination in use is verified against WCAG 2.2 AA.
-`--frus-ink` on `--frus-parchment` = 12.7 : 1; `--frus-navy` on
-`--frus-parchment` = 10.6 : 1; `--frus-slate` on `--frus-parchment` =
-6.4 : 1. Never place `--frus-gold` on `--frus-parchment` for text
-smaller than 18 px — it is a decorative colour.
+`--frus-ink` on `--frus-parchment` ≈ 12 : 1; `--frus-buckram-dark` on
+`--frus-parchment` ≈ 8.5 : 1; `--frus-gold` on `--frus-buckram` ≈ 6.4 : 1
+(large text and iconography only, matching the printed cover). Never
+place `--frus-gold` on `--frus-parchment` for text smaller than 18 px —
+it is a decorative colour on the parchment surface.
 
 ---
 
 ## Typography
 
 - **Editorial** (headings, document titles, block quotations, source
-  notes reproduced from FRUS): a transitional serif. Site default is
-  the free serif stack:
-  `'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif`.
-- **Interface** (navigation, filters, buttons, table headers, labels):
+  notes reproduced from FRUS, and now table headers and buttons that
+  should carry the printed FRUS voice): Times New Roman, matching the
+  printed Starter Pack. Stack:
+  `'Times New Roman', 'Tinos', Times, 'Source Serif 4', Georgia, serif`.
+- **Interface** (small controls, filter chips, legend labels): a
+  neutral sans, used sparingly:
   `'Inter', 'Helvetica Neue', Arial, sans-serif`.
 - **Monospace** (document IDs, cable numbers, case numbers):
   `'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace`.
+
+The editorial face carries the archival voice. When in doubt, use it.
+Interface sans is a background utility — never a header, never a title.
 
 **Scale.** Use a 1.200 minor-third scale anchored at 16 px:
 
@@ -123,9 +136,13 @@ smaller than 18 px — it is a decorative colour.
   Strategic Arms, Nuclear Testing, Human Rights) are visualised as
   edge-tint bands, not as a coloured rainbow — colour is used
   sparingly so that selection remains legible.
-- **Timeline:** Days are stacked vertically; events inside each day are
-  ordered by their parsed time-of-day and coloured by kind
-  (chronology in `--frus-slate`, documents in `--frus-navy`).
+- **Timeline:** Days are stacked vertically. Each day carries a
+  full-width dark-red theme header bar (echoing the theme bars in the
+  printed Starter Pack) with the date in white small caps and the
+  descriptor in gold italic. Events inside each day are ordered by
+  their parsed time-of-day and coloured by kind (chronology in
+  `--frus-slate`, documents in `--frus-buckram-dark` with a
+  white-on-red `Document` tag).
 - **Explorer:** A flat, sortable table of documents with filters for
   source, phase, session, person, and topic. The first click on a row
   opens a transcript pane on `--frus-paper`; the second click follows
