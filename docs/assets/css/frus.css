@@ -637,6 +637,43 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
   pointer-events: none;
 }
 
+/* Spine crease — narrow vertical shadow band suggesting the gutter
+   where two buckram boards meet. A very slim gold-tinted highlight
+   sits just to the right of the shadow, as if catching a raking light. */
+.cover__spine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  pointer-events: none;
+  background:
+    /* thin warm highlight, offset just off-center */
+    linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 52%,
+      rgba(201, 168, 76, 0.05) 53%,
+      transparent 55%
+    ),
+    /* soft shadow trough down the centerline */
+    linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(0, 0, 0, 0.00) 30%,
+      rgba(0, 0, 0, 0.28) 50%,
+      rgba(0, 0, 0, 0.00) 70%,
+      transparent 100%
+    );
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+/* Keep the editorial frame above the crease */
+.cover__frame { position: relative; z-index: 1; }
+
 /* When the cover is up, hide the app behind it — no scroll bleed */
 body.cover-open { overflow: hidden; }
 
