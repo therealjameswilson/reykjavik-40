@@ -20,6 +20,7 @@ const state = {
   stage: { meetings: [] },
   timeline: [],
   manifest: {},
+  foiaPdfs: { documents: [] },
   activeView: "register",
   selection: null,   // { kind: 'person'|'document'|'topic'|'session', id, label }
   regMin: 5,         // participants appearing in >= N documents
@@ -43,24 +44,28 @@ async function loadData() {
   // (see scripts/build_standalone.py); the served site fetches it.
   const embedded = document.getElementById("embedded-data");
   if (embedded) return JSON.parse(embedded.textContent);
-  const [docs, register, stage, timeline, manifest] = await Promise.all([
+  const [docs, register, stage, timeline, manifest, foiaPdfs] = await Promise.all([
     fetch("data/frus_core.json").then(r => r.json()),
     fetch("data/register.json").then(r => r.json()),
     fetch("data/summit_stage.json").then(r => r.json()),
     fetch("data/timeline.json").then(r => r.json()),
     fetch("data/manifest.json").then(r => r.json()),
+    // The declassified PDF library is optional; the rest of the edition
+    // renders even if the manifest is absent.
+    fetch("data/foia_pdfs.json").then(r => r.ok ? r.json() : null).catch(() => null),
   ]);
-  return { docs, register, stage, timeline, manifest };
+  return { docs, register, stage, timeline, manifest, foiaPdfs };
 }
 
 async function boot() {
   try {
-    const { docs, register, stage, timeline, manifest } = await loadData();
+    const { docs, register, stage, timeline, manifest, foiaPdfs } = await loadData();
     state.docs = docs;
     state.register = register;
     state.stage = stage;
     state.timeline = timeline;
     state.manifest = manifest;
+    state.foiaPdfs = foiaPdfs || { documents: [] };
 
     setupNav();
     setupCorpusLine();
@@ -70,6 +75,8 @@ async function boot() {
     renderTimeline();
     renderExplorer();
     setupExplorerControls();
+    renderFoia();
+    setupFoiaControls();
     setupSelectionClose();
   } catch (err) {
     console.error("[reykjavik-40] failed to load data", err);
@@ -1013,6 +1020,86 @@ function renderTranscript() {
   `;
 }
 
+// ------------------------ declassified PDF library ------------------------
+// A flat list of every PDF in a single FOIA case release, served locally
+// from docs/assets/pdf/ with a link back to the canonical foia.state.gov
+// copy. Data comes from data/foia_pdfs.json (see scripts/fetch_foia_pdfs.py).
+
+function humanBytes(n) {
+  if (!n) return "";
+  if (n < 1024) return `${n} B`;
+  if (n < 1_048_576) return `${(n / 1024).toFixed(0)} KB`;
+  return `${(n / 1_048_576).toFixed(1)} MB`;
+}
+
+function setupFoiaControls() {
+  const search = document.getElementById("foia-search");
+  if (search) search.addEventListener("input", renderFoiaRows);
+
+  const m = state.foiaPdfs || {};
+  const caseEl = document.getElementById("foia-case-number");
+  if (caseEl) caseEl.textContent = m.case_number || "";
+  const subjEl = document.getElementById("foia-case-subject");
+  if (subjEl) subjEl.textContent = m.case_subject || "";
+  const link = document.getElementById("foia-source-link");
+  const href = safeHttpUrl(m.search_url);
+  if (link && href) link.setAttribute("href", href);
+  else if (link) link.style.display = "none";
+}
+
+function renderFoia() {
+  const nav = document.querySelector('.nav-btn[data-view="foia"]');
+  const docs = (state.foiaPdfs && state.foiaPdfs.documents) || [];
+  // Hide the whole view if the manifest is missing or empty.
+  if (nav) nav.hidden = docs.length === 0;
+  renderFoiaRows();
+}
+
+function renderFoiaRows() {
+  const grid = document.getElementById("foia-grid");
+  if (!grid) return;
+  const all = (state.foiaPdfs && state.foiaPdfs.documents) || [];
+  const q = (document.getElementById("foia-search")?.value || "").toLowerCase().trim();
+  const rows = q
+    ? all.filter(d => `${d.filename} ${d.title} ${d.doc_index} ${d.doctype}`.toLowerCase().includes(q))
+    : all;
+
+  const meta = document.getElementById("foia-meta");
+  if (meta) {
+    const totalBytes = state.foiaPdfs.total_bytes || 0;
+    meta.textContent = `${rows.length} of ${all.length} declassified documents`
+      + (totalBytes ? ` · ${humanBytes(totalBytes)} total` : "");
+  }
+
+  grid.innerHTML = "";
+  const frag = document.createDocumentFragment();
+  rows.forEach(d => {
+    const li = document.createElement("li");
+    li.className = "foia-card";
+    const local = safeLocalPdf(d.local_url);
+    const source = safeHttpUrl(d.source_url);
+    const pages = d.page_count ? `${d.page_count} page${d.page_count === 1 ? "" : "s"}` : "";
+    const size = humanBytes(d.size_bytes);
+    const detail = [pages, size].filter(Boolean).join(" · ");
+    li.innerHTML = `
+      <div class="foia-card__index">${escape(String(d.doc_index || ""))}<span class="foia-card__total">/${escape(String(d.doc_total || ""))}</span></div>
+      <div class="foia-card__body">
+        <p class="foia-card__title">${escape(d.filename || "")}</p>
+        <p class="foia-card__meta">
+          <span class="tag tag--source-foia">${escape(d.classification || "Unclassified")}</span>
+          ${d.doctype ? `<span class="tag">${escape(d.doctype)}</span>` : ""}
+          ${detail ? `<span class="foia-card__detail">${escape(detail)}</span>` : ""}
+        </p>
+        <p class="foia-card__links">
+          ${local ? `<a class="tr-cta" href="${escape(local)}" target="_blank" rel="noopener">Open PDF &rarr;</a>` : ""}
+          ${source ? `<a class="foia-card__source" href="${escape(source)}" target="_blank" rel="noopener">Source at foia.state.gov</a>` : ""}
+        </p>
+      </div>`;
+    frag.appendChild(li);
+  });
+  grid.appendChild(frag);
+}
+
 // ------------------------ utils ------------------------
 function fillSelect(id, options) {
   const el = document.getElementById(id);
@@ -1053,6 +1140,15 @@ function safeHttpUrl(url) {
   } catch {
     return "";
   }
+}
+
+// Same-site relative path to a locally-served PDF. The manifest is
+// generated by our own pipeline, but we still constrain the value to a
+// safe relative "assets/pdf/…/NNN.pdf" shape so a bad entry can't emit a
+// javascript:/data: href or escape the assets tree.
+function safeLocalPdf(url) {
+  const s = String(url ?? "").trim();
+  return /^assets\/pdf\/[\w./-]+\.pdf$/.test(s) && !s.includes("..") ? s : "";
 }
 
 document.addEventListener("DOMContentLoaded", boot);
