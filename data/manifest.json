@@ -1,38 +1,49 @@
 {
-  "generated": "2026-07-08T16:08:12Z",
+  "generated": "2026-07-08T19:31:38Z",
   "counts": {
-    "frus_v05_reykjavik": 10,
-    "frus_v06_aftermath": 1,
+    "frus_v05_reykjavik": 43,
+    "frus_v06_aftermath": 39,
+    "frus_hsg_supplement": 74,
     "foia_declassified": 15,
-    "total_documents": 26,
-    "network_nodes": 11,
-    "network_edges": 50,
-    "timeline_events": 89
+    "total_documents": 171,
+    "network_nodes": 212,
+    "network_edges": 5031,
+    "timeline_events": 90,
+    "curated_subjects": 208,
+    "event_entities": 44,
+    "corpus_candidates": 0,
+    "participants": 212,
+    "register_notes": 4
   },
   "by_phase": {
-    "pre-summit": 4,
-    "summit": 11,
-    "aftermath": 11
+    "pre-summit": 39,
+    "summit": 13,
+    "aftermath": 119
   },
   "by_source": {
+    "FRUS 1981-1988 v05": 44,
     "foia.state.gov": 15,
-    "FRUS 1981-1988 v05": 10,
-    "FRUS 1981-1988 v06": 1
+    "FRUS 1981-1988 v11": 73,
+    "FRUS 1981-1988 v06": 39
   },
   "by_topic": {
-    "Human Rights": 7,
-    "SDI": 9,
-    "INF": 8,
-    "Strategic Arms": 9,
-    "Nuclear Testing": 7,
-    "Regional Issues": 6,
-    "Bilateral Relations": 6
+    "SDI": 100,
+    "INF": 105,
+    "Strategic Arms": 111,
+    "Human Rights": 63,
+    "Bilateral Relations": 41,
+    "Regional Issues": 37,
+    "Nuclear Testing": 43
   },
   "unverified": [],
   "sources": {
     "FRUS 1981-1988 v05": "https://history.state.gov/historicaldocuments/frus1981-88v05",
     "FRUS 1981-1988 v06": "https://history.state.gov/historicaldocuments/frus1981-88v06",
+    "FRUS 1981-1988 v11": "https://history.state.gov/historicaldocuments/frus1981-88v11",
     "foia.state.gov": "https://foia.state.gov/",
-    "TEI source": "https://github.com/HistoryAtState/frus"
-  }
+    "TEI source": "https://github.com/HistoryAtState/frus",
+    "FRUS subject taxonomy": "https://github.com/HistoryAtState/frus-subjects",
+    "HSG annotated TEI": "https://history.state.gov (Office of the Historian annotation program)"
+  },
+  "enriched": "2026-07-08T19:31:39Z"
 }

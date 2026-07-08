@@ -46,7 +46,8 @@
         <p class="masthead__subtitle">Reagan and Gorbachev at H&ouml;f&eth;i House &middot; 11&ndash;12 October 1986</p>
       </div>
       <nav class="masthead__nav" aria-label="Views">
-        <button class="nav-btn is-active" data-view="network" aria-pressed="true">Negotiation Network</button>
+        <button class="nav-btn is-active" data-view="register" aria-pressed="true">Participation Register</button>
+        <button class="nav-btn" data-view="stage" aria-pressed="false">H&ouml;f&eth;i House</button>
         <button class="nav-btn" data-view="timeline" aria-pressed="false">Hour-by-Hour Timeline</button>
         <button class="nav-btn" data-view="explorer" aria-pressed="false">Document Explorer</button>
       </nav>
@@ -58,22 +59,64 @@
     <!-- ==== Views container ==== -->
     <section class="views">
 
-      <!-- Network view -->
-      <article class="view view--network is-active" data-view="network" aria-labelledby="view-network-heading">
+      <!-- Participation register view -->
+      <article class="view view--register is-active" data-view="register" aria-labelledby="view-register-heading">
         <header class="view__head">
-          <h2 id="view-network-heading">Negotiation Network</h2>
-          <p class="view__lede">Co-occurrence of principals and negotiators across every memorandum of conversation, briefing paper, and follow-on cable in the Reykjav&iacute;k section of the Foreign Relations series and the corresponding declassified releases. Node size encodes document count; edge width encodes weighted co-occurrence. Select a node to filter the timeline and the explorer.</p>
+          <h2 id="view-register-heading">Participation Register</h2>
+          <p class="view__lede">Who is present in the record, month by month, from the first preparation paper in March 1986 to the end of the administration &mdash; drawn from the Office of the Historian&rsquo;s person annotations on every document. Each row is a participant; each cell is a month, shaded by how many documents that person appears in. Numbered editorial notes mark episodes legible in the record itself. Select a row to filter the timeline and the explorer.</p>
         </header>
-        <div class="network">
-          <div class="network__canvas" id="network-canvas" role="figure" aria-label="Interactive graph of people, documents, and topics."></div>
-          <aside class="network__legend" aria-label="Legend">
+        <div class="register">
+          <div class="register__canvas" id="register-canvas" role="figure" aria-label="Grid of participants by month; cell darkness shows documents per month."></div>
+          <aside class="register__legend" aria-label="Legend">
             <div class="legend-row"><span class="dot dot--us"></span> United States</div>
             <div class="legend-row"><span class="dot dot--ussr"></span> Soviet Union</div>
-            <p class="legend-note">Topic strands (SDI, INF, Strategic Arms, Nuclear Testing, Human Rights) tint edges by the dominant subject of the shared document.</p>
-            <fieldset class="legend-topics" id="topic-filter">
-              <legend>Filter edges by topic</legend>
-              <!-- filled by JS -->
+            <div class="legend-row"><span class="dot dot--other"></span> Other / unattributed</div>
+            <div class="legend-row"><span class="dot dot--roster"></span> Curated delegation roster</div>
+            <p class="legend-note">Cell shading: documents per month (1 &middot; 2&ndash;3 &middot; 4&ndash;6 &middot; 7+). Sides are inferred from the volumes&rsquo; lists of persons. Undated editorial notes count toward totals but not the monthly grid.</p>
+            <fieldset class="legend-controls">
+              <legend>Register</legend>
+              <label>Participants in at least
+                <select id="reg-min">
+                  <option value="1">1 document</option>
+                  <option value="2">2 documents</option>
+                  <option value="3">3 documents</option>
+                  <option value="5" selected>5 documents</option>
+                  <option value="8">8 documents</option>
+                  <option value="12">12 documents</option>
+                </select>
+              </label>
+              <label>Order by
+                <select id="reg-sort">
+                  <option value="total" selected>Prominence</option>
+                  <option value="first">First appearance</option>
+                </select>
+              </label>
+              <p class="legend-note" id="register-meta" aria-live="polite"></p>
             </fieldset>
+            <fieldset class="legend-controls">
+              <legend>Editorial notes</legend>
+              <ol class="register-notes" id="register-notes"></ol>
+            </fieldset>
+          </aside>
+        </div>
+      </article>
+
+      <!-- Höfði House stage view -->
+      <article class="view view--stage" data-view="stage" aria-labelledby="view-stage-heading" hidden>
+        <header class="view__head">
+          <h2 id="view-stage-heading">H&ouml;f&eth;i House &mdash; The Two Days</h2>
+          <p class="view__lede">Press play to follow the delegations through the six documented meetings of 11&ndash;12 October 1986. Attendance is exactly as printed in each memorandum&rsquo;s list of participants; meeting times are taken from the memcon datelines. Figures return to their delegations between meetings. Select a figure to filter the other views.</p>
+        </header>
+        <div class="stage">
+          <div class="stage__canvas" id="stage-canvas" role="figure" aria-label="Animated diagram of delegation figures moving into the documented meetings at Hofdi House."></div>
+          <aside class="stage__panel" aria-label="Playback">
+            <div class="stage__controls">
+              <button type="button" id="stage-prev" class="btn-ghost" aria-label="Previous step">&#8249; Back</button>
+              <button type="button" id="stage-play" class="btn-ghost stage__play">Play</button>
+              <button type="button" id="stage-next" class="btn-ghost" aria-label="Next step">Next &#8250;</button>
+            </div>
+            <input type="range" id="stage-scrub" min="0" max="0" value="0" step="1" aria-label="Step through the two days" />
+            <div class="stage__caption" id="stage-caption" aria-live="polite"></div>
           </aside>
         </div>
       </article>
@@ -117,6 +160,12 @@
             <span class="control__label">Topic</span>
             <select id="explorer-topic">
               <option value="">All topics</option>
+            </select>
+          </label>
+          <label class="control">
+            <span class="control__label">Subject</span>
+            <select id="explorer-subject">
+              <option value="">All subjects</option>
             </select>
           </label>
           <label class="control">

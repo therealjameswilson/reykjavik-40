@@ -129,13 +129,16 @@ Interface sans is a background utility — never a header, never a title.
 
 ## Graphs and tables
 
-- **Negotiation Network:** US nodes are `--frus-navy`; USSR nodes are
-  `--frus-red`. Node radius encodes document count. Edge width encodes
-  co-occurrence weight (memcons of the summit sessions count 5×;
-  other memcons 3×; other documents 1×). Topic strands (SDI, INF,
-  Strategic Arms, Nuclear Testing, Human Rights) are visualised as
-  edge-tint bands, not as a coloured rainbow — colour is used
-  sparingly so that selection remains legible.
+- **Participation Register:** an archival attendance chart in the
+  manner of a finding aid. Rows are participants grouped by delegation;
+  columns are calendar months; cell shading encodes documents per month
+  on a four-stop ramp per side (US on `--frus-navy`, USSR on
+  `--frus-red`, unattributed on a warm slate). The curated delegation
+  roster carries a `--frus-gold-deep` dot beside the name; the summit
+  month is washed in `--frus-gold`; numbered editorial notes are
+  gold-ringed numerals on the top rail, echoing the numbered editorial
+  notes of the printed series. Colour is used sparingly so that
+  selection and note emphasis remain legible.
 - **Timeline:** Days are stacked vertically. Each day carries a
   full-width dark-red theme header bar (echoing the theme bars in the
   printed Starter Pack) with the date in white small caps and the

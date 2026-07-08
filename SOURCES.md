@@ -3,7 +3,9 @@
 Every record in `data/frus_core.json` is traceable to one of the three
 primary feeds below. Together they cover the pre-summit diplomacy, the
 Reykjavik meeting itself (October 11–12, 1986, at Höfði House), and
-the post-summit reception and follow-up.
+the post-summit reception and follow-up. Two annotation feeds
+(Feeds 4 and 5) enrich the FRUS records with curated subjects and
+event entities from the Office of the Historian's annotation program.
 
 Records are keyed by a stable `doc_id` and always carry a canonical
 `url` pointing back to the publisher. When a document number cannot be
@@ -97,14 +99,117 @@ outline and a caveat in the transcript pane.
 
 ---
 
+## Feed 4 — FRUS subject taxonomy (curated subjects)
+
+- **Source:** the `frus-subjects` repository — the curated subject
+  taxonomy of the *Foreign Relations of the United States* series,
+  maintained by the Office of the Historian (543 subjects in 13
+  categories, applied across 552 annotated volumes).
+- **What we use:** `data/document_subjects.json`, the
+  subject → volume → document map. For every FRUS record in the
+  corpus we attach the curated subjects that the Office of the
+  Historian's annotation program applied to that document, as
+  `subjects[]` entries carrying the stable subject `ref`, the display
+  name, and the category/subcategory path. The `ref` is the citable
+  identifier in the taxonomy's TEI authority file
+  (`frus-subjects-authority.xml`).
+- **Ingestion script:** `scripts/enrich_core.py --frus-subjects <path>`.
+
+---
+
+## Feed 5 — HSG annotated TEI (entity annotations, including events)
+
+- **Source:** the `hsg-annotate-data` repository — the Office of the
+  Historian's annotated TEI corpus, in which FRUS documents carry
+  inline entity annotations (People, Places, Organizations, Events,
+  Topics, Programs, Compound Subjects) linked to the Department's
+  entity registry.
+- **What we use:** the per-volume annotation extracts
+  (`tei/annotations_frus1981-88v05.xml`, `...v06.xml`, `...v11.xml`),
+  the per-document TEI files, and the people-id-alignment lists.
+  For every FRUS record in the corpus we attach:
+  - `events[]` — Event entities tagged in the document (e.g.
+    *Reykjavik Summit (1986)*, *Geneva Summit (1985)*, *Strategic
+    Arms Reduction Talks (1982–1991)*), each carrying the registry
+    record id and display name;
+  - `persons[]` enrichment — the annotation program's People entities
+    are merged with the TEI-encoded persons into one canonical
+    participant list per document (see *Cross-source identity*);
+    occupations come from the volumes' lists of persons
+    (`import/people-id-alignment/`), and each person's side
+    (US / USSR / other) is inferred from that occupation text;
+  - `annotation_profile{}` — counts of unique annotated entities by
+    type, a density signal for the document record.
+- **Document feed:** the corpus itself is extended from this source.
+  Every document tagged with the *Reykjavik Summit (1986)* Event
+  entity that falls outside the Vol. V/VI parse ranges — the Volume
+  XI (START I) negotiation trail and Vol. V Doc 206 — is ingested by
+  `scripts/parse_hsg_docs.py` from the per-document TEI files
+  (title, dateline date/place, canonical URL, excerpt, topic
+  strands). Undated editorial notes take their summit phase from the
+  nearest preceding dated document in volume order.
+- **Corpus audit:** `scripts/enrich_core.py` writes any
+  Reykjavik-tagged documents still missing from the corpus to
+  `data/corpus_candidates.json`; with the full ingest this list is
+  empty, and a future annotation update upstream will surface new
+  candidates there.
+- **Coverage note:** Volume VI's annotation extract currently covers
+  People only; subject coverage for Volume VI records comes from
+  Feed 4.
+- **Ingestion scripts:** `scripts/parse_hsg_docs.py --hsg <path>` and
+  `scripts/enrich_core.py --hsg <path>`. A compact extract is cached
+  under `data/raw/annotations_supplement.json` so the enrichment
+  step re-runs without the sibling repositories.
+
+---
+
+## Meeting attendance (Höfði House view)
+
+The playable staging of the two summit days uses only what the memcons
+themselves record. `scripts/build_summit_stage.py` extracts, from each
+Oct 11–12 document in Volume V that carries them:
+
+- **Attendance** from the TEI `<list type="participants">` — the list
+  of participants exactly as printed at the head of each memorandum,
+  by side, including interpreters and notetakers and marginalia such
+  as "Shultz (came in at 11:30)".
+- **Meeting windows** from the dateline `<date from=".." to="..">`
+  attributes. One correction: Doc 303's machine-readable window
+  duplicates Session II's; its printed dateline ("October 11–12,
+  1986, 8 p.m.–4 a.m.") is used instead.
+
+Attendees are resolved to the same canonical person ids as the
+register (via the TEI ids and unambiguous surnames already in
+`frus_core.json`); printed titles ("The President," "The General
+Secretary") are mapped to the principals explicitly. Two Soviet
+working-group members (Mikol'chak, Shishlin) appear in no other
+annotated document and remain unlinked tokens. The overnight
+arms-control working group (Nitze–Akhromeyev) produced no US memcon;
+the view cites Doc 304, the editorial note that preserves its record.
+
+---
+
 ## Cross-source identity
 
-Persons are collapsed to a canonical id in `scripts/parse_frus.py`
-(`CANONICAL_ID`) so that a reference to Mikhail Gorbachev in Volume V
-(TEI id `p_GMS_1`), Volume VI (`p_GM_1`), and a FOIA cable
-(`Gorbachev` keyword match) resolves to a single network node
-(`reagan_gorbachev.gorbachev`). The `persons[]` array on each record
-preserves the original TEI id in a `tei_id` field for auditability.
+Persons arrive under three id schemes — TEI xml:ids in the volume XML
+(`p_GMS_1` in Vol. V, `p_GM_1` in Vol. VI, `p_RWReagan_1` in Vol. XI),
+registry record ids in the annotation extracts, and keyword matches in
+FOIA cables — and none of them is reliable across sources: the
+registry assigns separate People records per volume, and the
+people-id-alignment files contain crossed ids (Vol. V assigns Nancy
+Reagan the same registry idno as Ronald Reagan).
+
+Identity is therefore resolved by **normalized name keys**
+(surname + first given name, tolerant of transliteration variants
+like *Aleksandr/Alexander* via an initial-guarded surname fallback)
+in `scripts/enrich_core.py` (`PersonResolver`). The curated roster in
+`scripts/parse_frus.py` (`CANONICAL_ID`, `NETWORK_PEOPLE`) supplies
+canonical ids, sides, and roles for the principals and delegations;
+all other participants get a stable name-derived id
+(`person.<surname>-<given>`). The `persons[]` array on each record
+preserves the original TEI id (`tei_id`), registry id
+(`airtable_id`), and TEI surface form (`surface`) for auditability;
+a replaced TEI entry is retained verbatim under `tei_source`.
 
 ---
 

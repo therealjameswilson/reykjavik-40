@@ -53,16 +53,26 @@ CANONICAL_ID = {
     "p_RJH_1": "us.poindexter",
     "p_AKL_1": "us.adelman",
     "p_RRA_1": "us.ridgway",
+    "p_RRL_1": "us.ridgway",
     "p_PR_1": "us.perle",
+    "p_PRN_1": "us.perle",
     "p_KMH_1": "us.kampelman",
+    "p_KMM_1": "us.kampelman",
     "p_LR_1": "us.linhard",
     "p_HAH_1": "us.hartman",
+    "p_HAA_1": "us.hartman",
     "p_ASF_1": "ussr.akhromeyev",
     "p_DAF_1": "ussr.dobrynin",
+    "p_DA_1": "ussr.dobrynin",
     "p_KVM_1": "ussr.karpov",
+    "p_KVP_1": "ussr.karpov",
     "p_BAA_1": "ussr.bessmertnykh",
 }
 
+# Several people appear in the volume TEI under ids that differ from the
+# ones this roster was first built with (e.g. Ridgway is p_RRL_1 in the
+# published TEI, not p_RRA_1). Both spellings are kept: the alignment
+# files in hsg-annotate-data are the authority for the published ids.
 NETWORK_PEOPLE = {
     # United States
     "p_RRW_1": {"name": "Ronald Reagan", "side": "US", "role": "President of the United States"},
@@ -73,17 +83,23 @@ NETWORK_PEOPLE = {
     "p_MJF_1": {"name": "Jack F. Matlock Jr.", "side": "US", "role": "NSC Senior Director, European and Soviet Affairs"},
     "p_AKL_1": {"name": "Kenneth L. Adelman", "side": "US", "role": "Director, Arms Control and Disarmament Agency"},
     "p_RRA_1": {"name": "Rozanne L. Ridgway", "side": "US", "role": "Assistant Secretary of State for European and Canadian Affairs"},
+    "p_RRL_1": {"name": "Rozanne L. Ridgway", "side": "US", "role": "Assistant Secretary of State for European and Canadian Affairs"},
     "p_PR_1": {"name": "Richard N. Perle", "side": "US", "role": "Assistant Secretary of Defense for International Security Policy"},
+    "p_PRN_1": {"name": "Richard N. Perle", "side": "US", "role": "Assistant Secretary of Defense for International Security Policy"},
     "p_KMH_1": {"name": "Max M. Kampelman", "side": "US", "role": "Head, U.S. Delegation to the Nuclear and Space Talks"},
+    "p_KMM_1": {"name": "Max M. Kampelman", "side": "US", "role": "Head, U.S. Delegation to the Nuclear and Space Talks"},
     "p_LR_1": {"name": "Robert Linhard", "side": "US", "role": "NSC Director, Defense Programs and Arms Control"},
     "p_HAH_1": {"name": "Arthur A. Hartman", "side": "US", "role": "Ambassador to the Soviet Union"},
+    "p_HAA_1": {"name": "Arthur A. Hartman", "side": "US", "role": "Ambassador to the Soviet Union"},
     # Soviet Union
     "p_GM_1": {"name": "Mikhail S. Gorbachev", "side": "USSR", "role": "General Secretary, Communist Party of the Soviet Union"},
     "p_GMS_1": {"name": "Mikhail S. Gorbachev", "side": "USSR", "role": "General Secretary, Communist Party of the Soviet Union"},
     "p_SE_1": {"name": "Eduard A. Shevardnadze", "side": "USSR", "role": "Minister of Foreign Affairs"},
     "p_ASF_1": {"name": "Sergei F. Akhromeyev", "side": "USSR", "role": "Chief of the General Staff, Soviet Armed Forces"},
     "p_DAF_1": {"name": "Anatoly F. Dobrynin", "side": "USSR", "role": "Secretary, CPSU Central Committee"},
+    "p_DA_1": {"name": "Anatoly F. Dobrynin", "side": "USSR", "role": "Secretary, CPSU Central Committee"},
     "p_KVM_1": {"name": "Viktor M. Karpov", "side": "USSR", "role": "Head, Soviet Delegation to the Nuclear and Space Talks"},
+    "p_KVP_1": {"name": "Viktor M. Karpov", "side": "USSR", "role": "Head, Soviet Delegation to the Nuclear and Space Talks"},
     "p_BAA_1": {"name": "Aleksandr A. Bessmertnykh", "side": "USSR", "role": "Deputy Minister of Foreign Affairs"},
     "p_CVM_1": {"name": "Valentin M. Falin", "side": "USSR", "role": "Chief, Novosti Press Agency"},
     "p_ZL_1": {"name": "Nikolay Detinov", "side": "USSR", "role": "Arms control adviser"},

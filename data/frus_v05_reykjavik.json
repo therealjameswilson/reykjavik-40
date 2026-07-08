@@ -169,11 +169,13 @@
         "in_network": true
       },
       {
-        "id": "p_DA_1",
+        "name": "Anatoly F. Dobrynin",
+        "side": "USSR",
+        "role": "Secretary, CPSU Central Committee",
+        "id": "ussr.dobrynin",
         "tei_id": "p_DA_1",
-        "name": "Dobrynin",
         "surface": "Dobrynin",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_DY_1",
@@ -298,11 +300,13 @@
         "in_network": false
       },
       {
-        "id": "p_RRL_1",
-        "tei_id": "p_RRL_1",
         "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
+        "tei_id": "p_RRL_1",
         "surface": "Rozanne L. Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_RPW_1",
@@ -797,11 +801,13 @@
         "in_network": true
       },
       {
-        "id": "p_KMM_1",
+        "name": "Max M. Kampelman",
+        "side": "US",
+        "role": "Head, U.S. Delegation to the Nuclear and Space Talks",
+        "id": "us.kampelman",
         "tei_id": "p_KMM_1",
-        "name": "Max Kampelman",
         "surface": "Max Kampelman",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_REL_1",
@@ -811,11 +817,13 @@
         "in_network": false
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Richard Perle",
         "surface": "Richard Perle",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_LRF_1",
@@ -832,11 +840,13 @@
         "in_network": false
       },
       {
-        "id": "p_KVP_1",
+        "name": "Viktor M. Karpov",
+        "side": "USSR",
+        "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
+        "id": "ussr.karpov",
         "tei_id": "p_KVP_1",
-        "name": "Victor Karpov",
         "surface": "Victor Karpov",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_DY_1",
@@ -926,11 +936,13 @@
         "in_network": false
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_PBL_1",
@@ -1134,11 +1146,13 @@
         "in_network": false
       },
       {
-        "id": "p_KMM_1",
+        "name": "Max M. Kampelman",
+        "side": "US",
+        "role": "Head, U.S. Delegation to the Nuclear and Space Talks",
+        "id": "us.kampelman",
         "tei_id": "p_KMM_1",
-        "name": "Max Kampelman",
         "surface": "Max Kampelman",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Ronald Reagan",
@@ -1226,11 +1240,13 @@
         "in_network": false
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_PMR_1",
@@ -1590,11 +1606,13 @@
         "in_network": false
       },
       {
-        "id": "p_DA_1",
+        "name": "Anatoly F. Dobrynin",
+        "side": "USSR",
+        "role": "Secretary, CPSU Central Committee",
+        "id": "ussr.dobrynin",
         "tei_id": "p_DA_1",
-        "name": "Dobrynin",
         "surface": "Dobrynin",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_SA_1",
@@ -1611,11 +1629,13 @@
         "in_network": false
       },
       {
-        "id": "p_HAA_1",
+        "name": "Arthur A. Hartman",
+        "side": "US",
+        "role": "Ambassador to the Soviet Union",
+        "id": "us.hartman",
         "tei_id": "p_HAA_1",
-        "name": "Hartman",
         "surface": "Hartman",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_DY_1",
@@ -1692,18 +1712,22 @@
         "in_network": true
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_HAA_1",
+        "name": "Arthur A. Hartman",
+        "side": "US",
+        "role": "Ambassador to the Soviet Union",
+        "id": "us.hartman",
         "tei_id": "p_HAA_1",
-        "name": "Hartman",
         "surface": "Hartman",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Jack F. Matlock Jr.",
@@ -1715,11 +1739,13 @@
         "in_network": true
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Richard Perle",
         "surface": "Richard Perle",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_STW_1",
@@ -1759,11 +1785,13 @@
         "in_network": false
       },
       {
-        "id": "p_KVP_1",
+        "name": "Viktor M. Karpov",
+        "side": "USSR",
+        "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
+        "id": "ussr.karpov",
         "tei_id": "p_KVP_1",
-        "name": "Karpov",
         "surface": "Karpov",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_SO_1",
@@ -1948,18 +1976,22 @@
         "in_network": true
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_HAA_1",
+        "name": "Arthur A. Hartman",
+        "side": "US",
+        "role": "Ambassador to the Soviet Union",
+        "id": "us.hartman",
         "tei_id": "p_HAA_1",
-        "name": "Hartman",
         "surface": "Hartman",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Jack F. Matlock Jr.",
@@ -1971,11 +2003,13 @@
         "in_network": true
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Richard Perle",
         "surface": "Richard Perle",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_STW_1",
@@ -2015,11 +2049,13 @@
         "in_network": false
       },
       {
-        "id": "p_KVP_1",
+        "name": "Viktor M. Karpov",
+        "side": "USSR",
+        "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
+        "id": "ussr.karpov",
         "tei_id": "p_KVP_1",
-        "name": "Karpov",
         "surface": "Karpov",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_MV_1",
@@ -2125,18 +2161,22 @@
         "in_network": true
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_HAA_1",
+        "name": "Arthur A. Hartman",
+        "side": "US",
+        "role": "Ambassador to the Soviet Union",
+        "id": "us.hartman",
         "tei_id": "p_HAA_1",
-        "name": "Hartman",
         "surface": "Hartman",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Jack F. Matlock Jr.",
@@ -2157,11 +2197,13 @@
         "in_network": true
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Richard Perle",
         "surface": "Richard Perle",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_STW_1",
@@ -2201,11 +2243,13 @@
         "in_network": false
       },
       {
-        "id": "p_KVP_1",
+        "name": "Viktor M. Karpov",
+        "side": "USSR",
+        "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
+        "id": "ussr.karpov",
         "tei_id": "p_KVP_1",
-        "name": "Karpov",
         "surface": "Karpov",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_SO_1",
@@ -2371,11 +2415,13 @@
         "in_network": false
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -2466,11 +2512,13 @@
         "in_network": false
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -2505,11 +2553,13 @@
         "in_network": true
       },
       {
-        "id": "p_HAA_1",
+        "name": "Arthur A. Hartman",
+        "side": "US",
+        "role": "Ambassador to the Soviet Union",
+        "id": "us.hartman",
         "tei_id": "p_HAA_1",
-        "name": "Hartman",
         "surface": "Hartman",
-        "in_network": false
+        "in_network": true
       }
     ],
     "topics": [
@@ -2652,11 +2702,13 @@
         "in_network": true
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -2782,11 +2834,13 @@
         "in_network": true
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Aleksandr A. Bessmertnykh",
@@ -3144,11 +3198,13 @@
         "in_network": true
       },
       {
-        "id": "p_KMM_1",
+        "name": "Max M. Kampelman",
+        "side": "US",
+        "role": "Head, U.S. Delegation to the Nuclear and Space Talks",
+        "id": "us.kampelman",
         "tei_id": "p_KMM_1",
-        "name": "Kampelman",
         "surface": "Kampelman",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_REL_1",
@@ -3631,18 +3687,22 @@
         "in_network": true
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Richard Perle",
         "surface": "Richard Perle",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_KMM_1",
+        "name": "Max M. Kampelman",
+        "side": "US",
+        "role": "Head, U.S. Delegation to the Nuclear and Space Talks",
+        "id": "us.kampelman",
         "tei_id": "p_KMM_1",
-        "name": "Kampelman",
         "surface": "Kampelman",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_LRE_1",
@@ -3668,11 +3728,13 @@
         "in_network": true
       },
       {
-        "id": "p_KVP_1",
+        "name": "Viktor M. Karpov",
+        "side": "USSR",
+        "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
+        "id": "ussr.karpov",
         "tei_id": "p_KVP_1",
-        "name": "Karpov",
         "surface": "Karpov",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Sergei F. Akhromeyev",
@@ -3691,11 +3753,13 @@
         "in_network": false
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_RPW_1",
@@ -3755,18 +3819,22 @@
         "in_network": false
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_HAA_1",
+        "name": "Arthur A. Hartman",
+        "side": "US",
+        "role": "Ambassador to the Soviet Union",
+        "id": "us.hartman",
         "tei_id": "p_HAA_1",
-        "name": "Hartman",
         "surface": "Hartman",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Jack F. Matlock Jr.",
@@ -3948,18 +4016,22 @@
         "in_network": true
       },
       {
-        "id": "p_KMM_1",
+        "name": "Max M. Kampelman",
+        "side": "US",
+        "role": "Head, U.S. Delegation to the Nuclear and Space Talks",
+        "id": "us.kampelman",
         "tei_id": "p_KMM_1",
-        "name": "Kampelman",
         "surface": "Kampelman",
-        "in_network": false
+        "in_network": true
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Perle",
         "surface": "Perle",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_HMC_1",
@@ -3983,11 +4055,13 @@
         "in_network": false
       },
       {
-        "id": "p_KVP_1",
+        "name": "Viktor M. Karpov",
+        "side": "USSR",
+        "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
+        "id": "ussr.karpov",
         "tei_id": "p_KVP_1",
-        "name": "Karpov",
         "surface": "Karpov",
-        "in_network": false
+        "in_network": true
       },
       {
         "name": "Jack F. Matlock Jr.",
@@ -4260,11 +4334,13 @@
         "in_network": true
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Perle",
         "surface": "Perle",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_LRE_1",
@@ -4274,11 +4350,13 @@
         "in_network": false
       },
       {
-        "id": "p_KVP_1",
+        "name": "Viktor M. Karpov",
+        "side": "USSR",
+        "role": "Head, Soviet Delegation to the Nuclear and Space Talks",
+        "id": "ussr.karpov",
         "tei_id": "p_KVP_1",
-        "name": "Karpov",
         "surface": "Karpov",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_AG_1",
@@ -4410,11 +4488,13 @@
         "in_network": false
       },
       {
-        "id": "p_RRL_1",
+        "name": "Rozanne L. Ridgway",
+        "side": "US",
+        "role": "Assistant Secretary of State for European and Canadian Affairs",
+        "id": "us.ridgway",
         "tei_id": "p_RRL_1",
-        "name": "Ridgway",
         "surface": "Ridgway",
-        "in_network": false
+        "in_network": true
       },
       {
         "id": "p_LRE_1",
@@ -4424,11 +4504,13 @@
         "in_network": false
       },
       {
-        "id": "p_PRN_1",
+        "name": "Richard N. Perle",
+        "side": "US",
+        "role": "Assistant Secretary of Defense for International Security Policy",
+        "id": "us.perle",
         "tei_id": "p_PRN_1",
-        "name": "Richard [Perle]",
         "surface": "Richard [Perle]",
-        "in_network": false
+        "in_network": true
       }
     ],
     "topics": [
