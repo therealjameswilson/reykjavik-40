@@ -12,7 +12,7 @@ an **Hour-by-Hour Timeline**, and a filterable **Document Explorer** — cross-l
 every visual element to its canonical primary source.
 
 The tone and typography are modeled on the U.S. Department of State's Office
-of the Historian. See [`docs/FRUS_AESTHETIC.md`](docs/FRUS_AESTHETIC.md) for
+of the Historian. See [`docs/design/FRUS_AESTHETIC.md`](docs/design/FRUS_AESTHETIC.md) for
 the design system and [`SOURCES.md`](SOURCES.md) for provenance and query
 terms for every feed.
 
@@ -34,18 +34,18 @@ records.
 
 ```
 reykjavik-40/
-├── site/                       # Static site (deploy root)
+├── docs/                       # Static site (GitHub Pages publish root)
 │   ├── index.html
 │   ├── assets/{css,js}/
-│   └── data/                   # frus_core.json, network.json, timeline.json, manifest.json
+│   ├── data/                   # frus_core.json, network.json, timeline.json, manifest.json
+│   └── design/FRUS_AESTHETIC.md
 ├── scripts/
 │   ├── parse_frus.py           # TEI ingestion for Vols V and VI
 │   ├── fetch_foia.py           # foia.state.gov API client + relevance filter
 │   └── build_core.py           # Merges the three feeds into the site data files
-├── data/
+├── data/                       # Pipeline outputs (source of truth)
 │   ├── raw/                    # Cached TEI XML from HistoryAtState/frus
-│   └── processed/              # frus_core.{json,csv}, network.json, timeline.json, manifest.json
-├── docs/FRUS_AESTHETIC.md      # Design system: typography, palette, motion, accessibility
+│   └── *.json,*.csv            # frus_core.{json,csv}, network.json, timeline.json, manifest.json
 ├── SOURCES.md                  # Provenance and query terms for every feed
 └── screenshots/                # Playwright captures used during QA
 ```
@@ -54,7 +54,7 @@ reykjavik-40/
 
 The pipeline is deterministic and re-runnable from source. Each step writes
 into `data/processed/` and the final step also mirrors artifacts into
-`site/data/` so the front end has no external dependencies at runtime.
+`docs/data/` so the front end has no external dependencies at runtime.
 
 ```bash
 # 1. Ingest FRUS TEI from HistoryAtState/frus (Vols V and VI cached under data/raw/)
@@ -93,26 +93,25 @@ in `SOURCES.md`.
 ## Local preview
 
 ```bash
-cd site
+cd docs
 python3 -m http.server 8081
 # open http://localhost:8081/
 ```
 
 The site is a static single-page application with no build step. All data is
-loaded from `site/data/*.json` at page load.
+loaded from `docs/data/*.json` at page load.
 
 ## Deployment (GitHub Pages)
 
-The `site/` directory is the publish root. To serve on GitHub Pages:
+The `docs/` directory is the publish root. To serve on GitHub Pages:
 
 1. Settings → Pages → Source: **Deploy from a branch**
-2. Branch: `main`, folder: `/site`
-3. A `.nojekyll` file is included in `site/` to disable Jekyll processing so
-   that any underscore-prefixed paths and raw JSON in `site/data/` are served
-   as-is.
+2. Branch: `main`, folder: `/docs`
+3. A `.nojekyll` file is included in `docs/` to disable Jekyll processing so
+   that raw JSON in `docs/data/` is served as-is.
 
 Any static host (Cloudflare Pages, Netlify, S3+CloudFront) can serve the
-`site/` directory unchanged.
+`docs/` directory unchanged.
 
 ## Standards
 
