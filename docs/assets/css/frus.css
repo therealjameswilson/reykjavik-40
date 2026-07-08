@@ -608,18 +608,15 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
    spaced gold letterhead, department seal, gold hairline rules top & bottom.
    ========================================================================== */
 
+/* Outer stage — fixed to viewport, holds the perspective and the
+   dark surface the volume rests on. */
 .cover {
   position: fixed;
   inset: 0;
   z-index: 200;
+  /* Deep desk / shelf ground behind the volume */
   background:
-    /* subtle vignette */
-    radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.35) 100%),
-    /* buckram weave — two crossed hair-fine gradients */
-    repeating-linear-gradient( 45deg, rgba(0,0,0,0.05) 0 1px, transparent 1px 3px),
-    repeating-linear-gradient(-45deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px),
-    /* base ruby buckram */
-    linear-gradient(180deg, #631E1B 0%, var(--frus-buckram) 50%, #4A1513 100%);
+    radial-gradient(ellipse at 50% 60%, #2a0f0d 0%, #180806 70%, #0d0403 100%);
   color: var(--frus-gold);
   font-family: var(--font-editorial);
   display: flex;
@@ -629,6 +626,41 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
   opacity: 1;
   transition: opacity 900ms ease-in-out, visibility 0s linear 900ms;
   overflow: auto;
+  perspective: 2400px;
+  perspective-origin: 50% 40%;
+}
+
+/* The volume itself — a full-bleed buckram plane that carries all the
+   book cues (weave, vignette, spine crease, page-edge glow) and is
+   tilted slightly in 3D space. */
+.cover__volume {
+  position: absolute;
+  inset: clamp(1.5rem, 4vw, 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background:
+    /* subtle vignette */
+    radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.35) 100%),
+    /* buckram weave — two crossed hair-fine gradients */
+    repeating-linear-gradient( 45deg, rgba(0,0,0,0.05) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,0.03) 0 1px, transparent 1px 3px),
+    /* base ruby buckram */
+    linear-gradient(180deg, #631E1B 0%, var(--frus-buckram) 50%, #4A1513 100%);
+  transform-origin: 50% 60%;
+  transform: rotateX(4deg) rotateY(-1.5deg);
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.55),
+    0 20px 40px rgba(0, 0, 0, 0.35),
+    0 8px 16px rgba(0, 0, 0, 0.25);
+  will-change: transform;
+  animation: cover-volume-in 1400ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@keyframes cover-volume-in {
+  from { transform: rotateX(10deg) rotateY(-4deg) scale(0.985); opacity: 0.6; }
+  to   { transform: rotateX(4deg)  rotateY(-1.5deg) scale(1);    opacity: 1;   }
 }
 
 .cover.is-dismissed {
@@ -674,9 +706,10 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
 /* Keep the editorial frame above the crease */
 .cover__frame { position: relative; z-index: 1; }
 
-/* Page-edge glow — a faint gold-tinted halo along the outer margins,
-   as if the gilt page edges are catching light along the fore-edge. */
-.cover::before {
+/* Page-edge glow — a faint gold-tinted halo along the outer margins
+   of the volume, as if the gilt page edges are catching light along
+   the fore-edge, head, and tail. Lives on the tilted volume plane. */
+.cover__volume::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -700,24 +733,39 @@ a:focus-visible { outline: 2px solid var(--frus-gold); outline-offset: 2px; }
   mix-blend-mode: screen;
 }
 
-/* Shelf shadow — a soft horizontal shadow along the very bottom of the
-   viewport, as if the volume is resting on a surface. Sits above the
-   buckram but below the frame content. */
-.cover::after {
+/* Raking-light gloss — a very soft diagonal sheen from top-left,
+   consistent with the perspective tilt and the light source suggested
+   by the shelf shadow. Lives on the volume plane. */
+.cover__volume::after {
   content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    linear-gradient(115deg,
+      rgba(255, 240, 200, 0.05) 0%,
+      rgba(255, 240, 200, 0.02) 25%,
+      transparent 45%,
+      transparent 100%);
+  mix-blend-mode: screen;
+}
+
+/* Shelf contact shadow — sits on the outer stage (not the tilted
+   volume) so it always meets the surface. Denser below the volume
+   than at the edges, matching the perspective. */
+.cover > .cover__shelf {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 90px;
+  height: 110px;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
   background:
-    /* narrow contact shadow, densest right at the bottom edge */
-    linear-gradient(to top,
-      rgba(0, 0, 0, 0.55) 0%,
-      rgba(0, 0, 0, 0.30) 12%,
-      rgba(0, 0, 0, 0.12) 40%,
+    radial-gradient(ellipse 60% 100% at 50% 100%,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.30) 40%,
       rgba(0, 0, 0, 0.00) 100%);
   mix-blend-mode: multiply;
 }
@@ -868,7 +916,8 @@ body.cover-open { overflow: hidden; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .cover, .cover__frame { transition: none; animation: none; }
+  .cover, .cover__frame, .cover__volume { transition: none; animation: none; }
+  .cover__volume { transform: none; }
 }
 
 @media (max-width: 640px) {
