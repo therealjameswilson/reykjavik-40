@@ -12,9 +12,12 @@ Register** (an archival attendance chart of who is present in the record,
 month by month, with numbered editorial notes), **Höfði House** (a
 playable staging of the six documented meetings of the two summit days,
 with attendance exactly as printed in each memcon's list of
-participants), an **Hour-by-Hour Timeline**, and a filterable **Document
-Explorer** — cross-link every visual element to its canonical primary
-source.
+participants), an **Hour-by-Hour Timeline**, a filterable **Document
+Explorer**, and a **Declassified PDF Library** — cross-link every visual
+element to its canonical primary source. The PDF Library serves the full
+73-document FOIA release for case F-1986-04261 (the Reykjavík meeting)
+locally from `docs/assets/pdf/`, with a link back to each canonical copy
+in the Department of State's Virtual Reading Room.
 
 The tone and typography are modeled on the U.S. Department of State's Office
 of the Historian. See [`docs/design/FRUS_AESTHETIC.md`](docs/design/FRUS_AESTHETIC.md) for
@@ -63,6 +66,7 @@ reykjavik-40/
 ├── scripts/
 │   ├── parse_frus.py           # TEI ingestion for Vols V and VI
 │   ├── fetch_foia.py           # foia.state.gov API client + relevance filter
+│   ├── fetch_foia_pdfs.py      # Downloads a full FOIA case's PDFs + builds data/foia_pdfs.json
 │   ├── parse_hsg_docs.py       # Ingests Reykjavik-tagged docs from annotated TEI (Vol. XI trail)
 │   ├── build_core.py           # Merges the four feeds into the site data files
 │   ├── enrich_core.py          # Joins subject/event/person annotations; register + network

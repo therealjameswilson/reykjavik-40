@@ -55,12 +55,18 @@ def main() -> int:
         print("error: frus.js contains a literal </script>, unsafe to inline", file=sys.stderr)
         return 1
 
+    # The declassified PDF manifest is optional: the standalone still
+    # builds without it, just with the PDF library view hidden.
+    foia_pdfs_path = DATA / "foia_pdfs.json"
+    foia_pdfs = json.loads(foia_pdfs_path.read_text()) if foia_pdfs_path.exists() else None
+
     payload = {
         "docs": slim_docs(json.loads((DATA / "frus_core.json").read_text())),
         "register": json.loads((DATA / "register.json").read_text()),
         "stage": json.loads((DATA / "summit_stage.json").read_text()),
         "timeline": json.loads((DATA / "timeline.json").read_text()),
         "manifest": json.loads((DATA / "manifest.json").read_text()),
+        "foiaPdfs": foia_pdfs,
     }
 
     for marker in (CSS_LINK, JS_TAG):

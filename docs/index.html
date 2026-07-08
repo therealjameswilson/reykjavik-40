@@ -50,6 +50,7 @@
         <button class="nav-btn" data-view="stage" aria-pressed="false">H&ouml;f&eth;i House</button>
         <button class="nav-btn" data-view="timeline" aria-pressed="false">Hour-by-Hour Timeline</button>
         <button class="nav-btn" data-view="explorer" aria-pressed="false">Document Explorer</button>
+        <button class="nav-btn" data-view="foia" aria-pressed="false">Declassified PDFs</button>
       </nav>
     </div>
   </header>
@@ -194,6 +195,23 @@
             <div class="transcript__empty">Select a document to open its record here.</div>
           </aside>
         </div>
+      </article>
+
+      <!-- Declassified FOIA PDF library view -->
+      <article class="view view--foia" data-view="foia" aria-labelledby="view-foia-heading" hidden>
+        <header class="view__head">
+          <h2 id="view-foia-heading">Declassified PDF Library</h2>
+          <p class="view__lede">The complete declassified release for FOIA case <span class="foia-case" id="foia-case-number"></span> &mdash; <span id="foia-case-subject"></span>. Every document is served locally from this site; each entry also links back to its canonical PDF in the U.S. Department of State&rsquo;s Virtual Reading Room. Search by document number, then open the PDF in a new tab.</p>
+        </header>
+        <div class="foia__controls">
+          <label class="control control--search">
+            <span class="control__label">Search</span>
+            <input type="search" id="foia-search" placeholder="Search document number or title&hellip;" autocomplete="off" />
+          </label>
+          <a class="btn-ghost" id="foia-source-link" href="#" target="_blank" rel="noopener">View case at foia.state.gov &rarr;</a>
+        </div>
+        <div class="foia__meta" id="foia-meta" aria-live="polite"></div>
+        <ol class="foia__grid" id="foia-grid" aria-labelledby="view-foia-heading"></ol>
       </article>
 
     </section>
