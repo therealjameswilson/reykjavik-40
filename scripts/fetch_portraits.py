@@ -52,28 +52,38 @@ COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 # LicenseShortName Commons returns (e.g. "Public domain", "CC0", "CC BY-SA 3.0").
 FREE_LICENCES = ("public domain", "pd-", "cc0", "cc by")
 
-# person id (canonical, from data/summit_stage.json) -> Commons File page.
-# Only add a row once you have confirmed the File page shows a free licence.
-# File names must be exact (the leading "File:" is optional here).
+# person id (canonical, from data/summit_stage.json) -> candidate Commons File
+# pages, best first. The File names below were located on Wikimedia Commons;
+# the script tries each in turn and keeps the FIRST that both resolves and
+# reports a free licence, so a stale or renamed candidate falls through to the
+# next rather than dropping the person. Add or reorder candidates as needed.
 SOURCES = [
-    {"id": "reagan_gorbachev.reagan", "name": "President Reagan",
-     "file": "File:Official Portrait of President Reagan 1981.jpg"},
-    {"id": "us.shultz", "name": "Secretary of State George Shultz",
-     "file": "File:George Shultz.png"},
-    {"id": "us.poindexter", "name": "Vice Adm. John Poindexter",
-     "file": "File:John Poindexter 1985.jpg"},
-    {"id": "us.nitze", "name": "Paul Nitze",
-     "file": "File:Paul Nitze 1983.jpg"},
-    {"id": "us.perle", "name": "Richard Perle",
-     "file": "File:Richard Perle 1981.jpg"},
-    {"id": "us.matlock", "name": "Ambassador Jack Matlock",
-     "file": "File:Jack F. Matlock.jpg"},
-    {"id": "reagan_gorbachev.gorbachev", "name": "General Secretary Gorbachev",
-     "file": "File:Mikhail Gorbachev 1987.jpg"},
-    {"id": "ussr.shevardnadze", "name": "Foreign Minister Shevardnadze",
-     "file": "File:RIAN archive 359290 Eduard Shevardnadze.jpg"},
-    {"id": "person.primakov-evgeniy", "name": "Yevgeny Primakov",
-     "file": "File:Yevgeny Primakov 1998.jpg"},
+    {"id": "reagan_gorbachev.reagan", "name": "President Reagan", "files": [
+        "File:Official Portrait of President Reagan 1981.jpg",
+        "File:Ronald Reagan 1981 presidential portrait.jpg"]},
+    {"id": "us.shultz", "name": "Secretary of State George Shultz", "files": [
+        "File:George Pratt Shultz.jpg",
+        "File:George P. Shultz.jpg"]},
+    {"id": "us.poindexter", "name": "Vice Adm. John Poindexter", "files": [
+        "File:Admiral John Poindexter, official Navy photo, 1985.JPEG"]},
+    {"id": "us.nitze", "name": "Paul Nitze", "files": [
+        "File:Paul Nitze as SECNAV c1963.jpg",
+        "File:Nitze, Paul.jpg",
+        "File:Paul Nitze.jpeg"]},
+    {"id": "us.perle", "name": "Richard Perle", "files": [
+        "File:Richard Perle (cropped) (2).jpg",
+        "File:Richard Perle (cropped).jpg"]},
+    {"id": "us.matlock", "name": "Ambassador Jack Matlock", "files": [
+        "File:Jack F Matlock, Jr.jpg",
+        "File:Jack Matlock 19860107.jpg"]},
+    {"id": "reagan_gorbachev.gorbachev", "name": "General Secretary Gorbachev", "files": [
+        "File:RIAN archive 850809 General Secretary of the CPSU CC M. Gorbachev (cropped).jpg",
+        "File:RIAN archive 485307 Mikhail Gorbachev.jpg"]},
+    {"id": "ussr.shevardnadze", "name": "Foreign Minister Shevardnadze", "files": [
+        "File:Eduard shevardnadze.jpg",
+        "File:Eduard Schewardnadse.jpg"]},
+    {"id": "person.primakov-evgeniy", "name": "Yevgeny Primakov", "files": [
+        "File:RIAN archive 38725 Director of the USSR Central Intelligence Service Yevgeny Primakov.jpg"]},
 ]
 
 
@@ -131,21 +141,31 @@ def main() -> int:
     skipped: list[str] = []
 
     for src in SOURCES:
-        pid, name, file_page = src["id"], src["name"], src["file"]
-        print(f"[fetch_portraits] {pid}  <-  {file_page}")
-        try:
-            meta = resolve(file_page)
-        except Exception as e:  # network / API error
-            print(f"  ! could not resolve ({e}); skipping")
-            skipped.append(f"{pid}: resolve failed")
-            continue
-        if not meta or not meta["image_url"]:
-            print("  ! File page missing on Commons; skipping")
-            skipped.append(f"{pid}: file missing")
-            continue
-        if not is_free(meta["license"]):
-            print(f"  ! licence '{meta['license']}' not on the free-licence allowlist; skipping")
-            skipped.append(f"{pid}: non-free ({meta['license']})")
+        pid, name = src["id"], src["name"]
+        candidates = src.get("files") or ([src["file"]] if src.get("file") else [])
+        print(f"[fetch_portraits] {pid}")
+        # Try each candidate File page; keep the first that resolves free.
+        meta = None
+        reasons = []
+        for file_page in candidates:
+            try:
+                m = resolve(file_page)
+            except Exception as e:  # network / API error
+                reasons.append(f"{file_page}: resolve error ({e})")
+                continue
+            if not m or not m["image_url"]:
+                reasons.append(f"{file_page}: missing on Commons")
+                continue
+            if not is_free(m["license"]):
+                reasons.append(f"{file_page}: non-free ({m['license']})")
+                continue
+            meta = m
+            print(f"  using {file_page}")
+            break
+        if not meta:
+            for r in reasons:
+                print(f"  - {r}")
+            skipped.append(f"{pid}: no free candidate ({'; '.join(reasons) or 'none listed'})")
             continue
 
         fname = f"{pid.replace('.', '_')}.jpg"
