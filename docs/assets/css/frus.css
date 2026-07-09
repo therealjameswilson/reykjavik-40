@@ -483,6 +483,7 @@ svg.is-meeting .stage-token.is-benched { opacity: 0.4; }
   color: var(--frus-gold-deep);
 }
 .event__foia-title { font-family: var(--font-mono); font-size: var(--fs-sm); margin-right: 0.5rem; }
+.event__foia-desc { display: block; color: var(--frus-ink); font-family: var(--font-interface); font-size: var(--fs-xs); line-height: 1.45; margin: 0.2rem 0; }
 .event__foia-detail { color: var(--frus-slate); font-family: var(--font-interface); font-size: var(--fs-xs); }
 .event__foia-links {
   display: block; margin-top: 0.25rem;
@@ -1045,6 +1046,19 @@ body.cover-open { overflow: hidden; }
   margin: 0 0 0.4rem;
   color: var(--frus-ink);
   word-break: break-all;
+}
+.foia-card__date {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--frus-slate);
+  margin: 0 0 0.3rem;
+}
+.foia-card__desc {
+  font-family: var(--font-interface);
+  font-size: var(--fs-sm);
+  color: var(--frus-ink);
+  line-height: 1.45;
+  margin: 0 0 0.5rem;
 }
 .foia-card__meta {
   display: flex;
