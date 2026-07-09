@@ -79,6 +79,7 @@ reykjavik-40/
 │   ├── build_core.py           # Merges the four feeds into the site data files
 │   ├── enrich_core.py          # Joins subject/event/person annotations; register + network
 │   ├── build_summit_stage.py   # Meeting attendance/times for the Höfði House view
+│   ├── fetch_portraits.py      # Free-licensed participant portraits (person cards) -> data/portraits.json
 │   └── build_standalone.py     # Packages the single-file standalone edition
 ├── data/                       # Pipeline outputs (source of truth)
 │   ├── raw/                    # Cached TEI XML from HistoryAtState/frus
@@ -121,9 +122,14 @@ python3 scripts/enrich_core.py
 #    its printed dateline).
 python3 scripts/build_summit_stage.py
 
-# 7. Package the standalone single-file edition: stylesheet, script, and
-#    all five data artifacts inlined into one HTML file that opens from
-#    disk with no server and no Python.
+# 7. (Optional) Fetch free-licensed participant portraits for the person
+#    cards from Wikimedia Commons; keeps only files under a free licence and
+#    records each credit/licence verbatim. The site renders without this.
+python3 scripts/fetch_portraits.py
+
+# 8. Package the standalone single-file edition: stylesheet, script, and
+#    all data artifacts inlined into one HTML file that opens from disk
+#    with no server and no Python.
 python3 scripts/build_standalone.py
 ```
 

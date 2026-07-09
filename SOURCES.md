@@ -191,6 +191,32 @@ outline and a caveat in the transcript pane.
 
 ---
 
+## Feed 7 — Participant portraits (person cards)
+
+- **Publisher:** [Wikimedia Commons](https://commons.wikimedia.org/), used
+  as the retrieval host for freely-licensed portraits.
+- **What we use:** a small, deliberately partial set of head-and-shoulders
+  portraits shown on the person card (the selection panel) when a figure is
+  selected in any view. Coverage is uneven by design — several delegation
+  members, interpreters and notetakers have no free-licensed portrait and
+  intentionally have none here.
+- **Fetch script:** `scripts/fetch_portraits.py` is driven by a curated table
+  of Commons *File:* pages keyed to canonical person ids. For each it queries
+  the MediaWiki API for the download URL together with the licence, author and
+  credit Commons records, **keeps only files under a free licence** (public
+  domain, CC0, CC BY, CC BY-SA), downloads a web-sized JPEG (centre-cropped to
+  a square where Pillow is available) into `docs/assets/photos/portraits/`, and
+  writes the manifest `data/portraits.json` (mirrored to `docs/data/`). The
+  credit and licence on each card are taken verbatim from Commons.
+- **Provenance & fallback:** the manifest ships empty; the portrait feature is
+  a graceful no-op (discs and cards render exactly as before) until the script
+  is run in an environment with network access. The card renders a portrait
+  only where a manifest entry exists **and** its image actually loads, so a
+  not-yet-fetched or non-free entry simply shows nothing. Only same-origin
+  relative `assets/…` image paths are honoured.
+
+---
+
 ## Meeting attendance (Höfði House view)
 
 The playable staging of the two summit days uses only what the memcons
@@ -214,6 +240,12 @@ working-group members (Mikol'chak, Shishlin) appear in no other
 annotated document and remain unlinked tokens. The overnight
 arms-control working group (Nitze–Akhromeyev) produced no US memcon;
 the view cites Doc 304, the editorial note that preserves its record.
+
+Each figure's token deepens along a per-delegation shade ramp as
+playback advances and they enter another of the six meetings, so by the
+end the depth of colour reflects how many meetings each attended (the
+scale is normalised to the busiest attendee). Selecting a token opens the
+person card, which shows a portrait where one is available (Feed 7).
 
 ---
 

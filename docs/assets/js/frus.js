@@ -21,6 +21,7 @@ const state = {
   timeline: [],
   manifest: {},
   foiaPdfs: { documents: [] },
+  portraits: {},     // person id -> { name, credit, license, source_url, local_url }
   activeView: "register",
   selection: null,   // { kind: 'person'|'document'|'topic'|'session', id, label }
   regMin: 5,         // participants appearing in >= N documents
@@ -44,7 +45,7 @@ async function loadData() {
   // (see scripts/build_standalone.py); the served site fetches it.
   const embedded = document.getElementById("embedded-data");
   if (embedded) return JSON.parse(embedded.textContent);
-  const [docs, register, stage, timeline, manifest, foiaPdfs] = await Promise.all([
+  const [docs, register, stage, timeline, manifest, foiaPdfs, portraits] = await Promise.all([
     fetch("data/frus_core.json").then(r => r.json()),
     fetch("data/register.json").then(r => r.json()),
     fetch("data/summit_stage.json").then(r => r.json()),
@@ -53,19 +54,24 @@ async function loadData() {
     // The declassified PDF library is optional; the rest of the edition
     // renders even if the manifest is absent.
     fetch("data/foia_pdfs.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    // Participant portraits are optional and provenance-gated: the person
+    // card shows one only where a sourced image exists (see
+    // scripts/fetch_portraits.py). Absent manifest → discs and cards as before.
+    fetch("data/portraits.json").then(r => r.ok ? r.json() : null).catch(() => null),
   ]);
-  return { docs, register, stage, timeline, manifest, foiaPdfs };
+  return { docs, register, stage, timeline, manifest, foiaPdfs, portraits };
 }
 
 async function boot() {
   try {
-    const { docs, register, stage, timeline, manifest, foiaPdfs } = await loadData();
+    const { docs, register, stage, timeline, manifest, foiaPdfs, portraits } = await loadData();
     state.docs = docs;
     state.register = register;
     state.stage = stage;
     state.timeline = timeline;
     state.manifest = manifest;
     state.foiaPdfs = foiaPdfs || { documents: [] };
+    state.portraits = (portraits && portraits.portraits) || {};
 
     setupNav();
     setupCorpusLine();
@@ -145,13 +151,32 @@ function updateSelectionPanel() {
     const n = state.register.people.find(p => p.id === s.id) || {};
     const topics = (n.top_topics || []).map(t => `<span class="tag">${escape(t.topic)} · ${t.count}</span>`).join(" ");
     const span = n.first ? `${monthLabel(n.first)} – ${monthLabel(n.last)}` : "";
+    // Portraits are provenance-gated and optional; the figure stays hidden
+    // until the image actually loads, so a manifest entry whose file has not
+    // been fetched yet simply shows nothing rather than a broken image. Only
+    // same-origin relative asset paths are honoured (no javascript:/data:).
+    const portrait = state.portraits[s.id];
+    const portraitOk = portrait && /^assets\/[\w./-]+\.(jpe?g|png|webp)$/i.test(portrait.local_url || "");
+    const portraitHtml = portraitOk ? `
+      <figure class="tr-portrait" hidden>
+        <img alt="${escape(portrait.name || n.name || "")}" />
+        <figcaption>${escape(portrait.credit || "")}</figcaption>
+      </figure>` : "";
     body.innerHTML = `
+      ${portraitHtml}
       <p><span class="side ${sideClass(n.side)}">${escape(n.side === "other" ? "" : n.side || "")}</span></p>
       <strong>${escape(n.name || s.label || s.id)}</strong>
       <p style="color:var(--frus-slate);font-style:italic">${escape(n.role || "")}</p>
       <p><span class="tr-label">Appears in</span> ${n.total || 0} documents${span ? ` · ${span}` : ""}</p>
       <p><span class="tr-label">Top topics</span><br>${topics || '<span style="color:var(--frus-slate)">—</span>'}</p>
     `;
+    if (portraitOk) {
+      const fig = body.querySelector(".tr-portrait");
+      const img = fig.querySelector("img");
+      img.addEventListener("load", () => fig.hidden = false);
+      img.addEventListener("error", () => fig.remove());
+      img.src = portrait.local_url;  // relative, same-origin asset path
+    }
   } else if (s.kind === "document") {
     const d = state.docs.find(d => d.doc_id === s.id) || {};
     body.innerHTML = `

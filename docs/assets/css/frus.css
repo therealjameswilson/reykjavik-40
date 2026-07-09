@@ -788,6 +788,26 @@ svg.is-meeting .stage-token.is-benched { opacity: 0.4; }
 .selection__body .side.us { color: var(--frus-navy); }
 .selection__body .side.ussr { color: var(--frus-red); }
 
+/* Provenance-gated participant portrait, shown only once the image loads. */
+.tr-portrait { margin: 0 0 0.7rem; }
+.tr-portrait img {
+  display: block;
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1.5px solid var(--frus-gold-deep);
+  background: var(--frus-paper);
+}
+.tr-portrait figcaption {
+  margin-top: 0.35rem;
+  max-width: 220px;
+  font-family: var(--font-interface);
+  font-size: var(--fs-xs);
+  line-height: 1.4;
+  color: var(--frus-slate);
+}
+
 /* ========== Colophon ========== */
 .colophon {
   border-top: 4px solid var(--frus-buckram-dark);
