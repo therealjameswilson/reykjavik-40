@@ -632,6 +632,30 @@ NAME_CORRECTIONS = {
     "person.pascoe-boris": "B. Lynn Pascoe",
 }
 
+# Explicit side assignments for annotated people whose alignment
+# occupation text is empty or too ambiguous for side_for() to place them
+# (so they default to "other"). Keyed by the resolved person id. These
+# override the text-derived side. Confirmed from the record:
+#   US   — Read Hanmer and Robert Herres (U.S. delegation staff);
+#          Maynard Glitman (U.S. INF negotiator, later Ambassador);
+#          Richard Combs (Deputy Chief of Mission, U.S. Embassy Moscow).
+#   USSR — Gennady Zakharov (Soviet UN employee, Daniloff affair);
+#          Dimitry Zarechnak (listed Soviet-side interpreter);
+#          Nikolai Chervov (Soviet General Staff);
+#          Vitaliy Mikol'chak (Soviet working-group member).
+# Margaret Thatcher is deliberately absent: she is neither U.S. nor
+# Soviet and remains "other" (Prime Minister of the United Kingdom).
+SIDE_CORRECTIONS = {
+    "person.hanmer-read": "US",
+    "person.herres-robert": "US",
+    "person.glitman-maynard": "US",
+    "person.combs-richard": "US",
+    "person.zakharov-gennady": "USSR",
+    "person.zarechnak-dimitry": "USSR",
+    "person.chervov-nikolai": "USSR",
+    "person.mikol'chak-vitaliy": "USSR",
+}
+
 
 def correct_annotated_person(p: dict[str, Any]) -> None:
     """Apply curated fixes to an annotated person in place.
@@ -642,7 +666,8 @@ def correct_annotated_person(p: dict[str, Any]) -> None:
     in whatever side_for() returned when it was written). This is what
     reclassifies U.S. desk officers whose portfolio subject is the USSR
     (e.g. Parris and Simons at State, Ermarth at CIA) as US rather than
-    Soviet.
+    Soviet. SIDE_CORRECTIONS then pins people whose occupation text is
+    missing or too ambiguous for side_for() to resolve.
     """
     if p.get("tier") != "annotated":
         return
@@ -650,6 +675,8 @@ def correct_annotated_person(p: dict[str, Any]) -> None:
         p["name"] = NAME_CORRECTIONS[p["id"]]
     if p.get("role"):
         p["side"] = side_for(p["role"])
+    if p.get("id") in SIDE_CORRECTIONS:
+        p["side"] = SIDE_CORRECTIONS[p["id"]]
 
 
 def enrich_records(records: list[dict[str, Any]], per_doc: dict[str, dict[str, Any]]) -> None:
