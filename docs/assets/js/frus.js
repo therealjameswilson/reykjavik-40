@@ -536,17 +536,22 @@ function stageBeats() {
 
 function stagePeople() {
   // Union of attendees across meetings, keyed by canonical id (or the
-  // printed name for the two unregistered Soviets).
+  // printed name for the two unregistered Soviets). `meetingCount` tallies
+  // how many of the documented meetings each figure sat in, so the stage
+  // can shade the busiest participants more deeply than the one-off ones.
   const map = new Map();
   (state.stage.meetings || []).forEach(m => {
     m.attendees.forEach(a => {
       const key = a.id || `printed:${a.display}`;
-      if (!map.has(key)) map.set(key, { key, ...a });
+      const existing = map.get(key);
+      if (existing) existing.meetingCount += 1;
+      else map.set(key, { ...a, key, meetingCount: 1 });
     });
   });
   const people = Array.from(map.values());
+  const maxMeetings = people.reduce((m, p) => Math.max(m, p.meetingCount), 1);
   const order = side => people.filter(p => p.side === side).sort((a, b) => (b.tier === "roster") - (a.tier === "roster") || a.name.localeCompare(b.name));
-  return { US: order("US"), USSR: order("USSR") };
+  return { US: order("US"), USSR: order("USSR"), maxMeetings };
 }
 
 function stageSurname(name) {
@@ -558,6 +563,28 @@ function stageInitials(name) {
   const parts = String(name ?? "").split(/\s+/).filter(Boolean);
   if (!parts.length) return "";
   return (parts[0][0] + (parts.length > 1 ? stageSurname(name)[0] : "")).toUpperCase();
+}
+
+// Sequential shade per delegation: a figure who sat in more of the six
+// documented meetings gets a deeper disc, so the summit's core cast
+// (Shultz, Shevardnadze, the principals and their interpreters) reads
+// darker than the one-session participants. Endpoints run from a pale
+// tint (one meeting) to the full side colour (attended the most).
+const STAGE_SHADE = {
+  US:    { light: [157, 179, 201], dark: [18, 53, 91] },   // pale steel → navy
+  USSR:  { light: [211, 165, 165], dark: [143, 45, 45] },  // pale rose → red
+  other: { light: [176, 166, 158], dark: [91, 74, 61] },   // pale → slate
+};
+
+// count is the running number of meetings a figure has entered so far; the
+// disc deepens toward the full side colour as playback accumulates them.
+function stageShade(side, count, maxMeetings) {
+  const ramp = STAGE_SHADE[side] || STAGE_SHADE.other;
+  const t = maxMeetings > 0 ? Math.min(count, maxMeetings) / maxMeetings : 0;
+  const rgb = ramp.light.map((lo, i) => Math.round(lo + (ramp.dark[i] - lo) * t));
+  // White initials need a dark enough disc; fall back to ink on pale ones.
+  const luma = (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2]) / 255;
+  return { fill: `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`, ink: luma > 0.62 ? "var(--frus-ink)" : "var(--frus-paper)" };
 }
 
 function renderStage() {
@@ -633,14 +660,20 @@ function renderStage() {
         g.setAttribute("tabindex", "0");
         g.setAttribute("role", "button");
       }
-      g.setAttribute("aria-label", `${p.name} (${p.side})`);
+      const meetingsWord = p.meetingCount === 1 ? "meeting" : "meetings";
+      g.setAttribute("aria-label", `${p.name} (${p.side}) — attends ${p.meetingCount} of ${state.stage.meetings.length} documented ${meetingsWord}`);
+      // Discs begin empty (no meetings entered yet) and deepen in applyBeat
+      // as playback accumulates each figure's attendance.
+      const shade0 = stageShade(p.side, 0, people.maxMeetings);
       const c = document.createElementNS(SVG_NS, "circle");
       c.setAttribute("r", 12);
+      c.style.fill = shade0.fill;
       g.appendChild(c);
       const init = document.createElementNS(SVG_NS, "text");
       init.setAttribute("class", "stage-token-initials");
       init.setAttribute("text-anchor", "middle");
       init.setAttribute("y", 4);
+      init.style.fill = shade0.ink;
       init.textContent = stageInitials(p.name);
       g.appendChild(init);
       const nm = document.createElementNS(SVG_NS, "text");
@@ -664,7 +697,7 @@ function renderStage() {
         g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activate(); } });
       }
       svg.appendChild(g);
-      tokens.set(p.key, { el: g, home, person: p });
+      tokens.set(p.key, { el: g, circle: c, initials: init, home, person: p });
     });
   };
   makeTokens(people.US, 108);
@@ -708,10 +741,25 @@ function renderStage() {
         });
       });
     }
+    // Running attendance through the current beat: a figure's disc deepens
+    // each time they enter another of the six meetings, so by the final
+    // beat the depth of colour reflects how many they attended in all.
+    const cumCount = new Map();
+    for (let i = 0; i <= idx; i++) {
+      if (beats[i].kind !== "meeting") continue;
+      beats[i].meeting.attendees.forEach(a => {
+        const key = a.id || `printed:${a.display}`;
+        cumCount.set(key, (cumCount.get(key) || 0) + 1);
+      });
+    }
+
     tokens.forEach(tok => {
       const seat = attending.get(tok.person.key);
       const pos = seat || tok.home;
       tok.el.setAttribute("transform", `translate(${pos.x}, ${pos.y})`);
+      const shade = stageShade(tok.person.side, cumCount.get(tok.person.key) || 0, people.maxMeetings);
+      tok.circle.style.fill = shade.fill;
+      tok.initials.style.fill = shade.ink;
       tok.el.classList.toggle("is-benched", !!meeting && !seat);
     });
 
