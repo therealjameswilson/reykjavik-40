@@ -1,0 +1,5 @@
+{
+  "source_note": "Participant portraits for the person cards, keyed by canonical person id. Populated by scripts/fetch_portraits.py, which downloads each image from a documented public-domain source and records its credit and license. Empty until that script is run in an environment with network access; the edition renders without it.",
+  "generated": null,
+  "portraits": {}
+}
