@@ -128,6 +128,20 @@ function setupSelectionClose() {
   });
 }
 
+// A concise 1–2 sentence overview for a document. Prefers a curated
+// `summary`; otherwise derives the opening sentence(s) of the excerpt so
+// cards and panels never dump multi-paragraph raw document text.
+function docSummary(d) {
+  if (d.summary) return d.summary;
+  const ex = (d.excerpt || "").replace(/\s+/g, " ").trim();
+  if (!ex) return "";
+  const sentences = ex.match(/[^.!?]+[.!?]+/g) || [ex];
+  let out = (sentences[0] || "").trim();
+  if (out.length < 90 && sentences[1]) out = `${out} ${sentences[1].trim()}`.trim();
+  if (out.length > 260) out = `${out.slice(0, 257).trimEnd()}…`;
+  return out;
+}
+
 // ------------------------ selection sync ------------------------
 function setSelection(kind, id, label, extra = {}) {
   state.selection = { kind, id, label, ...extra };
@@ -183,8 +197,8 @@ function updateSelectionPanel() {
       <p><span class="tag ${d.source === "foia.state.gov" ? "tag--source-foia" : "tag--source-frus"}">${escape(d.source || "")}</span> ${d.summit_phase ? `<span class="tag tag--phase-${d.summit_phase === "summit" ? "summit" : ""}">${escape(d.summit_phase)}</span>` : ""}</p>
       <strong>${escape(d.title || s.label || s.id)}</strong>
       <p style="color:var(--frus-slate);font-family:var(--font-mono);font-size:var(--fs-xs)">${escape(d.date_display || d.date || "")}</p>
-      ${d.excerpt ? `<p style="font-family:var(--font-editorial);border-left:2px solid var(--frus-gold);padding-left:0.6rem;color:var(--frus-ink)">${escape(d.excerpt)}</p>` : ""}
-      ${safeHttpUrl(d.url) ? `<a class="tr-cta" href="${escape(safeHttpUrl(d.url))}" target="_blank" rel="noopener">Read at source →</a>` : ""}
+      ${docSummary(d) ? `<p class="doc-summary">${escape(docSummary(d))}</p>` : ""}
+      ${safeHttpUrl(d.url) ? `<a class="tr-cta" href="${escape(safeHttpUrl(d.url))}" target="_blank" rel="noopener">${d.source === "foia.state.gov" ? "Open the declassified PDF" : "Read the FRUS document"} →</a>` : ""}
     `;
   } else if (s.kind === "topic") {
     body.innerHTML = `<strong>Topic strand</strong><p style="color:var(--frus-slate)">${escape(s.label)}</p><p>Highlighted across the linked views.</p>`;
@@ -902,7 +916,7 @@ function renderTimeline() {
 
       const t = document.createElement("div");
       t.className = "event__time";
-      t.textContent = ev.kind === "foia" ? "PDF" : (ev.kind === "photo" ? "PHOTO" : (ev.time_hint || "—"));
+      t.textContent = ev.kind === "photo" ? "PHOTO" : (ev.time_hint || "—");
       const b = document.createElement("div");
       b.className = "event__text";
       if (ev.kind === "photo") {
@@ -923,10 +937,12 @@ function renderTimeline() {
       } else if (ev.kind === "foia") {
         const local = safeLocalPdf(ev.local_url);
         const source = safeHttpUrl(ev.url);
-        b.innerHTML = `<span class="event__foia-title">${escape(ev.text)}</span>`
+        // Date is the grouping key; the PDF file number is kept internally
+        // (row.dataset.docId) but no longer shown as the visible heading.
+        const foiaTitle = ev.description || ev.detail || "Declassified document";
+        b.innerHTML = `<span class="event__foia-title">${escape(foiaTitle)}</span>`
           + `<span class="tag tag--source-foia">${escape(ev.classification || "Declassified")}</span>`
-          + (ev.description ? ` <span class="event__foia-desc">${escape(ev.description)}</span>` : "")
-          + (ev.detail ? ` <span class="event__foia-detail">${escape(ev.detail)}</span>` : "")
+          + (ev.detail && ev.detail !== foiaTitle ? ` <span class="event__foia-detail">${escape(ev.detail)}</span>` : "")
           + `<span class="event__foia-links">`
           + (local ? `<a href="${escape(local)}" target="_blank" rel="noopener">Open PDF &rarr;</a>` : "")
           + (source ? `<a href="${escape(source)}" target="_blank" rel="noopener">Source at foia.state.gov</a>` : "")
@@ -1125,13 +1141,13 @@ function renderTranscript() {
     <p class="tr-meta">${escape(d.date_display || d.date || "")} ${d.place ? `· ${escape(d.place)}` : ""}${d.doc_id ? ` · <span>${escape(d.doc_id)}</span>` : ""}</p>
     ${d.verified === false ? `<div class="tr-caveat"><strong>Unverified.</strong> This document number has not been confirmed against a live page at history.state.gov.</div>` : ""}
     ${d.session ? `<div class="tr-section"><p class="tr-label">Session</p><p>${escape(d.session)}${d.principals ? ` — ${escape(d.principals)}` : ""}${d.venue ? ` · ${escape(d.venue)}` : ""}</p></div>` : ""}
-    ${d.excerpt ? `<div class="tr-section"><p class="tr-label">Excerpt</p><blockquote class="tr-excerpt">${escape(d.excerpt)}</blockquote></div>` : ""}
+    ${docSummary(d) ? `<div class="tr-section"><p class="tr-label">Overview</p><p class="doc-summary">${escape(docSummary(d))}</p></div>` : ""}
     ${d.case_number ? `<div class="tr-section"><p class="tr-label">Provenance</p><p style="font-family:var(--font-mono);font-size:var(--fs-xs)">Case ${escape(d.case_number)} · ${escape(d.doctype || "")} · ${escape(d.classification || "")}${d.release_decision ? ` · ${escape(d.release_decision)}` : ""}</p></div>` : ""}
     ${persons.length ? `<div class="tr-section"><p class="tr-label">Referenced</p><div>${personTags}</div></div>` : ""}
     ${topicTags ? `<div class="tr-section"><p class="tr-label">Topics</p><div>${topicTags}</div></div>` : ""}
     ${eventTags ? `<div class="tr-section"><p class="tr-label">Events</p><div>${eventTags}</div></div>` : ""}
     ${subjectHtml ? `<div class="tr-section"><p class="tr-label">Curated subjects</p>${subjectHtml}<p class="tr-provenance">Subject and event annotations by the Office of the Historian.</p></div>` : ""}
-    ${safeHttpUrl(d.url) ? `<a class="tr-cta" href="${escape(safeHttpUrl(d.url))}" target="_blank" rel="noopener">Open at ${d.source === "foia.state.gov" ? "foia.state.gov" : "history.state.gov"} →</a>` : ""}
+    ${safeHttpUrl(d.url) ? `<a class="tr-cta" href="${escape(safeHttpUrl(d.url))}" target="_blank" rel="noopener">${d.source === "foia.state.gov" ? "Open the declassified PDF at foia.state.gov" : "Read the FRUS document at history.state.gov"} →</a>` : ""}
   `;
 }
 
