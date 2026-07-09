@@ -477,14 +477,19 @@ svg.is-meeting .stage-token.is-benched { opacity: 0.4; }
   color: var(--frus-slate); margin: -0.2rem 0 0.6rem; max-width: 60ch;
 }
 .event.event--foia { background: rgba(201, 168, 76, 0.06); }
-.event.event--foia .event__time {
-  font-family: var(--font-interface); font-size: var(--fs-xs);
-  font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--frus-gold-deep);
+/* FOIA entries mirror the FRUS "Document" badge geometry so both sources
+   read as one design system; only the accent colour marks the source. */
+.event.event--foia .event__text::before {
+  content: "Declassified PDF"; display: inline-block; margin-right: 0.5rem;
+  font-family: var(--font-editorial); font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--frus-paper); background: var(--frus-gold-deep);
+  padding: 0.1rem 0.5rem; border: 1px solid var(--frus-gold-deep);
+  border-radius: 1px; vertical-align: 0.15em;
 }
-.event__foia-title { font-family: var(--font-mono); font-size: var(--fs-sm); margin-right: 0.5rem; }
-.event__foia-desc { display: block; color: var(--frus-ink); font-family: var(--font-interface); font-size: var(--fs-xs); line-height: 1.45; margin: 0.2rem 0; }
-.event__foia-detail { color: var(--frus-slate); font-family: var(--font-interface); font-size: var(--fs-xs); }
+.event__foia-title { font-family: var(--font-editorial); font-size: var(--fs-md); color: var(--frus-buckram-dark); margin-right: 0.5rem; }
+.event__foia-detail { display: block; color: var(--frus-slate); font-family: var(--font-interface); font-size: var(--fs-xs); margin: 0.2rem 0; }
 .event__foia-links {
   display: block; margin-top: 0.25rem;
   font-family: var(--font-interface); font-size: var(--fs-xs);
@@ -690,16 +695,16 @@ svg.is-meeting .stage-token.is-benched { opacity: 0.4; }
   color: var(--frus-slate);
   margin: 0.6rem 0 0;
 }
-.tr-excerpt {
+/* Concise editorial overview shared by FRUS and FOIA records — a short
+   1–2 sentence gloss, never a multi-paragraph raw extract. */
+.doc-summary {
   font-family: var(--font-editorial);
-  font-style: italic;
   font-size: var(--fs-md);
   line-height: 1.6;
-  border-left: 3px solid var(--frus-buckram-dark);
-  padding: 0.2rem 0 0.2rem 0.85rem;
+  border-left: 3px solid var(--frus-gold-deep);
+  padding: 0.1rem 0 0.1rem 0.85rem;
   color: var(--frus-ink);
   margin: 0 0 1rem;
-  background: rgba(255, 250, 240, 0.5);
 }
 .tr-caveat {
   font-family: var(--font-interface);
