@@ -491,6 +491,29 @@ svg.is-meeting .stage-token.is-benched { opacity: 0.4; }
 }
 .event__foia-links a { color: var(--frus-buckram-dark); margin-right: 1rem; }
 
+/* White House Photo Office plates, anchored to their summit moment. */
+.event.event--photo { background: rgba(76, 110, 140, 0.06); }
+.event.event--photo .event__time {
+  font-family: var(--font-interface); font-size: var(--fs-xs);
+  font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--frus-slate);
+}
+.event__photo-link { display: inline-block; margin: 0 0 0.35rem; }
+.event__photo-img {
+  display: block; width: 240px; max-width: 100%; height: auto;
+  border: 1px solid var(--frus-rule); border-radius: 2px;
+  background: var(--frus-paper);
+}
+.event__photo-cap {
+  display: block; color: var(--frus-ink);
+  font-family: var(--font-editorial); font-size: var(--fs-sm); line-height: 1.5;
+}
+.event__photo-credit {
+  display: block; margin-top: 0.2rem;
+  color: var(--frus-slate); font-family: var(--font-interface); font-size: var(--fs-xs);
+}
+.event__photo-credit a { color: var(--frus-buckram-dark); }
+
 /* ========== Explorer ========== */
 .explorer__controls {
   display: grid;

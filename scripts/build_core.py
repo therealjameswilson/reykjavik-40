@@ -294,6 +294,50 @@ def build_foia_supplement(foia_pdfs: dict[str, Any]) -> list[dict[str, Any]]:
     return events
 
 
+def build_photo_supplement(reagan_photos: dict[str, Any]) -> list[dict[str, Any]]:
+    """Timeline entries derived from White House Photo Office plates.
+
+    Each plate carries an ISO `date` (11 or 12 October 1986) and a
+    `time_hint` marking its place in the summit day, so the photo sorts
+    next to the chronology entry it depicts rather than forming a
+    disconnected gallery. Photos are typed `photo` so the front end can
+    render them as image cards, distinct from FRUS documents and FOIA
+    PDFs, and never displace either. Credit and source link travel with
+    every entry.
+    """
+    payload = reagan_photos or {}
+    credit = payload.get("credit") or payload.get("collection", "")
+    source = payload.get("source", "")
+    events: list[dict[str, Any]] = []
+    for p in payload.get("photos", []):
+        date = (p.get("date") or "").strip()
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+            continue
+        hint = (p.get("time_hint") or "").strip()
+        m = re.fullmatch(r"(\d{2}):(\d{2})", hint)
+        tod = f"{m.group(1)}:{m.group(2)}" if m else "23:59"
+        seq = p.get("seq") or 0
+        events.append(
+            {
+                "kind": "photo",
+                "date": date,
+                "date_display": p.get("date_display") or date,
+                "time_hint": hint,
+                "sort_key": f"{date}T{tod}:photo-{seq:04d}",
+                "text": p.get("caption", ""),
+                "caption": p.get("caption", ""),
+                "credit": credit,
+                "photo_id": p.get("id", ""),
+                "local_url": p.get("local_url", ""),
+                "thumb_url": p.get("thumb_url", "") or p.get("local_url", ""),
+                "url": p.get("source_url", ""),
+                "source": source,
+                "source_kind": "photograph",
+            }
+        )
+    return events
+
+
 # Restrict FRUS documents to the two summit days themselves.
 # FOIA records are NOT filtered here — the user will filter FOIA manually.
 # Set to None (or an empty set) to disable the filter.
@@ -368,6 +412,11 @@ def main() -> int:
     foia_pdfs = json.loads((DATA / "foia_pdfs.json").read_text()) if (DATA / "foia_pdfs.json").exists() else {}
     foia_events = build_foia_supplement(foia_pdfs)
     timeline += foia_events
+    # Fold in White House Photo Office plates, anchored to their summit
+    # date/time so they sit alongside the chronology entries they depict.
+    reagan_photos = json.loads((DATA / "reagan_photos.json").read_text()) if (DATA / "reagan_photos.json").exists() else {}
+    photo_events = build_photo_supplement(reagan_photos)
+    timeline += photo_events
     timeline.sort(key=lambda e: e["sort_key"])
     (DATA / "timeline.json").write_text(json.dumps(timeline, indent=2, ensure_ascii=False))
     foia_undated = sum(1 for e in foia_events if not e["dated"])
@@ -385,6 +434,7 @@ def main() -> int:
             "timeline_events": len(timeline),
             "foia_timeline_entries": len(foia_events),
             "foia_timeline_undated": foia_undated,
+            "reagan_photo_entries": len(photo_events),
         },
         "by_phase": dict(Counter(r["summit_phase"] for r in all_records)),
         "by_source": dict(Counter(r["source"] for r in all_records)),

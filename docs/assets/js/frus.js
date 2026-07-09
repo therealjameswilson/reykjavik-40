@@ -829,10 +829,25 @@ function renderTimeline() {
 
       const t = document.createElement("div");
       t.className = "event__time";
-      t.textContent = ev.kind === "foia" ? "PDF" : (ev.time_hint || "—");
+      t.textContent = ev.kind === "foia" ? "PDF" : (ev.kind === "photo" ? "PHOTO" : (ev.time_hint || "—"));
       const b = document.createElement("div");
       b.className = "event__text";
-      if (ev.kind === "foia") {
+      if (ev.kind === "photo") {
+        const img = safeLocalImg(ev.thumb_url) || safeLocalImg(ev.local_url);
+        const full = safeLocalImg(ev.local_url);
+        const source = safeHttpUrl(ev.url);
+        const cap = escape(ev.caption || ev.text || "");
+        const figure = img
+          ? `<a class="event__photo-link" href="${escape(full || img)}" target="_blank" rel="noopener">`
+            + `<img class="event__photo-img" src="${escape(img)}" alt="${cap}" loading="lazy" width="240" />`
+            + `</a>`
+          : "";
+        b.innerHTML = figure
+          + `<span class="event__photo-cap">${cap}</span>`
+          + `<span class="event__photo-credit">${escape(ev.credit || "")}`
+          + (source ? ` · <a href="${escape(source)}" target="_blank" rel="noopener">Reagan Library</a>` : "")
+          + `</span>`;
+      } else if (ev.kind === "foia") {
         const local = safeLocalPdf(ev.local_url);
         const source = safeHttpUrl(ev.url);
         b.innerHTML = `<span class="event__foia-title">${escape(ev.text)}</span>`
@@ -1180,6 +1195,14 @@ function safeHttpUrl(url) {
 function safeLocalPdf(url) {
   const s = String(url ?? "").trim();
   return /^assets\/pdf\/[\w./-]+\.pdf$/.test(s) && !s.includes("..") ? s : "";
+}
+
+// Same-site relative path to a locally-served photo, constrained to the
+// photos tree so a bad manifest entry can't emit a javascript:/data:
+// src or escape the assets directory.
+function safeLocalImg(url) {
+  const s = String(url ?? "").trim();
+  return /^assets\/photos\/[\w./-]+\.jpe?g$/i.test(s) && !s.includes("..") ? s : "";
 }
 
 document.addEventListener("DOMContentLoaded", boot);
