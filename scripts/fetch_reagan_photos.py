@@ -34,6 +34,13 @@ DATA_DIR = ROOT / "data"
 DOCS_DATA = ROOT / "docs" / "data"
 PHOTOS_DIR = ROOT / "docs" / "assets" / "photos" / "reagan"
 THUMBS_DIR = PHOTOS_DIR / "thumbs"
+# Path the served site (rooted at docs/) uses to reach an image.
+SITE_PREFIX = "assets/photos/reagan"
+CREDIT = "White House Photographic Collection, Ronald Reagan Presidential Library"
+MONTHS = [
+    "", "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+]
 
 # (id, date mm/dd/yyyy, caption, time-of-day anchor in the FRUS chronology)
 PHOTOS = [
@@ -125,25 +132,32 @@ def main() -> int:
             im = Image.open(dst)
             im.thumbnail((640, 640))
             im.save(thumb, "JPEG", quality=82, optimize=True)
-        # normalise date -> ISO
+        # normalise date -> ISO and a human display date
         mo, dy, yr = date.split("/")
         iso = f"{yr}-{int(mo):02d}-{int(dy):02d}"
+        display = f"{MONTHS[int(mo)]} {int(dy)}, {yr}"
+        thumb_exists = thumb.exists() and thumb.stat().st_size > 0
         records.append({
             "id": pid,
             "date": iso,
+            "date_display": display,
             "time_hint": time_hint,
             "caption": caption,
+            "credit": CREDIT,
             "source_url": urls[pid],
             "filename": fname,
+            "local_url": f"{SITE_PREFIX}/{fname}",
+            "thumb_url": f"{SITE_PREFIX}/thumbs/{fname}" if thumb_exists else f"{SITE_PREFIX}/{fname}",
             "seq": seq,
         })
 
     payload = {
         "source": GALLERY_URL,
-        "collection": "White House Photographic Collection, Ronald Reagan Presidential Library",
+        "collection": CREDIT,
         "summit": "Reykjavik Summit",
         "location": "H\u00f6f\u00f0i House, Reykjav\u00edk, Iceland",
         "photographers": "White House Photo Office",
+        "credit": CREDIT,
         "count": len(records),
         "photos": records,
     }

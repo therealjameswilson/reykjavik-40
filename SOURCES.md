@@ -163,6 +163,34 @@ outline and a caveat in the transcript pane.
 
 ---
 
+## Feed 6 — Ronald Reagan Presidential Library (White House Photographic Collection)
+
+- **Publisher:** Ronald Reagan Presidential Library and Museum,
+  [Summits with Mikhail Gorbachev gallery](https://www.reaganlibrary.gov/archives/audiovisual/white-house-photo-collection-galleries/summits-mikhail-gorbachev).
+- **What we use:** 19 White House Photo Office plates from the two
+  Reykjavik days (11–12 October 1986) — the first and later Höfði House
+  meetings, staff briefings and luncheons, and the Reagan–Gorbachev
+  farewell. Each plate keeps its Library photo number (e.g. `C37401-8A`),
+  the Library's caption verbatim, and a link back to the source image.
+- **Fetch script:** `scripts/fetch_reagan_photos.py` resolves each
+  plate's URL from the gallery page, downloads a web-sized JPEG into
+  `docs/assets/photos/reagan/` and a 640-px thumbnail into
+  `docs/assets/photos/reagan/thumbs/`, and writes the manifest
+  `data/reagan_photos.json` (mirrored to `docs/data/`).
+- **Dating:** every plate is dated to 11 or 12 October 1986 from the
+  gallery's own metadata; a `time_hint` places it within the summit day
+  (first meeting, briefings, farewell) so the photo sorts next to the
+  chronology entry it depicts. No more precise time is invented.
+- **How it appears in the site:** photographs are folded into the
+  Hour-by-Hour Timeline as `photo`-typed entries, rendered as image
+  cards visually distinct from FRUS documents and FOIA PDFs, each
+  carrying its caption, the *White House Photographic Collection, Ronald
+  Reagan Presidential Library* credit, and a source link. Images are
+  U.S. Government works (public domain); the collection is credited on
+  every card and in the colophon.
+
+---
+
 ## Meeting attendance (Höfði House view)
 
 The playable staging of the two summit days uses only what the memcons

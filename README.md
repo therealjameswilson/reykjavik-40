@@ -54,6 +54,14 @@ id, side (inferred from the volumes' lists of persons), and role. FOIA
 releases are rendered in a clearly labeled "Declassified" layer distinct
 from FRUS records.
 
+Alongside the documents, 19 White House Photo Office plates of the two
+summit days (11–12 October 1986) are drawn from the Ronald Reagan
+Presidential Library's *Summits with Mikhail Gorbachev* gallery and
+folded into the Hour-by-Hour Timeline at the moments they depict. They
+render as image cards distinct from documents, each credited to the
+*White House Photographic Collection, Ronald Reagan Presidential Library*
+with a source link. See `SOURCES.md` Feed 6 and `scripts/fetch_reagan_photos.py`.
+
 ## Repository layout
 
 ```
@@ -198,6 +206,9 @@ Any static host (Cloudflare Pages, Netlify, S3+CloudFront) can serve the
   <https://history.state.gov/historicaldocuments/frus1981-88v06>
 - TEI XML source: <https://github.com/HistoryAtState/frus>
 - foia.state.gov Virtual Reading Room: <https://foia.state.gov/>
+- White House Photographic Collection, Ronald Reagan Presidential Library —
+  *Summits with Mikhail Gorbachev* gallery.
+  <https://www.reaganlibrary.gov/archives/audiovisual/white-house-photo-collection-galleries/summits-mikhail-gorbachev>
 - FRUS subject taxonomy (`frus-subjects`) and annotated TEI corpus
   (`hsg-annotate-data`) — Office of the Historian annotation program;
   see `SOURCES.md` Feeds 4 and 5.

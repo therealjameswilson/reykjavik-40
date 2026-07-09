@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-09T00:29:14Z",
+  "generated": "2026-07-09T00:43:57Z",
   "counts": {
     "frus_v05_reykjavik": 43,
     "frus_v06_aftermath": 39,
@@ -8,9 +8,10 @@
     "total_documents": 171,
     "network_nodes": 212,
     "network_edges": 5031,
-    "timeline_events": 163,
+    "timeline_events": 182,
     "foia_timeline_entries": 73,
     "foia_timeline_undated": 23,
+    "reagan_photo_entries": 19,
     "curated_subjects": 208,
     "event_entities": 44,
     "corpus_candidates": 0,
@@ -47,5 +48,5 @@
     "FRUS subject taxonomy": "https://github.com/HistoryAtState/frus-subjects",
     "HSG annotated TEI": "https://history.state.gov (Office of the Historian annotation program)"
   },
-  "enriched": "2026-07-09T00:29:14Z"
+  "enriched": "2026-07-09T00:45:42Z"
 }
