@@ -1,5 +1,47 @@
 {
-  "source_note": "Participant portraits for the person cards, keyed by canonical person id. Populated by scripts/fetch_portraits.py, which downloads each image from a documented public-domain source and records its credit and license. Empty until that script is run in an environment with network access; the edition renders without it.",
-  "generated": null,
-  "portraits": {}
+  "source_note": "Participant portraits keyed by canonical person id. Images and their credit/licence are pulled from Wikimedia Commons by scripts/fetch_portraits.py and kept only under a free licence. Coverage is intentionally partial.",
+  "generated": "2026-07-09T14:57:43Z",
+  "count": 4,
+  "portraits": {
+    "reagan_gorbachev.reagan": {
+      "id": "reagan_gorbachev.reagan",
+      "name": "President Reagan",
+      "credit": "https://www.dodmedia.osd.mil/DVIC_View/Still_Details.cfm?SDAN=DASC9003096&amp;JPGPath=/Assets/Still/1990/Army/DA-SC-90-03096.JPG[dead link] · Public domain",
+      "license": "Public domain",
+      "license_url": "",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Official_Portrait_of_President_Reagan_1981.jpg",
+      "filename": "reagan_gorbachev_reagan.jpg",
+      "local_url": "assets/photos/portraits/reagan_gorbachev_reagan.jpg"
+    },
+    "us.shultz": {
+      "id": "us.shultz",
+      "name": "Secretary of State George Shultz",
+      "credit": "This image has been extracted from another file · Public domain",
+      "license": "Public domain",
+      "license_url": "",
+      "source_url": "https://commons.wikimedia.org/wiki/File:George_Pratt_Shultz.jpg",
+      "filename": "us_shultz.jpg",
+      "local_url": "assets/photos/portraits/us_shultz.jpg"
+    },
+    "us.poindexter": {
+      "id": "us.poindexter",
+      "name": "Vice Adm. John Poindexter",
+      "credit": "DefenseImagery.milVIRIN: DN-SC-86-00946 · Public domain",
+      "license": "Public domain",
+      "license_url": "",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Admiral_John_Poindexter,_official_Navy_photo,_1985.JPEG",
+      "filename": "us_poindexter.jpg",
+      "local_url": "assets/photos/portraits/us_poindexter.jpg"
+    },
+    "reagan_gorbachev.gorbachev": {
+      "id": "reagan_gorbachev.gorbachev",
+      "name": "General Secretary Gorbachev",
+      "credit": "This image has been extracted from another file · CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RIAN_archive_850809_General_Secretary_of_the_CPSU_CC_M._Gorbachev_(cropped).jpg",
+      "filename": "reagan_gorbachev_gorbachev.jpg",
+      "local_url": "assets/photos/portraits/reagan_gorbachev_gorbachev.jpg"
+    }
+  }
 }
