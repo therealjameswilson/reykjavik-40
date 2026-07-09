@@ -812,7 +812,12 @@ function renderTimeline() {
       day.classList.add("day--foia");
       const cap = document.createElement("p");
       cap.className = "day__caption";
-      cap.textContent = "Declassified PDFs supplementing the FRUS record — individual document dates were not released in this FOIA case.";
+      // The undated band (sentinel date) groups documents whose date could
+      // not be determined; dated bands carry document dates derived from the
+      // PDF text (cable date-time groups, in-text dates, or event context).
+      cap.textContent = events.some(e => e.dated)
+        ? "Declassified PDFs supplementing the FRUS record — dates derived from each document's contents (est./uncertain where marked)."
+        : "Declassified PDFs supplementing the FRUS record — these documents' dates could not be determined from the release.";
       day.appendChild(cap);
     }
 
@@ -832,6 +837,7 @@ function renderTimeline() {
         const source = safeHttpUrl(ev.url);
         b.innerHTML = `<span class="event__foia-title">${escape(ev.text)}</span>`
           + `<span class="tag tag--source-foia">${escape(ev.classification || "Declassified")}</span>`
+          + (ev.description ? ` <span class="event__foia-desc">${escape(ev.description)}</span>` : "")
           + (ev.detail ? ` <span class="event__foia-detail">${escape(ev.detail)}</span>` : "")
           + `<span class="event__foia-links">`
           + (local ? `<a href="${escape(local)}" target="_blank" rel="noopener">Open PDF &rarr;</a>` : "")
@@ -1082,7 +1088,7 @@ function renderFoiaRows() {
   const all = (state.foiaPdfs && state.foiaPdfs.documents) || [];
   const q = (document.getElementById("foia-search")?.value || "").toLowerCase().trim();
   const rows = q
-    ? all.filter(d => `${d.filename} ${d.title} ${d.doc_index} ${d.doctype}`.toLowerCase().includes(q))
+    ? all.filter(d => `${d.filename} ${d.title} ${d.doc_index} ${d.doctype} ${d.description || ""} ${d.date_display || ""}`.toLowerCase().includes(q))
     : all;
 
   const meta = document.getElementById("foia-meta");
@@ -1102,10 +1108,14 @@ function renderFoiaRows() {
     const pages = d.page_count ? `${d.page_count} page${d.page_count === 1 ? "" : "s"}` : "";
     const size = humanBytes(d.size_bytes);
     const detail = [pages, size].filter(Boolean).join(" · ");
+    const dateDisp = d.date_display || d.date || "";
+    const desc = d.description || d.summary || "";
     li.innerHTML = `
       <div class="foia-card__index">${escape(String(d.doc_index || ""))}<span class="foia-card__total">/${escape(String(d.doc_total || ""))}</span></div>
       <div class="foia-card__body">
         <p class="foia-card__title">${escape(d.filename || "")}</p>
+        ${dateDisp ? `<p class="foia-card__date">${escape(dateDisp)}</p>` : ""}
+        ${desc ? `<p class="foia-card__desc">${escape(desc)}</p>` : ""}
         <p class="foia-card__meta">
           <span class="tag tag--source-foia">${escape(d.classification || "Unclassified")}</span>
           ${d.doctype ? `<span class="tag">${escape(d.doctype)}</span>` : ""}

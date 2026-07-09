@@ -264,15 +264,23 @@ def build_foia_supplement(foia_pdfs: dict[str, Any]) -> list[dict[str, Any]]:
                 f"{d.get('page_count')} p." if d.get("page_count") else "",
             ) if part
         )
+        # Dated documents carry a curated, human date (with an est./uncertain
+        # marker where the day is inferred rather than stamped); the rest keep
+        # the labeled undated-band caption.
+        display = (d.get("date_display") or date) if dated else (
+            f"Declassified FOIA release · {case}"
+        )
         events.append(
             {
                 "kind": "foia",
                 "date": key,
-                "date_display": date if dated else f"Declassified FOIA release · {case}",
+                "date_display": display,
                 "time_hint": "",
                 "sort_key": f"{key}T00:00:foia-{idx:04d}",
                 "text": d.get("filename") or d.get("doc_id", ""),
                 "detail": detail,
+                "description": d.get("description", "") or d.get("summary", ""),
+                "date_confidence": d.get("date_confidence", ""),
                 "url": d.get("source_url", ""),
                 "local_url": d.get("local_url", ""),
                 "source": source,

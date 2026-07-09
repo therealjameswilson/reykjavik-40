@@ -69,6 +69,8 @@ PDF_DIR = Path("docs/assets/pdf/foia") / CASE_NUMBER
 SITE_PDF_PREFIX = f"assets/pdf/foia/{CASE_NUMBER}"
 OUT = Path("data/foia_pdfs.json")
 DOCS_OUT = Path("docs/data/foia_pdfs.json")
+# Curated per-document dates and one-sentence descriptions (source of truth).
+METADATA = Path("data/foia_metadata.json")
 
 USER_AGENT = (
     "reykjavik-40 pipeline (research; "
@@ -172,7 +174,17 @@ def iso_date(raw: str | None) -> str:
     return head
 
 
-def build_record(n: int, meta: dict[str, Any] | None) -> dict[str, Any]:
+def load_curated() -> dict[str, dict[str, Any]]:
+    """Curated date/description sidecar keyed by doc_id; empty if absent."""
+    if not METADATA.exists():
+        return {}
+    payload = json.loads(METADATA.read_text())
+    return payload.get("documents", {})
+
+
+def build_record(
+    n: int, meta: dict[str, Any] | None, curated: dict[str, dict[str, Any]]
+) -> dict[str, Any]:
     stem = doc_stem(n)
     dest = PDF_DIR / f"{stem}.pdf"
     size = dest.stat().st_size if dest.exists() else 0
@@ -183,8 +195,14 @@ def build_record(n: int, meta: dict[str, Any] | None) -> dict[str, Any]:
     title = subject or f"{FALLBACK_SUBJECT}   Document {n} of {DOC_COUNT}"
     numpages = meta.get("numpages") or 0
     pages = numpages if numpages else page_count(dest)
+    doc_id = f"foia-{stem}"
+    # The backend exposes no authored date for this microfiche case, so the
+    # curated sidecar is authoritative for date/description; fall back to any
+    # backend date only if the sidecar has none.
+    cur = curated.get(doc_id, {})
+    date = (cur.get("date") or "").strip() or iso_date(meta.get("docdate"))
     return {
-        "doc_id": f"foia-{stem}",
+        "doc_id": doc_id,
         "case_number": CASE_NUMBER,
         "case_subject": (meta.get("casesubject") or FALLBACK_SUBJECT).strip(),
         "doc_index": n,
@@ -193,7 +211,11 @@ def build_record(n: int, meta: dict[str, Any] | None) -> dict[str, Any]:
         "filename": f"{stem}.pdf",
         "local_url": f"{SITE_PDF_PREFIX}/{stem}.pdf",
         "source_url": f"{BASE}/{pdf_link(n)}",
-        "date": iso_date(meta.get("docdate")),
+        "date": date,
+        "date_display": cur.get("date_display", ""),
+        "date_confidence": cur.get("date_confidence", ""),
+        "description": cur.get("description", ""),
+        "summary": cur.get("description", ""),
         "posted_date": iso_date(meta.get("posteddate")) or FALLBACK_POSTED,
         "doctype_code": doctype_code,
         "doctype": DOCTYPE_LABEL.get(doctype_code, doctype_code or "Document"),
@@ -233,7 +255,10 @@ def main() -> int:
                       file=sys.stderr)
                 return 1
 
-    records = [build_record(n, meta.get(doc_stem(n))) for n in range(1, DOC_COUNT + 1)]
+    curated = load_curated()
+    records = [
+        build_record(n, meta.get(doc_stem(n)), curated) for n in range(1, DOC_COUNT + 1)
+    ]
 
     missing = [r["filename"] for r in records if r["size_bytes"] == 0]
     if missing:

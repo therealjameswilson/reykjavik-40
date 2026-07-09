@@ -1,0 +1,444 @@
+{
+  "case_number": "F-1986-04261",
+  "note": "Curated per-document dates and one-sentence descriptions for the F-1986-04261 declassified PDF release. Source of truth consumed by fetch_foia_pdfs.py (manifest enrichment) and build_core.py (timeline). Dates derived from cable date-time groups, telegram serials, explicit in-text dates, and conservative event-based inference; month-only and undated documents carry an empty `date`. Confidence: exact | partial | uncertain | none.",
+  "documents": {
+    "foia-C09000001": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "White House Executive Secretariat routing/action slip for a memorandum to the President concerning Reykjavik materials."
+    },
+    "foia-C09000002": {
+      "date": "1986-09-30",
+      "date_display": "September 30, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "State Department memorandum on the release of Soviet U.N. employee Gennadiy Zakharov into Soviet custody (the Daniloff affair) and the fate of the human-rights monitoring group."
+    },
+    "foia-C09000003": {
+      "date": "1986-09-26",
+      "date_display": "September 26, 1986",
+      "date_confidence": "exact",
+      "description": "Bureau of Public Affairs 'Current Policy' compilation excerpting key U.S. statements on arms control, U.S.-Soviet relations and the Reykjavik meeting."
+    },
+    "foia-C09000004": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Office of the Secretary routing/action slip (recommendation-and-reply handling)."
+    },
+    "foia-C09000005": {
+      "date": "1986-10-10",
+      "date_display": "October 10, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Embassy Reykjavik cable (86REYKJA02091) reporting the second Soviet pre-summit press conference, briefed by Nikolay Shishlin and Yevgeniy Primakov on regional conflicts and the world economy."
+    },
+    "foia-C09000006": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "State Department routing/action slip with FOIA exemption-review markings."
+    },
+    "foia-C09000007": {
+      "date": "1986-10-12",
+      "date_display": "October 12, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Transcript of remarks at the Reykjavik press center reflecting on the two days of Reagan-Gorbachev meetings."
+    },
+    "foia-C09000008": {
+      "date": "1986-10-12",
+      "date_display": "October 12, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "President Reagan's departure remarks at the Reykjavik/Keflavik airport thanking embassy staff after the two days of meetings with Gorbachev."
+    },
+    "foia-C09000009": {
+      "date": "1986-10-13",
+      "date_display": "October 13, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "White House press-office news summary of weekend media coverage of the Reykjavik meeting."
+    },
+    "foia-C09000010": {
+      "date": "1986-10-11",
+      "date_display": "October 11, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Embassy Reykjavik cable on the leaders' arrival and press-filing-center arrangements as the meetings opened."
+    },
+    "foia-C09000011": {
+      "date": "1986-10-11",
+      "date_display": "October 11, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Embassy Reykjavik cable summarizing Icelandic media coverage on the eve of the Reagan-Gorbachev pre-summit (Oct 11 papers and state radio/TV)."
+    },
+    "foia-C09000012": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Routing/action slip for a memorandum to the President."
+    },
+    "foia-C09000013": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Heavily degraded document concerning U.S.-Soviet discussions (source text largely illegible)."
+    },
+    "foia-C09000014": {
+      "date": "1986-10-13",
+      "date_display": "October 13, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Embassy Reykjavik cable analyzing the propaganda themes in General Secretary Gorbachev's post-summit press conference."
+    },
+    "foia-C09000015": {
+      "date": "1986-10-13",
+      "date_display": "October 13, 1986",
+      "date_confidence": "exact",
+      "description": "Embassy Reykjavik cable (No. 10 in the media series) summarizing Icelandic coverage of Reagan-Gorbachev based on the Oct 12-13 editions."
+    },
+    "foia-C09000016": {
+      "date": "1986-10-13",
+      "date_display": "October 13, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "State cable summarizing highlights of the Sunday, Oct 12 evening network television news coverage of the summit's inconclusive end."
+    },
+    "foia-C09000017": {
+      "date": "1986-10-13",
+      "date_display": "October 13, 1986",
+      "date_confidence": "exact",
+      "description": "USNATO cable (86USNATO 05508) transmitting the transcript of Secretary Shultz's on-the-record press conference at NATO headquarters on October 13."
+    },
+    "foia-C09000018": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Executive Secretariat routing/action slip for a memorandum to the President."
+    },
+    "foia-C09000019": {
+      "date": "1986-10-15",
+      "date_display": "October 15, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Embassy Moscow cable (86MOSCOW017709) on Soviet media treatment of Reykjavik, citing Western and American commentary."
+    },
+    "foia-C09000020": {
+      "date": "1986-10-14",
+      "date_display": "October 14, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "State cable (86STATE 322566) relaying the transcript of Shultz's NATO press conference to Ambassador Price in London."
+    },
+    "foia-C09000021": {
+      "date": "1986-10-15",
+      "date_display": "October 15, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Information memorandum to the Secretary on Gorbachev's hour-long televised appearance calling the Iceland meeting an important new situation."
+    },
+    "foia-C09000022": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Office of the Secretary routing/action slip."
+    },
+    "foia-C09000023": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Executive Secretariat action slip for an outgoing State cable and White House correspondence."
+    },
+    "foia-C09000024": {
+      "date": "1986-10-15",
+      "date_display": "October 15, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Executive Secretariat memorandum (Nicholas Platt to VADM Poindexter) transmitting draft Reykjavik op-ed pieces for Shultz and Ridgway."
+    },
+    "foia-C09000025": {
+      "date": "1986-10-14",
+      "date_display": "October 14, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Draft op-ed 'The Reykjavik Meeting' assessing the extraordinary but ultimately disappointing outcome of the Reagan-Gorbachev talks."
+    },
+    "foia-C09000026": {
+      "date": "1986-10-14",
+      "date_display": "October 14, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Draft op-ed on the Reykjavik meeting (Ridgway version) stressing progress on arms-control issues despite no final agreement."
+    },
+    "foia-C09000027": {
+      "date": "1986-10-14",
+      "date_display": "October 14, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Draft op-ed on the Reykjavik meeting reviewing the four negotiating areas (human rights, regional conflicts, bilateral matters, arms control)."
+    },
+    "foia-C09000028": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Routing/action slip for a memorandum to the President."
+    },
+    "foia-C09000029": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Office of the Secretary routing/action slip."
+    },
+    "foia-C09000030": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Executive Secretariat control/action slip for an outgoing State cable."
+    },
+    "foia-C09000031": {
+      "date": "1986-10-16",
+      "date_display": "October 16, 1986",
+      "date_confidence": "exact",
+      "description": "Embassy Bucharest cable (86BUCHAR07545) on Foreign Minister Shevardnadze's October 16 press conference after Warsaw Pact meetings, taking a tough public line on Reykjavik."
+    },
+    "foia-C09000032": {
+      "date": "1986-10-15",
+      "date_display": "October 15, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Embassy Helsinki cable (86HELSINKI05058) reporting Soviet Ambassador Semyonov's October 15 briefing of Finnish President Koivisto on the summit."
+    },
+    "foia-C09000033": {
+      "date": "",
+      "date_display": "October 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Embassy Rome cable on a special Soviet Moscow envoy's meeting with Italian Prime Minister Craxi about arms-control negotiating positions after Reykjavik."
+    },
+    "foia-C09000034": {
+      "date": "1986-10-14",
+      "date_display": "October 14, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "USNATO cable (86USNATO 05622) transmitting a correction to a prior message on the two-stage elimination of strategic offensive weapons discussed at Reykjavik."
+    },
+    "foia-C09000035": {
+      "date": "1986-10-14",
+      "date_display": "October 14, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "State cable circulating unclassified talking points on the Reykjavik meetings to Nordic country desks for use with local contacts."
+    },
+    "foia-C09000036": {
+      "date": "1986-10-15",
+      "date_display": "October 15, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "State cable reporting a Washington briefing by DAS Simons for NATO, Korean, Japanese and Australian embassies on the Reykjavik meeting."
+    },
+    "foia-C09000037": {
+      "date": "1986-10-21",
+      "date_display": "October 21, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Embassy Moscow cable on the October 21 press conference where Deputy Foreign Minister Bessmertnykh and negotiator Karpov criticized the U.S. and cited alleged presidential quotes from Reykjavik."
+    },
+    "foia-C09000038": {
+      "date": "1986-10-28",
+      "date_display": "October 28, 1986",
+      "date_confidence": "exact",
+      "description": "Embassy Moscow cable (DTG 281605Z OCT 86) supplying Russian-language transliterations of Bessmertnykh's alleged quotes of the President at Reykjavik."
+    },
+    "foia-C09000039": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Executive Secretariat routing/action slip for a memorandum to the President."
+    },
+    "foia-C09000040": {
+      "date": "1986-10-13",
+      "date_display": "October 13, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Transcript of National Security Adviser John Poindexter's on-the-record briefing at Andrews Air Force Base on the Reykjavik meeting."
+    },
+    "foia-C09000041": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Routing/action slip for a memorandum to the President."
+    },
+    "foia-C09000042": {
+      "date": "",
+      "date_display": "October 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Bureau of Public Affairs 'Current Policy' compilation excerpting key U.S.-Soviet statements, including Shultz's Los Angeles World Affairs Council address."
+    },
+    "foia-C09000043": {
+      "date": "1986-10-07",
+      "date_display": "October 7, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Action memorandum with talking points and scenarios for the Secretary's pre-Reykjavik congressional leadership briefing (October 7 bipartisan breakfast)."
+    },
+    "foia-C09000044": {
+      "date": "1986-10-08",
+      "date_display": "October 8, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Memorandum on the Secretary's October 8 breakfast with Senator Lugar to brief him on the upcoming meeting with Gorbachev."
+    },
+    "foia-C09000045": {
+      "date": "",
+      "date_display": "October 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "State cable reporting Secretary Shultz's meeting with Morris Abram and leaders of major Jewish organizations on Soviet human rights ahead of Reykjavik."
+    },
+    "foia-C09000046": {
+      "date": "1986-09-30",
+      "date_display": "September 30, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "NIACT cable to all NATO capitals conveying the President's September 30 announcement that he and Gorbachev would meet October 11-12 in Reykjavik."
+    },
+    "foia-C09000047": {
+      "date": "1986-10-08",
+      "date_display": "October 8, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "State cable updating allies on Soviet criticisms voiced at the October 7 defense-and-space negotiating plenary in Geneva."
+    },
+    "foia-C09000048": {
+      "date": "1986-10-13",
+      "date_display": "October 13, 1986",
+      "date_confidence": "exact",
+      "description": "USNATO cable (86USNATO 05509) reporting DAS Tom Simons' October 13 Brussels briefing of Japanese MOFA official Watanabe on the Reykjavik results."
+    },
+    "foia-C09000049": {
+      "date": "1986-10-15",
+      "date_display": "October 15, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Embassy Moscow cable analyzing Gorbachev's October 14 televised speech laying out the Soviet version of the Reykjavik meeting."
+    },
+    "foia-C09000050": {
+      "date": "1986-10-14",
+      "date_display": "October 14, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "State cable directing posts to brief host governments on Secretary Shultz's October 13 NAC consultations on Reykjavik."
+    },
+    "foia-C09000051": {
+      "date": "1986-10-15",
+      "date_display": "October 15, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Embassy Tokyo cable (86TOKYO) on Ambassador Rowny's one-hour October 15 meeting with Foreign Minister Kuranari briefing on Reykjavik."
+    },
+    "foia-C09000052": {
+      "date": "1986-10-16",
+      "date_display": "October 16, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Embassy Canberra cable on Ambassador Adelman's meetings with the Australian Prime Minister and senior officials reassuring them on post-Reykjavik arms control."
+    },
+    "foia-C09000053": {
+      "date": "1986-10-16",
+      "date_display": "October 16, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Embassy Seoul cable reporting the briefing of South Korean President Chun on the Reykjavik meeting."
+    },
+    "foia-C09000054": {
+      "date": "1986-10-15",
+      "date_display": "October 15, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "State cable reporting Assistant Secretary Ridgway's October 15 briefing of Warsaw Pact ambassadors and charges on Reykjavik."
+    },
+    "foia-C09000055": {
+      "date": "1986-10-18",
+      "date_display": "October 18, 1986",
+      "date_confidence": "exact",
+      "description": "Embassy Beijing cable (86BEIJIN026629, DTG 180245Z OCT 86) on Ambassador Rowny's October 16 post-Reykjavik consultations with Chinese Vice Foreign Minister Zhu Qizhen."
+    },
+    "foia-C09000056": {
+      "date": "1986-10-18",
+      "date_display": "October 18, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Embassy Rome cable reporting Secretary Weinberger's October 18 meeting with Italian Defense Minister Spadolini on Reykjavik and U.S. arms-control proposals."
+    },
+    "foia-C09000057": {
+      "date": "1986-10-24",
+      "date_display": "October 24, 1986",
+      "date_confidence": "exact",
+      "description": "Embassy Moscow cable (86MOSCOW018493) on the Soviet public-media campaign on Reykjavik, in full swing two weeks after the summit."
+    },
+    "foia-C09000058": {
+      "date": "",
+      "date_display": "Date undetermined",
+      "date_confidence": "none",
+      "description": "Document whose scanned image yielded no extractable text (blank or illegible page)."
+    },
+    "foia-C09000059": {
+      "date": "",
+      "date_display": "October 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Draft congressional letter urging bipartisan consensus on nuclear-testing policy and the Defense Authorization Act ahead of the Reykjavik meeting."
+    },
+    "foia-C09000060": {
+      "date": "",
+      "date_display": "October 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Letter thanking Icelandic hosts for briefings and logistics and casting Reykjavik as a working meeting rather than a summit."
+    },
+    "foia-C09000061": {
+      "date": "",
+      "date_display": "October 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Information memorandum (Richard Solomon to the Secretary) on links between Soviet human-rights behavior and economic development for the Reykjavik pre-summit."
+    },
+    "foia-C09000062": {
+      "date": "1986-09-30",
+      "date_display": "September 30, 1986",
+      "date_confidence": "exact",
+      "description": "State NIACT cable (DTG 301727Z SEP 86) to NATO capitals conveying the September 30 announcement that Reagan and Gorbachev would meet October 11-12 in Reykjavik."
+    },
+    "foia-C09000063": {
+      "date": "1986-10-13",
+      "date_display": "October 13, 1986",
+      "date_confidence": "exact",
+      "description": "USNATO cable (86USNATO 05509) reporting DAS Simons' October 13 Brussels briefing of Japanese MOFA official Watanabe on the Reykjavik results."
+    },
+    "foia-C09000064": {
+      "date": "",
+      "date_display": "October 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Senate Republican Policy Committee 'End of Session' talking points, including a section on the Iceland (Reykjavik) summit."
+    },
+    "foia-C09000065": {
+      "date": "1986-10-09",
+      "date_display": "October 9, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Table of contents and annotated agenda for the President's Reykjavik visit briefing book, covering the October 9-12 schedule."
+    },
+    "foia-C09000066": {
+      "date": "1986-10-02",
+      "date_display": "October 2, 1986",
+      "date_confidence": "exact",
+      "description": "State cable (86STATE 311155, DTG 022138Z OCT 86) transmitting an unofficial translation of a Soviet speaking note to Europeans on the announced Reykjavik meeting."
+    },
+    "foia-C09000067": {
+      "date": "",
+      "date_display": "October 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Information memorandum (Richard Solomon to the Secretary) analyzing links between Soviet human rights and economic development for Reykjavik pre-summit preparations."
+    },
+    "foia-C09000068": {
+      "date": "",
+      "date_display": "October 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Information memorandum (Richard Solomon) giving the Secretary talking points on human-rights issues for use at the Reykjavik meeting."
+    },
+    "foia-C09000069": {
+      "date": "1986-10-15",
+      "date_display": "October 15, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "Embassy Addis Ababa cable (86ADDIS 05204, with State guidance) on the regional-conflict dimension of Reykjavik, focused on Ethiopia and the Horn of Africa."
+    },
+    "foia-C09000070": {
+      "date": "1986-10-15",
+      "date_display": "October 15, 1986 (est.)",
+      "date_confidence": "partial",
+      "description": "Embassy Moscow cable (86MOSCOW017836) commenting on Gorbachev's October 14 televised speech blaming SDI for preventing a breakthrough at Reykjavik."
+    },
+    "foia-C09000071": {
+      "date": "1986-10-14",
+      "date_display": "October 14, 1986 (uncertain)",
+      "date_confidence": "uncertain",
+      "description": "State cable on Secretary Shultz's October 13 NAC consultations, tasking posts with allied briefings on Reykjavik."
+    },
+    "foia-C09000072": {
+      "date": "1986-10-18",
+      "date_display": "October 18, 1986",
+      "date_confidence": "exact",
+      "description": "Embassy Beijing cable (section 01 of 86BEIJIN026629, DTG 180245Z OCT 86) on Ambassador Rowny's October 16 post-Reykjavik consultations with Chinese VFM Zhu Qizhen."
+    },
+    "foia-C09000073": {
+      "date": "1986-10-24",
+      "date_display": "October 24, 1986",
+      "date_confidence": "exact",
+      "description": "Embassy Moscow cable (86MOSCOW018493, DTG 241615Z OCT 86) on the Soviet public line two weeks after Reykjavik."
+    }
+  }
+}
