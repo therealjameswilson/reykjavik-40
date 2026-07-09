@@ -75,6 +75,27 @@ def dateline_date(root: ET.Element) -> tuple[str, str]:
     return "", ""
 
 
+def curated_dates(path: Path) -> dict[str, tuple[str, str]]:
+    """doc_id -> (iso, human) from the checked-in supplement, used as an
+    authoritative fallback when the TEI carries no <dateline><date>.
+
+    Many Vol XI memcons, minutes, and editorial notes omit the machine
+    dateline that dateline_date() reads, yet their printed date is known
+    and curated in data/frus_hsg_supplement.json. Seeding from that
+    committed artifact keeps those dates from being re-emptied on a full
+    rebuild, and keeps re-runs idempotent. Documents that upstream marks
+    Undated (empty date) are simply absent here and stay undated."""
+    if not path.exists():
+        return {}
+    out: dict[str, tuple[str, str]] = {}
+    for r in json.loads(path.read_text()):
+        doc_id = r.get("doc_id")
+        iso = (r.get("date") or "").strip()
+        if doc_id and re.match(r"\d{4}-\d{2}-\d{2}$", iso):
+            out[doc_id] = (iso, r.get("date_display", ""))
+    return out
+
+
 def dateline_place(root: ET.Element) -> str:
     place = root.find(f".//{qn('dateline')}//{qn('placeName')}")
     return text_of(place) if place is not None else ""
@@ -118,12 +139,14 @@ def phase_for(iso_date: str) -> str:
     return "summit"
 
 
-def parse_doc(hsg: Path, volume: str, doc: str, vol_dates: dict[int, str]) -> dict[str, Any] | None:
+def parse_doc(hsg: Path, volume: str, doc: str, vol_dates: dict[int, str],
+              curated: dict[str, tuple[str, str]]) -> dict[str, Any] | None:
     path = hsg / "data" / "documents" / volume / f"{doc}.xml"
     if not path.exists():
         return None
     root = ET.parse(path).getroot()
     doc_num = int(doc[1:])
+    doc_id = f"{volume}-{doc}"
 
     title_el = root.find(f".//{qn('titleStmt')}/{qn('title')}")
     title = (title_el.text or "").strip() if title_el is not None else ""
@@ -139,8 +162,16 @@ def parse_doc(hsg: Path, volume: str, doc: str, vol_dates: dict[int, str]) -> di
             subtype = (bibl.text or "").strip()
 
     iso_date, human_date = dateline_date(root)
-    # Editorial notes have no dateline; interpolate from volume order so
-    # the phase is right, but leave `date` empty rather than assert one.
+    if not iso_date:
+        # No machine dateline: fall back to the curated printed date so a
+        # full rebuild preserves it instead of re-emptying it.
+        curated_iso, curated_human = curated.get(doc_id, ("", ""))
+        if curated_iso:
+            iso_date = curated_iso
+            human_date = human_date or curated_human
+    # Editorial notes that are undated everywhere have no dateline and no
+    # curated date; interpolate from volume order so the phase is right,
+    # but leave `date` empty rather than assert one.
     phase_date = iso_date or interpolated_date(doc_num, vol_dates)
 
     paragraphs = body_paragraphs(root)
@@ -153,7 +184,7 @@ def parse_doc(hsg: Path, volume: str, doc: str, vol_dates: dict[int, str]) -> di
             break
 
     return {
-        "doc_id": f"{volume}-{doc}",
+        "doc_id": doc_id,
         "doc_number": doc_num,
         "source": SOURCE_LABELS.get(volume, volume),
         "source_kind": subtype or "document",
@@ -178,11 +209,16 @@ def main() -> int:
     ap.add_argument("--hsg", type=Path, default=DEFAULT_HSG,
                     help="path to the hsg-annotate-data repository")
     ap.add_argument("--out", type=Path, default=DATA / "frus_hsg_supplement.json")
+    ap.add_argument("--dates-fallback", type=Path, default=DATA / "frus_hsg_supplement.json",
+                    help="curated supplement whose dates fill in for documents "
+                         "whose TEI carries no <dateline><date>")
     args = ap.parse_args()
 
     if not (args.hsg / "tei").is_dir():
         print(f"error: {args.hsg} does not look like hsg-annotate-data", file=sys.stderr)
         return 1
+
+    curated = curated_dates(args.dates_fallback)
 
     records: list[dict[str, Any]] = []
     for volume, docs in sorted(event_tagged_docs(args.hsg).items()):
@@ -192,7 +228,7 @@ def main() -> int:
             continue
         vol_dates = volume_dates(args.hsg, volume)
         for doc in wanted:
-            record = parse_doc(args.hsg, volume, doc, vol_dates)
+            record = parse_doc(args.hsg, volume, doc, vol_dates, curated)
             if record:
                 records.append(record)
         print(f"{volume}: {len(wanted)} documents ingested from annotated TEI")
