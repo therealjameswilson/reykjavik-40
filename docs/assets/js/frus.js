@@ -84,6 +84,7 @@ async function boot() {
     renderFoia();
     setupFoiaControls();
     setupSelectionClose();
+    setupMastheadToggle();
   } catch (err) {
     console.error("[reykjavik-40] failed to load data", err);
     document.getElementById("main").insertAdjacentHTML(
@@ -125,6 +126,29 @@ function setupSelectionClose() {
   document.getElementById("selection-close").addEventListener("click", () => clearSelection());
   document.addEventListener("keydown", e => {
     if (e.key === "Escape") clearSelection();
+  });
+}
+
+// Collapse/expand the sticky masthead so it stops obstructing the views.
+// The choice persists across visits.
+function setupMastheadToggle() {
+  const bar = document.getElementById("masthead");
+  const btn = document.getElementById("masthead-toggle");
+  if (!bar || !btn) return;
+  const KEY = "reykjavik40.mastheadCollapsed";
+  const apply = collapsed => {
+    bar.classList.toggle("is-collapsed", collapsed);
+    btn.setAttribute("aria-expanded", collapsed ? "false" : "true");
+    btn.setAttribute("aria-label", collapsed ? "Expand header" : "Minimize header");
+    btn.setAttribute("title", collapsed ? "Expand header" : "Minimize header");
+  };
+  let saved = false;
+  try { saved = localStorage.getItem(KEY) === "1"; } catch { /* storage blocked */ }
+  apply(saved);
+  btn.addEventListener("click", () => {
+    const collapsed = !bar.classList.contains("is-collapsed");
+    apply(collapsed);
+    try { localStorage.setItem(KEY, collapsed ? "1" : "0"); } catch { /* ignore */ }
   });
 }
 
